@@ -1,0 +1,66 @@
+---
+settings:
+  name: GenAI
+  platform: cloud
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  rss_page: whats-new.html
+  langs: ja-jp,us-en,ko-kr,zh-cn,zh-tw,de-de,es-es,fr-fr,it-it
+sidebar:
+  entries:
+  - title: GenAIのドキュメント
+    url: "/index.html"
+  - title: リリースノート
+    entries:
+    - title: 新機能
+      url: "/whats-new.html"
+  - title: はじめに
+    entries:
+    - title: GenAI向けワークロードファクトリーの詳細
+      url: "/ai-workloads-overview.html"
+    - title: クイックスタート
+      url: "/quick-start.html"
+    - title: GenAIの要件
+      url: "/requirements.html"
+    - title: ナレッジベースのデータソースを特定する
+      url: "/identify-data-sources.html"
+    - title: ナレッジベースインフラストラクチャの導入
+      url: "/deploy-infrastructure.html"
+  - title: GenAIを使用したナレッジベースの作成
+    entries:
+    - title: ナレッジベースの構築
+      entries:
+      - title: ナレッジベースの作成
+        url: "/create-knowledgebase.html"
+      - title: ナレッジベースのテスト
+        url: "/test-knowledgebase.html"
+      - title: 認証をアクティブ化
+        url: "/activate-authentication.html"
+      - title: ナレッジベースのパブリッシュ
+        url: "/publish-knowledgebase.html"
+      - title: 次は何ができるか
+        url: "/whats-next.html"
+    - title: データソースの管理
+      url: "/manage-data-source.html"
+    - title: ナレッジベースの管理
+      url: "/manage-knowledgebase.html"
+  - title: GenAIの管理
+    entries:
+    - title: GenAIインフラの管理
+      url: "/manage-infrastructure.html"
+    - title: NetApp GenAIエンジンのコンポーネント
+      url: "/genai-engine-instance.html"
+  - title: 知識とサポート
+    entries:
+    - title: サポートに登録します
+      url: "/support-registration.html"
+    - title: ヘルプを表示します
+      url: "/get-help.html"
+  - title: 法的通知
+    url: "/legal-notices.html"
+product-family:
+  name: BlueXP Workload Factory for AWS
+  repo: workload-family

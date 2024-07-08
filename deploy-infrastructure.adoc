@@ -1,0 +1,93 @@
+---
+sidebar: sidebar 
+permalink: deploy-infrastructure.html 
+keywords: ai, chatbot, infrastructure, bedrock, fsx for ontap 
+summary: 組織に適したFSx for ONTAPナレッジベースとアプリケーションを構築するには、RAGフレームワークのインフラを環境に導入する必要があります。主要なインフラコンポーネントは、Amazon Bedrock AIサービス、NetApp GenAIエンジンの仮想マシンインスタンス、FSx for ONTAPファイルシステムです。 
+---
+= GenAIインフラの導入
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+組織に合ったFSx for ONTAPナレッジベースとアプリケーションを構築するには、まずGenAI Infrastructure for RAGフレームワークを環境に導入する必要があります。主要なインフラコンポーネントは、Amazon Bedrockサービス、NetApp GenAIエンジンの仮想マシンインスタンス、FSx for ONTAPファイルシステムです。
+
+導入されたインフラストラクチャは複数のナレッジベースとチャットボットをサポートできるため、通常はこのタスクを一度だけ実行する必要があります。
+
+
+
+== インフラの詳細
+
+GenAI環境は、Amazon Bedrockが有効になっているAWSリージョンに配置する必要があります。 https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-supported.html["サポートされているリージョンの一覧を表示する"^]
+
+導入は、次のコンポーネントで構成されています。
+
+Amazon Bedrockサービス:: Amazon Bedrockは、業界をリードするAI企業の基盤モデル（FMS）を単一のAPIで使用できるフルマネージドサービスです。また、セキュアなジェネレーティブAIアプリケーションの構築に必要な機能も提供します。
++
+--
+https://aws.amazon.com/bedrock/["Amazon Bedrockの詳細"^]
+
+--
+NetApp GenAIエンジン用の仮想マシン:: このプロセスでは、NetApp GenAIエンジンがデプロイされます。データソースからデータを取り込み、そのデータをベクターデータベースに書き込む処理能力を提供します。
+FSx for ONTAPファイルシステム:: FSx for ONTAPファイルシステムは、GenAIシステムにストレージを提供します。
++
+--
+データソースに基づく基本モデルによって生成されたデータを格納するベクターデータベースを含む単一のボリュームが導入されます。
+
+ナレッジベースに統合するデータソースは、同じFSx for ONTAPファイルシステムに配置することも、別のシステムに配置することもできます。
+
+NetApp GenAIエンジンは、これらのボリュームの両方を監視し、相互作用します。
+
+--
+
+
+次の図は、GenAIインフラストラクチャを示しています。この手順では、番号1、2、3のコンポーネントを展開します。展開を開始する前に、他の要素が配置されている必要があります。
+
+image:diagram-chatbot-infrastructure.png["AIチャットボットのコンポーネントの図。"]
+
+
+
+== GenAIインフラの導入
+
+AWSクレデンシャルを入力し、FSx for ONTAPファイルシステムを選択して、Retrieval Augmentation Generation（RAG）インフラを導入する必要があります。
+
+.開始する前に
+この手順を開始する前に、環境がを満たしていることを確認し link:requirements.html["要件"] てください。
+
+.手順
+. Workload Factoryにログインします。
+. [AI Workloads]タイルで、*[Deploy & manage]*を選択します。
+. インフラの図を確認し、* Next *を選択します。
+. [AWS settings]セクションの項目を入力します。
++
+.. * AWSクレデンシャル*：AWSリソースを導入する権限を提供するAWSクレデンシャルを選択または追加します。
+.. *場所*：AWSのリージョン、VPC、サブネットを選択します。
++
+GenAI環境は、Amazon Bedrockが有効になっているAWSリージョンに配置する必要があります。 https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-supported.html["サポートされているリージョンの一覧を表示する"^]
+
+
+
+. [インフラストラクチャー設定]セクションの項目を入力します。
++
+.. * FSx for ONTAPファイルシステム*：FSx for ONTAPファイルシステムとGenAIインスタンスデータベースボリュームを導入するStorage VMを選択し、ボリュームに使用する名前を指定します。
++
+Workload FactoryがFSx for ONTAPファイルシステムのクレデンシャルを持っているかどうかによっては、ユーザ名とパスワードの入力が必要になる場合があります。
+
+.. * Tags *：この導入環境に含まれるすべてのAWSリソースに適用するタグのキーと値のペアを入力します。
+.. *キーペア*: NetApp GenAIエンジンインスタンスに安全に接続できるキーペアを選択します。
+
+
+. 導入*を選択して導入を開始します。
+
+
+.結果
+Workload Factoryチャットボットインフラストラクチャの展開を開始します。このプロセスには最大10分かかることがあります。
+
+導入プロセスでは、次の項目が設定されます。
+
+* ネットワークはプライベートエンドポイントとともにセットアップされます。
+* IAMロール、インスタンスプロファイル、およびセキュリティグループが作成されます。
+* GenAIエンジンデータベース（LanceDB）のボリュームは、FSx for ONTAPファイルシステム上に作成されます。
+* GenAIエンジンの仮想マシンインスタンスが導入されている。
+

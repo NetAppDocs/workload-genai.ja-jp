@@ -1,0 +1,24 @@
+---
+sidebar: sidebar 
+permalink: whats-new.html 
+keywords: 'what"s new, features, new, release notes, enhancements, fixes' 
+summary: Workload FactoryのAIワークロード機能の最新情報をご確認ください。 
+---
+= 新機能
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Workload FactoryのGenerative AI Workloads機能の最新情報をご確認ください。
+
+
+
+== 2024年7月7日
+
+
+
+=== GenAI向けWorkload Factoryの初版リリース
+
+最初のリリースには、組織のデータを埋め込むことによってカスタマイズされたナレッジベースを開発する機能が含まれています。ナレッジベースには、ユーザー用のチャットボットアプリケーションからアクセスできます。この機能により、組織固有の質問に対する正確で適切な回答が保証され、すべてのユーザーの満足度と生産性が向上します。
