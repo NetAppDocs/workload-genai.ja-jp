@@ -54,7 +54,6 @@
   <block id="80a4d47d289b6794b7af32bf0403d817" category="list-text">ナレッジベースのコンテンツに基づいて、会話スターターの質問を自動的に作成します。</block>
   <block id="d115eba24b3d1be73af7f0952b82dc13" category="list-text">データ管理者がナレッジベースとのチャットをテストするためのチャットシミュレータを提供します。</block>
   <block id="20b4f77bd00b4f63a49ec8e08f3bf6a6" category="section-title">コスト</block>
-  <block id="848d5941560ff7e3f492b8bc6ca745d1" category="paragraph">プレビュー期間中は、Workload FactoryのGenAI機能を使用するためのコストはかかりません。</block>
   <block id="ca4fec9e2b2e873ba73dde822ed0fd02" category="paragraph">ただし、生成型AIインフラをサポートするには、導入したAWSリソースに料金を支払う必要があります。たとえば、Amazon Bedrock AIサービス、FSx for ONTAPファイルシステムとストレージ容量、GenAIエンジンEC2インスタンスの料金をAWSに支払います。</block>
   <block id="0b9c6eef4e3d3a222eb04e910d252339" category="section-title">ライセンス</block>
   <block id="0ea77fd2fdca0ee14d426a023ea715ad" category="paragraph">ワークロードファクトリのAI機能を使用するために、NetAppから特別なライセンスは必要ありません。</block>
@@ -538,4 +537,5 @@
   <block id="2e800147de9688c09f27dae52c542680" category="sidebar">GenAIを使用したナレッジベースの作成</block>
   <block id="b032727d9e00be7e59aefec94a0972c2" category="sidebar">認証をアクティブ化</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知識とサポート</block>
+  <block id="3163a16fc98aa29c5fea8b61c62bb459" category="paragraph">Workload FactoryのGenAI機能を使用するためのコストはかかりません。</block>
 </blocks>

@@ -58,7 +58,7 @@ GenAIは、次の方法でRAGを使用したジェネレーティブAIアプリ�
 
 == コスト
 
-プレビュー期間中は、Workload FactoryのGenAI機能を使用するためのコストはかかりません。
+Workload FactoryのGenAI機能を使用するためのコストはかかりません。
 
 ただし、生成型AIインフラをサポートするには、導入したAWSリソースに料金を支払う必要があります。たとえば、Amazon Bedrock AIサービス、FSx for ONTAPファイルシステムとストレージ容量、GenAIエンジンEC2インスタンスの料金をAWSに支払います。
 
