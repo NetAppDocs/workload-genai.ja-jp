@@ -1,0 +1,16 @@
+---
+sidebar: sidebar 
+permalink: create-application.html 
+keywords: ai, chatbot, creating, application, knowledge base, rag, retrieval augmented generation 
+summary: ナレッジベースを構築してチャットボットをテストしたら、ユーザーがチャットボットを照会できるようにするアプリケーションをセットアップする準備が整いました。 
+---
+= FSx for ONTAPナレッジベースを基盤とするアプリケーションを作成
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+ナレッジベースを構築してチャットボットをテストしたら、ユーザーがチャットボットを照会できるようにするアプリケーションをセットアップする準備が整いました。
+
+https://community.netapp.com/t5/Tech-ONTAP-Blogs/How-to-create-a-RAG-based-AI-application-on-FSx-for-ONTAP-with-BlueXP-workload/ba-p/453870["FSx for ONTAPでRAGベースのAIアプリケーションを作成する方法をご確認ください"^]

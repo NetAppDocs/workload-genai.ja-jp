@@ -538,4 +538,9 @@
   <block id="b032727d9e00be7e59aefec94a0972c2" category="sidebar">認証をアクティブ化</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知識とサポート</block>
   <block id="3163a16fc98aa29c5fea8b61c62bb459" category="paragraph">Workload FactoryのGenAI機能を使用するためのコストはかかりません。</block>
+  <block id="a46c34e822b00eb49125943300225ec1" category="summary">ナレッジベースを構築してチャットボットをテストしたら、ユーザーがチャットボットを照会できるようにするアプリケーションをセットアップする準備が整いました。</block>
+  <block id="4c096c170a3ae328a9df5fb19871a9a7" category="doc">FSx for ONTAPナレッジベースを基盤とするアプリケーションを作成</block>
+  <block id="3034501b6830f6e24b0e219fa3565ffb" category="inline-link">FSx for ONTAPでRAGベースのAIアプリケーションを作成する方法をご確認ください</block>
+  <block id="cddb505028d2d2c7026aad1d17c19a05" category="paragraph"><block ref="cddb505028d2d2c7026aad1d17c19a05" category="inline-link-rx"></block></block>
+  <block id="53b343f4a880bcff3b258324a35744ff" category="sidebar">RAGベースのAIアプリケーションの作成</block>
 </blocks>

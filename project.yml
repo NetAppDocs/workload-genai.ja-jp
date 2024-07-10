@@ -41,6 +41,8 @@ sidebar:
         url: "/activate-authentication.html"
       - title: ナレッジベースのパブリッシュ
         url: "/publish-knowledgebase.html"
+      - title: RAGベースのAIアプリケーションの作成
+        url: "/create-application.html"
       - title: 次は何ができるか
         url: "/whats-next.html"
     - title: データソースの管理
