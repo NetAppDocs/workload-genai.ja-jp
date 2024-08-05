@@ -388,7 +388,6 @@
   <block id="19761722f9e779bd2a70fef96c24a1bc" category="paragraph">Workload Factoryはナレッジベースを公開しています。ナレッジベースの詳細ページで、ステータスが*未公開*から*公開済み*に変わります。</block>
   <block id="5e92f6a356303934a45930f0e541c6b1" category="paragraph">これで、ナレッジベースの一意のエンドポイントに関する詳細を取得できます。</block>
   <block id="004faa273ca0b2383f0f12b8850c493b" category="list-text">[公開済み]ステータスの横にある*[表示]*を選択します。</block>
-  <block id="d1f4efe2fd3a800f4b008e172439fe85" category="paragraph">Workload Factory APIを使用してナレッジベースにアクセスする方法の詳細が表示されます。</block>
   <block id="9de2775e528dfff9dd9666885c222272" category="list-text">[公開情報の表示]ダイアログボックスから、ナレッジベースとアプリケーションの統合に使用できるAPIエンドポイントをコピーします。</block>
   <block id="7495d9f71402d3b1d20f08bd19ac6562" category="inline-link">APIドキュメント</block>
   <block id="2cb94eb0648b9f93f300ea0aff833f95" category="paragraph">APIエンドポイントの詳細については、に移動し<block ref="c0a9aa55ed57e2e15b2d20baa6a6e023" category="inline-link-rx"></block> 、* AI &gt; External *を選択します。</block>
@@ -398,7 +397,6 @@
   <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">1つ</block>
   <block id="e16edd708081c06a9c8bdef1486a94b4" category="inline-link-macro">GenAIの要件を満たす環境のセットアップ</block>
   <block id="0b0e916064e065ab12e1db6735832ef0" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> <block ref="d4a51aa0811f51e3206f49b62f46f1ef" category="inline-link-macro-rx"></block></block>
-  <block id="926f216b1b078ff9ce47e61e22932514" category="paragraph">AWSインフラの導入、FSx for ONTAPファイルシステムの導入と検出、ナレッジベースに統合するデータソースのリスト、Amazon Bedrock AIサービスへのアクセスなどには、AWSのクレデンシャルが必要です。</block>
   <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">2つ</block>
   <block id="36ec882c51ea2d7689f78bed44b7fdaa" category="inline-link-macro">データソースが格納されているFSx for ONTAPファイルシステムを特定する</block>
   <block id="cc9cd1c7d0a54d3fe49ca467804963fb" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> <block ref="7206191241f03719b7415c03564b4c6e" category="inline-link-macro-rx"></block></block>
@@ -539,8 +537,17 @@
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知識とサポート</block>
   <block id="3163a16fc98aa29c5fea8b61c62bb459" category="paragraph">Workload FactoryのGenAI機能を使用するためのコストはかかりません。</block>
   <block id="a46c34e822b00eb49125943300225ec1" category="summary">ナレッジベースを構築してチャットボットをテストしたら、ユーザーがチャットボットを照会できるようにするアプリケーションをセットアップする準備が整いました。</block>
-  <block id="4c096c170a3ae328a9df5fb19871a9a7" category="doc">FSx for ONTAPナレッジベースを基盤とするアプリケーションを作成</block>
   <block id="3034501b6830f6e24b0e219fa3565ffb" category="inline-link">FSx for ONTAPでRAGベースのAIアプリケーションを作成する方法をご確認ください</block>
   <block id="cddb505028d2d2c7026aad1d17c19a05" category="paragraph"><block ref="cddb505028d2d2c7026aad1d17c19a05" category="inline-link-rx"></block></block>
   <block id="53b343f4a880bcff3b258324a35744ff" category="sidebar">RAGベースのAIアプリケーションの作成</block>
+  <block id="da1fd32e4f4851fbf4922d1c55e8fcc0" category="list-text">ナレッジベースインベントリページで、認証を有効にするナレッジベースを選択します。</block>
+  <block id="d71d72ee7bc5c79bade09f02715592c3" category="paragraph">ナレッジベースの認証がアクティブになり、APIエンドポイントを使用してナレッジベースと対話し、ナレッジベースとチャットボットアプリケーションを統合できます。</block>
+  <block id="c83d7c23906c063b64dd22d30483cb24" category="list-text">Amazon Bedrockは、プレフィックスを持つロググループを使用して、Amazon CloudWatch Logsにログを送信するように構成されて<block ref="26245dda4fa653114e9a41956171489d" prefix=" " category="inline-code"></block>います。</block>
+  <block id="6fbe5ae14d71eb3abafcfce8f7fe977a" category="inline-link">BlueXPアカウントID</block>
+  <block id="af270465b477b731bafe1e4859956cc4" category="list-text">GenAIエンジンは、という名前のロググループを使用して、Amazon CloudWatch Logsにログを送信するように構成されてい<block ref="267ed14c989ee7da1da6b5683a1ba205" prefix=" " category="inline-code"></block>ます。ここで、<block ref="44014fe9a7dd0d34b59279b9206b84b3" prefix=" " category="inline-code"></block> は現在のユーザーのです<block ref="bffdd6286177ca86f99ccefe410268a2" category="inline-link-rx"></block> 。</block>
+  <block id="b3ec171bb9a8cc7c009e2caf4d945535" category="paragraph">Workload Factory APIを使用してナレッジベースにアクセスする方法の詳細が表示されます。</block>
+  <block id="f48c3e82e3f3b9cc782fe1277e362ec5" category="paragraph">AWSインフラの導入、導入および検出されたFSx for ONTAPファイルシステム、ナレッジベースに統合するデータソースのリスト、Amazon Bedrock AIサービスへのアクセスなどには、AWSのクレデンシャルが必要です。</block>
+  <block id="691e71734464aaf43017f5b033e54559" category="section-title">2024 年 8 月 4 日</block>
+  <block id="ec7827c2237ae7b863c9ba93b519cbc1" category="section-title">Amazon CloudWatch Logsの統合</block>
+  <block id="64c1dd8cb5f86710c3293cc9807760fb" category="paragraph">ジェネレーティブAIワークロードがAmazon CloudWatch Logsと統合され、ジェネレーティブAIワークロードのログファイルを監視できるようになりました。</block>
 </blocks>

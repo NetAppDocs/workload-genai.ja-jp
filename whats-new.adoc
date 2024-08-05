@@ -15,6 +15,16 @@ Workload FactoryのGenerative AI Workloads機能の最新情報をご確認く�
 
 
 
+== 2024 年 8 月 4 日
+
+
+
+=== Amazon CloudWatch Logsの統合
+
+ジェネレーティブAIワークロードがAmazon CloudWatch Logsと統合され、ジェネレーティブAIワークロードのログファイルを監視できるようになりました。
+
+
+
 == 2024年7月7日
 
 
