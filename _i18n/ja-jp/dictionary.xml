@@ -12,7 +12,6 @@
   <block id="65f706122d6156fd52b6cb2ff2214944" category="list-text">[追加]*を選択して、このデータソースをナレッジベースに追加します。</block>
   <block id="f1af0b71f33a2e37e9e17b100f3c0b1e" category="summary">ナレッジベースとチャットボットアプリケーションを統合するときにトークンの検証とACLが必要になるように、ナレッジベースの認証をアクティブにします。</block>
   <block id="970a6e4ed60b5e3eb0f25c2ab67433fe" category="doc">ナレッジベースの外部認証を有効にする</block>
-  <block id="f739f01e878ac777330d67ca4158aece" category="paragraph">APIエンドポイントを使用してナレッジベースとチャットボットアプリケーションを統合するときにトークンの検証とACLが必要になるように、ナレッジベースの認証をアクティブにします。</block>
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">手順</block>
   <block id="958a8f384aa34f23244386f38ed3aeab" category="list-text">ナレッジベースインベントリページで、公開するナレッジベースを選択します。</block>
   <block id="2041999f6b6b70199d1267ee84f453a6" category="inline-image-macro">オプションボタン</block>
@@ -20,12 +19,6 @@
   <block id="717cb2ec03a878d541d7d67390c70a02" category="list-text">[アクション]*メニューを選択し、*[認証設定の管理]*を選択します。</block>
   <block id="01345ed4b5ff7f7a1a05a52074ad1caf" category="list-text">認証をセットアップします。</block>
   <block id="d408b7a47989c152a2aa2d90a6528cd8" category="list-text">[認証設定をアクティブにする]*を選択します。</block>
-  <block id="06b97c41aa527667da7e7e745c867d3c" category="list-text">必要な情報を入力します。</block>
-  <block id="f67d4abfe5d3ad3bdc35adca8802160f" category="list-text">アルゴリズム</block>
-  <block id="ef1e6887c579ba81dcedc3f4e3793cd2" category="list-text">対象読者</block>
-  <block id="51360304ea03557e79bdf5ff9cd2e234" category="list-text">発行者</block>
-  <block id="9ebac1089717ab190990b2b9a0fd554c" category="list-text">JWKS URI</block>
-  <block id="9df3162c758e92127fd15a555cd18f04" category="paragraph">これらのフィールドの値は、認証プロバイダから取得する必要があります。</block>
   <block id="10492389e94efdebbb66f7b0cd8a1324" category="list-text">[ 保存（ Save ） ] を選択します。</block>
   <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">結果</block>
   <block id="5d8cae383bd52502a39a1612796fb31f" category="paragraph">これで、公開されたナレッジベースと、ナレッジベースとチャットボットアプリケーションを統合するために使用できる一意のエンドポイントが作成されました。</block>
@@ -550,4 +543,13 @@
   <block id="691e71734464aaf43017f5b033e54559" category="section-title">2024 年 8 月 4 日</block>
   <block id="ec7827c2237ae7b863c9ba93b519cbc1" category="section-title">Amazon CloudWatch Logsの統合</block>
   <block id="64c1dd8cb5f86710c3293cc9807760fb" category="paragraph">ジェネレーティブAIワークロードがAmazon CloudWatch Logsと統合され、ジェネレーティブAIワークロードのログファイルを監視できるようになりました。</block>
+  <block id="c34bf4f0a7173f53dc110e7f41c2e0d0" category="paragraph">APIエンドポイントを使用してナレッジベースとチャットボットアプリケーションを統合するときにトークンの検証とACLが必要になるように、ナレッジベースの認証をアクティブにします。認証を有効にすると、チャットボットクライアントからナレッジベースへのAPI要求に使用するJSON Webトークンが生成されます。</block>
+  <block id="d4cc00616339f0819c8ca53d7850ca2c" category="list-text">必要な情報を入力します。ここでは例を示しますが、これらのフィールドの値は認証プロバイダから取得する必要があります。</block>
+  <block id="8fbebd38c35cb217ad6437410297b5e7" category="list-text">*アルゴリズム*:認証プロバイダが使用する署名アルゴリズム。</block>
+  <block id="59575929b41aa989abd4d539bc31b47a" category="list-text">* Audience *（任意）：認証トークン（URLの場合もあります）の受信者を含む文字列。</block>
+  <block id="8815fb464bfa6c8533fc5ae4e04b9c5a" category="list-text">*Issuer*:トークンを発行したプロバイダを識別する文字列。</block>
+  <block id="9f921e08c2635ce0ca6d5507cf90b6d2" category="paragraph">たとえば、Amazon Cognitoでは、次の形式の発行者文字列が使用されます。</block>
+  <block id="69a143a2f8c7c42f85ef0de9978c131d" category="paragraph"><block ref="d1dc4390a2dfb7cdc1a097e10b04acdf" prefix=" " category="inline-code"></block>はユーザプールを含むAWSリージョン、はユーザプール<block ref="d47ea98789cbedeffd13a02b7b550538" prefix=" " category="inline-code"></block> IDです。次のコマンドを使用して、ユーザプールIDを取得できます。</block>
+  <block id="563ae45eabbbd334a2af58d93ded707c" category="list-text">*JWKS URI*:このトークンの署名を検証するために必要な公開鍵を提供するURI文字列。</block>
+  <block id="2caafa02c784bfe569590254865dd928" category="paragraph">たとえば、Amazon Cognitoでは、次の形式のJWKS URI文字列が使用されます。</block>
 </blocks>
