@@ -552,4 +552,23 @@
   <block id="2caafa02c784bfe569590254865dd928" category="paragraph">たとえば、Amazon Cognitoでは、次の形式のJWKS URI文字列が使用されます。</block>
   <block id="566673c66dc53f65f0662ca186b4ff33" category="paragraph">APIエンドポイントを使用してナレッジベースとチャットボットアプリケーションを統合するときにトークンの検証とACLが必要になるように、ナレッジベースの認証をアクティブにします。認証を有効にするときは、チャットボットクライアントからナレッジベースへのAPI要求に使用されるJSON Webトークンの設定を構成します。</block>
   <block id="af3e21688164f21808a96c579519e58a" category="list-text">* Audience *（オプション）：トークンの受信者（URLの場合もあります）を含む文字列。</block>
+  <block id="9f6d7e16caf2363ed289cf415c43d68e" category="summary">サンプルのチャットボットアプリケーションをインストールして実行し、ナレッジベースをテストし、Workload Factory APIを使用して独自の生成AIアプリケーションを作成する方法を学ぶことができます。</block>
+  <block id="ce8f8573f53c4f625df29c794cd7d82a" category="doc">外部のサンプルチャットボットアプリケーションを使用する</block>
+  <block id="15abf1d561eb7f7ddb0e28f6c4562a8c" category="paragraph">ナレッジベースを構成、アクティブ化、公開した後、外部アプリケーション開発者は、NetAppが提供するオープンソースのサンプルチャットボットアプリケーションを構成および実行してナレッジベースを操作したり、ワークロードファクトリAPIを使用して独自の生成AIアプリケーションを作成する方法を学習したりできます。</block>
+  <block id="39f8e13a71ec862a906b446df493f119" category="list-text"><block ref="34b37227349aa26ad88498e81a1ea1af" category="inline-link-macro-rx"></block>です。</block>
+  <block id="804d039033ead5360f1a1a7d2c362f11" category="list-text"><block ref="30b5e2b0cf5de93d45c874ca5c8c6a31" category="inline-link-macro-rx"></block> をクリックします。</block>
+  <block id="73e5c231c5129b847eb8645a0a52a595" category="paragraph">これにより、ナレッジベースでAPI要求を認証できるようになり、APIエンドポイントを使用する際にトークンの検証とACLが必要になります。</block>
+  <block id="9422cba0464f58f3b37b0745e5b00b27" category="admonition">このナレッジベースと統合する外部チャットアプリケーションは、ナレッジベースの認証設定で設定したものと同じ認証プロバイダ(発行者)を使用する必要があります。</block>
+  <block id="4608fcb51404075a263bdb6e179b0a2d" category="inline-link-macro">ナレッジベースの公開</block>
+  <block id="722a513785392127bf30ac1365e83362" category="list-text"><block ref="55b5b45f76a7f4e93c30f45e62e61f7a" category="inline-link-macro-rx"></block> 外部アプリケーションのAPIアクセスを有効にします。</block>
+  <block id="1119e2011350c0d24f44e3aaf7f8fd74" category="paragraph">ナレッジベースが公開されると、APIエンドポイントに外部からアクセスできるようになり、ナレッジベースを外部チャットアプリケーション（例のチャットボットアプリケーションなど）と統合できます。</block>
+  <block id="d3b7c913cd04ebfec0e9ec32cb6fd58c" category="inline-link">GitHub</block>
+  <block id="f49a88c7b28444b7b991e9803b076e62" category="list-text">からサンプルのチャットボットアプリケーションパッケージをダウンロードし<block ref="61cc64ceefa7eff1b19d7a7c0c883e1f" category="inline-link-rx"></block>ます。</block>
+  <block id="188374f3639ec34e68d38eae79f19aae" category="list-text">パッケージに含まれているREADMEファイルの指示に従って、チャットボットアプリケーションをインストールして実行します。</block>
+  <block id="c2847f2ccebd5c687f46c7bf12c1be5c" category="inline-link"><block ref="c2847f2ccebd5c687f46c7bf12c1be5c" category="inline-link-rx"></block></block>
+  <block id="4fc1d0607a3fe50db5ef612a2c4a178e" category="list-text">を参照し<block ref="0e14f9ffc1d2673bd92f13a4ac79e32e" category="inline-link-rx"></block> てアプリケーションにログインします。</block>
+  <block id="5f62c285aea87618ed1381c43c7ae2cf" category="paragraph">チャットボットアプリケーションの例が表示されます。</block>
+  <block id="d59048f21fd887ad520398ce677be586" category="section-title">詳細</block>
+  <block id="862b02acae8afc7a8e5ed9bf4c7cb18e" category="inline-link">Workload Factory APIのドキュメント</block>
+  <block id="39d0fcde59bc31b066cd026cdc9718f8" category="paragraph"><block ref="39d0fcde59bc31b066cd026cdc9718f8" category="inline-link-rx"></block></block>
 </blocks>

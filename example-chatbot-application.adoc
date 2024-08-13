@@ -1,0 +1,42 @@
+---
+sidebar: sidebar 
+permalink: example-chatbot-application.html 
+keywords: ai, example, sample, chatbot, app, application, local 
+summary: サンプルのチャットボットアプリケーションをインストールして実行し、ナレッジベースをテストし、Workload Factory APIを使用して独自の生成AIアプリケーションを作成する方法を学ぶことができます。 
+---
+= 外部のサンプルチャットボットアプリケーションを使用する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+ナレッジベースを構成、アクティブ化、公開した後、外部アプリケーション開発者は、NetAppが提供するオープンソースのサンプルチャットボットアプリケーションを構成および実行してナレッジベースを操作したり、ワークロードファクトリAPIを使用して独自の生成AIアプリケーションを作成する方法を学習したりできます。
+
+.手順
+. link:create-knowledgebase.html["ナレッジベースの作成"]です。
+. link:activate-authentication.html["認証をアクティブ化"] をクリックします。
++
+これにより、ナレッジベースでAPI要求を認証できるようになり、APIエンドポイントを使用する際にトークンの検証とACLが必要になります。
+
++
+
+NOTE: このナレッジベースと統合する外部チャットアプリケーションは、ナレッジベースの認証設定で設定したものと同じ認証プロバイダ(発行者)を使用する必要があります。
+
+. link:publish-knowledgebase.html["ナレッジベースの公開"] 外部アプリケーションのAPIアクセスを有効にします。
++
+ナレッジベースが公開されると、APIエンドポイントに外部からアクセスできるようになり、ナレッジベースを外部チャットアプリケーション（例のチャットボットアプリケーションなど）と統合できます。
+
+. からサンプルのチャットボットアプリケーションパッケージをダウンロードし https://github.com/NetApp/FSx-ONTAP-samples-scripts/tree/main/AI/GenAI-ChatBot-application-sample["GitHub"^]ます。
+. パッケージに含まれているREADMEファイルの指示に従って、チャットボットアプリケーションをインストールして実行します。
+. を参照し http://localhost:9091["http://localhost:9091"] てアプリケーションにログインします。
++
+チャットボットアプリケーションの例が表示されます。
+
+
+
+
+
+== 詳細
+
+https://console.workloads.netapp.com/api-doc["Workload Factory APIのドキュメント"]
