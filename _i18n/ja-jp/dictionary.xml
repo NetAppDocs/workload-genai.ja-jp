@@ -5,7 +5,6 @@
   <block id="e3fbe9ea657688c1ff4a86f23c1752c3" category="list-text">*ボリュームを選択*：データソースファイルが格納されているボリュームを選択し、*[次へ]*を選択します。</block>
   <block id="3bce906453410b081d8e495b9cf8c9b0" category="paragraph">SMBプロトコルを使用して保存されているファイルを選択する場合は、ドメイン、IPアドレス、ユーザ名、パスワードなどのActive Directory情報を入力する必要があります。</block>
   <block id="7028355d43ef8a71ff4d5e7bed32be2b" category="list-text">*データソースを選択*：ファイルを保存した場所に基づいてデータソースの場所を選択します。これは、ボリューム全体、またはボリューム内の特定のフォルダまたはサブフォルダにすることができ、* Next *を選択します。</block>
-  <block id="8cb2845f0cbb1e8e9ed75fc969cf512b" category="list-text">* AIパラメータの定義*：*チャンク定義*セクションで、Amazon Bedrockサービスが属するナレッジベースが照会されたときにデータソースコンテンツをチャンクに分割する方法を定義します。現時点では、文のみを選択できます。</block>
   <block id="12d073958c6d4922a6f27ae8b5e4b533" category="list-text">権限対応*セクション（SMBプロトコルを使用するボリューム上に選択したデータソースがある場合にのみ表示）で、選択を有効または無効にできます。</block>
   <block id="751157f855d8f0597671b65bc8ea1301" category="list-text">*有効*:このナレッジベースにアクセスするチャットボットのユーザーは、アクセス権を持つデータソースからのクエリに対する応答のみを取得します。</block>
   <block id="9969ec0e7476736a130c54f32700611e" category="list-text">*無効*:チャットボットのユーザーは、統合されたすべてのデータソースからコンテンツを使用して応答を受信します。</block>
@@ -58,9 +57,7 @@
   <block id="3bd4cddbc7a98f5c9632a455eca8c27e" category="section-title">ナレッジベースの作成と設定</block>
   <block id="646df03c5fddafc8e9c4ed5aa7036edf" category="paragraph">ナレッジベースは、ナレッジベースの作成に使用するBedrock AIモデルや埋め込み形式などの特性を定義します。</block>
   <block id="d34fab7936dd110b003945d679bb4133" category="list-text">Workload Factoryにログインします。</block>
-  <block id="2775f5aa84cae461b809b629e27e2305" category="list-text">[AIワークロード]タイルで、*[チャットボットの作成]*を選択します。</block>
   <block id="5b20d7e96740200c428376cbb5e7fdb4" category="list-text">[ナレッジベース]タブで、*[ナレッジベースの追加]*を選択します。</block>
-  <block id="a3efc362347ba241480bf992b9fa4899" category="list-text">[ナレッジベースの定義]ページで、ナレッジベースの設定を行います。</block>
   <block id="53bdd4ba55043d3b20fafbaeddced95e" category="list-text">*名前*:ナレッジベースに使用する名前を入力します。</block>
   <block id="867a64928002194654eea40509536879" category="list-text">*説明*:ナレッジベースの詳細な説明を入力します。</block>
   <block id="c37e3f948924097538b621ebbdc79afa" category="list-text">*埋め込みモデル*:埋め込みモデルは、データがナレッジベースのベクトル埋め込みに変換される方法を定義します。Workload Factoryは次のモデルをサポートします。</block>
@@ -75,7 +72,6 @@
   <block id="c6a0e7101f0906d1498552ff723709e5" category="paragraph">選択に役立つ利用可能なモデルの詳細については、以下を参照してください。<block ref="56cf03ef03ec9048e7282cdb73fcf2fd" category="inline-link-rx"></block></block>
   <block id="bb75c182eff66bee3c76899d41fc8e8f" category="list-text">*会話の開始*：このナレッジベースを使用するチャットボットと対話するユーザーに表示される会話の開始プロンプトを最大4つ指定するかどうかを選択します。この設定を有効にすることをお勧めします。</block>
   <block id="fd6f710773f79577a44d128bb3df27cc" category="inline-link-macro">ナレッジベースの設定を変更する方法について説明します。</block>
-  <block id="1010b4e428fbb8fb24725a17eb384f8e" category="paragraph">会話開始機能を有効にすると、デフォルトで「自動モード」が選択されます。「手動モード」は、ナレッジベースにデータソースを追加した後にのみ有効にできます。<block ref="787b3d64d417e723feebaf5fa5dbfeee" category="inline-link-macro-rx"></block>です。</block>
   <block id="7311e81ffb665c2ec2a4c996ce693887" category="list-text">[ナレッジベースの作成]*を選択して、ナレッジベースをGenAIに追加します。</block>
   <block id="89f815e342683a86616ce06926e87088" category="list-text">ウィザードの次のページでは、新しいナレッジベースにデータソースを追加するか、データソースを追加せずにここで処理を終了するかを選択できます。[データソースの追加]*を選択し、ここで1つ以上のデータソースを追加することをお勧めします。</block>
   <block id="9bd079cbc91b32393983ae28a378c00c" category="section-title">ナレッジベースへのデータソースの追加</block>
@@ -118,8 +114,6 @@
   <block id="e36b38f91227e22bbae32a9f84bef25b" category="list-text">*場所*：AWSのリージョン、VPC、サブネットを選択します。</block>
   <block id="6f2c1c768f2edab4eb318bdb1580f9f7" category="paragraph">GenAI環境は、Amazon Bedrockが有効になっているAWSリージョンに配置する必要があります。<block ref="25581c78bc5f676a9b9f4743abf4f06f" category="inline-link-rx"></block></block>
   <block id="49d6fbbfca02733209ee2833d2481e4e" category="list-text">[インフラストラクチャー設定]セクションの項目を入力します。</block>
-  <block id="54e710456ced46833adf947bc5f6d4d8" category="list-text">* FSx for ONTAPファイルシステム*：FSx for ONTAPファイルシステムとGenAIインスタンスデータベースボリュームを導入するStorage VMを選択し、ボリュームに使用する名前を指定します。</block>
-  <block id="2d63bd7626a5c75abc0b0ce09d186bf9" category="paragraph">Workload FactoryがFSx for ONTAPファイルシステムのクレデンシャルを持っているかどうかによっては、ユーザ名とパスワードの入力が必要になる場合があります。</block>
   <block id="3869544f6aa6ccd1570caed7671ca0d6" category="list-text">* Tags *：この導入環境に含まれるすべてのAWSリソースに適用するタグのキーと値のペアを入力します。</block>
   <block id="f445edd51fe9e6a1af8ffd9c30e87f40" category="list-text">*キーペア*: NetApp GenAIエンジンインスタンスに安全に接続できるキーペアを選択します。</block>
   <block id="6449a99be42d938ed27187e040028634" category="list-text">導入*を選択して導入を開始します。</block>
@@ -127,7 +121,6 @@
   <block id="64dea11099d626528fa052576a740de2" category="paragraph">導入プロセスでは、次の項目が設定されます。</block>
   <block id="8f3d503d34aa6fe6a66b841b0bdd2996" category="list-text">ネットワークはプライベートエンドポイントとともにセットアップされます。</block>
   <block id="fc4ab898b1959c931605be5dfe62a71d" category="list-text">IAMロール、インスタンスプロファイル、およびセキュリティグループが作成されます。</block>
-  <block id="eac776dd224d1ed33599e26586f981b6" category="list-text">GenAIエンジンデータベース（LanceDB）のボリュームは、FSx for ONTAPファイルシステム上に作成されます。</block>
   <block id="216a480d552bd412d15e51cde6cbbf7a" category="list-text">GenAIエンジンの仮想マシンインスタンスが導入されている。</block>
   <block id="6b39fa3582a5336c28b4c324f016a9a8" category="summary">GenAIインフラストラクチャをデプロイすると、Workload FactoryによってGenAIエンジンのEC2インスタンスが作成されます。また、このインスタンスのIAMロール、セキュリティグループ、プライベートエンドポイントも作成されます。Workload FactoryでAWS環境に作成されるこれらのコンポーネントの詳細を確認することができます。</block>
   <block id="44f33186e2b6baa4a697e5604c0a3863" category="doc">NetApp GenAIエンジンのコンポーネント</block>
@@ -281,11 +274,8 @@
   <block id="24908e355d451004c7525900e1599a1f" category="list-text">を選択して各行を展開し、 <block ref="0722c4ff5aff83b42b3212ce6356e926" category="inline-image-macro-rx" type="image"></block> FSx for ONTAPファイルシステム、ボリューム、データソースが配置されているパスなど、各データソースに関する詳細情報を表示します。</block>
   <block id="e251df112fcfd5ceb227487e3e407e23" category="paragraph">また、埋め込み情報と、そのデータソースが現在ナレッジベースに埋め込まれているかどうかも表示されます。</block>
   <block id="437e83696ee10276f1829979bc2001ee" category="section-title">データソース設定の編集</block>
-  <block id="20b4ccd92a21762105664927fab1bf0b" category="paragraph">ナレッジベースに統合したデータソースに関する情報を編集できます。ほとんどの情報は、データソースをナレッジベースに追加すると修正されますが、チャンキングの定義や権限の認識（データソースボリュームでSMBプロトコルを使用している場合）に変更を加えることができます。</block>
   <block id="d2e5a465dda010b6df10e906f7ceebf7" category="list-text">ナレッジベースインベントリページで、データソースが存在するナレッジベースを選択し、 <block ref="4dc533ba94e6ca8d1968a9d477e1cbce" category="inline-image-macro-rx" type="image"></block> *[ナレッジベースの管理]*を選択します。</block>
   <block id="16a3994ccc4796acb1b8e40635717ec3" category="list-text">編集するデータソースの行で、を選択し <block ref="4dc533ba94e6ca8d1968a9d477e1cbce" category="inline-image-macro-rx" type="image"></block> て*[データソースの編集]*を選択します。</block>
-  <block id="d4e6a12cce33b083e0522879b175e10f" category="list-text">[Edit data source]ページで、を選択し <block ref="0722c4ff5aff83b42b3212ce6356e926" category="inline-image-macro-rx" type="image"></block> てチャンク定義の行を展開します。</block>
-  <block id="2be67c88816bb68c39e2b6cb0139de03" category="list-text">チャンキング戦略、チャンクサイズ、および権限の認識（SMBボリュームの場合）の設定を更新し、*[保存]*を選択します。</block>
   <block id="fcada3664d85dba347df890b564f014e" category="paragraph">データソースの設定が更新され、AIシステムがデータソースを同期して、ナレッジベースにインデックスが再作成されます。</block>
   <block id="f0c862596fc0a1dd30faa6b630a0d09b" category="section-title">既存のデータソースの内容を更新する</block>
   <block id="d811eb8aad6aebc071695232fb58c5a5" category="paragraph">データソースの内容はいつでも変更して、組織のデータを追加または更新できます。このデータソースがナレッジベースでアクティブに使用されている場合は、ナレッジベースに再インデックスされるようにデータソースを同期する必要があります。同期は差分で行われるため、Amazon Bedrockは前回の同期後に追加、変更、または削除されたFSx for ONTAPボリューム内のオブジェクトのみを処理します。</block>
@@ -304,7 +294,6 @@
   <block id="3263e773b336a912867ed1aeefc4176b" category="list-text">[インフラストラクチャー]タブを選択します。</block>
   <block id="441f8ae1adcfebb474bcc1b899e82a24" category="list-text">次のコンポーネントの詳細など、インフラに関する情報を表示します。</block>
   <block id="fcf0479502455d0702db3f277c9df646" category="list-text">AWS設定</block>
-  <block id="561e65b11988eaba0ecae49d7b764de1" category="list-text">FSx for ONTAPファイルシステム</block>
   <block id="ae83c68afab83f983d4cf40bb5e9197e" category="list-text">AIエンジン</block>
   <block id="6d8dc0b510e717cbe34e53d7fc1097e5" category="list-text">ベクターデータベース</block>
   <block id="2a118f240daca7e8bd0c3e4bc54a8d77" category="section-title">インフラストラクチャの削除</block>
@@ -333,7 +322,6 @@
   <block id="6c81c0a68409ceeffca1a2438dbb831c" category="paragraph">ナレッジベースにデータソースを追加、変更、または削除するたびに、データソースを同期してナレッジベースに再インデックス化する必要があります。同期は差分で行われるため、Amazon Bedrockは前回の同期後に追加、変更、または削除されたFSx for ONTAPボリューム内のオブジェクトのみを処理します。</block>
   <block id="d21368803fa621b044a871188810b1ac" category="list-text">ナレッジベースインベントリページで、更新するナレッジベースを選択します。</block>
   <block id="6461d5a78cc7b9cc40e5443635d9112e" category="list-text">[アクション]*メニューを選択し、*[ナレッジベースの編集]*を選択します。</block>
-  <block id="0008bdb5b5e3b453e69696b34d9d5d1c" category="list-text">[ナレッジベースの編集]ページでは、ナレッジベースの名前、説明、埋め込みモデル、チャットモデル、および会話スターターを自動的に作成するか手動で作成するかを変更できます。</block>
   <block id="e57d913eed051be6b0b9406295913487" category="paragraph">会話の開始に手動モードを使用している場合は、ここでも会話の開始を変更できます。</block>
   <block id="1302ca167379db1ebc02d198eb7518a3" category="list-text">変更が完了したら、*[保存]*を選択します。</block>
   <block id="214d48f43c3d0248419d70ccacea9a73" category="section-title">ナレッジベースへのデータソースの追加</block>
@@ -364,14 +352,9 @@
   <block id="bd5de107e9031f0c3a6ac09d2366a7be" category="list-text">[アクション（Actions）]メニューを選択し、*[パブリッシュ解除（Unpublish）]*を選択</block>
   <block id="10b42a1e79dbd5f79dd793c2655522b8" category="paragraph">ナレッジベースが無効になり、チャットボットアプリケーションからアクセスできなくなります。</block>
   <block id="cc0a404c41a82c6be9de0d64f06fcd89" category="section-title">ナレッジベースの削除</block>
-  <block id="76420e895d8bcbca33f0cf3202997ba2" category="paragraph">ナレッジベースが不要になった場合は、ナレッジベースを削除できます。ナレッジベースを削除すると、そのナレッジベースはWorkload Factoryから削除され、ナレッジベースを使用しているすべてのアプリケーションまたはチャットボットが機能しなくなります。この操作は元に戻すことはできません。</block>
-  <block id="bd1e7a638d401a590a6dfd0683fcab0c" category="paragraph">ナレッジベースを削除する場合は、次のアクションを実行して、ナレッジベースに関連付けられているすべてのリソースを完全に削除する必要があります。</block>
-  <block id="d6a62e94706e27186ebc0fbca1c802d4" category="list-text">ナレッジベースと関連付けられているエージェントの関連付けを解除します。</block>
-  <block id="0581045f098dd9833078169a3178147a" category="list-text">ナレッジベースからインデックス付けされた基になるデータは、設定したベクターストアに残り、取得することができます。データを削除するには、データ埋め込みを含むベクターインデックスも削除する必要があります。</block>
   <block id="26d469c182333c4c1e4800ddcd6d2a61" category="list-text">ナレッジベースインベントリページで、削除するナレッジベースを選択します。</block>
   <block id="0e0f1b27ca798d3b3b8154b411215d9a" category="list-text">[アクション]メニューを選択し、*[ナレッジベースの削除]*を選択します。</block>
   <block id="74091f3303c946e291c1c1702ba6d39a" category="list-text">[ナレッジベースの削除]ダイアログで、削除することを確認し、*[削除]*を選択します。</block>
-  <block id="63d56e434f490d0e8d99ce407df90bf6" category="paragraph">ナレッジベースがWorkload Factoryから削除されます。</block>
   <block id="8bbd4e338e42c1350d453ca5c82eb3b3" category="summary">ナレッジベースをローカルで構築してテストしたら、ナレッジベースを公開して、ユーザーがナレッジベースを照会できるようにするチャットボットアプリケーションにナレッジベースを統合できます。</block>
   <block id="70de8e73e84df845f91376c6c0d1188e" category="doc">ナレッジベースを公開し、一意のエンドポイントを表示する</block>
   <block id="12676fc9338d312de3a6cbb584fa3284" category="paragraph">ナレッジベースをローカルで構築してテストしたら、ナレッジベースを公開して、ユーザーがナレッジベースを照会できるようにするチャットボットアプリケーションにナレッジベースを統合できます。</block>
@@ -571,4 +554,29 @@
   <block id="d59048f21fd887ad520398ce677be586" category="section-title">詳細</block>
   <block id="862b02acae8afc7a8e5ed9bf4c7cb18e" category="inline-link">Workload Factory APIのドキュメント</block>
   <block id="39d0fcde59bc31b066cd026cdc9718f8" category="paragraph"><block ref="39d0fcde59bc31b066cd026cdc9718f8" category="inline-link-rx"></block></block>
+  <block id="8f3f613a5094ebfa7c5f531cb356028e" category="list-text">* AIパラメーターの定義*：*チャンク戦略*セクションで、データソースがナレッジベースと統合されている場合に、生成AIエンジンがデータソースコンテンツをチャンクに分割する方法を定義します。次のいずれかの方法を選択できます。</block>
+  <block id="091e1c7957272ab69145f4859b4465d0" category="list-text">*Multi-sentence chunking*:データソースの情報をセンテンス定義のチャンクに編成します。各チャンクを構成する文の数を選択できます(最大100 )。</block>
+  <block id="87aa4ffcf50084a10651fe7094e75bda" category="list-text">*オーバーラップベースのチャンク*:データソースからの情報を文字定義のチャンクに編成し、隣接するチャンクとオーバーラップすることができます。各チャンクのサイズを文字単位で選択し、各チャンクが隣接するチャンクとどの程度重なるかを選択できます。チャンクサイズは50～3000文字、オーバーラップパーセンテージは1～99%の範囲で設定できます。</block>
+  <block id="18c41e2a8da7a23dcc990da8d7dfe06d" category="admonition">オーバーラップ率を高く設定すると、取得精度がわずかに向上するだけで、ストレージ要件が大幅に増加します。</block>
+  <block id="e2c3c3f9d43a7b053dbca2a0234078b7" category="section-title">チャットボットアプリケーションの例</block>
+  <block id="75a337f9fd41608c507045c7429174be" category="paragraph">NetAppワークロードファクトリ 生成AIサンプルアプリケーションを使用すると、Webベースのチャットボットアプリケーションで直接対話することで、公開されたNetAppワークロードファクトリナレッジベースからの認証と取得をテストできます。</block>
+  <block id="8fa53177b9fd9cdb460f43ba4be39618" category="doc">その他のチャンキング戦略</block>
+  <block id="a0a464c97ca1835adf3bddc803b001cd" category="paragraph">ジェネレーティブAIワークロードで、データソースに対してマルチセンテンスチャンキングとオーバーラップベースのチャンキングがサポートされるようになりました。</block>
+  <block id="4cb92325ae7034576f6dff7fe48e3254" category="section-title">ナレッジベースごとの専用ボリューム</block>
+  <block id="a023a8333417a130bf6fb2c729aaa7f1" category="paragraph">ジェネレーティブAIワークロードでは、新しいナレッジベースごとに専用のAmazon FSx for NetApp ONTAPボリュームが作成されるようになりました。これにより、ナレッジベースごとに個別のSnapshotポリシーが有効になり、障害やデータポイズニングに対する保護が強化されます。</block>
+  <block id="a97438cf1c94fe51248083c86ce591c5" category="list-text">[ナレッジベースの定義]ページで、ナレッジベースの設定を行います。</block>
+  <block id="b651dafbe972dff3ef00c60a522c2c08" category="paragraph">会話開始機能を有効にすると、デフォルトで「自動モード」が選択されます。「手動モード」は、ナレッジベースにデータソースを追加した後にのみ有効にできます。<block ref="787b3d64d417e723feebaf5fa5dbfeee" category="inline-link-macro-rx"></block>です。</block>
+  <block id="ce08e73f7c40cf7e58d6371a757d23c6" category="list-text">* FSx for ONTAPファイルシステム*：新しいナレッジベースを定義すると、Workload Factoryは新しいAmazon FSx for NetApp ONTAPボリュームを作成して保存します。新しいボリュームを作成する既存のファイルシステム名とSVM（Storage VM）を選択します。</block>
+  <block id="305529b9c4df0ab06763778bf46b9449" category="list-text">* Snapshotポリシー*：Workload Factoryストレージインベントリで定義されている既存のポリシーのリストからSnapshotポリシーを選択します。</block>
+  <block id="ced63c567878ed01730fce043c8ade96" category="inline-link">Snapshot ポリシーを作成します</block>
+  <block id="ad36efe6c620944e32785812d09accd6" category="paragraph">必要なSnapshotポリシーが存在しない場合は<block ref="7546e5b5141e2979fa53ccc7106931ca" category="inline-link-rx"></block>、ボリュームを含むStorage VM上で実行できます。</block>
+  <block id="d2efa843fffdf7f0b1400f4edeb08081" category="paragraph">ナレッジベースに統合したデータソースに関する情報を編集できます。ほとんどの情報は、データソースをナレッジベースに追加すると修正されますが、チャンキングの定義と設定、および権限の認識（データソースボリュームでSMBプロトコルを使用している場合）に変更を加えることができます。</block>
+  <block id="46f71814ee1d2e5bbe062c91635739cf" category="list-text">[Edit data source]ページで、を選択し<block ref="0722c4ff5aff83b42b3212ce6356e926" category="inline-image-macro-rx" type="image"></block>てチャンク定義の行を展開します。</block>
+  <block id="c9ee341e3341c054d76e9a00e2455883" category="list-text">チャンキング戦略と構成、および権限の認識（SMBボリュームの場合）の設定を更新し、*[保存]*を選択します。</block>
+  <block id="f3ee02a23f65c24a5b66f40deaa52796" category="list-text">インフラ設定</block>
+  <block id="f39b1e8c1922f03eae35d54aa3cc70e1" category="list-text">[ナレッジベースの編集]ページでは、ナレッジベースの名前、説明、埋め込みモデル、チャットモデル、カンバセーションスターターを自動的に作成するか手動で作成するか、ナレッジベースを含むボリュームに使用するスナップショットポリシーを変更できます。</block>
+  <block id="88f99918375bbf8120b251d975b7e03e" category="paragraph">ナレッジベースが不要になった場合は、ナレッジベースを削除できます。ナレッジベースを削除すると、そのナレッジベースはWorkload Factoryから削除され、ナレッジベースを含むボリュームは削除されます。ナレッジベースを使用しているアプリケーションやチャットボットはすべて機能しなくなります。ナレッジベースの削除は元に戻すことはできません。</block>
+  <block id="fd33fe22719aed031c8ea822ba866360" category="paragraph">ナレッジベースを削除する場合は、ナレッジベースに関連付けられているすべてのリソースを完全に削除するために、ナレッジベースと関連付けられているエージェントの関連付けも解除する必要があります。</block>
+  <block id="fa20235938197ed878f7da8159917a1d" category="paragraph">ナレッジベースがWorkload Factoryから削除され、関連付けられているボリュームが削除されます。</block>
+  <block id="b5cef683aab00353096b98823a237e69" category="section-title">2024年9月1日</block>
 </blocks>

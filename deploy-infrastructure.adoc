@@ -69,16 +69,14 @@ GenAI環境は、Amazon Bedrockが有効になっているAWSリージョンに�
 
 
 . [インフラストラクチャー設定]セクションの項目を入力します。
+
+
+. * Tags *：この導入環境に含まれるすべてのAWSリソースに適用するタグのキーと値のペアを入力します。
+. *キーペア*: NetApp GenAIエンジンインスタンスに安全に接続できるキーペアを選択します。
 +
-.. * FSx for ONTAPファイルシステム*：FSx for ONTAPファイルシステムとGenAIインスタンスデータベースボリュームを導入するStorage VMを選択し、ボリュームに使用する名前を指定します。
-+
-Workload FactoryがFSx for ONTAPファイルシステムのクレデンシャルを持っているかどうかによっては、ユーザ名とパスワードの入力が必要になる場合があります。
-
-.. * Tags *：この導入環境に含まれるすべてのAWSリソースに適用するタグのキーと値のペアを入力します。
-.. *キーペア*: NetApp GenAIエンジンインスタンスに安全に接続できるキーペアを選択します。
+.. 導入*を選択して導入を開始します。
 
 
-. 導入*を選択して導入を開始します。
 
 
 .結果
@@ -88,7 +86,6 @@ Workload Factoryチャットボットインフラストラクチャの展開を�
 
 * ネットワークはプライベートエンドポイントとともにセットアップされます。
 * IAMロール、インスタンスプロファイル、およびセキュリティグループが作成されます。
-* GenAIエンジンデータベース（LanceDB）のボリュームは、FSx for ONTAPファイルシステム上に作成されます。
 * GenAIエンジンの仮想マシンインスタンスが導入されている。
 * Amazon Bedrockは、プレフィックスを持つロググループを使用して、Amazon CloudWatch Logsにログを送信するように構成されて `/aws/bedrock/`います。
 * GenAIエンジンは、という名前のロググループを使用して、Amazon CloudWatch Logsにログを送信するように構成されてい `/netapp/wlmai/<tenancyAccountId>/randomId`ます。ここで、 `<tenancyAccountID>` は現在のユーザーのです https://docs.netapp.com/us-en/bluexp-automation/platform/get_identifiers.html#get-the-account-identifier["BlueXPアカウントID"^] 。
