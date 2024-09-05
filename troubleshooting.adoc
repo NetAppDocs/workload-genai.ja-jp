@@ -1,0 +1,72 @@
+---
+sidebar: sidebar 
+permalink: troubleshooting.html 
+keywords: support registration, register for support, support, nss account, add nss account, 
+summary: NetAppテクニカルサポートでサポートケースをオープンするには、NetAppサポートサイトのアカウントをWorkload Factoryに追加してから、サポートに登録する必要があります。 
+---
+= トラブルシューティング
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+発生する可能性のある一般的な問題を回避する方法について説明します。
+
+
+
+== 一般的な問題と解決策
+
+これらのいずれかの問題がある場合は、[Workaround]列の手順を使用して解決できます。
+
+[cols="1,2,2,4"]
+|===
+| 面積 | 問題 | 原因 | 回避策 
+
+
+| 導入 | ボリュームがすでに存在するため導入に失敗します。 | Workload Factory for生成AIは導入プロセスで新しいボリュームを作成する必要がありますが、指定した名前のボリュームがすでに存在します。 | 新しいボリュームに使用する一意の名前を指定してから、導入を再試行してください。 
+
+
+| 導入 | 生成AI用ワークロードファクトリでボリュームをマウントできないため、導入が失敗します。 | FSx for NetApp ONTAPに必要な1つ以上のインバウンドポートが閉じているか、フィルタリングされています。  a| 
+に示すポートを開きます https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/reference-security-groups-fsx.html#inbound-rules["ONTAP の FSX のセキュリティグループルール"^]。
+
+
+
+| メンテナンス | Workload Factory for生成AIで使用されるバックエンドDockerインスタンスを起動できませんでした。 | ボリュームが削除され、EC2インスタンスが再起動されました。  a| 
+次のリカバリ手順を実行します。
+
+.手順
+. FSx for NetApp ONTAP上に新しいボリュームを作成します。たとえば `netapp_ai`、ボリューム名は、ボリュームパスはになります `/netapp_ai`。
+. Amazon EC2インスタンスにSSHで接続します。
+. ボリュームを表示します。
++
+[source, console]
+----
+docker volume list
+----
+. 古いボリュームを削除します。
++
+[source, console]
+----
+docker volume rm ec2-user_persistent_folder
+----
+.  `docker-compose.yml`テキストエディタを使用してファイルを開きます。
+.  `volumes`セクションで、デバイスパスを新しいボリュームパスに変更します。例：
++
+[source, yaml]
+----
+volumes:
+  persistent_folder:
+    driver_opts:
+      type: 'nfs'
+      o: "addr=svm-0df66b96a890d8a72.\
+      fs-0d673008aaca12bc3.\
+      fsx.us-east-1.amazonaws.com,nolock,soft,rw"
+      device: ':/netapp_ai' # Path to new volume
+----
+
+
+
+
+| メンテナンス | Workload Factory for生成AIで使用されるバックエンドDockerインスタンスを起動できませんでした。 | ルートボリュームが削除されました。 | 名前とパスを指定してボリュームを作成し、Amazon EC2からバックエンドDockerインスタンスを再起動します。 
+|===

@@ -63,6 +63,8 @@ sidebar:
     entries:
     - title: サポートに登録します
       url: "/support-registration.html"
+    - title: トラブルシューティング
+      url: "/troubleshooting.html"
     - title: ヘルプを表示します
       url: "/get-help.html"
   - title: 法的通知

@@ -579,4 +579,32 @@
   <block id="fd33fe22719aed031c8ea822ba866360" category="paragraph">ナレッジベースを削除する場合は、ナレッジベースに関連付けられているすべてのリソースを完全に削除するために、ナレッジベースと関連付けられているエージェントの関連付けも解除する必要があります。</block>
   <block id="fa20235938197ed878f7da8159917a1d" category="paragraph">ナレッジベースがWorkload Factoryから削除され、関連付けられているボリュームが削除されます。</block>
   <block id="b5cef683aab00353096b98823a237e69" category="section-title">2024年9月1日</block>
+  <block id="231cf4c70d866b616c21baddaeed0696" category="doc">トラブルシューティング</block>
+  <block id="36e2bd9e7950f46d3ea6d2bca4c50ba1" category="paragraph">発生する可能性のある一般的な問題を回避する方法について説明します。</block>
+  <block id="95716fc01ccba6df751b9d2ae002be52" category="section-title">一般的な問題と解決策</block>
+  <block id="cdfb5c11885ea650ef88224d86291d32" category="paragraph">これらのいずれかの問題がある場合は、[Workaround]列の手順を使用して解決できます。</block>
+  <block id="deec4ff19974f12ed781cb9a59064214" category="cell">面積</block>
+  <block id="642facf67e0ad311eee88b3ab8381590" category="cell">問題</block>
+  <block id="50fc9b91746bb8d34fa385d9324741ed" category="cell">原因</block>
+  <block id="7aebfa1e2291377e040de92d7f7f335f" category="cell">回避策</block>
+  <block id="ea355214fd4bc7c57f471bd92918879b" category="cell">導入</block>
+  <block id="c7ffd0cab67a601554ae934436d644d8" category="cell">ボリュームがすでに存在するため導入に失敗します。</block>
+  <block id="5c985f7bd2795d6a69cd256e7fd02755" category="cell">Workload Factory for生成AIは導入プロセスで新しいボリュームを作成する必要がありますが、指定した名前のボリュームがすでに存在します。</block>
+  <block id="c116d59189f49ad24327d9067ef9806e" category="cell">新しいボリュームに使用する一意の名前を指定してから、導入を再試行してください。</block>
+  <block id="429a792784eb6767e4ecfd3b82f1ae2d" category="cell">生成AI用ワークロードファクトリでボリュームをマウントできないため、導入が失敗します。</block>
+  <block id="8f3392d21c1e23f002f42fd0394d7c80" category="cell">FSx for NetApp ONTAPに必要な1つ以上のインバウンドポートが閉じているか、フィルタリングされています。</block>
+  <block id="e87d6ed459b274ad7c388e0797013c9f" category="inline-link">ONTAP の FSX のセキュリティグループルール</block>
+  <block id="5503cb2b17f74a27a0085d8499cd3f60" category="paragraph">に示すポートを開きます<block ref="127df24588c6526408fa1a708579050d" category="inline-link-rx"></block>。</block>
+  <block id="10d0de28911c5f66463b9c8783f8148a" category="cell">メンテナンス</block>
+  <block id="dbb45a1dccce77b67592b5925f4e79c4" category="cell">Workload Factory for生成AIで使用されるバックエンドDockerインスタンスを起動できませんでした。</block>
+  <block id="f1e0872518e98f8295b8550491f79850" category="cell">ボリュームが削除され、EC2インスタンスが再起動されました。</block>
+  <block id="35df13c892646e1e41e065276ead0cee" category="paragraph">次のリカバリ手順を実行します。</block>
+  <block id="33aefd97376313139230d90d11725c7c" category="list-text">FSx for NetApp ONTAP上に新しいボリュームを作成します。たとえば<block ref="74cd6292d49a50a17339880eaf71909f" prefix=" " category="inline-code"></block>、ボリューム名は、ボリュームパスはになります<block ref="e7251dd12f14500e110af37fd268f48d" prefix=" " category="inline-code"></block>。</block>
+  <block id="eeac5419fd92421807eedad222f7a6aa" category="list-text">Amazon EC2インスタンスにSSHで接続します。</block>
+  <block id="d8fdf1bf6fa8b2e85005a0e982def19e" category="list-text">ボリュームを表示します。</block>
+  <block id="dd99e83d7c285a324a28a5c92543c4f8" category="list-text">古いボリュームを削除します。</block>
+  <block id="fa7f64581f6d6c87a2a52e6df453b29b" category="list-text"><block ref="4e5e90c6228fd48698d074241c2ba760" prefix=" " category="inline-code"></block>テキストエディタを使用してファイルを開きます。</block>
+  <block id="9cbd2c5c5175ed32f13a8e1e7a8198dd" category="list-text"><block ref="078831e29f354e83fac6da3db6ed6b7b" prefix=" " category="inline-code"></block>セクションで、デバイスパスを新しいボリュームパスに変更します。例：</block>
+  <block id="e9813bd2289d9835204f02be0a5d2df6" category="cell">ルートボリュームが削除されました。</block>
+  <block id="358ede72c2c3d3e77baf3ed35b4039f6" category="cell">名前とパスを指定してボリュームを作成し、Amazon EC2からバックエンドDockerインスタンスを再起動します。</block>
 </blocks>
