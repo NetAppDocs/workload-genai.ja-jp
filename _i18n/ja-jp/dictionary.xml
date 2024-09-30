@@ -640,4 +640,8 @@
   <block id="75adfeedf06d70e0bc627133f85cd211" category="section-title">データソースとナレッジベースを同期する</block>
   <block id="44736bad98446163ecd5077653cbd105" category="paragraph">データソースは関連付けられたナレッジベースと1日に1回自動的に同期されるため、データソースの変更がチャットボットに反映されます。いずれかのデータソースに変更を加え、データをすぐに同期する場合は、オンデマンド同期を実行できます。</block>
   <block id="26e6f4cc71039ce95ddbb0acdad6891d" category="section-title">2024年9月29日</block>
+  <block id="f8016d0e0375ce671e71803692cf105c" category="paragraph"><block ref="f8016d0e0375ce671e71803692cf105c" category="inline-link-rx"></block></block>
+  <block id="340b5c4d996cad6cf6d27d13faf94e89" category="paragraph"><block ref="340b5c4d996cad6cf6d27d13faf94e89" category="inline-link-rx"></block></block>
+  <block id="f951fa0f2608d186cd1f0bd8889ac232" category="paragraph"><block ref="f951fa0f2608d186cd1f0bd8889ac232" category="inline-link-rx"></block></block>
+  <block id="8afd34c2a29e7b6286f3ed0bf9e20c22" category="paragraph"><block ref="8afd34c2a29e7b6286f3ed0bf9e20c22" category="inline-link-rx"></block></block>
 </blocks>
