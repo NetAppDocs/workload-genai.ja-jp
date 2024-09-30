@@ -73,14 +73,12 @@
   <block id="bb75c182eff66bee3c76899d41fc8e8f" category="list-text">*会話の開始*：このナレッジベースを使用するチャットボットと対話するユーザーに表示される会話の開始プロンプトを最大4つ指定するかどうかを選択します。この設定を有効にすることをお勧めします。</block>
   <block id="fd6f710773f79577a44d128bb3df27cc" category="inline-link-macro">ナレッジベースの設定を変更する方法について説明します。</block>
   <block id="7311e81ffb665c2ec2a4c996ce693887" category="list-text">[ナレッジベースの作成]*を選択して、ナレッジベースをGenAIに追加します。</block>
-  <block id="89f815e342683a86616ce06926e87088" category="list-text">ウィザードの次のページでは、新しいナレッジベースにデータソースを追加するか、データソースを追加せずにここで処理を終了するかを選択できます。[データソースの追加]*を選択し、ここで1つ以上のデータソースを追加することをお勧めします。</block>
   <block id="9bd079cbc91b32393983ae28a378c00c" category="section-title">ナレッジベースへのデータソースの追加</block>
   <block id="831e8ddab4c3e70bcfe67a3e58aaf8cc" category="paragraph">1つまたは複数のデータソースを追加して、組織のデータをナレッジベースに入力できます。</block>
   <block id="bbe48fb854ea022537208eeeff822f91" category="paragraph-title">タスクの内容</block>
   <block id="443fa995d0ec899357a7e519e2055b98" category="paragraph">サポートされるデータソースの最大数は10です。</block>
   <block id="10031d73287aadb6c5f8b3dae7b23860" category="list-text">[データソースの追加]*を選択すると、*[ファイルシステムの選択]*ページが表示されます。</block>
   <block id="8817d70d4163473468fa1b2b6e498321" category="paragraph">データソースがナレッジベースに埋め込まれ始めます。データソースが完全に埋め込まれると、ステータスが「埋め込み」から「埋め込み」に変わります。</block>
-  <block id="8dfce7f4d224734508ee16a1aff7ad72" category="paragraph">単一のデータソースをナレッジベースに追加したら、Chatbotシミュレータウィンドウでローカルにテストし、必要な変更を加えてから、ユーザーがチャットボットを使用できるようにします。同じ手順に従って、ナレッジベースにデータソースを追加することもできます。</block>
   <block id="b9605cf748e4b8e1c97d786258a0be40" category="summary">組織に適したFSx for ONTAPナレッジベースとアプリケーションを構築するには、RAGフレームワークのインフラを環境に導入する必要があります。主要なインフラコンポーネントは、Amazon Bedrock AIサービス、NetApp GenAIエンジンの仮想マシンインスタンス、FSx for ONTAPファイルシステムです。</block>
   <block id="e379b913896cf9bdd4e2d6717212215a" category="doc">GenAIインフラの導入</block>
   <block id="0cd805094b5dffd702d8e0faa10c927c" category="paragraph">組織に合ったFSx for ONTAPナレッジベースとアプリケーションを構築するには、まずGenAI Infrastructure for RAGフレームワークを環境に導入する必要があります。主要なインフラコンポーネントは、Amazon Bedrockサービス、NetApp GenAIエンジンの仮想マシンインスタンス、FSx for ONTAPファイルシステムです。</block>
@@ -218,7 +216,6 @@
   <block id="7d7b61e2696184ef2f1a673b4b505c10" category="doc">ナレッジベースに統合するデータソースを特定する</block>
   <block id="887cf13beb27381e3305ca34c5115c2d" category="section-title">データソースの最大数</block>
   <block id="4b8e341857a3eb86f0ae58a01da824ed" category="section-title">データソースの場所</block>
-  <block id="517b9fa88a903df70d1614de4a032562" category="paragraph">データソースは、単一のボリュームに格納することも、ボリューム内のフォルダに格納することも、Amazon FSx for NetApp ONTAPファイルシステム上のSMB共有やNFSエクスポートに格納することもできます。ボリュームまたはフォルダ内の個 々 のドキュメントを選択することはできません。したがって、データソースを含む各ボリュームまたはフォルダに、ナレッジベースと統合すべきではない無関係なドキュメントが含まれていないことを確認する必要があります。</block>
   <block id="a07dd9fe7465f7ec7d15135a3cfab3a4" category="paragraph">各ナレッジベースには複数のデータソースを追加できますが、それらはすべてAWSアカウントからアクセス可能なFSx for ONTAPファイルシステム上にある必要があります。</block>
   <block id="ffbef7cfe7a8524b59851c8a1389ebcc" category="paragraph">各データソースの最大ファイルサイズは50MBです。</block>
   <block id="c84d4278eb32c7a089aea86ebf95ad39" category="section-title">サポートされるプロトコル</block>
@@ -231,10 +228,8 @@
   <block id="63e4e92bb7d207ca577b11c07f827279" category="cell">エクステンション</block>
   <block id="f39a0720a929097afa9db4505cdf9669" category="cell">プレーンテキスト</block>
   <block id="be4117b0c842c4be8f9960294bdc2cd1" category="cell">.txt</block>
-  <block id="7fe3b93cf991d61aa2597033a8f37d76" category="cell">ポータブルドキュメント</block>
   <block id="abdf095626d4a4ab2bcd4167b128c1f1" category="cell">.pdf</block>
   <block id="d241ed446445a725f6362568f61cc6c3" category="cell">Microsoft Word</block>
-  <block id="8c7a7a618a6d4acfe85b4b4b1048846d" category="cell">.docx</block>
   <block id="68dfdbe39ab30356a21fe4db773d9589" category="cell">カンマ区切り値ファイル</block>
   <block id="01b1b6ebeb388697cca6712b58439069" category="cell">.csv</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法的通知</block>
@@ -329,8 +324,6 @@
   <block id="365770c3700b9872888879ce60ec18e9" category="list-text">[ナレッジベース]インベントリページで、データソースを追加するナレッジベースを選択します。</block>
   <block id="5e1a4fe723264018579dfc3330f9b160" category="list-text">を選択 <block ref="4dc533ba94e6ca8d1968a9d477e1cbce" category="inline-image-macro-rx" type="image"></block> し、*[Add data source]*を選択します。</block>
   <block id="07d9f547e6bcd64a574782add9797b63" category="paragraph">データソースはナレッジベースに統合されます。</block>
-  <block id="5b1f48da21d15acc675f4720c57d0f26" category="section-title">データソースとナレッジベースを同期する</block>
-  <block id="9547b575fe1c28cc98e35108cacd9918" category="paragraph">データソースは1日に1回自動的にナレッジベースと同期されるため、データソースの変更がチャットボットに反映されます。いずれかのデータソースに変更を加え、データをすぐに同期する場合は、オンデマンド同期を実行できます。</block>
   <block id="9cbd78c1bcf6132d43822acf74d520f1" category="paragraph">同期は増分処理であるため、Amazon Bedrockは前回の同期以降に追加、変更、または削除されたデータソース内のオブジェクトのみを処理します。</block>
   <block id="5fe210e3b4435e2188200d1f9b96db74" category="list-text">ナレッジベースインベントリページで、同期するナレッジベースを選択します。</block>
   <block id="fbf8fa86db3bb16616d2fb45b7250a0d" category="list-text">[アクション]*メニューを選択し、*[今すぐスキャン]*を選択します。</block>
@@ -567,7 +560,6 @@
   <block id="a97438cf1c94fe51248083c86ce591c5" category="list-text">[ナレッジベースの定義]ページで、ナレッジベースの設定を行います。</block>
   <block id="b651dafbe972dff3ef00c60a522c2c08" category="paragraph">会話開始機能を有効にすると、デフォルトで「自動モード」が選択されます。「手動モード」は、ナレッジベースにデータソースを追加した後にのみ有効にできます。<block ref="787b3d64d417e723feebaf5fa5dbfeee" category="inline-link-macro-rx"></block>です。</block>
   <block id="ce08e73f7c40cf7e58d6371a757d23c6" category="list-text">* FSx for ONTAPファイルシステム*：新しいナレッジベースを定義すると、Workload Factoryは新しいAmazon FSx for NetApp ONTAPボリュームを作成して保存します。新しいボリュームを作成する既存のファイルシステム名とSVM（Storage VM）を選択します。</block>
-  <block id="305529b9c4df0ab06763778bf46b9449" category="list-text">* Snapshotポリシー*：Workload Factoryストレージインベントリで定義されている既存のポリシーのリストからSnapshotポリシーを選択します。</block>
   <block id="ced63c567878ed01730fce043c8ade96" category="inline-link">Snapshot ポリシーを作成します</block>
   <block id="ad36efe6c620944e32785812d09accd6" category="paragraph">必要なSnapshotポリシーが存在しない場合は<block ref="7546e5b5141e2979fa53ccc7106931ca" category="inline-link-rx"></block>、ボリュームを含むStorage VM上で実行できます。</block>
   <block id="d2efa843fffdf7f0b1400f4edeb08081" category="paragraph">ナレッジベースに統合したデータソースに関する情報を編集できます。ほとんどの情報は、データソースをナレッジベースに追加すると修正されますが、チャンキングの定義と設定、および権限の認識（データソースボリュームでSMBプロトコルを使用している場合）に変更を加えることができます。</block>
@@ -607,4 +599,45 @@
   <block id="9cbd2c5c5175ed32f13a8e1e7a8198dd" category="list-text"><block ref="078831e29f354e83fac6da3db6ed6b7b" prefix=" " category="inline-code"></block>セクションで、デバイスパスを新しいボリュームパスに変更します。例：</block>
   <block id="e9813bd2289d9835204f02be0a5d2df6" category="cell">ルートボリュームが削除されました。</block>
   <block id="358ede72c2c3d3e77baf3ed35b4039f6" category="cell">名前とパスを指定してボリュームを作成し、Amazon EC2からバックエンドDockerインスタンスを再起動します。</block>
+  <block id="430ea429b454fdc4ea2eb6c6b9cdbd77" category="doc">ナレッジベースボリュームのスナップショットの作成とリストア</block>
+  <block id="1ae13d57da1c55ee537cb9dc63916d03" category="paragraph">ナレッジベースのポイントインタイムコピーを作成することで、ジェネレーティブAIワークロードのデータを保護できるようになりました。これにより、偶発的な損失からデータを保護したり、ナレッジベースの設定の変更をテストしたりできます。以前のバージョンのナレッジベースボリュームはいつでもリストアできます。</block>
+  <block id="073751c61467c5e36c6cc197d92a75c4" category="section-title">スケジュール済みスキャンを一時停止</block>
+  <block id="6c31cb11ffc4d11a5aed0e968bb5f8c9" category="paragraph">スケジュールされたデータソーススキャンを一時停止できるようになりました。デフォルトでは、ジェネレーティブAIワークロードは各データソースを毎日スキャンし、各ナレッジベースに新しいデータを取り込みます。最新の変更を取り込みたくない場合（テスト中やスナップショットのリストア中など）は、スケジュールされたスキャンを一時停止していつでも再開できます。</block>
+  <block id="9813be0bded00d4a8f5457f2e27277fa" category="section-title">ナレッジベースでのデータ保護ボリュームのサポート</block>
+  <block id="f20c02f54f20ee06aed661b133ba0fc3" category="paragraph">ナレッジベースボリュームを選択する際に、NetApp SnapMirrorレプリケーション関係の一部であるデータ保護ボリュームを選択できるようになりました。これにより、SnapMirrorレプリケーションですでに保護されているボリュームにナレッジベースを格納できます。</block>
+  <block id="c880ade9c6e1657038a733388834bf6d" category="list-text">* Snapshotポリシー*：Workload Factoryストレージインベントリで定義されている既存のポリシーのリストからSnapshotポリシーを選択します。ナレッジベースの定期的なスナップショットは、選択したスナップショットポリシーに基づいて頻度で自動的に作成されます。</block>
+  <block id="530d81713422730939efa8236f41105f" category="paragraph">ナレッジベースの作成中は、進行状況インジケータが表示されます。</block>
+  <block id="2ec7e499bf83fa315927a96623d03df5" category="paragraph">ナレッジベースを作成したら、新しいナレッジベースにデータソースを追加するか、データソースを追加せずにプロセスを終了するかを選択できます。[データソースの追加]*を選択し、ここで1つ以上のデータソースを追加することをお勧めします。</block>
+  <block id="e0308d285e9bc5966f6ceb7008c87849" category="paragraph">単一のデータソースをナレッジベースに追加したら、チャットボットシミュレータウィンドウでローカルにテストし、必要な変更を加えてから、ユーザーがチャットボットを使用できるようにします。同じ手順に従って、ナレッジベースにデータソースを追加することもできます。</block>
+  <block id="2ea3dbeb714261d8180c0931e50d9b53" category="paragraph">データソースは、単一のボリュームに格納することも、ボリューム内のフォルダに格納することも、Amazon FSx for NetApp ONTAPファイルシステム上のSMB共有やNFSエクスポートに格納することもできます。また、NetApp SnapMirrorデータ保護関係にあるAmazon FSx for NetApp ONTAPボリュームにデータソースを保存することもできます。</block>
+  <block id="709c30bf3c120fca30b346788a407cf8" category="paragraph">ボリュームまたはフォルダ内の個 々 のドキュメントを選択することはできません。したがって、データソースを含む各ボリュームまたはフォルダに、ナレッジベースと統合すべきではない無関係なドキュメントが含まれていないことを確認する必要があります。</block>
+  <block id="2182a74bab7188d959e795d9301e87ff" category="cell">マークダウン</block>
+  <block id="dadf0304a901246ee7f588e5276f1761" category="cell">.md</block>
+  <block id="09df1824d82fa779fc65302df5218ed7" category="cell">.docまたは.docx</block>
+  <block id="df8b8a3c2e9816c8fa5785b811006754" category="cell">ポータブルドキュメントフォーマット</block>
+  <block id="af467f026dd1b56c8564e770bf39737f" category="section-title">スナップショットでナレッジベースを保護</block>
+  <block id="ebe007adb0cdb086ff8918410a8dee5b" category="paragraph">ナレッジベースボリュームのスナップショットを作成および復元することで、ナレッジベースデータを保護できます。スナップショットから復元して、ナレッジベースの以前のバージョンにいつでも戻すことができます。</block>
+  <block id="4579190c461a9ec96d3604ff5fad8099" category="paragraph">スナップショットは、バックアップよりも高速でストレージ効率に優れており、異なる保護ポリシーを使用して各ナレッジベースを保護できます。スナップショットが役立つシナリオには、次のようなものがあります。</block>
+  <block id="07d621cfd1a721c92651875f5213cf9c" category="list-text">偶発的なデータ損失や破損</block>
+  <block id="b3edfca5cba615cc8a93b9d63e97b819" category="list-text">ナレッジベースに取り込まれた不正なデータからのリカバリ</block>
+  <block id="0243c67f7fa35f362d1323768ccc5871" category="list-text">さまざまなデータソースまたはチャンク戦略をテストし、テストが完了したら迅速にリバートする</block>
+  <block id="4dfbf3ac57687ef65479f0135589593f" category="section-title">ナレッジベースボリュームのスナップショットの作成</block>
+  <block id="4d44b256311340bb736c203922fb0296" category="paragraph">ナレッジベースボリュームのスナップショットを手動で作成することで、ナレッジベースの状態を保存できます。</block>
+  <block id="1fbeeb5e6aa15ff7209e4a92d6562e31" category="list-text">ナレッジベースインベントリページで、保護するナレッジベースを選択します。</block>
+  <block id="81d9d121de4b6c5678182e3422bf9650" category="list-text">[Actions]*メニューを選択し、*[Snapshot]&gt;[Create new snapshot]*を選択します。</block>
+  <block id="3ec558c4a178bea34d2e5946bf312b7d" category="paragraph">ナレッジベースのスナップショットが作成されます。</block>
+  <block id="3d1e45266a0a6784e668353081a13cd0" category="section-title">ナレッジベースボリュームのスナップショットのリストア</block>
+  <block id="1c0e06755573de2de1c2d9b32674ea2f" category="paragraph">ナレッジベースボリュームの手動またはスケジュールされたスナップショットは、いつでもリストアできます。</block>
+  <block id="de134183bea5df515a6756a539ce6f18" category="inline-link">ONTAP CLI</block>
+  <block id="f14abb5dd88e8c117fe2da63e57697d4" category="admonition">ボリュームに格納されているデータベースが破損しているか削除されている場合は、Generative AI Workloads UIを使用してSnapshotをリストアすることはできません。対処方法として、ボリュームがホストされているONTAPクラスタでを使用してSnapshotをリストアし<block ref="6335761ebc6c6e298f35eb8b2201e062" category="inline-link-rx"></block>ます。</block>
+  <block id="4eb5e554b61083f3b7827cb521093085" category="list-text">ナレッジベースインベントリページで、復元するナレッジベースを選択します。</block>
+  <block id="e890c518ff6cfabdc152007bfb3c49d8" category="list-text">[操作]*メニューを選択し、*[スナップショット]&gt;[スナップショットのリストア]*を選択します。</block>
+  <block id="da5ec29ae3439bc7afa7fa8e6407b19e" category="paragraph">スナップショット選択ダイアログが表示され、このナレッジベース用に作成されたスナップショットのリストが表示されます。</block>
+  <block id="ece73b44227fa0e2047743c76b07917a" category="list-text">（オプション）Snapshotのリストア後にスケジュール済みおよび現在実行中のデータソーススキャンを続行する場合は、*[Pause running and scheduled scans after restoring the snapshot]*オプションの選択を解除します。</block>
+  <block id="562ecd64817b603d4fc723f3f68aa81c" category="paragraph">このオプションはデフォルトで有効になっており、ナレッジベースが部分的に復元された状態のときにスキャンが実行されないようにしたり、新しく復元されたナレッジベースが古いデータで更新されないようにします。</block>
+  <block id="c33a9a11971ce2afdcc7d2ca3639e49d" category="list-text">リストアするSnapshotをリストから選択します。</block>
+  <block id="f77361b272ce81d8275727f7b1a756a8" category="list-text">[* Restore] を選択します。</block>
+  <block id="75adfeedf06d70e0bc627133f85cd211" category="section-title">データソースとナレッジベースを同期する</block>
+  <block id="44736bad98446163ecd5077653cbd105" category="paragraph">データソースは関連付けられたナレッジベースと1日に1回自動的に同期されるため、データソースの変更がチャットボットに反映されます。いずれかのデータソースに変更を加え、データをすぐに同期する場合は、オンデマンド同期を実行できます。</block>
+  <block id="26e6f4cc71039ce95ddbb0acdad6891d" category="section-title">2024年9月29日</block>
 </blocks>
