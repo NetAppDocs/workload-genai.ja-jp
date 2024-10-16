@@ -33,32 +33,30 @@ sidebar:
       url: "/deploy-infrastructure.html"
     - title: 外部のサンプルチャットボットアプリケーションを使用する
       url: "/example-chatbot-application.html"
-  - title: GenAIを使用したナレッジベースの作成
+    - title: NetApp GenAIエンジンのコンポーネント
+      url: "/genai-engine-instance.html"
+  - title: 生成AIを使用してナレッジベースを構築する
     entries:
-    - title: ナレッジベースの構築
-      entries:
-      - title: ナレッジベースの作成
-        url: "/create-knowledgebase.html"
-      - title: ナレッジベースのテスト
-        url: "/test-knowledgebase.html"
-      - title: 認証をアクティブ化
-        url: "/activate-authentication.html"
-      - title: ナレッジベースのパブリッシュ
-        url: "/publish-knowledgebase.html"
-      - title: RAGベースのAIアプリケーションの作成
-        url: "/create-application.html"
-      - title: 次は何ができるか
-        url: "/whats-next.html"
-    - title: データソースの管理
-      url: "/manage-data-source.html"
-    - title: ナレッジベースの管理
-      url: "/manage-knowledgebase.html"
+    - title: ナレッジベースの作成
+      url: "/create-knowledgebase.html"
+    - title: ナレッジベースのテスト
+      url: "/test-knowledgebase.html"
+    - title: 認証をアクティブ化
+      url: "/activate-authentication.html"
+    - title: ナレッジベースのパブリッシュ
+      url: "/publish-knowledgebase.html"
+    - title: RAGベースのAIアプリケーションの作成
+      url: "/create-application.html"
+    - title: 次は何ができるか
+      url: "/whats-next.html"
   - title: GenAIの管理
     entries:
     - title: GenAIインフラの管理
       url: "/manage-infrastructure.html"
-    - title: NetApp GenAIエンジンのコンポーネント
-      url: "/genai-engine-instance.html"
+    - title: ナレッジベースの管理
+      url: "/manage-knowledgebase.html"
+    - title: データソースの管理
+      url: "/manage-data-source.html"
   - title: 知識とサポート
     entries:
     - title: サポートに登録します

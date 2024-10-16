@@ -275,7 +275,6 @@
   <block id="f0c862596fc0a1dd30faa6b630a0d09b" category="section-title">既存のデータソースの内容を更新する</block>
   <block id="d811eb8aad6aebc071695232fb58c5a5" category="paragraph">データソースの内容はいつでも変更して、組織のデータを追加または更新できます。このデータソースがナレッジベースでアクティブに使用されている場合は、ナレッジベースに再インデックスされるようにデータソースを同期する必要があります。同期は差分で行われるため、Amazon Bedrockは前回の同期後に追加、変更、または削除されたFSx for ONTAPボリューム内のオブジェクトのみを処理します。</block>
   <block id="24f189799b33f2d3f465d0658dcc69e1" category="inline-link-macro">オンデマンドで同期を実行する</block>
-  <block id="424609f726117c0fe50e1034bb197bf7" category="paragraph">データソースは1日に1回自動的にナレッジベースと同期されるため、データソースの変更がチャットボットに反映されます。データソースに変更を加え、データをすぐに同期したい場合は、を使用できます <block ref="67b891ffaab1342f4fb267d7cc798f81" category="inline-link-macro-rx"></block>。</block>
   <block id="35198182831e3f9922e23822e3f2e2eb" category="section-title">データソースを削除する</block>
   <block id="19045c987301cc2ddb28f24761554946" category="paragraph">データソースをナレッジベースに含める必要がなくなった場合は、そのデータソースを削除できます。</block>
   <block id="7c25f02bbc30d711041ddd1cc4235dc3" category="list-text">ナレッジベースのインベントリページで、データソースが存在するナレッジベースを選択し、 <block ref="4dc533ba94e6ca8d1968a9d477e1cbce" category="inline-image-macro-rx" type="image"></block> *[ナレッジベースの管理]*を選択します。</block>
@@ -501,7 +500,6 @@
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">リリースノート</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新機能</block>
   <block id="acbf2b120f060c765cc5fbfef7779840" category="sidebar">ナレッジベースのデータソースを特定する</block>
-  <block id="2e800147de9688c09f27dae52c542680" category="sidebar">GenAIを使用したナレッジベースの作成</block>
   <block id="b032727d9e00be7e59aefec94a0972c2" category="sidebar">認証をアクティブ化</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知識とサポート</block>
   <block id="3163a16fc98aa29c5fea8b61c62bb459" category="paragraph">Workload FactoryのGenAI機能を使用するためのコストはかかりません。</block>
@@ -644,4 +642,6 @@
   <block id="f951fa0f2608d186cd1f0bd8889ac232" category="paragraph"><block ref="f951fa0f2608d186cd1f0bd8889ac232" category="inline-link-rx"></block></block>
   <block id="8afd34c2a29e7b6286f3ed0bf9e20c22" category="paragraph"><block ref="8afd34c2a29e7b6286f3ed0bf9e20c22" category="inline-link-rx"></block></block>
   <block id="4936442e55cb8f837f9616ca6aaf1e92" category="doc">ナレッジベースボリュームのSnapshotとリストアのサポート</block>
+  <block id="ef3d62d3a83e208fec16cf94a1c9ef8b" category="paragraph">データソースは1日に1回自動的にナレッジベースと同期されるため、データソースの変更がチャットボットに反映されます。データソースに変更を加え、データをすぐに同期したい場合は、を使用できます <block ref="a5f82761b74f2896160929ccd4ead00e" category="inline-link-macro-rx"></block>。</block>
+  <block id="3bd082f2a7c2961a682116b6ed9f43fc" category="sidebar">生成AIを使用してナレッジベースを構築する</block>
 </blocks>
