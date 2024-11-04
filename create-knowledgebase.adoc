@@ -13,9 +13,22 @@ summary: AIインフラを導入し、FSx for ONTAPデータストアからナ�
 [role="lead"]
 AIインフラを導入し、FSx for ONTAPデータストアからナレッジベースに統合するデータソースを特定したら、Workload Factoryを使用してナレッジベースを構築できます。このステップの一部として、AIの特性を定義し、会話のきっかけを作ります。
 
-ナレッジベースは、組織のデータソースを統合しなくても使用できます。この場合、ナレッジベースに統合されたアプリケーションは、インターネット上で公開されている情報からのみ結果を提供します。これは_public mode_integrationと呼ばれます。
+.タスクの内容
+ナレッジベースには、_パブリックモード_と_エンタープライズモード_という2つのデータ統合モダリティがあります。
 
-ほとんどの場合、組織のデータソースをナレッジベースに統合する必要があります。これは、エンタープライズからの知識を提供するため、_Enterprise mode_integrationと呼ばれます。
+パブリックモード:: ナレッジベースは、組織のデータソースを統合しなくても使用できます。この場合、ナレッジベースに統合されたアプリケーションは、インターネット上で公開されている情報からのみ結果を提供します。これは_public mode_integrationと呼ばれます。
+Enterpriseモード:: ほとんどの場合、組織のデータソースをナレッジベースに統合する必要があります。これは、エンタープライズからの知識を提供するため、_Enterprise mode_integrationと呼ばれます。
++
+--
+組織のデータソースには、個人識別情報（PII）が含まれている場合があります。この機密情報を保護するために、ナレッジベースの作成および構成時に_data guardrails_を有効にすることができます。BlueXP  分類を利用したデータガードレールは、PIIを識別してマスクし、アクセスできず、取り出すことができないようにします。
+
+link:https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["BlueXPの分類について説明します"^]です。
+
+
+NOTE: データガードレールはいつでも有効または無効にできます。データガードレールを有効に切り替えると、Workload Factoryはナレッジベース全体をゼロからスキャンするため、コストがかかります。
+
+--
+
 
 
 
@@ -47,6 +60,21 @@ https://aws.amazon.com/bedrock/titan/["Amazon Titanの詳細"^]
 .. *チャットモデル*: Amazon Bedrockに統合されているクロードチャットモデルから選択します。Amazon Bedrockからチャットモデルを有効にしておく必要があります。
 +
 選択に役立つ利用可能なモデルの詳細については、以下を参照してください。 https://aws.amazon.com/bedrock/claude/["Amazon BedrockのAnthropic's Claude"^]
+
+.. *データガードレール*:データガードレールを有効にするか無効にするかを選択します。link:https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["BlueXP  分類を活用したデータガードレールの詳細"^]です。
++
+データガードレールを有効にするには、次の前提条件を満たしている必要があります。
+
++
+*** BlueXP  分類と通信するには、サービスアカウントが必要です。サービスアカウントを作成するには、BlueXP  テナンシーアカウントで_Organization admin_roleが必要です。組織管理者ロールを持つメンバーは、BlueXP  ですべてのアクションを実行できます。link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-manage-members-permissions.html#add-a-role-to-a-member["BlueXP  でメンバーにロールを追加する方法を確認する"^]
+*** で説明されているように、次の手順を実行する必要がありlink:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-cloud-compliance.html#quick-start["BlueXPの分類に関するドキュメント"^]ます。
++
+.... BlueXPコネクタの作成
+.... 環境が前提条件を満たしていることを確認する
+.... BlueXP分類を導入します
+
+
+
 
 .. *会話の開始*：このナレッジベースを使用するチャットボットと対話するユーザーに表示される会話の開始プロンプトを最大4つ指定するかどうかを選択します。この設定を有効にすることをお勧めします。
 +

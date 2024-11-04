@@ -564,7 +564,6 @@
   <block id="46f71814ee1d2e5bbe062c91635739cf" category="list-text">[Edit data source]ページで、を選択し<block ref="0722c4ff5aff83b42b3212ce6356e926" category="inline-image-macro-rx" type="image"></block>てチャンク定義の行を展開します。</block>
   <block id="c9ee341e3341c054d76e9a00e2455883" category="list-text">チャンキング戦略と構成、および権限の認識（SMBボリュームの場合）の設定を更新し、*[保存]*を選択します。</block>
   <block id="f3ee02a23f65c24a5b66f40deaa52796" category="list-text">インフラ設定</block>
-  <block id="f39b1e8c1922f03eae35d54aa3cc70e1" category="list-text">[ナレッジベースの編集]ページでは、ナレッジベースの名前、説明、埋め込みモデル、チャットモデル、カンバセーションスターターを自動的に作成するか手動で作成するか、ナレッジベースを含むボリュームに使用するスナップショットポリシーを変更できます。</block>
   <block id="88f99918375bbf8120b251d975b7e03e" category="paragraph">ナレッジベースが不要になった場合は、ナレッジベースを削除できます。ナレッジベースを削除すると、そのナレッジベースはWorkload Factoryから削除され、ナレッジベースを含むボリュームは削除されます。ナレッジベースを使用しているアプリケーションやチャットボットはすべて機能しなくなります。ナレッジベースの削除は元に戻すことはできません。</block>
   <block id="fd33fe22719aed031c8ea822ba866360" category="paragraph">ナレッジベースを削除する場合は、ナレッジベースに関連付けられているすべてのリソースを完全に削除するために、ナレッジベースと関連付けられているエージェントの関連付けも解除する必要があります。</block>
   <block id="fa20235938197ed878f7da8159917a1d" category="paragraph">ナレッジベースがWorkload Factoryから削除され、関連付けられているボリュームが削除されます。</block>
@@ -644,4 +643,28 @@
   <block id="4936442e55cb8f837f9616ca6aaf1e92" category="doc">ナレッジベースボリュームのSnapshotとリストアのサポート</block>
   <block id="ef3d62d3a83e208fec16cf94a1c9ef8b" category="paragraph">データソースは1日に1回自動的にナレッジベースと同期されるため、データソースの変更がチャットボットに反映されます。データソースに変更を加え、データをすぐに同期したい場合は、を使用できます <block ref="a5f82761b74f2896160929ccd4ead00e" category="inline-link-macro-rx"></block>。</block>
   <block id="3bd082f2a7c2961a682116b6ed9f43fc" category="sidebar">生成AIを使用してナレッジベースを構築する</block>
+  <block id="17e908b1a02b6ec45f4e125877322d0f" category="doc">個人識別情報をデータガードレールでマスクする</block>
+  <block id="0f21cd7bd10e747bca7894a609acc04b" category="paragraph">ジェネレーティブAIワークロードには、BlueXP  分類を基盤とするデータガードレール機能が導入されています。データガードレール機能は、個人識別情報(PII)を識別してマスクし、組織の機密データのコンプライアンスを維持し、セキュリティを強化するのに役立ちます。</block>
+  <block id="8137174f639d391921dfeb8ca6d792d1" category="paragraph"><block ref="8137174f639d391921dfeb8ca6d792d1" category="inline-link-macro-rx"></block></block>
+  <block id="a686d5fa6b6925450f1b7fa2b4245d28" category="inline-link-macro">BlueXPの分類について説明します</block>
+  <block id="384713a8a1d5a2dd365da2851c50ad93" category="paragraph"><block ref="384713a8a1d5a2dd365da2851c50ad93" category="inline-link-macro-rx"></block></block>
+  <block id="ee538d8e0203b8c3e9bdb95ebee1162c" category="paragraph">ナレッジベースには、_パブリックモード_と_エンタープライズモード_という2つのデータ統合モダリティがあります。</block>
+  <block id="3b3458714be1e5c3f76dd200e4227588" category="list-text">パブリックモード</block>
+  <block id="ab6bcff4b8fb91fe0c83c8ef83da1c6e" category="list-text">Enterpriseモード</block>
+  <block id="e168133413009827e06cf1b52bf82d2e" category="paragraph">組織のデータソースには、個人識別情報（PII）が含まれている場合があります。この機密情報を保護するために、ナレッジベースの作成および構成時に_data guardrails_を有効にすることができます。BlueXP  分類を利用したデータガードレールは、PIIを識別してマスクし、アクセスできず、取り出すことができないようにします。</block>
+  <block id="2abf45f9ff5a74918b97267cd4e59d6a" category="paragraph"><block ref="384713a8a1d5a2dd365da2851c50ad93" category="inline-link-macro-rx"></block>です。</block>
+  <block id="cf24c0f0066b07e51df4da735abd84e5" category="admonition">データガードレールはいつでも有効または無効にできます。データガードレールを有効に切り替えると、Workload Factoryはナレッジベース全体をゼロからスキャンするため、コストがかかります。</block>
+  <block id="1be907baab24daef236be08a55d381ce" category="inline-link-macro">BlueXP  分類を活用したデータガードレールの詳細</block>
+  <block id="239980b6c377cd208cd4875dd11871a7" category="list-text">*データガードレール*:データガードレールを有効にするか無効にするかを選択します。<block ref="705e589dc60832aba1b9593eb1d26a9a" category="inline-link-macro-rx"></block>です。</block>
+  <block id="5d78af30e91e495d74cbd3cac7a282db" category="paragraph">データガードレールを有効にするには、次の前提条件を満たしている必要があります。</block>
+  <block id="069e9a4c876c108cc9f27ee13170ed16" category="inline-link-macro">BlueXP  でメンバーにロールを追加する方法を確認する</block>
+  <block id="f271e30d6a375057fa3075f037ab44e5" category="list-text">BlueXP  分類と通信するには、サービスアカウントが必要です。サービスアカウントを作成するには、BlueXP  テナンシーアカウントで_Organization admin_roleが必要です。組織管理者ロールを持つメンバーは、BlueXP  ですべてのアクションを実行できます。<block ref="9ba9a2df720ef49e9efc4ba4af6ca608" category="inline-link-macro-rx"></block></block>
+  <block id="44b34442167c9611792529867ee76d90" category="inline-link-macro">BlueXPの分類に関するドキュメント</block>
+  <block id="bc2f4df95fcf66983b127abe7caa7a0a" category="list-text">で説明されているように、次の手順を実行する必要があり<block ref="0e478e925fb96541eb2f7d657ca01cb8" category="inline-link-macro-rx"></block>ます。</block>
+  <block id="a5085066220b6bc77291e8a3ba481c5a" category="list-text">BlueXPコネクタの作成</block>
+  <block id="3e3c8a56035df76e06772f4505dc58c7" category="list-text">環境が前提条件を満たしていることを確認する</block>
+  <block id="0ce4d42838344488f607ff306088fae9" category="list-text">BlueXP分類を導入します</block>
+  <block id="b91895758c5a35a75fd3e87dc1fa0741" category="list-text">[ナレッジベースの編集]ページでは、ナレッジベースの名前、説明、埋め込みモデル、チャットモデル、データガードレールの有効化、会話スターターを自動的に作成するか手動で作成するかを選択し、ナレッジベースを含むボリュームに使用するスナップショットポリシーを変更できます。</block>
+  <block id="fde00ba8f64d2c57d64a163698fd6f03" category="admonition">埋め込み、コストを含むすべてのナレッジベーススキャン。ナレッジベースの作成後にデータガードレールを有効にすると、ナレッジベースは再度スキャンされ、コストがかかります。</block>
+  <block id="d9f5899ddcae7952c9df69e075c822e2" category="section-title">2024年11月3日</block>
 </blocks>
