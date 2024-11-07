@@ -667,4 +667,8 @@
   <block id="b91895758c5a35a75fd3e87dc1fa0741" category="list-text">[ナレッジベースの編集]ページでは、ナレッジベースの名前、説明、埋め込みモデル、チャットモデル、データガードレールの有効化、会話スターターを自動的に作成するか手動で作成するかを選択し、ナレッジベースを含むボリュームに使用するスナップショットポリシーを変更できます。</block>
   <block id="fde00ba8f64d2c57d64a163698fd6f03" category="admonition">埋め込み、コストを含むすべてのナレッジベーススキャン。ナレッジベースの作成後にデータガードレールを有効にすると、ナレッジベースは再度スキャンされ、コストがかかります。</block>
   <block id="d9f5899ddcae7952c9df69e075c822e2" category="section-title">2024年11月3日</block>
+  <block id="5975f7e9036c78e6217b16f295f0ca75" category="inline-link-macro">BlueXPコンソール</block>
+  <block id="402ae08ce46f82670c0313312e504ad7" category="list-text">AIエンジンは、 <block ref="046fd603b18837f482287e5ec741e5ed" category="inline-link-macro-rx"></block></block>
+  <block id="4d82a1ec1af02725042c8c785564ee7a" category="list-text">NetApp ONTAP 対応の Amazon FSX</block>
+  <block id="4b88d56bd65ef92611ac63064c38369f" category="list-text">Amazon CloudWatch</block>
 </blocks>

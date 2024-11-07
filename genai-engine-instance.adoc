@@ -42,6 +42,8 @@ IAMロール:: GenAIエンジンインスタンスには、データのチャン
 * Amazon Elastic Container Registry（ECR）
 * Amazon S3
 * AWSシステムマネージャ（SSM）
+* NetApp ONTAP 対応の Amazon FSX
+* Amazon CloudWatch
 
 
 --
