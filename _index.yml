@@ -1,6 +1,6 @@
 ---
 indexpage:
-  title: 生成AIドキュメントのワークロードファクトリ
+  title: 生成AIドキュメント用のBlueXP  ワークロードファクトリ
   summary: FSx for ONTAPファイルシステムのデータをMLOpsプラットフォームやGenAI基盤モデルと統合し、組織のデータを使用して機能的なチャットボットを作成します。
   keywords: AI, GenAI, ML, Chatbot, FSx, FSx for ONTAP, knowledge base
   lead: FSx for ONTAPファイルシステムのデータをMLOpsプラットフォームやGenAI基盤モデルと統合し、組織のデータを使用して機能的なチャットボットを作成します。

@@ -686,5 +686,5 @@
   <block id="34734891f639d2ae1ecbbaab22157fe2" category="paragraph">ワークロードファクトリのジェネレーティブAIワークロード機能の最新情報をご確認ください。</block>
   <block id="81ff996ef963d9805259d4a6c9bafac8" category="inline-link">Amazon FSx for NetApp ONTAPドキュメントのワークロードファクトリー</block>
   <block id="07e2e5eecff8fe1dbb4712055f0055f1" category="paragraph">FSx for ONTAPファイルシステムの管理については、で<block ref="3845b9852e43f2af9ae621ea5bb328c1" category="inline-link-rx"></block> 使用できるバックアップ機能と保護機能を確認してください。</block>
-  <block id="ae734fb1e6d4e05106a10b963ef2ee25" category="sidebar">生成AIドキュメントのワークロードファクトリ</block>
+  <block id="2b6b3d10fe7ba8590618a95b1cc96a1a" category="sidebar">生成AIドキュメント用のBlueXP  ワークロードファクトリ</block>
 </blocks>
