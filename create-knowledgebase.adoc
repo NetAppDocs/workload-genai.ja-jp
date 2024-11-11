@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: create-knowledgebase.html 
 keywords: ai, chatbot, creating, knowledge base 
-summary: AIインフラを導入し、FSx for ONTAPデータストアからナレッジベースに統合するデータソースを特定したら、Workload Factoryを使用してナレッジベースを構築できます。このステップの一部として、AIの特性を定義し、会話のきっかけを作ります。 
+summary: AIインフラを導入し、FSx for ONTAPデータストアからナレッジベースに統合するデータソースを特定したら、ワークロードファクトリを使用してナレッジベースを構築できます。このステップの一部として、AIの特性を定義し、会話のきっかけを作ります。 
 ---
 = ナレッジベースの作成
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: AIインフラを導入し、FSx for ONTAPデータストアからナ�
 
 
 [role="lead"]
-AIインフラを導入し、FSx for ONTAPデータストアからナレッジベースに統合するデータソースを特定したら、Workload Factoryを使用してナレッジベースを構築できます。このステップの一部として、AIの特性を定義し、会話のきっかけを作ります。
+AIインフラを導入し、FSx for ONTAPデータストアからナレッジベースに統合するデータソースを特定したら、ワークロードファクトリを使用してナレッジベースを構築できます。このステップの一部として、AIの特性を定義し、会話のきっかけを作ります。
 
 .タスクの内容
 ナレッジベースには、_パブリックモード_と_エンタープライズモード_という2つのデータ統合モダリティがあります。
@@ -37,7 +37,7 @@ NOTE: データガードレールはいつでも有効または無効にでき�
 ナレッジベースは、ナレッジベースの作成に使用するBedrock AIモデルや埋め込み形式などの特性を定義します。
 
 .手順
-. Workload Factoryにログインします。
+. いずれかを使用してワークロードファクトリにログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
 . [AI Workloads]タイルで、*[Deploy & manage]*を選択します。
 . [ナレッジベース]タブで、*[ナレッジベースの追加]*を選択します。
 . [ナレッジベースの定義]ページで、ナレッジベースの設定を行います。
@@ -81,8 +81,8 @@ https://aws.amazon.com/bedrock/titan/["Amazon Titanの詳細"^]
 +
 会話開始機能を有効にすると、デフォルトで「自動モード」が選択されます。「手動モード」は、ナレッジベースにデータソースを追加した後にのみ有効にできます。link:manage-knowledgebase.html["ナレッジベースの設定を変更する方法について説明します。"]です。
 
-.. * FSx for ONTAPファイルシステム*：新しいナレッジベースを定義すると、Workload Factoryは新しいAmazon FSx for NetApp ONTAPボリュームを作成して保存します。新しいボリュームを作成する既存のファイルシステム名とSVM（Storage VM）を選択します。
-.. * Snapshotポリシー*：Workload Factoryストレージインベントリで定義されている既存のポリシーのリストからSnapshotポリシーを選択します。ナレッジベースの定期的なスナップショットは、選択したスナップショットポリシーに基づいて頻度で自動的に作成されます。
+.. * FSx for ONTAPファイルシステム*：新しいナレッジベースを定義すると、Workload factoryによって新しいAmazon FSx for NetApp ONTAPボリュームが作成されて格納されます。新しいボリュームを作成する既存のファイルシステム名とSVM（Storage VM）を選択します。
+.. * Snapshotポリシー*：ワークロード工場のストレージインベントリに定義されている既存のポリシーのリストからSnapshotポリシーを選択します。ナレッジベースの定期的なスナップショットは、選択したスナップショットポリシーに基づいて頻度で自動的に作成されます。
 +
 必要なSnapshotポリシーが存在しない場合は https://docs.netapp.com/us-en/ontap/data-protection/create-snapshot-policy-task.html["Snapshot ポリシーを作成します"]、ボリュームを含むStorage VM上で実行できます。
 

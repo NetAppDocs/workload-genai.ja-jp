@@ -56,7 +56,7 @@ AWSクレデンシャルを入力し、FSx for ONTAPファイルシステムを�
 この手順を開始する前に、環境がを満たしていることを確認し link:requirements.html["要件"] てください。
 
 .手順
-. Workload Factoryにログインします。
+. いずれかを使用してワークロードファクトリにログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
 . [AI Workloads]タイルで、*[Deploy & manage]*を選択します。
 . インフラの図を確認し、* Next *を選択します。
 . [AWS settings]セクションの項目を入力します。
@@ -78,7 +78,7 @@ GenAI環境は、Amazon Bedrockが有効になっているAWSリージョンに�
 
 
 .結果
-Workload Factoryチャットボットインフラストラクチャの展開を開始します。このプロセスには最大10分かかることがあります。
+Workload Factoryはチャットボットインフラストラクチャの導入を開始します。このプロセスには最大10分かかることがあります。
 
 導入プロセスでは、次の項目が設定されます。
 

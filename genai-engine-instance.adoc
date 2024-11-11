@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: genai-engine-instance.html 
 keywords: genai engine, instance, ec2, role, iam role, permissions, security group, inbound, outbound, private endpoints 
-summary: GenAIインフラストラクチャをデプロイすると、Workload FactoryによってGenAIエンジンのEC2インスタンスが作成されます。また、このインスタンスのIAMロール、セキュリティグループ、プライベートエンドポイントも作成されます。Workload FactoryでAWS環境に作成されるこれらのコンポーネントの詳細を確認することができます。 
+summary: 生成AIインフラを導入すると、ワークロードファクトリによって 生成AIエンジン用のEC2インスタンスが作成されます。また、このインスタンスのIAMロール、セキュリティグループ、プライベートエンドポイントも作成されます。ワークロードファクトリがAWS環境に作成するこれらのコンポーネントの詳細を確認することができます。 
 ---
 = NetApp GenAIエンジンのコンポーネント
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: GenAIインフラストラクチャをデプロイすると、Workload 
 
 
 [role="lead"]
-GenAIインフラストラクチャをデプロイすると、Workload FactoryによってGenAIエンジンのEC2インスタンスが作成されます。また、このインスタンスのIAMロール、セキュリティグループ、プライベートエンドポイントも作成されます。Workload FactoryでAWS環境に作成されるこれらのコンポーネントの詳細を確認することができます。
+生成AIインフラを導入すると、ワークロードファクトリによって 生成AIエンジン用のEC2インスタンスが作成されます。また、このインスタンスのIAMロール、セキュリティグループ、プライベートエンドポイントも作成されます。ワークロードファクトリがAWS環境に作成するこれらのコンポーネントの詳細を確認することができます。
 
 EC2インスタンスタイプ:: m5.large
 IAMロール:: GenAIエンジンインスタンスには、データのチャンクをAmazon Bedrockの埋め込みモデルに送信し、NetApp AIサービスバックエンドと通信するための権限が必要です。IAMロールには次の権限が含まれています。
@@ -34,7 +34,7 @@ IAMロール:: GenAIエンジンインスタンスには、データのチャン
 ----
 --
 セキュリティグループ:: 発信ルールはすべてのトラフィックに対してオープンであり、着信ルールは完全にクローズされます。
-プライベートエンドポイント:: ターゲットVPCにまだVPCがない場合、Workload FactoryはGenAIエンジンEC2インスタンスのプライベートエンドポイントを作成し、次のAWSサービスと通信できるようにします。
+プライベートエンドポイント:: ターゲットVPCにまだVPCがない場合、Workload Factoryは 生成AIエンジンEC2インスタンスのプライベートエンドポイントを作成し、次のAWSサービスと通信できるようにします。
 +
 --
 * Amazon Bedrock

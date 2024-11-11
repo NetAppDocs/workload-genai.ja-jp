@@ -13,17 +13,26 @@ summary: Amazon FSx for NetApp ONTAPファイルシステムに存在する組�
 [role="lead"]
 Amazon FSx for NetApp ONTAPファイルシステムに存在する組織のデータを使用して、ナレッジベースを作成しましょう。チャットボットなどのアプリケーションは、このナレッジベースにアクセスして、組織に焦点を当てた回答をエンドユーザーに提供します。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"] link:requirements.html["GenAIの要件を満たす環境のセットアップ"]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"]ワークロードファクトリへのログイン
+のいずれかを使用してログインする https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]必要があります https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["ワークロードファクトリでアカウントを設定する"^]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2つ"]生成AIの要件を満たす環境のセットアップ
 [role="quick-margin-para"]
 AWSインフラの導入、導入および検出されたFSx for ONTAPファイルシステム、ナレッジベースに統合するデータソースのリスト、Amazon Bedrock AIサービスへのアクセスなどには、AWSのクレデンシャルが必要です。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2つ"] link:identify-data-sources.html["データソースが格納されているFSx for ONTAPファイルシステムを特定する"]
+link:requirements.html["生成AI要件の詳細"^]です。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"]データソースが格納されているFSx for ONTAPファイルシステムを特定する
 [role="quick-margin-para"]
 ナレッジベースに統合するデータソースは、単一のFSx for ONTAPファイルシステムに配置することも、複数のFSx for ONTAPファイルシステムに配置することもできます。これらのシステムは異なるVPCに配置できますが、同じネットワーク内でアクセスできる必要があります。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"] link:deploy-infrastructure.html["ナレッジベースインフラストラクチャの導入"]
+link:identify-data-sources.html["データソースを特定する方法"^]です。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4つ"]ナレッジベースインフラストラクチャの導入
 [role="quick-margin-para"]
 インフラ導入ウィザードを起動して、ナレッジベースインフラをAWS環境に導入します。このプロセスでは、NetApp GenAIエンジン用のEC2インスタンスと、NetApp AIエンジンデータベースを格納するFSx for ONTAPファイルシステムにボリュームを導入します。ボリュームは、ナレッジベースで使用されるベクターデータベースを格納するために使用されます。
+
+link:deploy-infrastructure.html["ナレッジベースインフラストラクチャの導入方法"^]です。
 
 .次のステップ
 ナレッジベースを構築して、組織に焦点を当てた回答をエンドユーザーに提供できるようになりました。

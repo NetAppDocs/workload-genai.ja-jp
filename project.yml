@@ -21,7 +21,7 @@ sidebar:
       url: "/whats-new.html"
   - title: はじめに
     entries:
-    - title: GenAI向けワークロードファクトリーの詳細
+    - title: 生成AI向けワークロードファクトリの詳細
       url: "/ai-workloads-overview.html"
     - title: クイックスタート
       url: "/quick-start.html"
@@ -68,5 +68,5 @@ sidebar:
   - title: 法的通知
     url: "/legal-notices.html"
 product-family:
-  name: BlueXP Workload Factory for AWS
+  name: BlueXP workload factory for AWS
   repo: workload-family

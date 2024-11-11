@@ -1,13 +1,13 @@
 ---
 indexpage:
-  title: GenAIドキュメント用ワークロードファクトリ
+  title: 生成AIドキュメントのワークロードファクトリ
   summary: FSx for ONTAPファイルシステムのデータをMLOpsプラットフォームやGenAI基盤モデルと統合し、組織のデータを使用して機能的なチャットボットを作成します。
   keywords: AI, GenAI, ML, Chatbot, FSx, FSx for ONTAP, knowledge base
   lead: FSx for ONTAPファイルシステムのデータをMLOpsプラットフォームやGenAI基盤モデルと統合し、組織のデータを使用して機能的なチャットボットを作成します。
   tiles:
   - title: はじめに
     links:
-    - title: GenAI向けワークロードファクトリーの詳細
+    - title: 生成AI向けワークロードファクトリの詳細
       url: ai-workloads-overview.html
     - title: クイックスタート
       url: quick-start.html

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: example-chatbot-application.html 
 keywords: ai, example, sample, chatbot, app, application, local 
-summary: サンプルのチャットボットアプリケーションをインストールして実行し、ナレッジベースをテストし、Workload Factory APIを使用して独自の生成AIアプリケーションを作成する方法を学ぶことができます。 
+summary: サンプルのチャットボットアプリケーションをインストールして実行し、ナレッジベースをテストし、ワークロードファクトリAPIを使用して独自の生成AIアプリケーションを作成する方法を学ぶことができます。 
 ---
 = 外部のサンプルチャットボットアプリケーションを使用する
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: サンプルのチャットボットアプリケーションをイン�
 
 
 [role="lead"]
-ナレッジベースを構成、アクティブ化、公開した後、外部アプリケーション開発者は、NetAppが提供するオープンソースのサンプルチャットボットアプリケーションを構成および実行してナレッジベースを操作したり、ワークロードファクトリAPIを使用して独自の生成AIアプリケーションを作成する方法を学習したりできます。
+ナレッジベースを構成、アクティブ化、公開した後、外部アプリケーション開発者は、NetAppが提供するオープンソースのサンプルチャットボットアプリケーションを構成および実行してナレッジベースと対話し、ワークロードファクトリAPIを使用して独自の生成AIアプリケーションを作成する方法を学習できます。
 
 .手順
 . link:create-knowledgebase.html["ナレッジベースの作成"]です。
@@ -39,4 +39,4 @@ NOTE: このナレッジベースと統合する外部チャットアプリケ�
 
 == 詳細
 
-https://console.workloads.netapp.com/api-doc["Workload Factory APIのドキュメント"]
+https://console.workloads.netapp.com/api-doc["ワークロードファクトリAPIのドキュメント"]

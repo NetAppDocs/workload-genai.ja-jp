@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: requirements.html 
 keywords: ai, chatbot, prerequisites, bedrock, fsx for ontap, prerequisites, requirements 
-summary: ナレッジベースを構築する前に、Workload FactoryとAWSが正しく設定されていることを確認してください。これには、AWSのログインクレデンシャル、ナレッジベースに統合するデータソースを含む導入済みのFSx for ONTAPファイルシステム、Amazon Bedrock AIサービスへのアクセスなどが含まれます。 
+summary: ナレッジベースを構築する前に、ワークロードファクトリとAWSが適切に設定されていることを確認してください。これには、AWSのログインクレデンシャル、ナレッジベースに統合するデータソースを含む導入済みのFSx for ONTAPファイルシステム、Amazon Bedrock AIサービスへのアクセスなどが含まれます。 
 ---
 = GenAIの要件
 :allow-uri-read: 
@@ -11,15 +11,10 @@ summary: ナレッジベースを構築する前に、Workload FactoryとAWSが�
 
 
 [role="lead"]
-ナレッジベースを構築する前に、Workload FactoryとAWSが正しく設定されていることを確認してください。これには、AWSのログインクレデンシャル、ナレッジベースに統合するデータソースを含む導入済みのFSx for ONTAPファイルシステム、Amazon Bedrock AIサービスへのアクセスなどが含まれます。
+ナレッジベースを構築する前に、ワークロードファクトリとAWSが適切に設定されていることを確認してください。これには、AWSのログインクレデンシャル、ナレッジベースに統合するデータソースを含む導入済みのFSx for ONTAPファイルシステム、Amazon Bedrock AIサービスへのアクセスなどが含まれます。
 
-Workload Factoryのログインとアカウント:: Workload Factoryにログインし、アカウントを作成する必要があります。
-+
---
-https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["ログインとアカウントの作成の詳細"^]
-
---
-AWS のクレデンシャルと権限:: AWSクレデンシャルをWorkload Factoryに自動化権限で追加する必要があります。つまり、GenAIのWorkload Factoryを_automate_modeで使用することになります。
+ワークロードの工場出荷時のログインとアカウント:: のいずれかを使用してログインする https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]必要があります https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["ワークロードファクトリでアカウントを設定する"^]。
+AWS のクレデンシャルと権限:: automate権限を持つワークロードファクトリにAWSクレデンシャルを追加する必要があります。つまり、生成AIの_automate_modeでワークロードファクトリを使用することになります。
 +
 --
 現時点では、_basic_modeおよび_read_mode権限はサポートされていません。
@@ -28,13 +23,13 @@ AWS のクレデンシャルと権限:: AWSクレデンシャルをWorkload Fact
 
 image:screenshot-ai-permissions.png["AIリソースを完全に管理するための権限設定を示すスクリーンショット。"]
 
-https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWSクレデンシャルをWorkload Factoryに追加する方法"^]
+https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["ワークロードファクトリにAWSクレデンシャルを追加する方法を確認"^]
 
 --
 Amazon Bedrock:: Amazon Bedrockを使用すると、基盤モデルを使用でき、生成型AIアプリケーションを構築するための機能を提供します。
 +
 --
-Workload Factory for GenAIを始める前に、Amazon Bedrockをセットアップする必要があります。GenAI環境は、Amazon Bedrockが有効になっているAWSリージョンに配置する必要があります。
+生成AIのワークロードファクトリを開始する前に、Amazon Bedrockをセットアップする必要があります。生成AI環境がAmazon Bedrockが有効になっているAWSリージョンにある必要があります。
 
 * https://docs.aws.amazon.com/bedrock/latest/userguide/setting-up.html["AWSのドキュメント：Amazon Bedrockのセットアップ"^]
 * https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-supported.html["AWSのドキュメント：Amazon Bedrockのナレッジベースでサポートされるリージョンとモデル"^]
