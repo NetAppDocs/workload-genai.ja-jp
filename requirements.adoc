@@ -29,7 +29,7 @@ https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["ワー�
 Amazon Bedrock:: Amazon Bedrockを使用すると、基盤モデルを使用でき、生成型AIアプリケーションを構築するための機能を提供します。
 +
 --
-生成AIのワークロードファクトリを開始する前に、Amazon Bedrockをセットアップする必要があります。生成AI環境がAmazon Bedrockが有効になっているAWSリージョンにある必要があります。
+生成AI用のBlueXP  ワークロードファクトリを開始する前に、Amazon Bedrockをセットアップする必要があります。生成AI環境がAmazon Bedrockが有効になっているAWSリージョンにある必要があります。
 
 * https://docs.aws.amazon.com/bedrock/latest/userguide/setting-up.html["AWSのドキュメント：Amazon Bedrockのセットアップ"^]
 * https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-supported.html["AWSのドキュメント：Amazon Bedrockのナレッジベースでサポートされるリージョンとモデル"^]

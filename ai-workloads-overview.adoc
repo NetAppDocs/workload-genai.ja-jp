@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: ai-workloads-overview.html 
 keywords: overview, concepts, features, use case, workloads, AI, Bedrock, knowledge base, chatbot 
-summary: 生成AI向けワークロードファクトリーでは、Amazon FSx for NetApp ONTAPファイルシステムを 生成AI基盤モデルと統合できます。これにより、AIデータセット向けの豊富な保護機能、セキュリティ機能、コスト最適化機能を備えたハイパフォーマンスストレージが実現します。 
+summary: BlueXP  Workload Factory for生成AIでは、Amazon FSx for NetApp ONTAPファイルシステムと 生成AIの基盤モデルを統合できます。これにより、AIデータセット向けの豊富な保護機能、セキュリティ機能、コスト最適化機能を備えたハイパフォーマンスストレージが実現します。 
 ---
-= 生成AI向けワークロードファクトリの詳細
+= 生成AI向けBlueXP  ワークロードファクトリの詳細
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
@@ -15,9 +15,9 @@ summary: 生成AI向けワークロードファクトリーでは、Amazon FSx f
 
 
 
-== 生成AIのワークロードファクトリとは
+== 生成AI向けのBlueXP  ワークロードファクトリとは何ですか。
 
-生成AI向けワークロードファクトリーでは、Amazon FSx for NetApp ONTAP上のエンタープライズデータソースとジェネレーティブAIアプリケーションを使用できます。Retrieval Augmentation Generation（RAG）フレームワークを利用すると、Amazon Bedrock経由で利用可能なFoundationモデルにデータソースをすばやく接続して、バーチャルアシスタント、Q&Aチャットボット、ドキュメント要約、コンテンツ作成などのGenerative AIを活用したアプリケーションを開発できます。
+BlueXP  Workload Factory for生成AIでは、Amazon FSx for NetApp ONTAP上のエンタープライズデータソースとジェネレーティブAIアプリケーションを使用できます。Retrieval Augmentation Generation（RAG）フレームワークを利用すると、Amazon Bedrock経由で利用可能なFoundationモデルにデータソースをすばやく接続して、バーチャルアシスタント、Q&Aチャットボット、ドキュメント要約、コンテンツ作成などのGenerative AIを活用したアプリケーションを開発できます。
 
 ジェネレーティブAIを組織のデータとともに使用すると、モデルがトレーニングされたパブリックデータに基づくモデルのインテリジェンスだけに頼るのではなく、独自の知識と専門知識を活用できます。RAGを使用してモデルをカスタマイズすると、組織固有の質問に対する正確で適切な応答が保証され、ジェネレーティブAIを使用してアプリケーションのユーザーの生産性と効率が向上します。
 
@@ -29,7 +29,7 @@ summary: 生成AI向けワークロードファクトリーでは、Amazon FSx f
 
 == GenAIを使用してジェネレーティブAIアプリケーションを作成するメリット
 
-生成AIのワークロードファクトリは、Retrieval Augmented Generation（RAG）を使用してジェネレーティブAIアプリケーションを構築するために必要なインフラの導入プロセスを簡易化します。具体的には、生成AIには次のようなメリットがあります。
+生成AI向けのBlueXP  ワークロードファクトリは、Retrieval Augmented Generation（RAG）を使用してジェネレーティブAIアプリケーションを構築するために必要なインフラを導入するプロセスを簡易化します。具体的には、生成AIには次のようなメリットがあります。
 
 * IT管理者や開発者は、データインフラ、基盤、言語モデルに関する深い知識がなくても、GenAIが提供する自動化を活用してアプリケーション開発を加速できます。データ管理者と開発者は、生成AIアプリケーションで使用する組織の非構造化データを埋め込むエンタープライズナレッジベースを簡単かつ迅速に作成できます。
 * ナレッジベースに埋め込まれたファイルにユーザー権限を保持して、データのセキュリティとプライバシーを維持することで、セキュリティを強化します。チャットボットなどのアプリケーションは、ユーザーがアクセスできるデータに基づいて、認証されたユーザーのみに回答を提供するように開発できます。
@@ -49,7 +49,7 @@ image:diagram-chatbot-processing.png["GenAIの主要コンポーネントとそ�
 
 
 
-== 生成AIのワークロードファクトリがジェネレーティブAIアプリケーションの構築にどのように役立つか
+== BlueXP  Workload Factory for生成AIがジェネレーティブAIアプリケーションの構築にどのように役立つか
 
 GenAIは、次の方法でRAGを使用したジェネレーティブAIアプリケーションの構築を支援します。
 

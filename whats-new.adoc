@@ -15,6 +15,26 @@ summary: ワークロードファクトリーのAIワークロード機能の最
 
 
 
+== 2024年12月1日
+
+
+
+=== Snapshotからナレッジベースをクローニング
+
+生成AI向けのBlueXP  ワークロードファクトリでは、スナップショットからのナレッジベースのクローニングがサポートされるようになりました。これにより、ナレッジベースの迅速なリカバリと既存のデータソースを使用した新しいナレッジベースの作成が可能になり、データのリカバリと開発に役立ちます。
+
+link:https://docs.netapp.com/us-en/workload-genai/manage-knowledgebase.html#clone-a-knowledge-base["ナレッジベースの複製"]
+
+
+
+=== オンプレミスのONTAPクラスタの検出とレプリケーション
+
+オンプレミスのONTAPクラスタデータを検出してFSx for ONTAPファイルシステムにレプリケートすることで、AIのナレッジベースを強化できます。オンプレミスの検出とレプリケーションのすべてのワークフローは、ストレージインベントリの新しい*オンプレミスONTAP *タブから実行できます。
+
+link:https://docs.netapp.com/us-en/workload-fsx-ontap/use-onprem-data.html["オンプレミスの ONTAP クラスタを検出"]
+
+
+
 == 2024年11月3日
 
 

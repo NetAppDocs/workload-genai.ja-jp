@@ -50,7 +50,7 @@ image:diagram-chatbot-infrastructure.png["AIチャットボットのコンポー
 
 == GenAIインフラの導入
 
-AWSクレデンシャルを入力し、FSx for ONTAPファイルシステムを選択して、Retrieval Augmentation Generation（RAG）インフラを導入する必要があります。
+AWSのクレデンシャルを入力し、FSx for ONTAPファイルシステムを選択して、Retrieval-Augmented Generation（RAG）インフラを導入する必要があります。
 
 .開始する前に
 この手順を開始する前に、環境がを満たしていることを確認し link:requirements.html["要件"] てください。
@@ -75,6 +75,10 @@ GenAI環境は、Amazon Bedrockが有効になっているAWSリージョンに�
 
 
 . 導入*を選択して導入を開始します。
++
+
+NOTE: 導入がクレデンシャルエラーで失敗した場合は、エラーメッセージ内のハイパーリンクを選択すると、エラーの詳細を確認できます。見つからないかブロックされている権限のリストと、生成AIワークロードが 生成AIインフラを導入するために必要な権限のリストを確認できます。
+
 
 
 .結果
