@@ -4,7 +4,7 @@ permalink: identify-data-sources.html
 keywords: data sources, chatbot, documents, knowledge base 
 summary: ナレッジベースに統合するFSx for ONTAPファイルシステムにあるドキュメント（データソース）を特定または作成します。これらのデータソースを使用すると、組織に関連するデータに基づいて、ナレッジベースでユーザクエリに対する正確でパーソナライズされた回答を提供できます。 
 ---
-= ナレッジベースに統合するデータソースを特定する
+= 生成AIナレッジベースに統合するデータソースを特定する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

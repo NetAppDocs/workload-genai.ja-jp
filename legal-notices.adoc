@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary:  
 ---
-= 法的通知
+= 生成AI法的通知のためのBlueXP  ワークロードファクトリ
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

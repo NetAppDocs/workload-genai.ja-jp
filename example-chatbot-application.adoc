@@ -4,7 +4,7 @@ permalink: example-chatbot-application.html
 keywords: ai, example, sample, chatbot, app, application, local 
 summary: サンプルのチャットボットアプリケーションをインストールして実行し、ナレッジベースをテストし、ワークロードファクトリAPIを使用して独自の生成AIアプリケーションを作成する方法を学ぶことができます。 
 ---
-= 外部のサンプルチャットボットアプリケーションを使用する
+= 生成AI外部サンプルチャットボットアプリケーションを使用する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

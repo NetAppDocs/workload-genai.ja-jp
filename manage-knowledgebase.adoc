@@ -4,7 +4,7 @@ permalink: manage-knowledgebase.html
 keywords: ai, chatbot, managing, knowledge base 
 summary: ナレッジベースを作成したら、ナレッジベースの詳細の表示、ナレッジベースの変更、追加のデータソースの統合、ナレッジベースの削除を行うことができます。 
 ---
-= ナレッジベースの管理
+= 生成AIナレッジベースの管理
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

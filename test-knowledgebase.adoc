@@ -4,7 +4,7 @@ permalink: test-knowledgebase.html
 keywords: ai, chatbot, creating, knowledge base 
 summary: ナレッジベースを作成したら、チャットボットシミュレータを使用してローカルでテストし、必要な変更を加えてから、チャットボットアプリケーションを使用してユーザーがナレッジベースを利用できるようになります。 
 ---
-= ナレッジベースのテスト
+= 生成AIナレッジベースのテスト
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

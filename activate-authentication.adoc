@@ -4,7 +4,7 @@ permalink: activate-authentication.html
 keywords: ai, chatbot, publishing, knowledge base 
 summary: ナレッジベースとチャットボットアプリケーションを統合するときにトークンの検証とACLが必要になるように、ナレッジベースの認証をアクティブにします。 
 ---
-= ナレッジベースの外部認証を有効にする
+= 生成AIナレッジベースの外部認証のアクティブ化
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

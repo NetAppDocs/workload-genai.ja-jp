@@ -4,7 +4,7 @@ permalink: manage-data-source.html
 keywords: ai, chatbot, creating, knowledge base, data source 
 summary: FSx for ONTAPファイルシステムのデータソースを使用してナレッジベースを作成したら、データソースの詳細の表示、データソースの内容の更新または変更、データソースの設定の編集、データソースの削除を行うことができます。 
 ---
-= データソースの管理
+= 生成AIデータソースを管理します。
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

@@ -4,7 +4,7 @@ permalink: create-knowledgebase.html
 keywords: ai, chatbot, creating, knowledge base 
 summary: AIインフラを導入し、FSx for ONTAPデータストアからナレッジベースに統合するデータソースを特定したら、ワークロードファクトリを使用してナレッジベースを構築できます。このステップの一部として、AIの特性を定義し、会話のきっかけを作ります。 
 ---
-= ナレッジベースの作成
+= 生成AIナレッジベースの作成
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
@@ -67,7 +67,7 @@ https://aws.amazon.com/bedrock/titan/["Amazon Titanの詳細"^]
 
 +
 *** BlueXP  分類と通信するには、サービスアカウントが必要です。サービスアカウントを作成するには、BlueXP  テナンシーアカウントで_Organization admin_roleが必要です。組織管理者ロールを持つメンバーは、BlueXP  ですべてのアクションを実行できます。link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-manage-members-permissions.html#add-a-role-to-a-member["BlueXP  でメンバーにロールを追加する方法を確認する"^]
-*** AIエンジンは、 link:https://console.bluexp.netapp.com/["BlueXPコンソール"^]
+*** AIエンジンには、BlueXP  APIエンドポイント\https://api .API.COMへのアクセスが必要ですBlueXP  NetApp。
 *** で説明されているように、次の手順を実行する必要がありlink:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-cloud-compliance.html#quick-start["BlueXPの分類に関するドキュメント"^]ます。
 +
 .... BlueXPコネクタの作成

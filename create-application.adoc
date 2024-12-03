@@ -4,7 +4,7 @@ permalink: create-application.html
 keywords: ai, chatbot, creating, application, knowledge base, rag, retrieval augmented generation 
 summary: ナレッジベースを構築してチャットボットをテストしたら、ユーザーがチャットボットを照会できるようにするアプリケーションをセットアップする準備が整いました。 
 ---
-= RAGベースのAIアプリケーションの作成
+= RAGベースの 生成AIアプリケーションの作成
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
