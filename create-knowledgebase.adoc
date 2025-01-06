@@ -25,7 +25,10 @@ Enterpriseモード:: ほとんどの場合、組織のデータソースをナ�
 link:https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["BlueXPの分類について説明します"^]です。
 
 
-NOTE: データガードレールはいつでも有効または無効にできます。データガードレールを有効に切り替えると、Workload Factoryはナレッジベース全体をゼロからスキャンするため、コストがかかります。
+NOTE: BlueXP  Workload Factory for生成AIでは、機密性の高い個人情報(SPii)はマスクされません。このタイプのデータの詳細については、を参照してくださいlink:https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-sensitive-personal-data["機密性の高い個人データのタイプ"^]。
+
+
+NOTE: データガードレールはいつでも有効または無効にできます。データガードレールの有効化を切り替えると、Workload Factoryはナレッジベース全体をゼロからスキャンするため、コストがかかります。
 
 --
 
