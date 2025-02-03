@@ -5,7 +5,6 @@
   <block id="e3fbe9ea657688c1ff4a86f23c1752c3" category="list-text">*ボリュームを選択*：データソースファイルが格納されているボリュームを選択し、*[次へ]*を選択します。</block>
   <block id="3bce906453410b081d8e495b9cf8c9b0" category="paragraph">SMBプロトコルを使用して保存されているファイルを選択する場合は、ドメイン、IPアドレス、ユーザ名、パスワードなどのActive Directory情報を入力する必要があります。</block>
   <block id="7028355d43ef8a71ff4d5e7bed32be2b" category="list-text">*データソースを選択*：ファイルを保存した場所に基づいてデータソースの場所を選択します。これは、ボリューム全体、またはボリューム内の特定のフォルダまたはサブフォルダにすることができ、* Next *を選択します。</block>
-  <block id="12d073958c6d4922a6f27ae8b5e4b533" category="list-text">権限対応*セクション（SMBプロトコルを使用するボリューム上に選択したデータソースがある場合にのみ表示）で、選択を有効または無効にできます。</block>
   <block id="751157f855d8f0597671b65bc8ea1301" category="list-text">*有効*:このナレッジベースにアクセスするチャットボットのユーザーは、アクセス権を持つデータソースからのクエリに対する応答のみを取得します。</block>
   <block id="9969ec0e7476736a130c54f32700611e" category="list-text">*無効*:チャットボットのユーザーは、統合されたすべてのデータソースからコンテンツを使用して応答を受信します。</block>
   <block id="65f706122d6156fd52b6cb2ff2214944" category="list-text">[追加]*を選択して、このデータソースをナレッジベースに追加します。</block>
@@ -115,9 +114,7 @@
   <block id="36d8c0d0c9711e8ac7a5bbcbe9b96008" category="list-text">発信ルールはすべてのトラフィックに対してオープンであり、着信ルールは完全にクローズされます。</block>
   <block id="1f171bab0b26254e4c58e536973c5c09" category="list-text">プライベートエンドポイント</block>
   <block id="34048930da0f8b448828d6774b139b17" category="list-text">Amazon Bedrock</block>
-  <block id="c421d122321bec48d6b30858f4e7b515" category="list-text">Amazon EC2</block>
   <block id="719ffca696aa714ef090fce0aca97bd2" category="list-text">Amazon Elastic Container Registry（ECR）</block>
-  <block id="270fcb785810d0206945029bb05f4e97" category="list-text">Amazon S3</block>
   <block id="0072b242011f459b57b0768dceac82f8" category="list-text">AWSシステムマネージャ（SSM）</block>
   <block id="fabfc25ef8996fd90836e58a4c0b26b6" category="doc">ヘルプを表示します</block>
   <block id="6a7b2c9c4cec65ad972b108fa0a1192b" category="section-title">FSx for ONTAPのサポートを利用する</block>
@@ -475,7 +472,6 @@
   <block id="4fc1d0607a3fe50db5ef612a2c4a178e" category="list-text">を参照し<block ref="0e14f9ffc1d2673bd92f13a4ac79e32e" category="inline-link-rx"></block> てアプリケーションにログインします。</block>
   <block id="5f62c285aea87618ed1381c43c7ae2cf" category="paragraph">チャットボットアプリケーションの例が表示されます。</block>
   <block id="d59048f21fd887ad520398ce677be586" category="section-title">詳細</block>
-  <block id="8f3f613a5094ebfa7c5f531cb356028e" category="list-text">* AIパラメーターの定義*：*チャンク戦略*セクションで、データソースがナレッジベースと統合されている場合に、生成AIエンジンがデータソースコンテンツをチャンクに分割する方法を定義します。次のいずれかの方法を選択できます。</block>
   <block id="091e1c7957272ab69145f4859b4465d0" category="list-text">*Multi-sentence chunking*:データソースの情報をセンテンス定義のチャンクに編成します。各チャンクを構成する文の数を選択できます(最大100 )。</block>
   <block id="87aa4ffcf50084a10651fe7094e75bda" category="list-text">*オーバーラップベースのチャンク*:データソースからの情報を文字定義のチャンクに編成し、隣接するチャンクとオーバーラップすることができます。各チャンクのサイズを文字単位で選択し、各チャンクが隣接するチャンクとどの程度重なるかを選択できます。チャンクサイズは50～3000文字、オーバーラップパーセンテージは1～99%の範囲で設定できます。</block>
   <block id="18c41e2a8da7a23dcc990da8d7dfe06d" category="admonition">オーバーラップ率を高く設定すると、取得精度がわずかに向上するだけで、ストレージ要件が大幅に増加します。</block>
@@ -583,7 +579,6 @@
   <block id="3e3c8a56035df76e06772f4505dc58c7" category="list-text">環境が前提条件を満たしていることを確認する</block>
   <block id="0ce4d42838344488f607ff306088fae9" category="list-text">BlueXP分類を導入します</block>
   <block id="b91895758c5a35a75fd3e87dc1fa0741" category="list-text">[ナレッジベースの編集]ページでは、ナレッジベースの名前、説明、埋め込みモデル、チャットモデル、データガードレールの有効化、会話スターターを自動的に作成するか手動で作成するかを選択し、ナレッジベースを含むボリュームに使用するスナップショットポリシーを変更できます。</block>
-  <block id="fde00ba8f64d2c57d64a163698fd6f03" category="admonition">埋め込み、コストを含むすべてのナレッジベーススキャン。ナレッジベースの作成後にデータガードレールを有効にすると、ナレッジベースは再度スキャンされ、コストがかかります。</block>
   <block id="d9f5899ddcae7952c9df69e075c822e2" category="section-title">2024年11月3日</block>
   <block id="4d82a1ec1af02725042c8c785564ee7a" category="list-text">NetApp ONTAP 対応の Amazon FSX</block>
   <block id="4b88d56bd65ef92611ac63064c38369f" category="list-text">Amazon CloudWatch</block>
@@ -781,5 +776,47 @@
   <block id="2c6cb4e03314c724c32217626f17bd37" category="list-text">SSHを使用してインスタンスにログインします。</block>
   <block id="337d79852891a37d41285c9101c3fff4" category="list-text">次のコマンドを実行します。</block>
   <block id="37b8354fe553b0151888468751ea8eb0" category="section-title">2025年1月5日</block>
-  <block id="0fdf33109843473a96b84acfe576030a" category="paragraph"><block ref="384713a8a1d5a2dd365da2851c50ad93" category="inline-link-macro-rx"></block>== 2024年9月29日</block>
+  <block id="2b33992406857bfe64aea3c375dfd0f3" category="list-text">*設定*:データソースがファイルから情報を取り込む方法と、スキャンに含めるファイルを設定します。</block>
+  <block id="556d69e48e56f7282433b4470f9fc985" category="list-text">*データソースの定義*：*チャンク戦略*セクションで、データソースがナレッジベースと統合されている場合に、生成AIエンジンがデータソースのコンテンツをチャンクに分割する方法を定義します。次のいずれかの方法を選択できます。</block>
+  <block id="441ffcb2a5deb53b096bf6da09532c3c" category="list-text">*ファイルフィルタリング*:スキャンに含めるファイルを設定します。</block>
+  <block id="fbf5c3d1e175475dce2b6f27f23e342c" category="list-text">[ファイルタイプのサポート]セクションで、すべてのタイプのファイルを含めるか、データソーススキャンに含めるファイルタイプを個別に選択します。</block>
+  <block id="9c91ae043d4f1fed127449b7d9f56f1a" category="paragraph">画像またはPDFファイルを含めると、BlueXP  Workload Factory for生成AIは画像内のテキスト(PDFドキュメント内の画像を含む)を解析するため、コストが高くなります。</block>
+  <block id="cdc5210ee55660ad12576b6b12e53505" category="paragraph">画像のテキストデータを含めると、スキャンされたテキストデータが環境からAWSに送信されるため、生成AIは画像の個人識別情報(PII)をマスクできません。ただし、データが保存されると、すべてのPIIは 生成AIデータベースでマスクされます。</block>
+  <block id="527140faa5b9a355e269287e721ad95b" category="admonition">画像ファイルをスキャンに含めるかどうかは、ナレッジベースチャットモデルに関連しています。画像ファイルをスキャンに含める場合は、チャットモデルで画像がサポートされている必要があります。ここで画像ファイルタイプが選択されている場合、画像ファイルをサポートしていないチャットモデルにナレッジベースを切り替えることはできません。</block>
+  <block id="2af4913e8e59a092d414744be9ae44d2" category="list-text">[ファイル変更時刻フィルタ]*セクションで、ファイルの変更時刻に基づいてファイルを含めるかどうかを選択します。変更時刻のフィルタリングを有効にする場合は、リストから日付範囲を選択します。</block>
+  <block id="67aa8f84073b450b225b7d2830cc4e41" category="admonition">変更日の範囲に基づいてファイルをインクルードした場合、日付範囲が満たされない（指定した日付範囲内でファイルが変更されていない）とすぐに、ファイルは定期スキャンから除外され、データソースにはこれらのファイルは含まれません。</block>
+  <block id="a036984d47253ddc828a04bc8ac85524" category="list-text">権限対応*セクション（選択したデータソースがSMBプロトコルを使用するボリューム上にある場合にのみ表示）で、権限対応の応答を有効または無効にできます。</block>
+  <block id="77fd00559b8279b555e48d21e5e67c34" category="doc">データソースのファイルタイプフィルタリング</block>
+  <block id="47cf5538cc85b7acf0e24098fc5bbffd" category="paragraph">生成AIでは、データソースを追加するときに、データソーススキャンに含める特定のファイルタイプの選択がサポートされるようになりました。</block>
+  <block id="e57c1e86c82776cdcb9c50b4e82943f8" category="paragraph"><block ref="e57c1e86c82776cdcb9c50b4e82943f8" category="inline-link-macro-rx"></block></block>
+  <block id="f191d5f0a123d62966b3617a9d8c752c" category="section-title">データソースのファイル変更日のフィルタリング</block>
+  <block id="b1be3e2e5ab05373dbf3927507ea84d2" category="paragraph">生成AIでは、データソースの追加時に変更日によってデータソーススキャンに含めるファイルのフィルタリングがサポートされるようになりました。インクルードされるファイルの変更日の範囲を選択できます。</block>
+  <block id="7a7ba68ff13813a8c9d7413b67a91e34" category="section-title">画像ファイルのサポートとPDFファイルのサポートの強化</block>
+  <block id="02edd7a4065e5f73535b550150fc46f2" category="paragraph">生成AIでは、画像ファイルおよびPDFファイル内の画像のスキャンがサポートされるようになりました（マルチモーダルファイルサポートとも呼ばれます）。画像ファイルを選択すると、画像のテキストがデータソースにスキャンされ、データとして使用されます。この機能には、PDFドキュメント内の画像が含まれます。PDFファイルタイプを含めると、各PDF内の画像でテキストがスキャンされ、そのテキストがデータソースの情報に含まれます。</block>
+  <block id="b9a5ff8382cbb9f5609b8bff25344245" category="section-title">ハイブリッド検索と再検索のサポート</block>
+  <block id="429b63d212adaceb6de8dae934d76ea4" category="paragraph">生成AIでは、ハイブリッド検索を使用して検索結果の関連性を高め、結果の順位を変更できるようになりました。ハイブリッド検索は、キーワード検索とベクトル検索およびセマンティック検索を組み合わせたものです。標準的なキーワード検索結果は、近い一致と言語的なニュアンスで強化され、関連性が向上します。生成AIは検索結果を再ランク付けし、関連性が最も高い結果のみを返します。</block>
+  <block id="397adcec169a6ce17f0abfc941258c0f" category="paragraph"><block ref="397adcec169a6ce17f0abfc941258c0f" category="inline-link-macro-rx"></block></block>
+  <block id="c009fe342f72cc06fe63760e2eaa701c" category="list-text">生成AIが提供するハイブリッド検索機能とリランク機能を使用して、データから高品質の結果を得ることができます。ハイブリッド検索とリランク付けを組み合わせることで、検索結果の関連性が大幅に向上します。これらの機能はAmazon AWSから利用でき、リージョンによって異なります。</block>
+  <block id="e1201f675c705c74b856dba391a68602" category="paragraph">テキスト情報のための画像のスキャンなど、一部のマルチモーダル操作では、より多くのリソースが使用されるため、コストが高くなります。ナレッジベースの設定の変更など、一部の設定処理ではデータソースが再スキャンされたり、データソーススキャンのコストが高くなることがあります。</block>
+  <block id="0a2b76d9cf1a9ffdd3b88e030e038252" category="example-title">IAMロールノケンゲン</block>
+  <block id="216304eb42158c57d4ec762a309c7df6" category="list-text">岩盤</block>
+  <block id="12789b4d0bdf3d54be09051f154d5eba" category="list-text">Bedrock -ランタイム</block>
+  <block id="ca6c1f270eb3bc12524f0c3ad6af0765" category="list-text">Bedrock-agentランタイム</block>
+  <block id="db974238714ca8de634a7ce1d083a14f" category="list-text">API</block>
+  <block id="05b6053c41a2130afd6fc3b158bda4e6" category="list-text">Docker です</block>
+  <block id="078aab7ae8c1a0df339ac8525790d5e1" category="list-text">SSM</block>
+  <block id="627597c7a47356c5c9f55a4854a59ff3" category="list-text">ec2messages</block>
+  <block id="25f6388206f436c2d1de63216302b13d" category="list-text">ssmメツセエシ</block>
+  <block id="907e06a16862d82ca6907a28a68d0ad6" category="cell">JPEG</block>
+  <block id="8106d47388a74c58448d40c84de6fd91" category="cell">.jpg or.jpeg</block>
+  <block id="7281c70f390b5e0f3c8827352c83f0b0" category="cell">ポータブルネットワークグラフィックス</block>
+  <block id="6446d860dbbfe540e9e2cbab5f98f1e3" category="cell">.png</block>
+  <block id="a97aa4a947e531a7fa6f96a2b73876e3" category="cell">グラフィック交換フォーマット</block>
+  <block id="03a46779cf1ed515b29e1c471efd4c0f" category="cell">.gif</block>
+  <block id="830b1d3b1096152076b8daa22a275a74" category="cell">WebP画像</block>
+  <block id="f38a468e497336f7e3144a22393a4ca9" category="cell">.webp</block>
+  <block id="0c05a373f02466ab8f502ea4b3b8e2e8" category="admonition">埋め込み、コストを含むすべてのナレッジベーススキャン。ナレッジベースの作成後にデータガードレールを有効にすると、ナレッジベースは再度スキャンされ、コストがかかります。同様に、チャットモデルを変更すると、生成AIは関連するデータソースを再スキャンします(コストが発生します)。</block>
+  <block id="f7fb3b5dc06e03848b8f5ff23bbcd37d" category="paragraph">生成AIは、検索結果の関連性を向上させるために、デフォルトで検索結果を再ランク付けします。最良の結果を得るには、Amazon Bedrock Foundationモデルの構成に、Cohere RerankやAmazon Rerankなどのリランクモデルへのアクセスが含まれていることを確認してください（地域で利用可能な場合）。</block>
+  <block id="986aee2caba870111e5ce3c5571c82de" category="section-title">2025年2月2日</block>
+  <block id="26e6f4cc71039ce95ddbb0acdad6891d" category="section-title">2024年9月29日</block>
 </blocks>

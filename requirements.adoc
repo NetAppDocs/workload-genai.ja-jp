@@ -35,6 +35,8 @@ Amazon Bedrock:: Amazon Bedrockを使用すると、基盤モデルを使用で�
 * https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-supported.html["AWSのドキュメント：Amazon Bedrockのナレッジベースでサポートされるリージョンとモデル"^]
 
 
+生成AIは、検索結果の関連性を向上させるために、デフォルトで検索結果を再ランク付けします。最良の結果を得るには、Amazon Bedrock Foundationモデルの構成に、Cohere RerankやAmazon Rerankなどのリランクモデルへのアクセスが含まれていることを確認してください（地域で利用可能な場合）。
+
 --
 埋め込みモデル:: ナレッジベースを作成する前に、使用する予定の埋め込みモデルを有効にする必要があります。次の埋め込みモデルがサポートされています。
 +
