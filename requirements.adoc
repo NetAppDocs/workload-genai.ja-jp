@@ -50,21 +50,34 @@ https://aws.amazon.com/bedrock/titan/["Amazon Titanの詳細"^]
 
 
 --
-チャットモデル:: ナレッジベースを作成する前に、使用する予定の基本チャットモデルを有効にする必要があります。次のClaudeチャットモデルがサポートされています。
+チャットモデル:: ナレッジベースを作成する前に、使用する予定の基本チャットモデルを有効にする必要があります。サポートされるモデルはAWSのリージョンによって異なるため、ナレッジベースを導入するリージョンで使用できるモデルを確認するには、を参照し https://docs.aws.amazon.com/bedrock/latest/userguide/models-regions.html["AWSのドキュメント"^] てください。
 +
 --
-* クロード3.5ソネット
-* クロード3オプス
-* クロード3ハイク"
-* クロード3ソネット
-* クロード2.1
-* クロード2.0
-+
-サポートされるモデルはAWSのリージョンによって異なるため、ナレッジベースを導入するリージョンで使用できるモデルを確認するには、を参照し https://docs.aws.amazon.com/bedrock/latest/userguide/models-regions.html["AWSのドキュメントページ"^] てください。
+生成AIは、次のAnthropic ClaudeモデルとAmazon Novaモデルをサポートしています。
 
+* Anthropic Claude：
 +
-選択に役立つ利用可能なモデルの詳細については、以下を参照してください。 https://aws.amazon.com/bedrock/claude/["Amazon BedrockのAnthropic's Claude"^]
+** クロード3.5ソネット
+** クロード3オプス
+** クロード3ハイク"
+** クロード3ソネット
+** クロード2.1
+** クロード2.0
 
+
+* Amazon Nova：
++
+** Nova Micro
+** Nova Lite（画像とテキストをサポート）
+** Nova Pro（画像とテキストをサポート）
+
+
+
+
+Amazon Bedrockでこれらのモデルを使用する方法の詳細をご覧ください。
+
+* https://aws.amazon.com/bedrock/claude/["Amazon BedrockのAnthropic's Claude"^]
+* https://docs.aws.amazon.com/nova/latest/userguide/getting-started-console.html["Amazon BedrockコンソールでAmazon Novaを使い始める"^]
 
 
 --
