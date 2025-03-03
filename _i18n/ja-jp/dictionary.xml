@@ -832,4 +832,21 @@
   <block id="0dd1c2bf85c6e3f8ac28b8d5d343a230" category="list-text"><block ref="0dd1c2bf85c6e3f8ac28b8d5d343a230" category="inline-link-rx"></block></block>
   <block id="b6c678dfe5e31c8f081fa11ac56bff46" category="inline-link">Amazon BedrockコンソールでAmazon Novaを使い始める</block>
   <block id="cafb3db15a71932288c768a7beb404b4" category="list-text"><block ref="cafb3db15a71932288c768a7beb404b4" category="inline-link-rx"></block></block>
+  <block id="ca5a05186a2f243eb84efcf08152a8f2" category="doc">組み込みチャットボットの機能強化</block>
+  <block id="362c473fe2757bda1e0d68b3c2cdfbc8" category="paragraph">質問と回答をクリップボードに直接コピーしたり、チャットウィンドウのサイズを調整したり、タイトルを変更したりできるようになりました。さらに、チャット応答にテーブルを含めることができるようになりました。テーブルはコピー可能です。</block>
+  <block id="b7def3234606fc50e35ddaf4c351fbe6" category="paragraph"><block ref="b7def3234606fc50e35ddaf4c351fbe6" category="inline-link-macro-rx"></block></block>
+  <block id="4842fdf5dae1e7a3fb7ea049a091be73" category="section-title">チャット応答引用のサポート</block>
+  <block id="c010ca64710d07e36327c27318c0303f" category="paragraph">チャットの応答に、応答を生成するために使用されたファイルとデータのチャンクをリストする引用が含まれるようになりました。</block>
+  <block id="312fbafda6b72e176a3eb6272e48d799" category="section-title">ファイル形式のサポートの強化</block>
+  <block id="cb1c6d98111a4dc0f10d1914aabf97ff" category="paragraph">このリリースの 生成AIでは、ファイルサポートが強化されています。</block>
+  <block id="20fae993429f53ad24302c4bea3332d1" category="list-text">チャットモデル機能CSVサポートが改善されました。これにより、CSVファイルからデータを照会するときに、より便利な応答が可能になります。</block>
+  <block id="820ddf0d1fd0a9cf5aaea49d2b400838" category="list-text">生成AIは、データソースからApache Parquetファイルを取り込むことができるようになりました。</block>
+  <block id="ce2ed264c43f0733c7c1ccbd1b06fdab" category="list-text">生成AIでは、画像を含むMicrosoft Word DOCXファイルの取り込みがサポートされるようになりました。</block>
+  <block id="9e64c0f3360c80d2707e71b213c5fc58" category="paragraph"><block ref="9e64c0f3360c80d2707e71b213c5fc58" category="inline-link-macro-rx"></block></block>
+  <block id="bf971e4f3cc5d92890a57f57611a0107" category="cell">アパッチ寄木細工</block>
+  <block id="2041784b912a2b2e72827a5e9c656f5f" category="cell">寄木細工</block>
+  <block id="f1776184cd873aef06fc869138b3b776" category="admonition">チャットボットシミュレータウィンドウのサイズを変更してタイトルを変更したり、質問や回答をクリップボードにコピーしたりできます。</block>
+  <block id="e27f142520976de0e091895abd1a2b45" category="list-text">回答の下の*ソース*リストを展開すると、回答の作成に使用されたソースを確認できます。これにより、アンサーの生成に使用されるファイルのリストが表示されます。ファイル名にカーソルを合わせると、各ファイルおよびボリュームパスで使用されているデータチャンクを表示およびコピーできます。</block>
+  <block id="8e08c9e7067a8bc5d8828ba0b5a8a5b2" category="list-text">テーブルが応答に含まれている場合は、各列のデータをソートし、各テーブルをクリップボードにコピーできます。</block>
+  <block id="2d5a4b914acb6c2f03d312067c73ce32" category="section-title">2025年3月2日</block>
 </blocks>
