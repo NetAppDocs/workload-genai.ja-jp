@@ -27,3 +27,13 @@ indexpage:
     links:
     - title: ナレッジベースインフラストラクチャの管理
       url: manage-infrastructure.html
+  - title: ブログとコミュニティ
+    links:
+    - title: NetAppコミュニティ
+      url: https://community.netapp.com/t5/BlueXP-and-Services/ct-p/CDS
+    - title: BlueXPのブログ
+      url: https://bluexp.netapp.com/blog
+    - title: クラウドに関する Web セミナー
+      url: https://bluexp.netapp.com/events
+    - title: データで 生成AIを最大限に活用
+      url: https://community.netapp.com/t5/Tech-ONTAP-Blogs/Unlocking-GenAI-with-your-data-using-Amazon-FSx-for-NetApp-ONTAP-and-BlueXP/ba-p/456394
