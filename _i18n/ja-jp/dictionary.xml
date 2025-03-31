@@ -55,9 +55,7 @@
   <block id="b6306206c9c2b9f0903b5bfc5872066e" category="paragraph">Amazon Bedrockから埋め込みモデルを有効にしておく必要があります。</block>
   <block id="6034693f6588a087cd6872b5c42ea4d6" category="inline-link">Amazon Titanの詳細</block>
   <block id="558b7a3f6f7e506377040f9194ff098b" category="paragraph"><block ref="558b7a3f6f7e506377040f9194ff098b" category="inline-link-rx"></block></block>
-  <block id="eedd3619a786f9c1261bba5f49d4f821" category="list-text">*チャットモデル*: Amazon Bedrockに統合されているクロードチャットモデルから選択します。Amazon Bedrockからチャットモデルを有効にしておく必要があります。</block>
   <block id="d6444760a98aae63c256572c582cbe80" category="inline-link">Amazon BedrockのAnthropic's Claude</block>
-  <block id="c6a0e7101f0906d1498552ff723709e5" category="paragraph">選択に役立つ利用可能なモデルの詳細については、以下を参照してください。<block ref="56cf03ef03ec9048e7282cdb73fcf2fd" category="inline-link-rx"></block></block>
   <block id="bb75c182eff66bee3c76899d41fc8e8f" category="list-text">*会話の開始*：このナレッジベースを使用するチャットボットと対話するユーザーに表示される会話の開始プロンプトを最大4つ指定するかどうかを選択します。この設定を有効にすることをお勧めします。</block>
   <block id="fd6f710773f79577a44d128bb3df27cc" category="inline-link-macro">ナレッジベースの設定を変更する方法について説明します。</block>
   <block id="7311e81ffb665c2ec2a4c996ce693887" category="list-text">[ナレッジベースの作成]*を選択して、ナレッジベースをGenAIに追加します。</block>
@@ -203,7 +201,6 @@
   <block id="be4117b0c842c4be8f9960294bdc2cd1" category="cell">.txt</block>
   <block id="abdf095626d4a4ab2bcd4167b128c1f1" category="cell">.pdf</block>
   <block id="d241ed446445a725f6362568f61cc6c3" category="cell">Microsoft Word</block>
-  <block id="68dfdbe39ab30356a21fe4db773d9589" category="cell">カンマ区切り値ファイル</block>
   <block id="01b1b6ebeb388697cca6712b58439069" category="cell">.csv</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法的通知</block>
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">法的通知では、著作権に関する声明、商標、特許などにアクセスできます。</block>
@@ -322,7 +319,6 @@
   <block id="35f6f80cfc19636641dd85bbae19edee" category="doc">GenAIのクイックスタート</block>
   <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">1つ</block>
   <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">2つ</block>
-  <block id="10986db05c15b94a4d13e32858a6e26e" category="paragraph">ナレッジベースに統合するデータソースは、単一のFSx for ONTAPファイルシステムに配置することも、複数のFSx for ONTAPファイルシステムに配置することもできます。これらのシステムは異なるVPCに配置できますが、同じネットワーク内でアクセスできる必要があります。</block>
   <block id="ca8a2087e5557e317599344687a57391" category="inline-image-macro">3つ</block>
   <block id="ad6f5ec13ed51e48bce763e25a9c69ce" category="inline-link-macro">ナレッジベースインフラストラクチャの導入</block>
   <block id="41c27d3fbdf0cdc6aab23df489fe4c94" category="paragraph">インフラ導入ウィザードを起動して、ナレッジベースインフラをAWS環境に導入します。このプロセスでは、NetApp GenAIエンジン用のEC2インスタンスと、NetApp AIエンジンデータベースを格納するFSx for ONTAPファイルシステムにボリュームを導入します。ボリュームは、ナレッジベースで使用されるベクターデータベースを格納するために使用されます。</block>
@@ -568,7 +564,6 @@
   <block id="2abf45f9ff5a74918b97267cd4e59d6a" category="paragraph"><block ref="384713a8a1d5a2dd365da2851c50ad93" category="inline-link-macro-rx"></block>です。</block>
   <block id="1be907baab24daef236be08a55d381ce" category="inline-link-macro">BlueXP  分類を活用したデータガードレールの詳細</block>
   <block id="239980b6c377cd208cd4875dd11871a7" category="list-text">*データガードレール*:データガードレールを有効にするか無効にするかを選択します。<block ref="705e589dc60832aba1b9593eb1d26a9a" category="inline-link-macro-rx"></block>です。</block>
-  <block id="5d78af30e91e495d74cbd3cac7a282db" category="paragraph">データガードレールを有効にするには、次の前提条件を満たしている必要があります。</block>
   <block id="069e9a4c876c108cc9f27ee13170ed16" category="inline-link-macro">BlueXP  でメンバーにロールを追加する方法を確認する</block>
   <block id="f271e30d6a375057fa3075f037ab44e5" category="list-text">BlueXP  分類と通信するには、サービスアカウントが必要です。サービスアカウントを作成するには、BlueXP  テナンシーアカウントで_Organization admin_roleが必要です。組織管理者ロールを持つメンバーは、BlueXP  ですべてのアクションを実行できます。<block ref="9ba9a2df720ef49e9efc4ba4af6ca608" category="inline-link-macro-rx"></block></block>
   <block id="44b34442167c9611792529867ee76d90" category="inline-link-macro">BlueXPの分類に関するドキュメント</block>
@@ -724,7 +719,6 @@
   <block id="e8293cb4f1909d8329e31cefdfb4dba4" category="doc">生成AIナレッジベースの外部認証のアクティブ化</block>
   <block id="b05735c6e4c6d503ad9f93af6e740fa9" category="doc">RAGベースの 生成AIアプリケーションの作成</block>
   <block id="16cb0b733a26e9afa11f388e6d83aec1" category="doc">生成AIナレッジベースの作成</block>
-  <block id="79cee61f29eb5a0e2dd156871eb70a40" category="list-text">AIエンジンには、BlueXP  APIエンドポイント\https://api .API.COMへのアクセスが必要ですBlueXP  NetApp。</block>
   <block id="e63e0ed616c63ed724e592b04e608826" category="doc">生成AI外部サンプルチャットボットアプリケーションを使用する</block>
   <block id="52f26f0fff3bae61240c4b3a43f3624d" category="doc">生成AI向けBlueXP  ワークロードファクトリのサポート</block>
   <block id="e1cdd82a2918ba1a2c0ff51770aad51e" category="doc">生成AIナレッジベースに統合するデータソースを特定する</block>
@@ -843,7 +837,6 @@
   <block id="820ddf0d1fd0a9cf5aaea49d2b400838" category="list-text">生成AIは、データソースからApache Parquetファイルを取り込むことができるようになりました。</block>
   <block id="ce2ed264c43f0733c7c1ccbd1b06fdab" category="list-text">生成AIでは、画像を含むMicrosoft Word DOCXファイルの取り込みがサポートされるようになりました。</block>
   <block id="9e64c0f3360c80d2707e71b213c5fc58" category="paragraph"><block ref="9e64c0f3360c80d2707e71b213c5fc58" category="inline-link-macro-rx"></block></block>
-  <block id="bf971e4f3cc5d92890a57f57611a0107" category="cell">アパッチ寄木細工</block>
   <block id="2041784b912a2b2e72827a5e9c656f5f" category="cell">寄木細工</block>
   <block id="f1776184cd873aef06fc869138b3b776" category="admonition">チャットボットシミュレータウィンドウのサイズを変更してタイトルを変更したり、質問や回答をクリップボードにコピーしたりできます。</block>
   <block id="e27f142520976de0e091895abd1a2b45" category="list-text">回答の下の*ソース*リストを展開すると、回答の作成に使用されたソースを確認できます。これにより、アンサーの生成に使用されるファイルのリストが表示されます。ファイル名にカーソルを合わせると、各ファイルおよびボリュームパスで使用されているデータチャンクを表示およびコピーできます。</block>
@@ -854,4 +847,30 @@
   <block id="abd0fe91ce589ecf3c7bad0543ccad16" category="sidebar">BlueXPのブログ</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">クラウドに関する Web セミナー</block>
   <block id="8accc316c27ade20e4acbe4aa6c6742b" category="sidebar">データで 生成AIを最大限に活用</block>
+  <block id="f3a4976ab2464242211263cea7e247f9" category="paragraph">このリリースの 生成AIでは、データソースからファイルを取り込む際のJSONおよびJSONPファイル形式のサポートが導入されて<block ref="cc8f0c0e5a5cef9b33f236a0a9c19ca0" prefix=" " category="inline-code"></block>います。ネストされたオブジェクトを含むJSONファイルがサポートされますが、ネストされた配列はサポートされません。</block>
+  <block id="0a8f6f086d5f30a416a61fd3606f1025" category="section-title">外部チャットボットサンプルアプリケーションの国際化サポート</block>
+  <block id="a2f4023c744ab1521036ee54ec2e15ba" category="paragraph">生成AIサンプル外部チャットボットアプリケーションのユーザーインターフェイスを別の言語やロケールに簡単に変更できるようになりました。</block>
+  <block id="5b8a8facbec8623a03d7cae8b62bfeb7" category="inline-link-macro">生成AI外部サンプルチャットボットアプリケーション</block>
+  <block id="4d79fade08f1e8c2d92bbdf0e3237924" category="paragraph"><block ref="4d79fade08f1e8c2d92bbdf0e3237924" category="inline-link-macro-rx"></block></block>
+  <block id="26ea891fa4f63d071728537d886e0f6c" category="section-title">Anthropic Claude Sonnet 3.7チャットモデルのサポート</block>
+  <block id="4c58515c1bd9657f223b7731d306475c" category="paragraph">生成AIでは、Anthropic Claude 3.7 Sonnetチャットモデルがサポートされるようになりました。Claude 3.7 Sonnetのベータ機能は、要求ごとに最大128Kの出力トークンを可能にし、新しいコンピュータの使用アクションをサポートします。Claude 3.7 Sonnet拡張思考モードは、将来の 生成AIリリースでサポートされる予定です。</block>
+  <block id="fe72cb2aff5f7bf6138e806921c5d3d6" category="paragraph"><block ref="fe72cb2aff5f7bf6138e806921c5d3d6" category="inline-link-macro-rx"></block></block>
+  <block id="40bd8fe426c37e97f38be2c5a2728752" category="section-title">汎用NFS / SMB共有からのデータソースの追加のサポート</block>
+  <block id="1813c42a79840f7d495281cf050a30dc" category="paragraph">ワークロードファクトリAPIを使用して、一般的なNFSv3、NFSv4、またはSMB共有からデータソースを追加できるようになりました。NFS共有またはSMB共有からデータソースを追加しても、ナレッジベースボリュームはAmazon FSx for NetApp ONTAPボリュームに残ります。この機能は、ワークロードファクトリのWeb UIで今後のリリースでサポートされる予定です。</block>
+  <block id="fbc7eedf5c13a549330a0c3f52777db8" category="section-title">vPCピアリングのサポート</block>
+  <block id="52bc46202bc9013e258f32f66b8bf88a" category="inline-link-macro">ピア関係にある仮想プライベートクラウド（VPC）</block>
+  <block id="93dbde0ee04c36dce05b96f3551f8606" category="paragraph">同じリージョンにあるに 生成AIインフラを導入し、同じAWSアカウントを使用できるようになりまし<block ref="f008838004ac43a2c4a5b39672df7daf" category="inline-link-macro-rx"></block>た。AIエンジンをVPCに導入してから、ピアVPCにナレッジベースを作成し、ピアVPCにあるAmazon FSx for NetApp ONTAPファイルシステムを選択できます。</block>
+  <block id="b36fca5a6a45d6da3c01e23792f8a153" category="list-text">*チャットモデル*: Amazon Bedrockに統合されているAnthropic ClaudeまたはAmazon Novaチャットモデルから選択します。Amazon Bedrockからチャットモデルを有効にしておく必要があります。</block>
+  <block id="7b64cb38404993f8db85b46fa460e3f1" category="paragraph">データガードレールを有効にするには、次の前提条件を満たす必要があります。</block>
+  <block id="b687386681bc74afd9f1f05a81484454" category="inline-link-macro">BlueXP  APIエンドポイント</block>
+  <block id="52840142bc9ae1cec5ab47f43451b7f2" category="list-text">AIエンジンがにアクセスできる必要があります<block ref="0d55c5152a345809ffefdd3a1a629e2a" category="inline-link-macro-rx"></block>。</block>
+  <block id="b3e25fad7a8f45ec59f40a0eaf7b74ea" category="admonition">CSV、JSON、JSONP、Parquetなどの構造化データファイルを取り込む場合、データガードレール機能はサポートされません。</block>
+  <block id="71e83c676c8b3aea9726262e97dd0c14" category="cell">Apache Parquetfootnote:免責事項[構造化データファイルの取り込み時にデータガードレール機能はサポートされていません。]</block>
+  <block id="230703a919b034364b970a5ee5c5ab76" category="cell">カンマ区切り値filefootnote:disclaimer[]</block>
+  <block id="33555d9ae9e8936cbd995ec23836ef0a" category="cell">JSONおよびJSONPfootnote:免責事項[]</block>
+  <block id="cc8f0c0e5a5cef9b33f236a0a9c19ca0" category="cell">.json</block>
+  <block id="ff9da638fe97b0c6f7deb173e8ea9623" category="paragraph">ナレッジベースに統合するデータソースは、単一のFSx for ONTAPファイルシステムに配置することも、複数のFSx for ONTAPファイルシステムに配置することもできます。これらのシステムが異なるVPCにある場合は、次の2つの構成のいずれかを使用する必要があります。</block>
+  <block id="6c654e9590c6b2b6a77fcf4553b9fc79" category="list-text">同じネットワーク内でアクセス可能</block>
+  <block id="277e6e0f8a7c91992d2766d798ab5915" category="list-text">VPCのピア関係を確立し、AIエンジンと同じリージョンとAWSアカウントを使用する必要がある</block>
+  <block id="db54384248c75c5896f34bcb0879b66c" category="section-title">2025年3月30日</block>
 </blocks>

@@ -52,16 +52,19 @@ SMB経由でアクセスされる共有（ファイルまたはディレクト�
 | ファイル形式 | エクステンション 
 
 
-| アパッチ寄木細工 | 寄木細工 
+| Apache Parquetfootnote:免責事項[構造化データファイルの取り込み時にデータガードレール機能はサポートされていません。] | 寄木細工 
 
 
-| カンマ区切り値ファイル | .csv 
+| カンマ区切り値filefootnote:disclaimer[] | .csv 
 
 
 | グラフィック交換フォーマット | .gif 
 
 
 | JPEG | .jpg or.jpeg 
+
+
+| JSONおよびJSONPfootnote:免責事項[] | .json 
 
 
 | マークダウン | .md 
