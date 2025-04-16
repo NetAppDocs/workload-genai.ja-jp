@@ -26,11 +26,7 @@ link:requirements.html["生成AI要件の詳細"^]です。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"]データソースが格納されているFSx for ONTAPファイルシステムを特定する
 [role="quick-margin-para"]
-ナレッジベースに統合するデータソースは、単一のFSx for ONTAPファイルシステムに配置することも、複数のFSx for ONTAPファイルシステムに配置することもできます。これらのシステムが異なるVPCにある場合は、次の2つの構成のいずれかを使用する必要があります。
-
-* 同じネットワーク内でアクセス可能
-* VPCのピア関係を確立し、AIエンジンと同じリージョンとAWSアカウントを使用する必要がある
-
+ナレッジベースに統合するデータソースは、単一のFSx for ONTAPファイルシステムに配置することも、複数のFSx for ONTAPファイルシステムに配置することもできます。これらのシステムが異なるVPCにある場合は、同じネットワーク内でアクセス可能であるか、またはAIエンジンと同じリージョンとAWSアカウントを使用してVPC間でピア関係を確立しておく必要があります。
 
 [role="quick-margin-para"]
 link:identify-data-sources.html["データソースを特定する方法"^]です。
