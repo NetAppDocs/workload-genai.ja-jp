@@ -1,19 +1,19 @@
 ---
 sidebar: sidebar 
-permalink: deploy-infrastructure.html 
+permalink: knowledge-base/deploy-infrastructure.html 
 keywords: ai, chatbot, infrastructure, bedrock, fsx for ontap 
 summary: 組織に適したFSx for ONTAPナレッジベースとアプリケーションを構築するには、RAGフレームワークのインフラを環境に導入する必要があります。主要なインフラコンポーネントは、Amazon Bedrock AIサービス、NetApp GenAIエンジンの仮想マシンインスタンス、FSx for ONTAPファイルシステムです。 
 ---
 = GenAIインフラの導入
 :allow-uri-read: 
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]
-組織に合ったFSx for ONTAPナレッジベースとアプリケーションを構築するには、まずGenAI Infrastructure for RAGフレームワークを環境に導入する必要があります。主要なインフラコンポーネントは、Amazon Bedrockサービス、NetApp GenAIエンジンの仮想マシンインスタンス、FSx for ONTAPファイルシステムです。
+組織のFSx for ONTAPナレッジベース、コネクタ、アプリケーションを構築する前に、生成AI Infrastructure for RAGフレームワークを環境に導入する必要があります。主要なインフラコンポーネントは、Amazon Bedrockサービス、NetApp生成AIエンジンの仮想マシンインスタンス、FSx for ONTAPファイルシステムです。
 
-導入されたインフラストラクチャは複数のナレッジベースとチャットボットをサポートできるため、通常はこのタスクを一度だけ実行する必要があります。
+展開されたインフラストラクチャは、複数のナレッジベース、チャットボット、コネクタをサポートできるため、通常はこのタスクを一度だけ実行する必要があります。
 
 
 
@@ -21,12 +21,18 @@ summary: 組織に適したFSx for ONTAPナレッジベースとアプリケー�
 
 GenAI環境は、Amazon Bedrockが有効になっているAWSリージョンに配置する必要があります。 https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-supported.html["サポートされているリージョンの一覧を表示する"^]
 
-導入は、次のコンポーネントで構成されています。
+インフラストラクチャは、次のコンポーネントで構成されています。
 
 Amazon Bedrockサービス:: Amazon Bedrockは、業界をリードするAI企業の基盤モデル（FMS）を単一のAPIで使用できるフルマネージドサービスです。また、セキュアなジェネレーティブAIアプリケーションの構築に必要な機能も提供します。
 +
 --
 https://aws.amazon.com/bedrock/["Amazon Bedrockの詳細"^]
+
+--
+Amazon Q Business:: Amazon QはAmazon Bedrock上に構築されており、フルマネージドのジェネレーティブAIアシスタントを使用して、データソースからの情報に基づいて質問に答えたりコンテンツを生成したりできます。
++
+--
+https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/what-is.html["Amazon Q Businessの詳細"^]
 
 --
 NetApp GenAIエンジン用の仮想マシン:: このプロセスでは、NetApp GenAIエンジンがデプロイされます。データソースからデータを取り込み、そのデータをベクターデータベースに書き込む処理能力を提供します。
@@ -44,7 +50,7 @@ NetApp GenAIエンジンは、これらのボリュームの両方を監視し�
 
 次の図は、GenAIインフラストラクチャを示しています。この手順では、番号1、2、3のコンポーネントを展開します。展開を開始する前に、他の要素が配置されている必要があります。
 
-image:diagram-chatbot-infrastructure.png["AIチャットボットのコンポーネントの図。"]
+image:genai-infrastructure-diagram-numbered.png["生成AIインフラコンポーネントの図。"]
 
 
 
@@ -53,7 +59,11 @@ image:diagram-chatbot-infrastructure.png["AIチャットボットのコンポー
 AWSのクレデンシャルを入力し、FSx for ONTAPファイルシステムを選択して、Retrieval-Augmented Generation（RAG）インフラを導入する必要があります。
 
 .開始する前に
-この手順を開始する前に、環境がを満たしていることを確認し link:requirements.html["要件"] てください。
+この手順を開始する前に、使用している環境がナレッジベースまたはコネクタの要件を満たしていることを確認してください。
+
+* link:../knowledge-base/requirements-knowledge-base.html["ナレッジベースの要件"]
+* link:../connector/requirements-connector.html["コネクタの要件"]
+
 
 .手順
 . いずれかを使用してワークロードファクトリにログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。

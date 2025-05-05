@@ -1,13 +1,13 @@
 ---
 sidebar: sidebar 
-permalink: manage-infrastructure.html 
+permalink: general/manage-infrastructure.html 
 keywords: ai, chatbot, creating, knowledge base 
 summary: デプロイされたGenAI RAGインフラストラクチャの詳細を表示したり、不要になった場合はチャットボットインフラストラクチャを削除したりできます。 
 ---
 = GenAIインフラの管理
 :allow-uri-read: 
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]
@@ -42,7 +42,7 @@ summary: デプロイされたGenAI RAGインフラストラクチャの詳細�
 
 NOTE: このインフラストラクチャに展開されているすべてのチャットボットが無効になり、すべてのチャット履歴が削除されます。
 
-この処理では、ワークロードファクトリからAIインフラへのリンクが削除されるだけで、AWSからすべてのコンポーネントが削除されるわけではありません。次のインフラコンポーネントをAWSから手動で削除する必要があります。
+この処理では、AIインフラへのリンクがワークロードファクトリから削除されるだけで、AWSからすべてのコンポーネントが削除されるわけではありません。次のインフラコンポーネントをAWSから手動で削除する必要があります。
 
 * VMインスタンス
 * プライベートエンドポイント

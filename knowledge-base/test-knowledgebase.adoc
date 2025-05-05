@@ -1,13 +1,13 @@
 ---
 sidebar: sidebar 
-permalink: test-knowledgebase.html 
+permalink: knowledge-base/test-knowledgebase.html 
 keywords: ai, chatbot, creating, knowledge base 
 summary: ナレッジベースを作成したら、チャットボットシミュレータを使用してローカルでテストし、必要な変更を加えてから、チャットボットアプリケーションを使用してユーザーがナレッジベースを利用できるようになります。 
 ---
 = 生成AIナレッジベースのテスト
 :allow-uri-read: 
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

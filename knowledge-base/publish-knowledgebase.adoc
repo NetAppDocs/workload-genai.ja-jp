@@ -1,13 +1,13 @@
 ---
 sidebar: sidebar 
-permalink: publish-knowledgebase.html 
+permalink: knowledge-base/publish-knowledgebase.html 
 keywords: ai, chatbot, publishing, knowledge base 
 summary: ナレッジベースをローカルで構築してテストしたら、ナレッジベースを公開して、ユーザーがナレッジベースを照会できるようにするチャットボットアプリケーションにナレッジベースを統合できます。 
 ---
 = 生成AIナレッジベースを公開し、一意のエンドポイントを表示する
 :allow-uri-read: 
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

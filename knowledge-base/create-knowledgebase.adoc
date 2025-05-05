@@ -1,17 +1,19 @@
 ---
 sidebar: sidebar 
-permalink: create-knowledgebase.html 
+permalink: knowledge-base/create-knowledgebase.html 
 keywords: ai, chatbot, creating, knowledge base 
 summary: AIインフラを導入し、FSx for ONTAPデータストアからナレッジベースに統合するデータソースを特定したら、ワークロードファクトリを使用してナレッジベースを構築できます。このステップの一部として、AIの特性を定義し、会話のきっかけを作ります。 
 ---
 = 生成AIナレッジベースの作成
 :allow-uri-read: 
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]
 AIインフラを導入し、FSx for ONTAPデータストアからナレッジベースに統合するデータソースを特定したら、ワークロードファクトリを使用してナレッジベースを構築できます。このステップの一部として、AIの特性を定義し、会話のきっかけを作ります。
+
+作業を進める前に、環境がナレッジベースのを満たしていることを確認しlink:requirements-knowledge-base.html["要件"]てください。
 
 .タスクの内容
 ナレッジベースには、_パブリックモード_と_エンタープライズモード_という2つのデータ統合モダリティがあります。
@@ -42,7 +44,7 @@ NOTE: データガードレールはいつでも有効または無効にでき�
 .手順
 . いずれかを使用してワークロードファクトリにログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
 . [AI Workloads]タイルで、*[Deploy & manage]*を選択します。
-. [ナレッジベース]タブで、*[ナレッジベースの追加]*を選択します。
+. [ナレッジベースとコネクタ]タブで、*[新規作成]*ドロップダウンを選択し、* NetApp Bedrock用 生成AIナレッジベース*を選択します。
 . [ナレッジベースの定義]ページで、ナレッジベースの設定を行います。
 +
 .. *名前*:ナレッジベースに使用する名前を入力します。
@@ -52,6 +54,8 @@ NOTE: データガードレールはいつでも有効または無効にでき�
 *** Titan埋め込みG1 -テキスト
 *** Titan埋め込みテキストv2
 *** Titan Multimodal Embedding G1
+*** 英語を埋め込む
+*** 多言語を埋め込む
 +
 Amazon Bedrockから埋め込みモデルを有効にしておく必要があります。
 
@@ -60,15 +64,7 @@ https://aws.amazon.com/bedrock/titan/["Amazon Titanの詳細"^]
 
 
 
-.. *チャットモデル*: Amazon Bedrockに統合されているAnthropic ClaudeまたはAmazon Novaチャットモデルから選択します。Amazon Bedrockからチャットモデルを有効にしておく必要があります。
-+
-Amazon Bedrockでこれらのモデルを使用する方法の詳細をご覧ください。
-
-+
-*** https://aws.amazon.com/bedrock/claude/["Amazon BedrockのAnthropic's Claude"^]
-*** https://docs.aws.amazon.com/nova/latest/userguide/getting-started-console.html["Amazon BedrockコンソールでAmazon Novaを使い始める"^]
-
-
+.. *チャットモデル*: Amazon Bedrockに統合されているさまざまなチャットモデルから選択します。Amazon Bedrockからチャットモデルを有効にしておく必要があります。
 .. *データガードレール*:データガードレールを有効にするか無効にするかを選択します。link:https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["BlueXP  分類を活用したデータガードレールの詳細"^]です。
 +
 データガードレールを有効にするには、次の前提条件を満たす必要があります。

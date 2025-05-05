@@ -8,9 +8,9 @@
 
 ナレッジベースのポイントインタイムコピーを作成することで、ジェネレーティブAIワークロードのデータを保護できるようになりました。これにより、偶発的な損失からデータを保護したり、ナレッジベースの設定の変更をテストしたりできます。以前のバージョンのナレッジベースボリュームはいつでもリストアできます。
 
-https://docs.netapp.com/us-en/workload-genai/manage-knowledgebase.html#take-a-snapshot-of-a-knowledge-base-volume["ナレッジベースボリュームのスナップショットの作成"]
+https://docs.netapp.com/us-en/workload-genai/knowledge-base/manage-knowledgebase.html#take-a-snapshot-of-a-knowledge-base-volume["ナレッジベースボリュームのスナップショットの作成"]
 
-https://review.docs.netapp.com/us-en/workload-genai_29-sept-24-release/manage-knowledgebase.html#restore-a-snapshot-of-a-knowledge-base-volume["ナレッジベースボリュームのスナップショットのリストア"]
+https://docs.netapp.com/us-en/workload-genai/knowledge-base/manage-knowledgebase.html#restore-a-snapshot-of-a-knowledge-base-volume["ナレッジベースボリュームのスナップショットのリストア"]
 
 
 
@@ -18,7 +18,7 @@ https://review.docs.netapp.com/us-en/workload-genai_29-sept-24-release/manage-kn
 
 スケジュールされたデータソーススキャンを一時停止できるようになりました。デフォルトでは、ジェネレーティブAIワークロードは各データソースを毎日スキャンし、各ナレッジベースに新しいデータを取り込みます。最新の変更を取り込みたくない場合（テスト中やスナップショットのリストア中など）は、スケジュールされたスキャンを一時停止していつでも再開できます。
 
-https://docs.netapp.com/us-en/workload-genai/manage-knowledgebase.html["ナレッジベースの管理"]
+https://docs.netapp.com/us-en/workload-genai/knowledge-base/manage-knowledgebase.html["ナレッジベースの管理"]
 
 
 
@@ -26,4 +26,4 @@ https://docs.netapp.com/us-en/workload-genai/manage-knowledgebase.html["ナレ�
 
 ナレッジベースボリュームを選択する際に、NetApp SnapMirrorレプリケーション関係の一部であるデータ保護ボリュームを選択できるようになりました。これにより、SnapMirrorレプリケーションですでに保護されているボリュームにナレッジベースを格納できます。
 
-https://docs.netapp.com/us-en/workload-genai/identify-data-sources.html["ナレッジベースに統合するデータソースを特定する"]
+https://docs.netapp.com/us-en/workload-genai/knowledge-base/identify-data-sources-knowledge-base.html["ナレッジベースに統合するデータソースを特定する"]

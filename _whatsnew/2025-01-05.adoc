@@ -8,7 +8,7 @@
 
 アドホックスナップショットのスナップショット名を指定できるようになりました。
 
-link:https://docs.netapp.com/us-en/workload-genai/manage-knowledgebase.html#protect-a-knowledge-base-with-snapshots["スナップショットでナレッジベースを保護"]
+link:https://docs.netapp.com/us-en/workload-genai/knowledge-base/manage-knowledgebase.html#protect-a-knowledge-base-with-snapshots["スナップショットでナレッジベースを保護"]
 
 
 
@@ -16,7 +16,7 @@ link:https://docs.netapp.com/us-en/workload-genai/manage-knowledgebase.html#prot
 
 導入時にAIエンジンインスタンスにカスタム名を付けることができるようになりました。
 
-link:https://docs.netapp.com/us-en/workload-genai/deploy-infrastructure.html["GenAIインフラの導入"]
+link:https://docs.netapp.com/us-en/workload-genai/knowledge-base/deploy-infrastructure.html["GenAIインフラの導入"]
 
 
 
@@ -24,4 +24,4 @@ link:https://docs.netapp.com/us-en/workload-genai/deploy-infrastructure.html["Ge
 
 AIエンジンインスタンスが破損したり、何らかの理由で削除されたりした場合は、ワークロードファクトリに再構築を依頼できます。ワークロードファクトリは、再構築が完了した後、ナレッジベースをインフラストラクチャに自動的に再接続して、すぐに使用できるようにします。
 
-link:https://docs.netapp.com/us-en/workload-genai/troubleshooting.html["トラブルシューティング"]
+link:https://docs.netapp.com/us-en/workload-genai/general/troubleshooting.html["トラブルシューティング"]

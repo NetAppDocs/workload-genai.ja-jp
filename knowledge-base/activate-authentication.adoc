@@ -1,13 +1,13 @@
 ---
 sidebar: sidebar 
-permalink: activate-authentication.html 
+permalink: knowledge-base/activate-authentication.html 
 keywords: ai, chatbot, publishing, knowledge base 
 summary: ナレッジベースとチャットボットアプリケーションを統合するときにトークンの検証とACLが必要になるように、ナレッジベースの認証をアクティブにします。 
 ---
 = 生成AIナレッジベースの外部認証のアクティブ化
 :allow-uri-read: 
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

@@ -25,28 +25,18 @@
   <block id="e3fa845bdb32966ee960e79fc4cb6cf2" category="list-text">IT管理者や開発者は、データインフラ、基盤、言語モデルに関する深い知識がなくても、GenAIが提供する自動化を活用してアプリケーション開発を加速できます。データ管理者と開発者は、生成AIアプリケーションで使用する組織の非構造化データを埋め込むエンタープライズナレッジベースを簡単かつ迅速に作成できます。</block>
   <block id="ce8128205284c384b430769caeb26741" category="list-text">ナレッジベースに埋め込まれたファイルにユーザー権限を保持して、データのセキュリティとプライバシーを維持することで、セキュリティを強化します。チャットボットなどのアプリケーションは、ユーザーがアクセスできるデータに基づいて、認証されたユーザーのみに回答を提供するように開発できます。</block>
   <block id="3bc3038379ac11eb60388be943b76d65" category="list-text">組織のデータが外部に公開されることがないAWSカスタマーアカウント内で、エンタープライズデータのプライバシーとセキュリティを確保します。</block>
-  <block id="2858795dda2f40fc08938e45130e6015" category="list-text">LangChainなどのオープンソースフレームワークを使用したQ&amp;AチャットボットなどのGenAIアプリケーションの開発を加速GenAI APIを活用して、ナレッジベースのプロビジョニングと管理、ナレッジベースとのチャット、チャット履歴の保存と取得を行います。</block>
   <block id="d7aa8c04a5852ad32f4df4ebc355d79b" category="list-text">FSx for NetApp ONTAPファイルシステムに生成型AIデータインフラを導入し、高可用性、ローカルデータの保護とリカバリのためのスナップショット、ディザスタリカバリのためのSnapMirror、データインフラのバックアップのためのSnapVaultなどのONTAP機能を活用することで、データの保護と可用性の体制を強化します。</block>
   <block id="258bfa564ea52ad2ae40702194995f18" category="list-text">データの重複排除、圧縮とコンパクション、データ階層化、シンプロビジョニングなどのONTAPのデータ効率化機能を活用することで、生成型AIデータインフラの全体的なストレージコストを削減します。</block>
   <block id="a2313dfd4d2d5baef4999beaa742689c" category="section-title">GenAIの仕組み</block>
-  <block id="69fc349b2f7bd62d0e7765c8cc066234" category="paragraph">GenAIは、トレーニングを受けたデータに基づいてモデルのインテリジェンスを補完するために組織のプライベートデータを使用し、組織内のユーザーからの質問に対するカスタマイズされた回答を提供します。最初にRAGフレームワークに必要なインフラストラクチャをデプロイしてから、Amazon Bedrock経由で利用可能な組織のデータソースと基盤モデルを使用してナレッジベースを構築し、次にアプリケーション（Q&amp;Aチャットボットなど）をナレッジベースに接続します。</block>
   <block id="d70bac99beb52d5e093b391d08e80174" category="inline-image-macro">GenAIの主要コンポーネントとその機能、およびその仕組みを示す図。</block>
-  <block id="ce3b45a4624ee79213529a063f3abb8c" category="paragraph"><block ref="ce3b45a4624ee79213529a063f3abb8c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ade2c068f72325046c5312c72ad3b430" category="paragraph">GenAIは、次の方法でRAGを使用したジェネレーティブAIアプリケーションの構築を支援します。</block>
-  <block id="fda814900dea98d0023eb0ecf6f36448" category="list-text">FSx for ONTAPファイルシステムやAmazon Bedrock上のデータソースと連携するために、Retrieval Augmented Generation（RAG）フレームワークに必要なインフラを導入します。このインフラには、データ管理用のNetApp GenAIエンジンインスタンス、組み込みベクターデータベース（LanceDB）、FSx for ONTAPファイルシステム上のベクターデータベース用ストレージが含まれています。</block>
-  <block id="cc56ccbbe7a4a4f1d99e1d08267a272b" category="list-text">データソースをAmazon Bedrock経由で利用可能な埋め込みや言語モデルに接続して、データソースを埋め込み、ユーザークエリの応答を取得できます。データソースは、モデルとその構成とともに、FSx for ONTAPナレッジベースとして提供されます。</block>
-  <block id="2ff04f7767fbbbb717b2d50acb89245d" category="list-text">ソースデータをナレッジベースに取り込んで、SMB共有にソースファイルを埋め込み、FSx for ONTAPファイルシステムにNFSエクスポートを埋め込むとともに、SMB共有内のファイルに対するファイル権限を格納します。</block>
-  <block id="80a4d47d289b6794b7af32bf0403d817" category="list-text">ナレッジベースのコンテンツに基づいて、会話スターターの質問を自動的に作成します。</block>
-  <block id="d115eba24b3d1be73af7f0952b82dc13" category="list-text">データ管理者がナレッジベースとのチャットをテストするためのチャットシミュレータを提供します。</block>
   <block id="20b4f77bd00b4f63a49ec8e08f3bf6a6" category="section-title">コスト</block>
-  <block id="ca4fec9e2b2e873ba73dde822ed0fd02" category="paragraph">ただし、生成型AIインフラをサポートするには、導入したAWSリソースに料金を支払う必要があります。たとえば、Amazon Bedrock AIサービス、FSx for ONTAPファイルシステムとストレージ容量、GenAIエンジンEC2インスタンスの料金をAWSに支払います。</block>
   <block id="0b9c6eef4e3d3a222eb04e910d252339" category="section-title">ライセンス</block>
   <block id="0da805b7cc0727848a84e995ab36cd76" category="doc">ナレッジベースの作成</block>
   <block id="ede259c54718066f429204cb187335ac" category="paragraph">ナレッジベースは、組織のデータソースを統合しなくても使用できます。この場合、ナレッジベースに統合されたアプリケーションは、インターネット上で公開されている情報からのみ結果を提供します。これは_public mode_integrationと呼ばれます。</block>
   <block id="9c5cf370721bfae38201d8aeb52e4022" category="paragraph">ほとんどの場合、組織のデータソースをナレッジベースに統合する必要があります。これは、エンタープライズからの知識を提供するため、_Enterprise mode_integrationと呼ばれます。</block>
   <block id="3bd4cddbc7a98f5c9632a455eca8c27e" category="section-title">ナレッジベースの作成と設定</block>
   <block id="646df03c5fddafc8e9c4ed5aa7036edf" category="paragraph">ナレッジベースは、ナレッジベースの作成に使用するBedrock AIモデルや埋め込み形式などの特性を定義します。</block>
-  <block id="5b20d7e96740200c428376cbb5e7fdb4" category="list-text">[ナレッジベース]タブで、*[ナレッジベースの追加]*を選択します。</block>
   <block id="53bdd4ba55043d3b20fafbaeddced95e" category="list-text">*名前*:ナレッジベースに使用する名前を入力します。</block>
   <block id="867a64928002194654eea40509536879" category="list-text">*説明*:ナレッジベースの詳細な説明を入力します。</block>
   <block id="0edab7909500c21f42341384982d7dab" category="list-text">Titan埋め込みG1 -テキスト</block>
@@ -67,12 +57,9 @@
   <block id="8817d70d4163473468fa1b2b6e498321" category="paragraph">データソースがナレッジベースに埋め込まれ始めます。データソースが完全に埋め込まれると、ステータスが「埋め込み」から「埋め込み」に変わります。</block>
   <block id="b9605cf748e4b8e1c97d786258a0be40" category="summary">組織に適したFSx for ONTAPナレッジベースとアプリケーションを構築するには、RAGフレームワークのインフラを環境に導入する必要があります。主要なインフラコンポーネントは、Amazon Bedrock AIサービス、NetApp GenAIエンジンの仮想マシンインスタンス、FSx for ONTAPファイルシステムです。</block>
   <block id="e379b913896cf9bdd4e2d6717212215a" category="doc">GenAIインフラの導入</block>
-  <block id="0cd805094b5dffd702d8e0faa10c927c" category="paragraph">組織に合ったFSx for ONTAPナレッジベースとアプリケーションを構築するには、まずGenAI Infrastructure for RAGフレームワークを環境に導入する必要があります。主要なインフラコンポーネントは、Amazon Bedrockサービス、NetApp GenAIエンジンの仮想マシンインスタンス、FSx for ONTAPファイルシステムです。</block>
-  <block id="acc7a3fda0820287411e8fb0e8b801f2" category="paragraph">導入されたインフラストラクチャは複数のナレッジベースとチャットボットをサポートできるため、通常はこのタスクを一度だけ実行する必要があります。</block>
   <block id="352b67da62e25a1a8f45636930053f08" category="section-title">インフラの詳細</block>
   <block id="8428644910b49210b6312a1abb433a99" category="inline-link">サポートされているリージョンの一覧を表示する</block>
   <block id="e295768e822c8bd83198042fbb470661" category="paragraph">GenAI環境は、Amazon Bedrockが有効になっているAWSリージョンに配置する必要があります。<block ref="25581c78bc5f676a9b9f4743abf4f06f" category="inline-link-rx"></block></block>
-  <block id="0d5fdb6bfaa1c5a89c4128c1a8bb5b6c" category="paragraph">導入は、次のコンポーネントで構成されています。</block>
   <block id="12c3d12e41194b32453a96f3a7e15e48" category="list-text">Amazon Bedrockサービス</block>
   <block id="c79d103149669e7aa24ba1b487cccd34" category="list-text">Amazon Bedrockは、業界をリードするAI企業の基盤モデル（FMS）を単一のAPIで使用できるフルマネージドサービスです。また、セキュアなジェネレーティブAIアプリケーションの構築に必要な機能も提供します。</block>
   <block id="8013da98e1db7396729f9e939983f21d" category="inline-link">Amazon Bedrockの詳細</block>
@@ -85,11 +72,7 @@
   <block id="cd4ca8fe4f8028f11146f93e0f114879" category="paragraph">ナレッジベースに統合するデータソースは、同じFSx for ONTAPファイルシステムに配置することも、別のシステムに配置することもできます。</block>
   <block id="e9f04a38bc1df3695df7675463dfe7d2" category="paragraph">NetApp GenAIエンジンは、これらのボリュームの両方を監視し、相互作用します。</block>
   <block id="cc573650532041ff5d41735ee141eab8" category="paragraph">次の図は、GenAIインフラストラクチャを示しています。この手順では、番号1、2、3のコンポーネントを展開します。展開を開始する前に、他の要素が配置されている必要があります。</block>
-  <block id="ce783b25723548b58b44d3dde715476f" category="inline-image-macro">AIチャットボットのコンポーネントの図。</block>
-  <block id="b7cef2c498d21a11e9176de11360774c" category="paragraph"><block ref="b7cef2c498d21a11e9176de11360774c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="135b308ed83c53f1516b7c754566d1c4" category="paragraph-title">開始する前に</block>
-  <block id="567dcfd6302e5511c1b546a4df21a679" category="inline-link-macro">要件</block>
-  <block id="48b1a64ea0f002f28680bb1b8a8c87b2" category="paragraph">この手順を開始する前に、環境がを満たしていることを確認し <block ref="b537f86d93b89f494a26572d1a60f4ef" category="inline-link-macro-rx"></block> てください。</block>
   <block id="4d7ea1af041cca43906c5e490c0c1820" category="list-text">[AI Workloads]タイルで、*[Deploy &amp; manage]*を選択します。</block>
   <block id="6bb39c2a8e12d8e43ba94f5c10b515e3" category="list-text">インフラの図を確認し、* Next *を選択します。</block>
   <block id="ea04a0c1437f4ebc45564d8545775b59" category="list-text">[AWS settings]セクションの項目を入力します。</block>
@@ -103,7 +86,6 @@
   <block id="8f3d503d34aa6fe6a66b841b0bdd2996" category="list-text">ネットワークはプライベートエンドポイントとともにセットアップされます。</block>
   <block id="fc4ab898b1959c931605be5dfe62a71d" category="list-text">IAMロール、インスタンスプロファイル、およびセキュリティグループが作成されます。</block>
   <block id="216a480d552bd412d15e51cde6cbbf7a" category="list-text">GenAIエンジンの仮想マシンインスタンスが導入されている。</block>
-  <block id="44f33186e2b6baa4a697e5604c0a3863" category="doc">NetApp GenAIエンジンのコンポーネント</block>
   <block id="b7afd5ecab3ac597cbe300dd5827c445" category="list-text">EC2インスタンスタイプ</block>
   <block id="b592e89ca5722aab8bf77ae181e9fc0d" category="list-text">m5.large</block>
   <block id="759d9f0fdbf1b3fe124b8de48be0485b" category="list-text">IAMロール</block>
@@ -190,11 +172,9 @@
   <block id="a07dd9fe7465f7ec7d15135a3cfab3a4" category="paragraph">各ナレッジベースには複数のデータソースを追加できますが、それらはすべてAWSアカウントからアクセス可能なFSx for ONTAPファイルシステム上にある必要があります。</block>
   <block id="ffbef7cfe7a8524b59851c8a1389ebcc" category="paragraph">各データソースの最大ファイルサイズは50MBです。</block>
   <block id="c84d4278eb32c7a089aea86ebf95ad39" category="section-title">サポートされるプロトコル</block>
-  <block id="430170fe80b2fc2e8745819f3bf64b55" category="paragraph">ナレッジベースでは、NFSプロトコルまたはSMB / CIFSプロトコルを使用するボリュームのデータがサポートされます。SMBプロトコルを使用して保存されているファイルを選択する場合は、Active Directory情報を入力して、ナレッジベースがこれらのボリューム上のファイルにアクセスできるようにする必要があります。これには、Active Directoryドメイン、IPアドレス、ユーザ名、パスワードが含まれます。</block>
   <block id="0c303dcbadd43e7fb595ff47ae13d713" category="paragraph">SMB経由でアクセスされる共有（ファイルまたはディレクトリ）にデータソースを格納する場合、その共有にアクセスする権限を持つチャットボットのユーザまたはグループのみがデータにアクセスできます。この「権限認識機能」が有効になっている場合、AIシステムはAuth0内のユーザのEメールを、SMB共有上のファイルの表示または使用を許可されているユーザと比較します。チャットボットは、埋め込まれたファイルのユーザー権限に基づいて回答を提供します。</block>
   <block id="ccb61f3b531c53a6536d4968042eea99" category="paragraph">たとえば、10個のファイル(データソース)をナレッジベースに統合し、そのうちの2つが制限された情報を含む人事ファイルである場合、これら2つのファイルへのアクセスを認証されたチャットボットユーザーのみが、それらのファイルからのデータを含むチャットボットから応答を受け取ります。</block>
   <block id="939bf2b00dbe77d4a65f4d265a755136" category="section-title">サポートされるデータソースファイル形式</block>
-  <block id="4a2c59aee6db61ec236539acdbc3b3e8" category="paragraph">現在、次のデータソースファイル形式がサポートされています。</block>
   <block id="1bd7f72decec9fb5b51a58447b152d38" category="cell">ファイル形式</block>
   <block id="63e4e92bb7d207ca577b11c07f827279" category="cell">エクステンション</block>
   <block id="f39a0720a929097afa9db4505cdf9669" category="cell">プレーンテキスト</block>
@@ -223,12 +203,9 @@
   <block id="a76746a54be32982bbd6b113b4d88d95" category="summary">FSx for ONTAPファイルシステムのデータソースを使用してナレッジベースを作成したら、データソースの詳細の表示、データソースの内容の更新または変更、データソースの設定の編集、データソースの削除を行うことができます。</block>
   <block id="a184e20ed5e6a5b8da09e0b40c163e0c" category="doc">データソースの管理</block>
   <block id="185887c3ad19744e76bc5a84165858d0" category="section-title">データソースに関する情報を表示する</block>
-  <block id="f6060e0bb20c0eff7193a80ac27e3036" category="paragraph">データソースのコンテンツに関する情報を表示したり、ナレッジベースでデータソースの埋め込みステータスを表示したりできます。データソースはナレッジベースの一部であるため、データソースの詳細を表示するには、まずナレッジベースを開く必要があります。</block>
-  <block id="2fb136b28c086b6b7bfc783f6e18f23b" category="list-text">データソースが存在するナレッジベースを選択し、を選択し <block ref="4dc533ba94e6ca8d1968a9d477e1cbce" category="inline-image-macro-rx" type="image"></block> て*［ナレッジベースの管理］*を選択します。</block>
   <block id="b5d487e1e7e0dc1f35f129a112481d93" category="paragraph">ページの下部には、このナレッジベースの一部であるデータソースが一覧表示されます。</block>
   <block id="8a68fc9773461f136961ee1d6821c3c8" category="inline-image-macro">下矢印ボタン</block>
   <block id="24908e355d451004c7525900e1599a1f" category="list-text">を選択して各行を展開し、 <block ref="0722c4ff5aff83b42b3212ce6356e926" category="inline-image-macro-rx" type="image"></block> FSx for ONTAPファイルシステム、ボリューム、データソースが配置されているパスなど、各データソースに関する詳細情報を表示します。</block>
-  <block id="e251df112fcfd5ceb227487e3e407e23" category="paragraph">また、埋め込み情報と、そのデータソースが現在ナレッジベースに埋め込まれているかどうかも表示されます。</block>
   <block id="437e83696ee10276f1829979bc2001ee" category="section-title">データソース設定の編集</block>
   <block id="d2e5a465dda010b6df10e906f7ceebf7" category="list-text">ナレッジベースインベントリページで、データソースが存在するナレッジベースを選択し、 <block ref="4dc533ba94e6ca8d1968a9d477e1cbce" category="inline-image-macro-rx" type="image"></block> *[ナレッジベースの管理]*を選択します。</block>
   <block id="16a3994ccc4796acb1b8e40635717ec3" category="list-text">編集するデータソースの行で、を選択し <block ref="4dc533ba94e6ca8d1968a9d477e1cbce" category="inline-image-macro-rx" type="image"></block> て*[データソースの編集]*を選択します。</block>
@@ -316,20 +293,15 @@
   <block id="2cb94eb0648b9f93f300ea0aff833f95" category="paragraph">APIエンドポイントの詳細については、に移動し<block ref="c0a9aa55ed57e2e15b2d20baa6a6e023" category="inline-link-rx"></block> 、* AI &gt; External *を選択します。</block>
   <block id="404b6a1003edac169b0788bb3fe37d9f" category="paragraph">これらのエンドポイントを使用する前に、認証プロバイダからユーザトークンを取得する必要があります。</block>
   <block id="a0acd37c2eea374fd571fd7e5710e3ab" category="summary">Amazon FSx for NetApp ONTAPファイルシステムに存在する組織のデータを使用して、ナレッジベースを作成しましょう。チャットボットなどのアプリケーションは、このナレッジベースにアクセスして、組織に焦点を当てた回答をエンドユーザーに提供します。</block>
-  <block id="35f6f80cfc19636641dd85bbae19edee" category="doc">GenAIのクイックスタート</block>
   <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">1つ</block>
   <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">2つ</block>
   <block id="ca8a2087e5557e317599344687a57391" category="inline-image-macro">3つ</block>
   <block id="ad6f5ec13ed51e48bce763e25a9c69ce" category="inline-link-macro">ナレッジベースインフラストラクチャの導入</block>
-  <block id="41c27d3fbdf0cdc6aab23df489fe4c94" category="paragraph">インフラ導入ウィザードを起動して、ナレッジベースインフラをAWS環境に導入します。このプロセスでは、NetApp GenAIエンジン用のEC2インスタンスと、NetApp AIエンジンデータベースを格納するFSx for ONTAPファイルシステムにボリュームを導入します。ボリュームは、ナレッジベースで使用されるベクターデータベースを格納するために使用されます。</block>
   <block id="01e12de62fa77fda2815719aed8ff892" category="paragraph-title">次のステップ</block>
   <block id="8d126cd06a65751189e95006c972e173" category="paragraph">ナレッジベースを構築して、組織に焦点を当てた回答をエンドユーザーに提供できるようになりました。</block>
   <block id="43b842fd441ce1ce92d22fb0ca25a507" category="doc">GenAIの要件</block>
   <block id="97911b3c54a4e826b34c1f79026316c5" category="list-text">AWS のクレデンシャルと権限</block>
-  <block id="b9696d94476cf594b0d0a85c749985c8" category="paragraph">現時点では、_basic_modeおよび_read_mode権限はサポートされていません。</block>
   <block id="6acb98cae81ff4c3d668ee23eaf475ea" category="paragraph">クレデンシャルを設定する際に、以下に示すように権限を選択すると、FSx for ONTAPファイルシステムの管理、GenAI EC2インスタンスおよびナレッジベースとチャットボットに必要なその他のAWSリソースの導入と管理を行うためのフルアクセスが提供されます。</block>
-  <block id="90971299f3c483d8dff23334303ec501" category="inline-image-macro">AIリソースを完全に管理するための権限設定を示すスクリーンショット。</block>
-  <block id="b0508f9b3b98a787c9ffda5b7aec828c" category="paragraph"><block ref="b0508f9b3b98a787c9ffda5b7aec828c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="75925d950c87a7dc75f300f3d330e728" category="list-text">Amazon Bedrockを使用すると、基盤モデルを使用でき、生成型AIアプリケーションを構築するための機能を提供します。</block>
   <block id="42100945533643a01574ce6867f93337" category="inline-link">AWSのドキュメント：Amazon Bedrockのセットアップ</block>
   <block id="c28dc65deb038c89921c82f97349e6b0" category="list-text"><block ref="c28dc65deb038c89921c82f97349e6b0" category="inline-link-rx"></block></block>
@@ -338,14 +310,7 @@
   <block id="e9d7e3888c0ecac6d332909618bf2a62" category="list-text">埋め込みモデル</block>
   <block id="52e64b029bc109efaa2d9ddf8bf95697" category="list-text">ナレッジベースを作成する前に、使用する予定の埋め込みモデルを有効にする必要があります。次の埋め込みモデルがサポートされています。</block>
   <block id="cffe100a2fafd4ed6df5c517d3a0c436" category="list-text">チャットモデル</block>
-  <block id="91862a732427fcc9b0f3f7c7e8fd3ef1" category="list-text">クロード3.5ソネット</block>
-  <block id="1ae4bf76ece2339f94382079fec8ea1b" category="list-text">クロード3オプス</block>
-  <block id="5cb902fc92ae2100fc949c459b29f2e0" category="list-text">クロード3ハイク"</block>
-  <block id="dfd281025f82519d079a3bf3bfbabad2" category="list-text">クロード3ソネット</block>
-  <block id="48a6d42b28f10b9387da7c0c33136030" category="list-text">クロード2.1</block>
-  <block id="5e1e83b3913f32ce101decea051b2e89" category="list-text">クロード2.0</block>
   <block id="c16810aa96ec44a060863610996db3f6" category="list-text">少なくとも1つのFSx for ONTAPファイルシステムが必要です。</block>
-  <block id="ae0e1b2daa525e1e1109bf5c13627d7d" category="list-text">NetApp GenAIエンジンは、ナレッジベースで使用されるベクターデータベースを格納するために1つのファイルシステムを使用します。</block>
   <block id="c076421513a5b28b674cdd0d818b4476" category="paragraph">このFSx for ONTAPファイルシステムでは、FlexVolボリュームを使用する必要があります。FlexGroupボリュームはサポートされません。</block>
   <block id="1f0befb829af39db4a0cbb499215915f" category="list-text">1つ以上のファイルシステムには、ナレッジベースに統合するデータソースが含まれています。</block>
   <block id="b56c72064b6e564dd0f3f703eff43db3" category="paragraph">1つのFSx for ONTAPファイルシステムを両方の目的に使用することも、複数のFSx for ONTAPファイルシステムを使用することもできます。</block>
@@ -419,14 +384,11 @@
   <block id="1995377d356d639f1a2e87a282280beb" category="sidebar">FSx for ONTAPファイルシステムのデータをMLOpsプラットフォームやGenAI基盤モデルと統合し、組織のデータを使用して機能的なチャットボットを作成します。</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">はじめに</block>
   <block id="06ad314b340900d226b1196e1fe289e9" category="sidebar">クイックスタート</block>
-  <block id="3c26a99b89e3c7e6133ab9da9015f277" category="sidebar">ナレッジベースの構築</block>
   <block id="d6fd7e92747512219eb7bcf3b47fcaf9" category="sidebar">ナレッジベースのパブリッシュ</block>
   <block id="f2f80ac70883a1ae6f423f6eda663371" category="sidebar">GenAIの管理</block>
-  <block id="1e2d1b975cb59eff959e606ba60cffac" category="sidebar">ナレッジベースインフラストラクチャの管理</block>
   <block id="c90fe540972fc3cdcef54526cc8386e2" category="sidebar">GenAIのドキュメント</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">リリースノート</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新機能</block>
-  <block id="acbf2b120f060c765cc5fbfef7779840" category="sidebar">ナレッジベースのデータソースを特定する</block>
   <block id="b032727d9e00be7e59aefec94a0972c2" category="sidebar">認証をアクティブ化</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知識とサポート</block>
   <block id="a46c34e822b00eb49125943300225ec1" category="summary">ナレッジベースを構築してチャットボットをテストしたら、ユーザーがチャットボットを照会できるようにするアプリケーションをセットアップする準備が整いました。</block>
@@ -438,7 +400,6 @@
   <block id="c83d7c23906c063b64dd22d30483cb24" category="list-text">Amazon Bedrockは、プレフィックスを持つロググループを使用して、Amazon CloudWatch Logsにログを送信するように構成されて<block ref="26245dda4fa653114e9a41956171489d" prefix=" " category="inline-code"></block>います。</block>
   <block id="6fbe5ae14d71eb3abafcfce8f7fe977a" category="inline-link">BlueXPアカウントID</block>
   <block id="af270465b477b731bafe1e4859956cc4" category="list-text">GenAIエンジンは、という名前のロググループを使用して、Amazon CloudWatch Logsにログを送信するように構成されてい<block ref="267ed14c989ee7da1da6b5683a1ba205" prefix=" " category="inline-code"></block>ます。ここで、<block ref="44014fe9a7dd0d34b59279b9206b84b3" prefix=" " category="inline-code"></block> は現在のユーザーのです<block ref="bffdd6286177ca86f99ccefe410268a2" category="inline-link-rx"></block> 。</block>
-  <block id="f48c3e82e3f3b9cc782fe1277e362ec5" category="paragraph">AWSインフラの導入、導入および検出されたFSx for ONTAPファイルシステム、ナレッジベースに統合するデータソースのリスト、Amazon Bedrock AIサービスへのアクセスなどには、AWSのクレデンシャルが必要です。</block>
   <block id="691e71734464aaf43017f5b033e54559" category="section-title">2024 年 8 月 4 日</block>
   <block id="ec7827c2237ae7b863c9ba93b519cbc1" category="section-title">Amazon CloudWatch Logsの統合</block>
   <block id="64c1dd8cb5f86710c3293cc9807760fb" category="paragraph">ジェネレーティブAIワークロードがAmazon CloudWatch Logsと統合され、ジェネレーティブAIワークロードのログファイルを監視できるようになりました。</block>
@@ -478,7 +439,6 @@
   <block id="b651dafbe972dff3ef00c60a522c2c08" category="paragraph">会話開始機能を有効にすると、デフォルトで「自動モード」が選択されます。「手動モード」は、ナレッジベースにデータソースを追加した後にのみ有効にできます。<block ref="787b3d64d417e723feebaf5fa5dbfeee" category="inline-link-macro-rx"></block>です。</block>
   <block id="ced63c567878ed01730fce043c8ade96" category="inline-link">Snapshot ポリシーを作成します</block>
   <block id="ad36efe6c620944e32785812d09accd6" category="paragraph">必要なSnapshotポリシーが存在しない場合は<block ref="7546e5b5141e2979fa53ccc7106931ca" category="inline-link-rx"></block>、ボリュームを含むStorage VM上で実行できます。</block>
-  <block id="d2efa843fffdf7f0b1400f4edeb08081" category="paragraph">ナレッジベースに統合したデータソースに関する情報を編集できます。ほとんどの情報は、データソースをナレッジベースに追加すると修正されますが、チャンキングの定義と設定、および権限の認識（データソースボリュームでSMBプロトコルを使用している場合）に変更を加えることができます。</block>
   <block id="46f71814ee1d2e5bbe062c91635739cf" category="list-text">[Edit data source]ページで、を選択し<block ref="0722c4ff5aff83b42b3212ce6356e926" category="inline-image-macro-rx" type="image"></block>てチャンク定義の行を展開します。</block>
   <block id="c9ee341e3341c054d76e9a00e2455883" category="list-text">チャンキング戦略と構成、および権限の認識（SMBボリュームの場合）の設定を更新し、*[保存]*を選択します。</block>
   <block id="f3ee02a23f65c24a5b66f40deaa52796" category="list-text">インフラ設定</block>
@@ -545,22 +505,14 @@
   <block id="f77361b272ce81d8275727f7b1a756a8" category="list-text">[* Restore] を選択します。</block>
   <block id="75adfeedf06d70e0bc627133f85cd211" category="section-title">データソースとナレッジベースを同期する</block>
   <block id="44736bad98446163ecd5077653cbd105" category="paragraph">データソースは関連付けられたナレッジベースと1日に1回自動的に同期されるため、データソースの変更がチャットボットに反映されます。いずれかのデータソースに変更を加え、データをすぐに同期する場合は、オンデマンド同期を実行できます。</block>
-  <block id="f8016d0e0375ce671e71803692cf105c" category="paragraph"><block ref="f8016d0e0375ce671e71803692cf105c" category="inline-link-rx"></block></block>
-  <block id="340b5c4d996cad6cf6d27d13faf94e89" category="paragraph"><block ref="340b5c4d996cad6cf6d27d13faf94e89" category="inline-link-rx"></block></block>
-  <block id="f951fa0f2608d186cd1f0bd8889ac232" category="paragraph"><block ref="f951fa0f2608d186cd1f0bd8889ac232" category="inline-link-rx"></block></block>
-  <block id="8afd34c2a29e7b6286f3ed0bf9e20c22" category="paragraph"><block ref="8afd34c2a29e7b6286f3ed0bf9e20c22" category="inline-link-rx"></block></block>
   <block id="4936442e55cb8f837f9616ca6aaf1e92" category="doc">ナレッジベースボリュームのSnapshotとリストアのサポート</block>
-  <block id="ef3d62d3a83e208fec16cf94a1c9ef8b" category="paragraph">データソースは1日に1回自動的にナレッジベースと同期されるため、データソースの変更がチャットボットに反映されます。データソースに変更を加え、データをすぐに同期したい場合は、を使用できます <block ref="a5f82761b74f2896160929ccd4ead00e" category="inline-link-macro-rx"></block>。</block>
-  <block id="3bd082f2a7c2961a682116b6ed9f43fc" category="sidebar">生成AIを使用してナレッジベースを構築する</block>
   <block id="17e908b1a02b6ec45f4e125877322d0f" category="doc">個人識別情報をデータガードレールでマスクする</block>
   <block id="0f21cd7bd10e747bca7894a609acc04b" category="paragraph">ジェネレーティブAIワークロードには、BlueXP  分類を基盤とするデータガードレール機能が導入されています。データガードレール機能は、個人識別情報(PII)を識別してマスクし、組織の機密データのコンプライアンスを維持し、セキュリティを強化するのに役立ちます。</block>
-  <block id="8137174f639d391921dfeb8ca6d792d1" category="paragraph"><block ref="8137174f639d391921dfeb8ca6d792d1" category="inline-link-macro-rx"></block></block>
   <block id="a686d5fa6b6925450f1b7fa2b4245d28" category="inline-link-macro">BlueXPの分類について説明します</block>
   <block id="384713a8a1d5a2dd365da2851c50ad93" category="paragraph"><block ref="384713a8a1d5a2dd365da2851c50ad93" category="inline-link-macro-rx"></block></block>
   <block id="ee538d8e0203b8c3e9bdb95ebee1162c" category="paragraph">ナレッジベースには、_パブリックモード_と_エンタープライズモード_という2つのデータ統合モダリティがあります。</block>
   <block id="3b3458714be1e5c3f76dd200e4227588" category="list-text">パブリックモード</block>
   <block id="ab6bcff4b8fb91fe0c83c8ef83da1c6e" category="list-text">Enterpriseモード</block>
-  <block id="e168133413009827e06cf1b52bf82d2e" category="paragraph">組織のデータソースには、個人識別情報（PII）が含まれている場合があります。この機密情報を保護するために、ナレッジベースの作成および構成時に_data guardrails_を有効にすることができます。BlueXP  分類を利用したデータガードレールは、PIIを識別してマスクし、アクセスできず、取り出すことができないようにします。</block>
   <block id="2abf45f9ff5a74918b97267cd4e59d6a" category="paragraph"><block ref="384713a8a1d5a2dd365da2851c50ad93" category="inline-link-macro-rx"></block>です。</block>
   <block id="1be907baab24daef236be08a55d381ce" category="inline-link-macro">BlueXP  分類を活用したデータガードレールの詳細</block>
   <block id="239980b6c377cd208cd4875dd11871a7" category="list-text">*データガードレール*:データガードレールを有効にするか無効にするかを選択します。<block ref="705e589dc60832aba1b9593eb1d26a9a" category="inline-link-macro-rx"></block>です。</block>
@@ -579,16 +531,8 @@
   <block id="082d99c5d452c4b44edd8ec50926da9a" category="paragraph">NetAppワークロードファクトリ 生成AIサンプルアプリケーションを使用すると、Webベースのチャットボットアプリケーションで直接対話することで、公開されたNetAppワークロードファクトリナレッジベースからの認証と取得をテストできます。</block>
   <block id="dcafe9cce796ce855e87b270f0a5af59" category="inline-link-macro">コンソールエクスペリエンス</block>
   <block id="eb788a90862825cc147ed3f85612a8cc" category="list-text">いずれかを使用してワークロードファクトリにログインし<block ref="68ceec76279c6913cdee16884c2d813a" category="inline-link-macro-rx"></block>ます。</block>
-  <block id="ba069bdc38a1ce5022a1e6d8b69882b8" category="summary">生成AI向けワークロードファクトリーでは、Amazon FSx for NetApp ONTAPファイルシステムを 生成AI基盤モデルと統合できます。これにより、AIデータセット向けの豊富な保護機能、セキュリティ機能、コスト最適化機能を備えたハイパフォーマンスストレージが実現します。</block>
   <block id="70cb57a8d5d75d8762d6b082d319dec7" category="inline-link">ワークロードファクトリの概要</block>
   <block id="41dde101808f5228034390c3766fcad7" category="paragraph">ワークロードファクトリの詳細については、を参照して<block ref="5b162ed7e5df7e2d72a6505743e2b555" category="inline-link-rx"></block>ください。</block>
-  <block id="200e3179449390bdf5f3f8d9a199630c" category="section-title">ワークロードファクトリを使用するためのツール</block>
-  <block id="b5a374f3f5b31b5057808689d26fe2c4" category="paragraph">BlueXP  ワークロード工場では、次のツールを使用できます。</block>
-  <block id="becd2c66a018e594b787abb509da2fcb" category="list-text">*ワークロードファクトリコンソール*:ワークロードファクトリコンソールは、アプリケーションとプロジェクトの全体的なビューを提供するビジュアルインターフェイスを提供します。</block>
-  <block id="590410b3a112ba2f531f9aae44e29ed1" category="list-text">* BlueXP  コンソール*：BlueXP  コンソールはハイブリッドインターフェイスを提供するため、BlueXP  ワークロードファクトリを他のBlueXP  サービスと一緒に使用できます。</block>
-  <block id="3994718f6fdd9c0fd3f50884c4c05615" category="list-text">* REST API *：ワークロードファクトリREST APIを使用すると、FSx for ONTAPファイルシステムやその他のAWSリソースを導入および管理できます。</block>
-  <block id="870c2713113a9cc14410aec5475c932f" category="list-text">* CloudFormation *：AWS CloudFormationコードを使用すると、ワークロードファクトリコンソールで定義したアクションを実行して、AWSアカウントのCloudFormationスタックからAWSおよびサードパーティリソースをモデル化、プロビジョニング、管理できます。</block>
-  <block id="531a2642b7c023ef8b4ec401d5c39c4b" category="list-text">*Terraform BlueXP  ワークロードファクトリプロバイダ*: Terraformを使用すると、ワークロードファクトリコンソールで生成されたインフラワークフローを構築および管理できます。</block>
   <block id="eb2d717e4f7003bece96a54d9bfcab8c" category="paragraph">ワークロードファクトリの 生成AI機能を使用するためのコストはかかりません。</block>
   <block id="fe25da415465509a9a69d606dab870c0" category="paragraph">ワークロード工場のAI機能を使用するために、NetAppから特別なライセンスは必要ありません。</block>
   <block id="f6a347d6bbcc84735a944fdcd256092f" category="summary">AIインフラを導入し、FSx for ONTAPデータストアからナレッジベースに統合するデータソースを特定したら、ワークロードファクトリを使用してナレッジベースを構築できます。このステップの一部として、AIの特性を定義し、会話のきっかけを作ります。</block>
@@ -606,7 +550,6 @@
   <block id="894106a56db6962222de989043e29e02" category="summary">NetAppは、さまざまな方法でワークロードファクトリをサポートします。ナレッジベース（ KB ）記事やコミュニティフォーラムなど、 24 時間 365 日利用可能な幅広いセルフサポートオプションをご用意しています。サポート登録には、 Web チケット処理によるリモートテクニカルサポートが含まれます。</block>
   <block id="e703cd6c7dd517a92f3648a2a1305e15" category="list-text">ワークロード工場出荷時のナビゲーションメニューで、* AI *を選択します。</block>
   <block id="02c24f1607a88a7b66de312463a92ee0" category="paragraph">1つ以上のチャットボットに展開したチャットボットインフラストラクチャが不要になった場合は、ワークロードファクトリから削除できます。</block>
-  <block id="e156182d12afe45e03e8d3deb27ba670" category="paragraph">この処理では、ワークロードファクトリからAIインフラへのリンクが削除されるだけで、AWSからすべてのコンポーネントが削除されるわけではありません。次のインフラコンポーネントをAWSから手動で削除する必要があります。</block>
   <block id="62daa906a9333be93a5e975044f666a1" category="paragraph">チャットボットインフラストラクチャコンポーネントはワークロードファクトリから削除されます。</block>
   <block id="86dbd1b84518abb5c7347546b8844b7e" category="paragraph">ナレッジベースが不要になった場合は、ナレッジベースを削除できます。ナレッジベースを削除すると、そのナレッジベースはワークロードファクトリから削除され、ナレッジベースを含むボリュームが削除されます。ナレッジベースを使用しているアプリケーションやチャットボットはすべて機能しなくなります。ナレッジベースの削除は元に戻すことはできません。</block>
   <block id="22f6a017871820df71fb38c6218efc2f" category="paragraph">ナレッジベースがワークロードファクトリから削除され、関連付けられているボリュームが削除されます。</block>
@@ -618,17 +561,13 @@
   <block id="113933a0a6b3eb57d22f707e6384bd49" category="paragraph">のいずれかを使用してログインする<block ref="17b71e2884d56fdbadfe752689dbd4d6" category="inline-link-rx"></block>必要があります<block ref="5eb9de2715b74ed434f03d8a9fef9b70" category="inline-link-rx"></block>。</block>
   <block id="7c42a251218f29f59dd7dbf0987115c8" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block>生成AIの要件を満たす環境のセットアップ</block>
   <block id="fca2fd00582f9c7c4a5a7f66db5c76d7" category="inline-link-macro">生成AI要件の詳細</block>
-  <block id="0efa8e5eec015c7557fa0d66656108d5" category="paragraph"><block ref="048bf8a63d18514c61565bf7fbdd1a56" category="inline-link-macro-rx"></block>です。</block>
   <block id="13a3df270bbff43d6e9a3cda00e93bf6" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block>データソースが格納されているFSx for ONTAPファイルシステムを特定する</block>
   <block id="21d5bccbbe925613c0af5324543c58b1" category="inline-link-macro">データソースを特定する方法</block>
-  <block id="70d15316e3e767964ed59c8ffa7502da" category="paragraph"><block ref="7388636e3703309ce48a47f5a2c06fbc" category="inline-link-macro-rx"></block>です。</block>
   <block id="981b8fcee42e1e726a67a2b9a98ea6e9" category="inline-image-macro">4つ</block>
-  <block id="67544fe024b8f9a36d65dad6756df3ae" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block>ナレッジベースインフラストラクチャの導入</block>
   <block id="20ec4ab4fcf35b65157df141218adeb4" category="inline-link-macro">ナレッジベースインフラストラクチャの導入方法</block>
   <block id="821dd0baa6265d27edc6fde0f7f8a2a7" category="paragraph"><block ref="cf103609479325827138f1030380ee71" category="inline-link-macro-rx"></block>です。</block>
   <block id="7da236f1583acd597958e11defdd0aed" category="summary">ナレッジベースを構築する前に、ワークロードファクトリとAWSが適切に設定されていることを確認してください。これには、AWSのログインクレデンシャル、ナレッジベースに統合するデータソースを含む導入済みのFSx for ONTAPファイルシステム、Amazon Bedrock AIサービスへのアクセスなどが含まれます。</block>
   <block id="7881e5952d93ca1a1396ec11c08fa645" category="list-text">ワークロードの工場出荷時のログインとアカウント</block>
-  <block id="c3c0f7069bfe59c5a67dd6f1fd5d2301" category="list-text">automate権限を持つワークロードファクトリにAWSクレデンシャルを追加する必要があります。つまり、生成AIの_automate_modeでワークロードファクトリを使用することになります。</block>
   <block id="5145374f219e1c177ab5588a5344aa6e" category="inline-link">ワークロードファクトリにAWSクレデンシャルを追加する方法を確認</block>
   <block id="ced1a4827b1ea3c1da0273c3d73fdd46" category="paragraph"><block ref="ced1a4827b1ea3c1da0273c3d73fdd46" category="inline-link-rx"></block></block>
   <block id="056634bec4a153903ebb9b769277f4d7" category="summary">NetAppテクニカルサポートでサポートケースをオープンする前に、NetAppサポートサイトのアカウントをワークロード工場に追加し、サポートに登録する必要があります。</block>
@@ -641,7 +580,6 @@
   <block id="f8a21101d47aa852f29a4be35904736e" category="doc">Snapshotからナレッジベースをクローニング</block>
   <block id="c711d2f72cc16ad2c0919ebe70292834" category="paragraph">生成AI向けのBlueXP  ワークロードファクトリでは、スナップショットからのナレッジベースのクローニングがサポートされるようになりました。これにより、ナレッジベースの迅速なリカバリと既存のデータソースを使用した新しいナレッジベースの作成が可能になり、データのリカバリと開発に役立ちます。</block>
   <block id="53ea9e78bbaa3e1c3ead030a954216c8" category="inline-link-macro">ナレッジベースの複製</block>
-  <block id="23899d33da818933cc59017a222d3f1f" category="paragraph"><block ref="23899d33da818933cc59017a222d3f1f" category="inline-link-macro-rx"></block></block>
   <block id="aadb8a2a44b75c1333f5a52c2ceb1516" category="section-title">オンプレミスのONTAPクラスタの検出とレプリケーション</block>
   <block id="490a30e9496a9d55f2cfdb934812658b" category="paragraph">オンプレミスのONTAPクラスタデータを検出してFSx for ONTAPファイルシステムにレプリケートすることで、AIのナレッジベースを強化できます。オンプレミスの検出とレプリケーションのすべてのワークフローは、ストレージインベントリの新しい*オンプレミスONTAP *タブから実行できます。</block>
   <block id="c6f905e067bdaa7ba33a58a907e59477" category="inline-link-macro">オンプレミスの ONTAP クラスタを検出</block>
@@ -649,8 +587,6 @@
   <block id="b83113ab8d9d4c69dfb32e9034617513" category="summary">BlueXP  Workload Factory for生成AIでは、Amazon FSx for NetApp ONTAPファイルシステムと 生成AIの基盤モデルを統合できます。これにより、AIデータセット向けの豊富な保護機能、セキュリティ機能、コスト最適化機能を備えたハイパフォーマンスストレージが実現します。</block>
   <block id="77c129bd3271a24d7bdf27f4904c52f4" category="doc">生成AI向けBlueXP  ワークロードファクトリの詳細</block>
   <block id="766c4de0717e832db67cb7e35ee5df4b" category="section-title">生成AI向けのBlueXP  ワークロードファクトリとは何ですか。</block>
-  <block id="847fc7565e14d8fa93f26cd789e29cb5" category="paragraph">BlueXP  Workload Factory for生成AIでは、Amazon FSx for NetApp ONTAP上のエンタープライズデータソースとジェネレーティブAIアプリケーションを使用できます。Retrieval Augmentation Generation（RAG）フレームワークを利用すると、Amazon Bedrock経由で利用可能なFoundationモデルにデータソースをすばやく接続して、バーチャルアシスタント、Q&amp;Aチャットボット、ドキュメント要約、コンテンツ作成などのGenerative AIを活用したアプリケーションを開発できます。</block>
-  <block id="586d1c82027100a85b2c840e10585fd4" category="paragraph">生成AI向けのBlueXP  ワークロードファクトリは、Retrieval Augmented Generation（RAG）を使用してジェネレーティブAIアプリケーションを構築するために必要なインフラを導入するプロセスを簡易化します。具体的には、生成AIには次のようなメリットがあります。</block>
   <block id="daadd89cd1fba3fd8665e4d598faa29e" category="section-title">BlueXP  Workload Factory for生成AIがジェネレーティブAIアプリケーションの構築にどのように役立つか</block>
   <block id="6849617ada590bcd67ec5c42f527dbca" category="paragraph">AWSのクレデンシャルを入力し、FSx for ONTAPファイルシステムを選択して、Retrieval-Augmented Generation（RAG）インフラを導入する必要があります。</block>
   <block id="29c02ba7cbd3c64fafa4c7eab2de837a" category="admonition">導入がクレデンシャルエラーで失敗した場合は、エラーメッセージ内のハイパーリンクを選択すると、エラーの詳細を確認できます。見つからないかブロックされている権限のリストと、生成AIワークロードが 生成AIインフラを導入するために必要な権限のリストを確認できます。</block>
@@ -721,7 +657,6 @@
   <block id="16cb0b733a26e9afa11f388e6d83aec1" category="doc">生成AIナレッジベースの作成</block>
   <block id="e63e0ed616c63ed724e592b04e608826" category="doc">生成AI外部サンプルチャットボットアプリケーションを使用する</block>
   <block id="52f26f0fff3bae61240c4b3a43f3624d" category="doc">生成AI向けBlueXP  ワークロードファクトリのサポート</block>
-  <block id="e1cdd82a2918ba1a2c0ff51770aad51e" category="doc">生成AIナレッジベースに統合するデータソースを特定する</block>
   <block id="fe1e8231ce0909884a561100cafd30a8" category="doc">生成AI法的通知のためのBlueXP  ワークロードファクトリ</block>
   <block id="dd3ed9192bf4d0d55741ed48bf8a6695" category="doc">生成AIデータソースを管理します。</block>
   <block id="10f8936c8a58bcff3825995f8d31ea40" category="doc">生成AIナレッジベースの管理</block>
@@ -733,13 +668,10 @@
   <block id="988a487756dcb4e1605a4e07dc7dbd42" category="doc">生成AIで次にできること</block>
   <block id="a117d99fd0597e840921767ec50fe791" category="doc">カスタムSnapshot名</block>
   <block id="34df51ccce053f8aef051fe069f6004a" category="paragraph">アドホックスナップショットのスナップショット名を指定できるようになりました。</block>
-  <block id="2cbaa1be80e354895c4d9e497cad82ad" category="paragraph"><block ref="2cbaa1be80e354895c4d9e497cad82ad" category="inline-link-macro-rx"></block></block>
   <block id="63713d130d6ced83e06b8a2f84ca4236" category="section-title">カスタムAIエンジンインスタンス名</block>
   <block id="5a22f1756638135653917db715aeec43" category="paragraph">導入時にAIエンジンインスタンスにカスタム名を付けることができるようになりました。</block>
-  <block id="c3e29d6f9db8b5f89b548e4659ce60ad" category="paragraph"><block ref="c3e29d6f9db8b5f89b548e4659ce60ad" category="inline-link-macro-rx"></block></block>
   <block id="cc78f676d3193b6273b428bb17c26dd7" category="section-title">破損または欠落している 生成AIインフラの再構築</block>
   <block id="1691fa3a19bfaa3082dd2f6e01934960" category="paragraph">AIエンジンインスタンスが破損したり、何らかの理由で削除されたりした場合は、ワークロードファクトリに再構築を依頼できます。ワークロードファクトリは、再構築が完了した後、ナレッジベースをインフラストラクチャに自動的に再接続して、すぐに使用できるようにします。</block>
-  <block id="b23e4d787bd591292c1d5f10247e0e53" category="paragraph"><block ref="b23e4d787bd591292c1d5f10247e0e53" category="inline-link-macro-rx"></block></block>
   <block id="22d9005388d9e535daefed3f2e693f8c" category="inline-link-macro">機密性の高い個人データのタイプ</block>
   <block id="9c5f697c48859cff8ee185f1b8ac3722" category="admonition">BlueXP  Workload Factory for生成AIでは、機密性の高い個人情報(SPii)はマスクされません。このタイプのデータの詳細については、を参照してください<block ref="0cdb750dab1dfb2fce5dd1cc6f558f0e" category="inline-link-macro-rx"></block>。</block>
   <block id="634af6b3fd334eee66435e4f2e04ce47" category="admonition">データガードレールはいつでも有効または無効にできます。データガードレールの有効化を切り替えると、Workload Factoryはナレッジベース全体をゼロからスキャンするため、コストがかかります。</block>
@@ -780,12 +712,10 @@
   <block id="a036984d47253ddc828a04bc8ac85524" category="list-text">権限対応*セクション（選択したデータソースがSMBプロトコルを使用するボリューム上にある場合にのみ表示）で、権限対応の応答を有効または無効にできます。</block>
   <block id="77fd00559b8279b555e48d21e5e67c34" category="doc">データソースのファイルタイプフィルタリング</block>
   <block id="47cf5538cc85b7acf0e24098fc5bbffd" category="paragraph">生成AIでは、データソースを追加するときに、データソーススキャンに含める特定のファイルタイプの選択がサポートされるようになりました。</block>
-  <block id="e57c1e86c82776cdcb9c50b4e82943f8" category="paragraph"><block ref="e57c1e86c82776cdcb9c50b4e82943f8" category="inline-link-macro-rx"></block></block>
   <block id="f191d5f0a123d62966b3617a9d8c752c" category="section-title">データソースのファイル変更日のフィルタリング</block>
   <block id="b1be3e2e5ab05373dbf3927507ea84d2" category="paragraph">生成AIでは、データソースの追加時に変更日によってデータソーススキャンに含めるファイルのフィルタリングがサポートされるようになりました。インクルードされるファイルの変更日の範囲を選択できます。</block>
   <block id="7a7ba68ff13813a8c9d7413b67a91e34" category="section-title">画像ファイルのサポートとPDFファイルのサポートの強化</block>
   <block id="b9a5ff8382cbb9f5609b8bff25344245" category="section-title">ハイブリッド検索と再検索のサポート</block>
-  <block id="397adcec169a6ce17f0abfc941258c0f" category="paragraph"><block ref="397adcec169a6ce17f0abfc941258c0f" category="inline-link-macro-rx"></block></block>
   <block id="c009fe342f72cc06fe63760e2eaa701c" category="list-text">生成AIが提供するハイブリッド検索機能とリランク機能を使用して、データから高品質の結果を得ることができます。ハイブリッド検索とリランク付けを組み合わせることで、検索結果の関連性が大幅に向上します。これらの機能はAmazon AWSから利用でき、リージョンによって異なります。</block>
   <block id="e1201f675c705c74b856dba391a68602" category="paragraph">テキスト情報のための画像のスキャンなど、一部のマルチモーダル操作では、より多くのリソースが使用されるため、コストが高くなります。ナレッジベースの設定の変更など、一部の設定処理ではデータソースが再スキャンされたり、データソーススキャンのコストが高くなることがあります。</block>
   <block id="0a2b76d9cf1a9ffdd3b88e030e038252" category="example-title">IAMロールノケンゲン</block>
@@ -811,22 +741,13 @@
   <block id="26e6f4cc71039ce95ddbb0acdad6891d" category="section-title">2024年9月29日</block>
   <block id="9a7d43c72f0d1a35c2a2cdfb58c6cc0d" category="doc">Amazon Nova基盤モデルのサポート</block>
   <block id="ba0908c46e81d6dfcc41f1af42be123c" category="paragraph">生成AIはAmazon Nova基盤モデルをサポートするようになりました。Amazon Nova Micro、Amazon Nova Lite、およびAmazon Nova Proがサポートされています。</block>
-  <block id="5ddfb412189af7bcce0a056c9fcef326" category="paragraph"><block ref="5ddfb412189af7bcce0a056c9fcef326" category="inline-link-macro-rx"></block></block>
   <block id="1b72fbdbed811fb02ab7310c71e79ab2" category="inline-link">AWSのドキュメント</block>
   <block id="c3321626512a416bb22de0f62b8458bc" category="list-text">ナレッジベースを作成する前に、使用する予定の基本チャットモデルを有効にする必要があります。サポートされるモデルはAWSのリージョンによって異なるため、ナレッジベースを導入するリージョンで使用できるモデルを確認するには、を参照し<block ref="0bd10fd36efa0fd68b9fc8a53401f764" category="inline-link-rx"></block> てください。</block>
-  <block id="1c61d246c37b3dd7fcf1e2812799ee53" category="paragraph">生成AIは、次のAnthropic ClaudeモデルとAmazon Novaモデルをサポートしています。</block>
-  <block id="e37cca905470582668e8cf006efd3557" category="list-text">Anthropic Claude：</block>
-  <block id="22e20ffc2045bc3420e2cb94c47a29ce" category="list-text">Amazon Nova：</block>
-  <block id="39106736b72a09cf072c2dc73e847b86" category="list-text">Nova Micro</block>
-  <block id="5966dc23b01f7dbdf996a7a860ee9459" category="list-text">Nova Lite（画像とテキストをサポート）</block>
-  <block id="d5c9ae773ceec77e2ca3ed0d6347bf9b" category="list-text">Nova Pro（画像とテキストをサポート）</block>
-  <block id="ddbb727fa06553b8b9d4aab207332c7e" category="paragraph">Amazon Bedrockでこれらのモデルを使用する方法の詳細をご覧ください。</block>
   <block id="0dd1c2bf85c6e3f8ac28b8d5d343a230" category="list-text"><block ref="0dd1c2bf85c6e3f8ac28b8d5d343a230" category="inline-link-rx"></block></block>
   <block id="b6c678dfe5e31c8f081fa11ac56bff46" category="inline-link">Amazon BedrockコンソールでAmazon Novaを使い始める</block>
   <block id="cafb3db15a71932288c768a7beb404b4" category="list-text"><block ref="cafb3db15a71932288c768a7beb404b4" category="inline-link-rx"></block></block>
   <block id="ca5a05186a2f243eb84efcf08152a8f2" category="doc">組み込みチャットボットの機能強化</block>
   <block id="362c473fe2757bda1e0d68b3c2cdfbc8" category="paragraph">質問と回答をクリップボードに直接コピーしたり、チャットウィンドウのサイズを調整したり、タイトルを変更したりできるようになりました。さらに、チャット応答にテーブルを含めることができるようになりました。テーブルはコピー可能です。</block>
-  <block id="b7def3234606fc50e35ddaf4c351fbe6" category="paragraph"><block ref="b7def3234606fc50e35ddaf4c351fbe6" category="inline-link-macro-rx"></block></block>
   <block id="4842fdf5dae1e7a3fb7ea049a091be73" category="section-title">チャット応答引用のサポート</block>
   <block id="c010ca64710d07e36327c27318c0303f" category="paragraph">チャットの応答に、応答を生成するために使用されたファイルとデータのチャンクをリストする引用が含まれるようになりました。</block>
   <block id="312fbafda6b72e176a3eb6272e48d799" category="section-title">ファイル形式のサポートの強化</block>
@@ -856,21 +777,252 @@
   <block id="fbc7eedf5c13a549330a0c3f52777db8" category="section-title">vPCピアリングのサポート</block>
   <block id="52bc46202bc9013e258f32f66b8bf88a" category="inline-link-macro">ピア関係にある仮想プライベートクラウド（VPC）</block>
   <block id="93dbde0ee04c36dce05b96f3551f8606" category="paragraph">同じリージョンにあるに 生成AIインフラを導入し、同じAWSアカウントを使用できるようになりまし<block ref="f008838004ac43a2c4a5b39672df7daf" category="inline-link-macro-rx"></block>た。AIエンジンをVPCに導入してから、ピアVPCにナレッジベースを作成し、ピアVPCにあるAmazon FSx for NetApp ONTAPファイルシステムを選択できます。</block>
-  <block id="b36fca5a6a45d6da3c01e23792f8a153" category="list-text">*チャットモデル*: Amazon Bedrockに統合されているAnthropic ClaudeまたはAmazon Novaチャットモデルから選択します。Amazon Bedrockからチャットモデルを有効にしておく必要があります。</block>
   <block id="7b64cb38404993f8db85b46fa460e3f1" category="paragraph">データガードレールを有効にするには、次の前提条件を満たす必要があります。</block>
   <block id="b687386681bc74afd9f1f05a81484454" category="inline-link-macro">BlueXP  APIエンドポイント</block>
   <block id="52840142bc9ae1cec5ab47f43451b7f2" category="list-text">AIエンジンがにアクセスできる必要があります<block ref="0d55c5152a345809ffefdd3a1a629e2a" category="inline-link-macro-rx"></block>。</block>
   <block id="b3e25fad7a8f45ec59f40a0eaf7b74ea" category="admonition">CSV、JSON、JSONP、Parquetなどの構造化データファイルを取り込む場合、データガードレール機能はサポートされません。</block>
-  <block id="71e83c676c8b3aea9726262e97dd0c14" category="cell">Apache Parquetfootnote:免責事項[構造化データファイルの取り込み時にデータガードレール機能はサポートされていません。]</block>
   <block id="230703a919b034364b970a5ee5c5ab76" category="cell">カンマ区切り値filefootnote:disclaimer[]</block>
   <block id="33555d9ae9e8936cbd995ec23836ef0a" category="cell">JSONおよびJSONPfootnote:免責事項[]</block>
   <block id="cc8f0c0e5a5cef9b33f236a0a9c19ca0" category="cell">.json</block>
-  <block id="db54384248c75c5896f34bcb0879b66c" category="section-title">2025年3月30日</block>
   <block id="fdd252a657eafa925fe82da2c74ab41c" category="paragraph">生成AIでは、画像やグラフの説明、ドキュメントテキストからのインサイトを使用してナレッジベースのクエリへの応答を強化できるようになり、より豊かで高品質な回答が得られるようになりました。生成AIでは、PDFファイル内の画像ファイルおよび画像をスキャンできるようになりました（マルチモーダルファイルサポートとも呼ばれます）。画像またはPDFファイルのスキャンを選択した場合は、画像のテキスト（PDFドキュメントに埋め込まれた画像を含む）がデータソースにスキャンされ、スキャンからのインサイトがナレッジベースのクエリへの応答に含まれます。</block>
   <block id="603e61783fa33cd04788f143e949760c" category="paragraph">生成AIでは、ハイブリッド検索を使用して結果をリランク付けすることで、検索結果の関連性と精度を大幅に向上させることができます。ハイブリッド検索は、従来のキーワードベース検索の強みと高度な高密度ベクトルベースのセマンティック検索技術を組み合わせたものです。標準的なキーワード検索結果は、近い一致と言語的なニュアンスで強化され、関連性が向上します。その後、生成AIはCohere RerankやAmazon Rerankなどの高度なリランキングモデルを使用してこれらの結果をさらに絞り込み、最も関連性の高い結果を返します。この機能は、新しく作成されたナレッジベースで使用できます。</block>
   <block id="7c6f7e444c5d96b670cdcd189e2ee43a" category="list-text">生成AIでは、画像を含むMicrosoft Word DOCXファイルの取り込みがサポートされるようになりました。DOCXドキュメント内に埋め込まれた画像がスキャンされ、埋め込まれた画像からのテキストインサイトがナレッジベースのクエリへの応答に含まれます。</block>
   <block id="0fcf305133bffed241e3ea17efbba5fc" category="inline-link-macro">ワークロードファクトリAPIを使用</block>
   <block id="a6efc6ca3aa5af2c7a8cad1239df17c0" category="paragraph"><block ref="a6efc6ca3aa5af2c7a8cad1239df17c0" category="inline-link-macro-rx"></block></block>
   <block id="1013a9a62eb4667e6ae35cbe4e298de6" category="paragraph">ナレッジベースに統合するデータソースは、単一のFSx for ONTAPファイルシステムに配置することも、複数のFSx for ONTAPファイルシステムに配置することもできます。これらのシステムが異なるVPCにある場合は、同じネットワーク内でアクセス可能であるか、またはAIエンジンと同じリージョンとAWSアカウントを使用してVPC間でピア関係を確立しておく必要があります。</block>
-  <block id="b70e34d229298faea8d481f1cfdd32a9" category="paragraph"><block ref="b70e34d229298faea8d481f1cfdd32a9" category="inline-link-macro-rx"></block></block>
+  <block id="3b0424c657d7f94d3576d4c275f58d4c" category="list-text">*有効*:このコネクタにアクセスするチャットボットのユーザーは、アクセス権を持つデータソースからのクエリに対する応答のみを取得します。</block>
+  <block id="cc969578d5af5249aced30698622b541" category="admonition">Active Directoryグループ権限は、Amazon Q Business Connectorデータソースではサポートされていません。</block>
+  <block id="8e7311e2a2a855dad7de8a56a0aa57d2" category="list-text">このデータソースをAmazon Q Business Connectorに追加するには、*[追加]*を選択します。</block>
+  <block id="fa73e37938f52fcfcb0bf41200ec0ca8" category="paragraph">組織のFSx for ONTAPナレッジベース、コネクタ、アプリケーションを構築する前に、生成AI Infrastructure for RAGフレームワークを環境に導入する必要があります。主要なインフラコンポーネントは、Amazon Bedrockサービス、NetApp生成AIエンジンの仮想マシンインスタンス、FSx for ONTAPファイルシステムです。</block>
+  <block id="7b69380b59ab25a52a3890c0b595dcdb" category="paragraph">展開されたインフラストラクチャは、複数のナレッジベース、チャットボット、コネクタをサポートできるため、通常はこのタスクを一度だけ実行する必要があります。</block>
+  <block id="f18154a9b9be40fcdf149ed96215b72f" category="paragraph">インフラストラクチャは、次のコンポーネントで構成されています。</block>
+  <block id="be233e7542a4cdfd8f4db815899ffe55" category="list-text">Amazon Q Business</block>
+  <block id="fb51d22afce66d807de9a5ec0e57bb1f" category="list-text">Amazon QはAmazon Bedrock上に構築されており、フルマネージドのジェネレーティブAIアシスタントを使用して、データソースからの情報に基づいて質問に答えたりコンテンツを生成したりできます。</block>
+  <block id="3cd04df71a92b57e7e0b649c25c86144" category="inline-link">Amazon Q Businessの詳細</block>
+  <block id="7a0b82b29eab51c564d9f44ef3737aa4" category="paragraph"><block ref="7a0b82b29eab51c564d9f44ef3737aa4" category="inline-link-rx"></block></block>
+  <block id="0c6cf53f02bb16e6e4275c3b79966b50" category="inline-image-macro">生成AIインフラコンポーネントの図。</block>
+  <block id="6f326b36284a4f3ce3de66ffc6167fc9" category="paragraph"><block ref="6f326b36284a4f3ce3de66ffc6167fc9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7759fb09c86e4287a63dc0f3aa2c871a" category="paragraph">この手順を開始する前に、使用している環境がナレッジベースまたはコネクタの要件を満たしていることを確認してください。</block>
+  <block id="138a61823952f938a9b70641d09cc13f" category="inline-link-macro">ナレッジベースの要件</block>
+  <block id="86dc36560e41f1c1ea72ceefa534f5a2" category="list-text"><block ref="86dc36560e41f1c1ea72ceefa534f5a2" category="inline-link-macro-rx"></block></block>
+  <block id="608448c2576128ccc8c2f959d59e20b4" category="inline-link-macro">コネクタの要件</block>
+  <block id="030ca7db294f16d68e8fdcf05bbcec53" category="list-text"><block ref="030ca7db294f16d68e8fdcf05bbcec53" category="inline-link-macro-rx"></block></block>
+  <block id="4ddb48cac9158bd3754bbde2dac725a1" category="paragraph"><block ref="4ddb48cac9158bd3754bbde2dac725a1" category="inline-link-rx"></block></block>
+  <block id="66dcbffa464e42a5a70549da95a9fce8" category="paragraph"><block ref="66dcbffa464e42a5a70549da95a9fce8" category="inline-link-rx"></block></block>
+  <block id="6e81aa0aaa9f90d486d9b10971c77d5b" category="paragraph"><block ref="6e81aa0aaa9f90d486d9b10971c77d5b" category="inline-link-rx"></block></block>
+  <block id="20b70c955d7e2ae1d32abf7981fa778d" category="paragraph"><block ref="20b70c955d7e2ae1d32abf7981fa778d" category="inline-link-rx"></block></block>
+  <block id="71a6e13d9246eebc4c665bd6856ef62e" category="paragraph"><block ref="71a6e13d9246eebc4c665bd6856ef62e" category="inline-link-macro-rx"></block></block>
+  <block id="c8cb32544f3421770987153c7b2dbac8" category="paragraph"><block ref="c8cb32544f3421770987153c7b2dbac8" category="inline-link-macro-rx"></block></block>
+  <block id="9eda245a8d0fc28bfa9439a2eeab7bf6" category="paragraph"><block ref="9eda245a8d0fc28bfa9439a2eeab7bf6" category="inline-link-macro-rx"></block></block>
+  <block id="5ee94025ca317a5dcb596db977e1213d" category="paragraph"><block ref="5ee94025ca317a5dcb596db977e1213d" category="inline-link-macro-rx"></block></block>
+  <block id="7dd2d826a181ea2f9a3b31239bf46de3" category="paragraph"><block ref="7dd2d826a181ea2f9a3b31239bf46de3" category="inline-link-macro-rx"></block></block>
+  <block id="2e3901c216301ff20bf1108a16ffab23" category="paragraph"><block ref="2e3901c216301ff20bf1108a16ffab23" category="inline-link-macro-rx"></block></block>
+  <block id="efaf8eeadceb43309e642a115859e2a0" category="paragraph"><block ref="efaf8eeadceb43309e642a115859e2a0" category="inline-link-macro-rx"></block></block>
+  <block id="4ea5a8d3b0067bf5307eb05137bce817" category="paragraph"><block ref="4ea5a8d3b0067bf5307eb05137bce817" category="inline-link-macro-rx"></block></block>
+  <block id="77a89cd0e5a14d8b8709467f579b8edc" category="paragraph"><block ref="77a89cd0e5a14d8b8709467f579b8edc" category="inline-link-macro-rx"></block></block>
+  <block id="c9cbd1d1d65e3b0d2ec2922daec8bddf" category="paragraph"><block ref="c9cbd1d1d65e3b0d2ec2922daec8bddf" category="inline-link-macro-rx"></block></block>
+  <block id="fa499afb5b0e71cede67d6430b479aad" category="doc">Amazon Q向けNetApp ONTAP Connectorのサポート</block>
+  <block id="c77dd74f22a4c7346ab562d5eff0bc5a" category="paragraph">このリリースの 生成AIでは、NetApp ONTAP Connector for Amazon Qのサポートが導入され、Amazon Q Business用のコネクタを作成できるようになりました。Amazon Bedrock用の 生成AIナレッジベースを構築するよりも、初期設定が少なくて済み、Amazon Q Business AIアシスタントをすばやく簡単に活用できます。</block>
+  <block id="cf79fa4b0d1663f0ab76e8bc4b4e5ff3" category="inline-link-macro">Amazon Q Business用の 生成AIコネクタの作成</block>
+  <block id="9e4085aea7ddf49d777bc0d6415232d0" category="paragraph"><block ref="9e4085aea7ddf49d777bc0d6415232d0" category="inline-link-macro-rx"></block></block>
+  <block id="535baaac5969b3bd7fd10592a2cb8e22" category="section-title">強化されたチャットモデルサポート</block>
+  <block id="48ced6c80c0d41a7f68e3e9caece65d9" category="paragraph">生成AIでは、ナレッジベース用に次の追加チャットモデルがサポートされるようになりました。</block>
+  <block id="ba7ee7dc8867588bd50d38f7762f4e93" category="inline-link-macro">Mistral AIモデル</block>
+  <block id="fffe8738239ad19b2e24fda4b92d99f8" category="list-text"><block ref="fffe8738239ad19b2e24fda4b92d99f8" category="inline-link-macro-rx"></block></block>
+  <block id="ac4754b088e15ec23e2e33942607b0db" category="inline-link-macro">Amazon Titanテキストモデル</block>
+  <block id="91b642108b49f539aef5f1e7e8429b9a" category="list-text"><block ref="91b642108b49f539aef5f1e7e8429b9a" category="inline-link-macro-rx"></block></block>
+  <block id="3e431ea8f1bf6f1b755d11be49ab7215" category="inline-link-macro">Meta Llamaモデル</block>
+  <block id="957aa19111afb49cbdb72a75c11a7824" category="list-text"><block ref="957aa19111afb49cbdb72a75c11a7824" category="inline-link-macro-rx"></block></block>
+  <block id="025fda77b8ffb8c9e7812b66f625dcdb" category="inline-link-macro">Jamba 1.5モデル</block>
+  <block id="00be89811246b5f1554783fae811628a" category="list-text"><block ref="00be89811246b5f1554783fae811628a" category="inline-link-macro-rx"></block></block>
+  <block id="d5bedd5eb6b3c4a63a27527880abc5ae" category="inline-link-macro">Cohereコマンドモデル</block>
+  <block id="01f2d137c910887f5780defdf71aa720" category="list-text"><block ref="01f2d137c910887f5780defdf71aa720" category="inline-link-macro-rx"></block></block>
+  <block id="7af238b1ae959fcc9ca0417cb2d5f9a7" category="inline-link-macro">ディープシークモデル</block>
+  <block id="96734ae1eb62df22f906e39314369633" category="list-text"><block ref="96734ae1eb62df22f906e39314369633" category="inline-link-macro-rx"></block></block>
+  <block id="dbc68fe7976455ff2b6f2e5143dfd308" category="inline-link-macro">Amazon Bedrockでサポートされる基盤モデル</block>
+  <block id="b198f4cca9409499187762bec5420672" category="paragraph">生成AIは、Amazon Bedrockがサポートする各プロバイダのモデルをサポートしています。<block ref="9f10081366e85554159ed4dc640b95c7" category="inline-link-macro-rx"></block></block>
+  <block id="514f1fc0ac0ff6e4200d3637146367f1" category="section-title">権限に関する用語を更新</block>
+  <block id="a7b97ab7d88b015e92ed51ef4bee9c25" category="paragraph">ワークロードファクトリのユーザインターフェイスとドキュメントでは、読み取り権限を「読み取り専用」に、自動権限を「読み取り/書き込み」に指定するようになりました。</block>
+  <block id="da1f9b1e0d45e28b599d8f40c855f668" category="summary">AIインフラストラクチャを展開し、Amazon Q Businessと統合するデータソースを特定したら、コネクタを定義できます。</block>
+  <block id="06576beecf0a3b501bd304361172e710" category="doc">Amazon Q用のNetApp ONTAPコネクタの作成</block>
+  <block id="eb56f84f8c7f39034f8b4f008276df54" category="paragraph">AIインフラを導入し、FSx for ONTAPデータストアから使用するデータソースを特定したら、NetApp ONTAP Connector for Amazon Qを定義できます。</block>
+  <block id="b4851e92b19af0c5c82447fc0937709d" category="inline-link-macro">要件</block>
+  <block id="c544ac4406a53e3d89f1f777f49bd9ab" category="paragraph">続行する前に、ご使用の環境がfor Amazon Q Businessの要件を満たしていることを確認し<block ref="e9a731368b15c5c87437cf87756c4dd9" category="inline-link-macro-rx"></block>てください。</block>
+  <block id="416b1ad25d5076e01c81a106a5183bb8" category="paragraph">組織のデータソースには、個人識別情報（PII）が含まれている場合があります。この機密情報を保護するために、コネクタを定義するときに_data guardrails_を有効にすることができます。BlueXP  分類を利用したデータガードレールは、PIIを識別してマスクし、アクセスできず、取り出すことができないようにします。</block>
+  <block id="32a3d08b7aad0fea19d07c320ae1572b" category="admonition">BlueXP  Workload Factory for生成AIでは、機密性の高い個人情報（SPII）はマスクされません。このタイプのデータの詳細については、を参照してください<block ref="0cdb750dab1dfb2fce5dd1cc6f558f0e" category="inline-link-macro-rx"></block>。</block>
+  <block id="35c5b8334726059a903cf8e72acd6567" category="admonition">データガードレールはいつでも有効または無効にできます。データガードレールを有効にすると、Workload Factoryはデータソース全体をゼロからスキャンするため、コストが発生する可能性があります。</block>
+  <block id="7110ae9aea43e2e00725933a5f626fa1" category="section-title">コネクターの定義</block>
+  <block id="587c0510bec4ca8fb8c5c828596d2bf3" category="paragraph">Amazon Q用のNetApp ONTAPコネクタを作成するこのコネクタは、生成AIとAmazon Q Business間のAPIおよびデータソース通信を可能にします。</block>
+  <block id="cef935b09c14a76911c2bc3b2878c1eb" category="list-text">[ナレッジベースとコネクタ]タブで、*[新規作成]*ドロップダウンを選択し、*[Amazon Q Business Connector]*を選択します。</block>
+  <block id="e90a1e1cd02488bfade2709b90f749fd" category="list-text">[コネクタの定義（Define Connector）]ページで、コネクタの設定を構成します。</block>
+  <block id="5e8ca8e597dc55a04039701d5dac2cf3" category="list-text">*名前*:コネクタに使用する名前を入力します。</block>
+  <block id="dffbc54d16e84507b04590e6d1c0c866" category="list-text">*説明*：コネクタの詳細な説明を入力します。</block>
+  <block id="c9feba567b8d3a8ba8747f88e19831cc" category="list-text">* Amazon Q *：統合するAmazon Q Businessインスタンスのリージョンとアプリケーション名。</block>
+  <block id="bf5ee3ec2f3e4b65913ce148dc85d307" category="admonition">データガードレール機能を有効にすると、生成AIは.txt、.md、.csv、.docx、および.pdfファイルを処理し、プレーンテキスト（埋め込み画像またはメディアテキストを除く）のみを取り込み、プライベートデータまたは機密データをマスキングします。他のすべてのファイルタイプは、プライベートデータや機密データをマスキングすることなく正常に処理されます。</block>
+  <block id="48ca727fe38026867b97dd4a2615a41f" category="list-text">* FSx for ONTAPファイルシステム*：Amazon Q用の新しいNetApp ONTAPコネクタを定義すると、Workload Factoryはコネクタ情報を格納するための新しいAmazon FSx for NetApp ONTAPボリュームを作成します。新しいボリュームを作成する既存のファイルシステムおよびSVM（Storage VM）を選択します。</block>
+  <block id="5449bd448d32094e1be238f48844c03e" category="list-text">* Snapshotポリシー*：ワークロード工場のストレージインベントリに定義されている既存のポリシーのリストからSnapshotポリシーを選択します。生成AIは、選択したSnapshotポリシーに基づいて、コネクタ情報を格納するボリュームの定期的なSnapshotを自動的に作成します。</block>
+  <block id="c5639571aa9605e9474435556c2b9258" category="paragraph">必要なSnapshotポリシーが存在しない場合は<block ref="446afe1ef4f3740a216a777a896ec27c" category="inline-link-rx"></block>、ボリュームを含むStorage VM上で実行できます。</block>
+  <block id="c47b1f6ddc8b5b2b1c01ea580fdcbe2b" category="list-text">[コネクタの作成]*を選択して、Amazon Q Businessと 生成AIを統合します。</block>
+  <block id="0fd1c37214b672806d1b01aaa5e711ad" category="paragraph">コネクタの作成中は、進行状況インジケータが表示されます。</block>
+  <block id="b8f6d9f09bc1de45210a1757d02e6a64" category="paragraph">コネクタが作成されたら、Amazon Q Businessがデータを取り込んでインデックスに追加するように、コネクタにデータソースを追加するオプションがあります。[データソースの追加]*を選択し、ここで1つ以上のデータソースを追加することをお勧めします。</block>
+  <block id="aa8ac1310c7d9b19ce03d24b5fc56dd3" category="section-title">コネクタへのデータソースの追加</block>
+  <block id="494e9d7617b206e4728ee8d4e943c436" category="paragraph">1つ以上のデータソースを追加して、組織のデータをAmazon Q Businessインデックスに入力できます。</block>
+  <block id="38948212cb1298a9a87847d80aff8ca3" category="inline-link">Amazon Q Businessドキュメント</block>
+  <block id="e9f9ee2b178e9240eb07268c9b4fe3d4" category="list-text">Amazon Q Businessインデックスの特定のサービス制限については、を参照して<block ref="f859099ef55e8e981ddab6b409f06373" category="inline-link-rx"></block>ください。</block>
+  <block id="55fddc2bb52523580afe42caa9835fc7" category="paragraph">データソースはAmazon Q Businessインデックスに埋め込まれています。データソースが完全に埋め込まれると、ステータスが「埋め込み」から「埋め込み」に変わります。</block>
+  <block id="b6d85ca0ba60b5dd543710bc3ce9d8cf" category="paragraph">コネクタに単一のデータソースを追加した後、Amazon Q Businessチャットボット環境でテストし、ユーザーがサービスを利用できるようにする前に必要な変更を加えることができます。同じ手順に従って、コネクタに追加データソースを追加することもできます。</block>
+  <block id="aa33bca1874e3db584536f0f66cd3301" category="doc">コネクタに追加するデータソースを特定する</block>
+  <block id="ee92c82f76148f0f7c42c7d8935a4737" category="paragraph">コネクタに統合するFSx for ONTAPファイルシステムに存在するドキュメント（データソース）を特定または作成します。これらのデータソースを使用すると、Amazon Q Businessは、組織に関連するデータに基づいて、ユーザークエリに対して正確でパーソナライズされた回答を提供できます。</block>
+  <block id="3b932b7a96c1eee4b65c70c231bb6e60" category="paragraph">各コネクタには複数のデータソースを追加できますが、すべてのデータソースをAWSアカウントからアクセスできるFSx for ONTAPファイルシステムに配置する必要があります。</block>
+  <block id="7072813121d82ae0d2bc05aaab425d4c" category="paragraph">コネクタは、NFSまたはSMB / CIFSプロトコルを使用するボリュームのデータをサポートします。SMBプロトコルを使用して保存されているファイルを選択する場合は、コネクタがこれらのボリューム上のファイルにアクセスできるように、Active Directory情報を入力する必要があります。これには、Active Directoryドメイン、IPアドレス、ユーザ名、パスワードが含まれます。</block>
+  <block id="40ad80bd520fcb9c58d8bdf69bfeafe8" category="paragraph">たとえば、コネクタに10個のファイル(データソース)を統合し、そのうちの2個が制限された情報を含む人事ファイルである場合、これら2つのファイルへのアクセスを認証されたチャットボットユーザーのみが、それらのファイルからのデータを含むチャットボットから応答を受け取ります。</block>
+  <block id="7be29227377788a5b12c7a7e7a66cd65" category="admonition">Amazon Q Business Connectorにデータソースを追加する場合、データソースファイルにはユーザー権限のみが適用されます。グループ権限は適用されません。</block>
+  <block id="93e9aea370504a46b95b2ec1db56c76c" category="admonition">データソースにテキストが含まれていないファイルがある場合、Amazon Q Businessはそれらのファイルにインデックスを作成せず、代わりにファイルにインデックスを作成するテキストが含まれていないことを示すエントリをAmazon CloudWatch Logsに記録します。</block>
+  <block id="5004434ec8c79db151dd6e0c18edd6b3" category="paragraph">現在、NetApp ONTAP Connector for Amazon Qでサポートされているデータソースのファイル形式は次のとおりです。</block>
+  <block id="68dfdbe39ab30356a21fe4db773d9589" category="cell">カンマ区切り値ファイル</block>
+  <block id="67cddf56c0ff55c79aee7dfa01b3d310" category="cell">JSONとJSONP</block>
+  <block id="8c7a7a618a6d4acfe85b4b4b1048846d" category="cell">.docx</block>
+  <block id="121333faad7b59b7a995b890be1e3928" category="cell">Microsoft PowerPoint</block>
+  <block id="520b3f8c79416a683bc233eb9e9a7466" category="cell">.pptまたは.pptx</block>
+  <block id="4382267a4a500ad3c3689577cda2271a" category="cell">ハイパーテキストマークアップ言語</block>
+  <block id="8ff6ba7aa2917af91edd5ace8896cba2" category="cell">.html からのアクセスが可能です</block>
+  <block id="632b65116d554008b76c3be3c8c37f4e" category="cell">拡張マークアップ言語</block>
+  <block id="4e9f6c7fdef327a6b0e08505dc57a694" category="cell">.xml に保存されます</block>
+  <block id="139e293a7146f23cd247c6be049ebf26" category="cell">XSLT</block>
+  <block id="179b98294a9c7a64f9b40b9e9179e171" category="cell">.XSLT</block>
+  <block id="28392dee72b88a917a72357aea20a3a5" category="cell">Microsoft Excel</block>
+  <block id="303e9d780912940ea6ade0981c37e23e" category="cell">.xls</block>
+  <block id="f74d675f930739888116a4559aa93a52" category="cell">リッチテキスト形式</block>
+  <block id="9e653a3b0c5a3f4648036d4881e875cd" category="cell">.rtf</block>
+  <block id="61a6c15b1f4f2a575ac5f47d1fbfe6f2" category="doc">Amazon Q Business Connectorの管理</block>
+  <block id="fe9c0e854bb75d8d0368615c8b433c6f" category="paragraph">Amazon Q Business用のコネクタを作成したら、コネクタの詳細の表示、コネクタの変更、追加データソースの統合、コネクタの削除を行うことができます。</block>
+  <block id="23a31567db48e019d75bf325ea4fd33f" category="section-title">コネクタに関する情報を表示する</block>
+  <block id="ce678abc65f85cf934579388d70bdda3" category="paragraph">コネクタと統合されているデータソースの設定に関する情報を表示できます。</block>
+  <block id="8f1455aac1b07c1a845480b659aeb292" category="list-text">表示するコネクタを選択します。</block>
+  <block id="5cc101287966e66cd99c9c6c0764d04b" category="list-text">コネクターの詳細を表示するには、を選択し<block ref="4dc533ba94e6ca8d1968a9d477e1cbce" category="inline-image-macro-rx" type="image"></block>て*コネクターの管理*を選択します。</block>
+  <block id="b0d4da1928debc3094d8b21648c0c3a3" category="paragraph">[アクション（Actions）]*メニューを使用すると、変更を加える場合にコネクターを管理できます。</block>
+  <block id="4f0c75d31e9e14362509657a4cc55a49" category="section-title">コネクタの編集</block>
+  <block id="2875bbbc39d9cabdc6add56e715a7c04" category="paragraph">一部の設定を変更してコネクタを更新したり、データソースを追加または削除したりできます。</block>
+  <block id="20925e865e981be570599ec2328cd70a" category="paragraph">コネクタからデータソースを追加、変更、または削除するたびに、生成AIはデータソース情報をAmazon Q Businessに送信してインデックスを再作成する必要があります。同期は増分処理であるため、Amazon Q Businessは前回の同期後に追加、変更、または削除されたFSx for ONTAPボリューム内のオブジェクトのみを処理します。</block>
+  <block id="3648f00c53d2df063c5880b5d296acfb" category="list-text">[ナレッジベースとコネクタ]インベントリページで、更新するコネクタを選択します。</block>
+  <block id="7200168818502116f24fc9a2c9aa8107" category="list-text">を選択し<block ref="4dc533ba94e6ca8d1968a9d477e1cbce" category="inline-image-macro-rx" type="image"></block>、*コネクターの管理*を選択します。</block>
+  <block id="470d464d67629b6ff919ea8c9aae93bf" category="list-text">[アクション]メニューを選択し、*[コネクタの編集]*を選択します。</block>
+  <block id="aa946f0a678f73f74ff06250357c1799" category="list-text">[Edit Connector]ページでは、コネクタの名前、説明、埋め込みモデル、データガードレールの有効化、およびコネクタを含むボリュームで使用されるSnapshotポリシーを変更できます。</block>
+  <block id="6e27ea0225699137ba2530c35a8f6d84" category="admonition">埋め込みを含むすべてのデータソーススキャンにはコストがかかります。コネクタの作成後にデータガードレールを有効にすると、データソースが再度スキャンされ、コストが発生します。</block>
+  <block id="a57c1dc973ddd436afe9fcbc15a22c93" category="list-text">変更を行ったら、*[保存]*を選択します。</block>
+  <block id="4dc43722dfa1894b89c5e06558237389" category="section-title">コネクタへの追加データソースの追加</block>
+  <block id="14c12befe24a457bafec00515aa0e29d" category="paragraph">追加データソースをコネクタに埋め込んで、追加の組織データをコネクタに取り込むことができます。</block>
+  <block id="d424d9565a0a56283e14fcec720f7b6a" category="list-text">[ナレッジベースとコネクタ]インベントリページで、データソースを追加するコネクタを選択します。</block>
+  <block id="bf90a209a79dde864f9804cf27edf4df" category="paragraph">データソースがコネクタに統合されます。</block>
+  <block id="e7977875f2273c9165fd47c3d3c3aee8" category="section-title">データソースをコネクタと同期する</block>
+  <block id="3517d2b8ddd9b09d923867695e150fbf" category="paragraph">データソースは関連付けられているコネクタと1日に1回自動的に同期されるため、データソースの変更がAmazon Q Businessに反映されます。いずれかのデータソースに変更を加え、データをすぐに同期（スキャン）する場合は、オンデマンド同期を実行できます。</block>
+  <block id="c023f0c37e2395dfbcb86599990b54ce" category="paragraph">同期は増分処理であるため、Amazon Q Businessは前回の同期以降に追加、変更、または削除されたデータソース内のオブジェクトのみを処理します。</block>
+  <block id="d486ec04a4ff263da9129c2a5580442f" category="list-text">[ナレッジベースとコネクタ]タブで、同期するコネクタを選択します。</block>
+  <block id="d93801edfaf0b3ede0db39f53d95cf40" category="paragraph">コネクタは接続されているデータソースと同期され、Amazon Q Businessはデータソースからの最新情報を使用し始めます。</block>
+  <block id="6b67d2366cdfceb53aeea58819331958" category="section-title">スケジュールされた同期を一時停止または再開する</block>
+  <block id="113b98024868773b6f70f39a7ddd716d" category="paragraph">データソースの次の同期（スキャン）を一時停止または再開する場合は、いつでも実行できます。データソースに変更を加え、変更ウィンドウ中に同期を行わないようにする場合は、次のスケジュールされた同期を一時停止しなければならないことがあります。</block>
+  <block id="7f33995767e18921d242be1e1b3d4d92" category="list-text">[Connector]インベントリページで、スキャンを一時停止または再開するコネクタを選択します。</block>
+  <block id="20fe7c74b98a61498f3b4cf9a0cedfe1" category="list-text">[Actions]メニューを選択し、[Scan]&gt;[Pause scheduled scan]*または[Scan]&gt;[Resume scheduled scan]*を選択します。</block>
+  <block id="0d3742f512084e332df9cf3e01431604" category="paragraph">次のスケジュールされたスキャンが一時停止または再開されたことを示すメッセージが表示されます。</block>
+  <block id="bf5a484e29502a227f97ab9005183647" category="section-title">コネクタの削除</block>
+  <block id="523be0bf702b821a1ff0d32a0a447edb" category="paragraph">コネクタが不要になった場合は、削除できます。コネクタを削除すると、そのコネクタはワークロードファクトリから削除され、コネクタを含むボリュームが削除されます。コネクタの削除は元に戻せません。</block>
+  <block id="9c0f6136c0054738cd89f4434829341d" category="paragraph">コネクタを削除する場合は、コネクタに関連付けられているすべてのエージェントからコネクタの関連付けを解除して、コネクタに関連付けられているすべてのリソースを完全に削除する必要があります。</block>
+  <block id="5f04e305e4afb373dd4222c101416421" category="list-text">[ナレッジベースとコネクタ]インベントリページで、削除するコネクタを選択します。</block>
+  <block id="49ca25cc293d8eaea5abbc997a98b766" category="list-text">[アクション（Actions）]メニューを選択し、[コネクタの削除（Delete Connector）]を選択します。</block>
+  <block id="fe4e9f24fd3a3e4e128adbeb8b1e4f63" category="list-text">[コネクタの削除（Delete Connector）]ダイアログで、削除することを確認し、*[削除（Delete）]*を選択します。</block>
+  <block id="cd5654a62ac0ae4992fc556cbbfc385c" category="paragraph">コネクタがワークロードファクトリから削除され、関連付けられているボリュームが削除されます。</block>
+  <block id="182e3e33bf92b5fae899ae295398f967" category="summary">Amazon FSx for NetApp ONTAPファイルシステムに存在する組織のデータを使用してコネクタを作成しましょう。</block>
+  <block id="450eb57f37211d072a7368e65c267a97" category="doc">生成AIコネクタのクイックスタート</block>
+  <block id="3327960afa4d33a42952d6c7d8ed56ec" category="paragraph">Amazon FSx for NetApp ONTAPファイルシステムに存在する組織のデータを使用して、Amazon Q用NetApp ONTAPコネクタの作成を開始しましょう。コネクタを作成すると、エンドユーザーはAmazon Q Businessアシスタントにアクセスして、質問に対する組織中心の回答を得ることができます。</block>
+  <block id="473b0d4489afb6847b3528470c283f5e" category="paragraph">AWSインフラの導入、導入および検出されたFSx for ONTAPファイルシステム、コネクタに統合するデータソースのリスト、Amazon Q Businessアプリケーションへのアクセスなどには、AWSのクレデンシャルが必要です。</block>
+  <block id="ecce7b5245e843c6ae115994088db5e2" category="paragraph"><block ref="a4570bff78b2af8a7e4a27bf4959db8d" category="inline-link-macro-rx"></block>です。</block>
+  <block id="aa9cd94a01409a2e0db1cfbaa2ff5574" category="paragraph">コネクタに統合するデータソースは、単一のFSx for ONTAPファイルシステムに配置することも、複数のFSx for ONTAPファイルシステムに配置することもできます。これらのシステムが異なるVPCにある場合は、同じネットワーク内でアクセス可能であるか、またはAIエンジンと同じリージョンとAWSアカウントを使用してVPC間でピア関係を確立しておく必要があります。</block>
+  <block id="ef33a25234aa2ece6646cb5739f4fde9" category="paragraph"><block ref="29010d60a361a26e7cccd39eeacb5588" category="inline-link-macro-rx"></block>です。</block>
+  <block id="4f2775ca378d5c35a4a98b0bd3989d31" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block>生成AIインフラの導入</block>
+  <block id="6b0e4831e3d99acb9ad23703e3360c01" category="paragraph">インフラ導入ウィザードを起動して、AWS環境に 生成AIインフラを導入します。このプロセスでは、NetApp生成AIエンジンのEC2インスタンスと、FSx for ONTAPファイルシステムにNetApp AIエンジンのデータベースを格納するボリュームを導入します。ボリュームは、コネクタに関する情報を格納するために使用されます。</block>
+  <block id="1c04a1a61ca2584ca8ea0e2661c59240" category="inline-link-macro">生成AIインフラの導入方法をご確認ください</block>
+  <block id="a052f63c8b3d79d0e865981102e38253" category="paragraph"><block ref="0d6818cfcf477d8cb9e6d8498d1a9d44" category="inline-link-macro-rx"></block>です。</block>
+  <block id="136533d4992078df7d1f45db41363ffc" category="paragraph">Amazon Q Business用のコネクタを作成して、組織に焦点を当てた回答をエンドユーザーに提供できるようになりました。</block>
+  <block id="69c3ca978f076b54fa2030f25d3332fc" category="doc">生成AI Connectorの要件</block>
+  <block id="a3b1269946165413b25e6bd3a003b6be" category="paragraph">Amazon Q用のNetApp ONTAPコネクタを作成する前に、ワークロードファクトリとAWSが適切に設定されていることを確認してください。</block>
+  <block id="a6390dd71ac213c8926f4e003361b1c7" category="section-title">生成AIの基本要件</block>
+  <block id="d94f906cc0b4e822ea4cc6f7282c6f3f" category="paragraph">生成AIには、作業を開始する前に環境が満たす必要のある一般的な要件があります。</block>
+  <block id="5d077bd2e14c4e2191fcc692704a074c" category="list-text">AWSクレデンシャルを読み取り/書き込み権限でWorkload Factoryに追加する必要があります。つまり、生成AIの_読み取り/書き込みモードでWorkload Factoryを使用することになります。</block>
+  <block id="92b8944386b41a864c3b42d0a5f178da" category="paragraph">現時点では、_basic_modeおよび_read-only_mode権限はサポートされていません。</block>
+  <block id="595f56efdb431edfb5c98924891aa631" category="section-title">Amazon Q用NetApp ONTAP Connectorの要件</block>
+  <block id="dc24ca2a4507b8d4ffa56cd2f4ff7a5c" category="paragraph">Amazon Q Business Connectorの次の特定の要件を環境が満たしていることを確認します。</block>
+  <block id="50a0042a7df9c6588a808141018da878" category="list-text">Amazon Q Businessアプリケーション</block>
+  <block id="89092e7ac04c4e6446bab5908228964d" category="list-text">Amazon Q Businessアプリケーションを作成するか、既存のアプリケーションを使用する必要があります。</block>
+  <block id="1d5720aeac7e3539d6efaa01161dfd21" category="list-text">アプリケーションがいずれかのAWSリージョンに存在することを確認します。</block>
+  <block id="a1147b567cbdd1f301a37ed87c2afed7" category="inline-link">インデックスを作成しました</block>
+  <block id="dfe5f26168740e575faf08b9a2ef1ee7" category="list-text">アプリケーションにがあることを確認し<block ref="799ce02f9fcc74379f6eaf3c0d15ae7c" category="inline-link-rx"></block>ます。</block>
+  <block id="dde2cb934f19cc6792ef4202facc9d52" category="list-text">アプリケーションが失敗した状態でないことを確認します。</block>
+  <block id="5b7b71abf2920fafe6a621a8cd575f8c" category="list-text">NetAppの 生成AIエンジンは、コネクタに関する情報を格納するために1つのファイルシステムを使用（存在しない場合は作成）します。</block>
+  <block id="f06479e214120da53f991b1af4eb0097" category="list-text">1つまたは複数のファイルシステムには、コネクタに追加するデータソースが含まれます。</block>
+  <block id="0d8ba413f648e51fef4fb209cc7b48a1" category="list-text">AWS FSx for ONTAPファイルシステムが配置されているAWSリージョン、VPC、サブネットを把握しておく必要があります。</block>
+  <block id="a6389fdd3aafc525ca961513074657c7" category="paragraph">BlueXP  Workload factory for生成AIでは、Amazon FSx for NetApp ONTAPファイルシステムを 生成AI基盤モデルと統合できます。これにより、AIデータセット向けの豊富な保護機能、セキュリティ機能、コスト最適化機能を備えたハイパフォーマンスストレージが実現します。</block>
+  <block id="60525997ca84017159be9ccc575fddc6" category="paragraph">BlueXP  Workload Factory for生成AIでは、Amazon FSx for NetApp ONTAP上のエンタープライズデータソースとジェネレーティブAIアプリケーションを使用できます。Retrieval-Augmented Generation(RAG)を利用すると、データソースをAmazon BedrockまたはAmazon Q Business経由で利用可能な基盤モデルにすばやく接続し、バーチャルアシスタント、Q&amp;Aチャットボット、ドキュメント要約、コンテンツ作成などのGenerative AIを活用したアプリケーションを開発できます。</block>
+  <block id="9eac267e04135210fd13de3d35bf966f" category="inline-link-macro">ナレッジベースの作成</block>
+  <block id="7857532e4fb86ce943421b8f4c90279e" category="inline-link-macro">Amazon Q用のNetApp ONTAPコネクタの定義</block>
+  <block id="816eaa71f63bd8cfa450e3a6a6a4e21b" category="paragraph"><block ref="a1707f04689d949f85e4cb6db99b5c64" category="inline-link-macro-rx"></block>生成AIでは、データソースからデータを取り込み、ベクトル化された結果をデータベースに格納し、取り込まれたデータを使用してクエリに応答する方法を完全に制御できます。この方法では、より初期設定が必要ですが、結果に応じて異なるチャットモデルを選択できます。<block ref="7e2e1fab0b17942f623c655a801494c8" category="inline-link-macro-rx"></block>データソースからのデータはAmazon Q Businessによって取り込まれ、インデックスに保存されます。この方法では初期設定の手間は少なくて済みますが、結果を制御することはできません。</block>
+  <block id="33ce7f647f173acb7ace68da57d0ad93" category="paragraph">生成AI向けのBlueXP  ワークロードファクトリは、取得拡張生成（RAG）を使用してジェネレーティブAIアプリケーションを構築するために必要なインフラを導入するプロセスを簡易化します。具体的には、生成AIには次のようなメリットがあります。</block>
+  <block id="71aa508255eddc0938ca384c87a7c8a1" category="list-text">LangChainなどのオープンソースフレームワークを使用したQ&amp;Aチャットボットなどの 生成AIアプリケーションの開発を加速 生成AI APIを活用して、ナレッジベースやコネクタのプロビジョニングと管理、ナレッジベースとのチャット、チャット履歴の保存と取得を行います。</block>
+  <block id="f0bdc00cfa448d8f15fa17aea3aee5fa" category="paragraph">生成AIは、組織のプライベートデータを使用してモデルのインテリジェンスを補完し、組織内のユーザーからの質問に対するカスタマイズされた回答を提供します。まずRAGフレームワークに必要なインフラストラクチャをデプロイしてから、Amazon BedrockまたはAmazon Q Businessで利用可能な組織のデータソースと基盤モデルを使用してナレッジベースを構築するかコネクタを定義し、次にアプリケーション（Q&amp;Aチャットボットなど）をナレッジベースまたはコネクタに接続します。</block>
+  <block id="3c7cdfc68dac7c9c2821a868ef7397e3" category="paragraph"><block ref="3c7cdfc68dac7c9c2821a868ef7397e3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b395d44923246b15b2cf6bbccefd488e" category="list-text">FSx for ONTAPファイルシステムやAmazon BedrockまたはAmazon Q Business上のデータソースと連携するために、検索拡張生成（RAG）フレームワークに必要なインフラを導入します。このインフラには、データ管理用のNetApp生成AIエンジンインスタンス、組み込みベクターデータベース（LanceDB）、FSx for ONTAPファイルシステム上のベクターデータベース用ストレージが含まれています。</block>
+  <block id="6b2235dca5c2e5796c1881c49bdc02e1" category="list-text">データソースをAmazon BedrockまたはAmazon Q Businessで利用可能な埋め込みおよび言語モデルに接続して、データソースを埋め込み、ユーザークエリの応答を取得できます。データソースは、モデルとその構成とともに、FSx for ONTAPナレッジベースとして提供されます。</block>
+  <block id="bac5e556932e341a4b9de98f3f120a5c" category="list-text">ソースデータをナレッジベースまたはコネクタに取り込んで、ソースファイルをSMB共有に埋め込み、FSx for ONTAPファイルシステムでNFSエクスポートを行うとともに、SMB共有内のファイルに対するファイル権限を格納します。</block>
+  <block id="1e99c460cf537bae167f699f72f10783" category="list-text">ナレッジベースのコンテンツに基づいて、会話スターターの質問を自動的に作成します。</block>
+  <block id="f7876b81c07b146c27fb7196bb0889f1" category="list-text">データ管理者がナレッジベースでチャットをテストするためのチャットシミュレータを提供します。</block>
+  <block id="183107db84b5d97e830561a02417467f" category="list-text">シンプルなコネクタインターフェイスを提供するため、このAIアシスタントの機能を迅速かつ簡単に利用して、生成AIとAmazon Q Businessを接続できます。</block>
+  <block id="1c9640aa9075334712c6c2b922771c50" category="paragraph"><block ref="1c9640aa9075334712c6c2b922771c50" category="inline-link-rx"></block></block>
+  <block id="3e037b952ced7d9d3d5f755278df683d" category="paragraph">ただし、生成型AIインフラをサポートするには、導入したAWSリソースに料金を支払う必要があります。たとえば、Amazon BedrockまたはAmazon Q Business、FSx for ONTAPファイルシステムとストレージ容量、生成AIエンジンEC2インスタンスの料金をAWSに支払います。</block>
+  <block id="eb172a4ea0ca9b00dbcb16f6401ade8d" category="doc">NetApp生成AIエンジンのコンポーネント</block>
+  <block id="9f6ab331f6e1b93cd7720e3b01290dfe" category="paragraph">FSx for ONTAPファイルシステムでデータソースを使用してナレッジベースまたはコネクタを作成したら、データソースの詳細の表示、データソースの内容の更新または変更、データソースの設定の編集、データソースの削除を行うことができます。</block>
+  <block id="d1bd53c9c036a0a164289d39a5a4edea" category="paragraph">データソースのコンテンツに関する情報を表示したり、ナレッジベースまたはコネクタを使用してデータソースの埋め込みステータスを表示したりできます。データソースはナレッジベースまたはコネクタに関連付けられているため、データソースの詳細を表示するには、まずナレッジベースまたはコネクタを選択する必要があります。</block>
+  <block id="11bdb1b485383914846d0ec01ecbf8da" category="list-text">いずれかを使用してワークロードファクトリにログインし<block ref="17b71e2884d56fdbadfe752689dbd4d6" category="inline-link-rx"></block>ます。</block>
+  <block id="a4d7e53eade04c3be167cb91eb35875b" category="list-text">データソースが存在するナレッジベースまたはコネクタを選択し<block ref="4dc533ba94e6ca8d1968a9d477e1cbce" category="inline-image-macro-rx" type="image"></block>、*[ナレッジベースの管理]*または*[コネクタの管理]*を選択します。</block>
+  <block id="d18084c9cdad87027b728588d97de1d2" category="paragraph">ページの下部には、関連するデータソースが表示されます。</block>
+  <block id="75b4e172ba31c79bb7c96549ff633102" category="paragraph">また、埋め込み情報と、そのデータソースが現在ナレッジベースまたはコネクタに埋め込まれているかどうかも表示されます。</block>
+  <block id="6a9319277b81fdcd682844204a1b8ddc" category="paragraph">ナレッジベースまたはコネクタと統合したデータソースに関する情報を編集できます。ほとんどの情報は、データソースを追加した後で修正されますが、一部の構成（チャンキング定義やパーミッションアウェアネスなど）に変更を加えることができます。</block>
+  <block id="d9a5be1c6e2136c44531327606633c19" category="paragraph">データソースは1日に1回自動的にナレッジベースと同期されるため、データソースの変更がチャットボットに反映されます。データソースに変更を加え、データをすぐに同期したい場合は、を使用できます <block ref="0f5a728901202a758f49141d39e6d6c4" category="inline-link-macro-rx"></block>。</block>
+  <block id="8d1c283884ec2a2a9b912b6e070e8367" category="paragraph">この処理では、AIインフラへのリンクがワークロードファクトリから削除されるだけで、AWSからすべてのコンポーネントが削除されるわけではありません。次のインフラコンポーネントをAWSから手動で削除する必要があります。</block>
+  <block id="e1750bb502afd54b5058d245599b0178" category="paragraph">作業を進める前に、環境がナレッジベースのを満たしていることを確認し<block ref="d4b380da98d3e217e1a1342547359af5" category="inline-link-macro-rx"></block>てください。</block>
+  <block id="67018b2f9b0f536ad3b15e35baf7848f" category="paragraph">組織のデータソースには、個人識別情報（PII）が含まれている場合があります。この機密情報を保護するために、ナレッジベースの作成および構成時に_data guardrails_を有効にすることができます。BlueXP  分類を利用したデータガードレールは、PIIを識別してマスクし、アクセスできず、取り出すことができないようにします。</block>
+  <block id="1353892c3200d5ef34ea39aff734e6b8" category="list-text">[ナレッジベースとコネクタ]タブで、*[新規作成]*ドロップダウンを選択し、* NetApp Bedrock用 生成AIナレッジベース*を選択します。</block>
+  <block id="4ecacb5c42fc3b13c2e7d2cc8f5b177c" category="list-text">英語を埋め込む</block>
+  <block id="675aea0734aa7d33f5b87dd79fb596ea" category="list-text">多言語を埋め込む</block>
+  <block id="f407f3d1164313838fd95c2ed0e3ea37" category="list-text">*チャットモデル*: Amazon Bedrockに統合されているさまざまなチャットモデルから選択します。Amazon Bedrockからチャットモデルを有効にしておく必要があります。</block>
+  <block id="088bdfcb190e7f5cbd74a7b7b0afc7ac" category="doc">ナレッジベースまたはコネクタに追加するデータソースを特定する</block>
+  <block id="22ae6b53af9d033c916e5ac98cafe398" category="paragraph">ナレッジベースでは、NFSプロトコルまたはSMB / CIFSプロトコルを使用するボリュームのデータがサポートされます。SMBプロトコルを使用して保存されているファイルを選択する場合は、Active Directory情報を入力して、ナレッジベースがこれらのボリューム上のファイルにアクセスできるようにする必要があります。これには、Active Directoryドメイン、IPアドレス、ユーザ名、パスワードが含まれます。</block>
+  <block id="144ed6dedc8fb9d6e8c267ed1b88f622" category="paragraph">Workload Factory生成AIナレッジベースで現在サポートされているデータソースファイル形式は次のとおりです。</block>
+  <block id="bc288de0017ed79e5ddf41186d5a7bac" category="cell">Apache Parquetfootnote:免責事項[構造化データファイルをナレッジベースに取り込む場合、データガードレール機能はサポートされていません。]</block>
+  <block id="b322ac739d190389142090c734961275" category="list-text">[ナレッジベースとコネクタ]タブで、スキャンを一時停止または再開するナレッジベースを選択します。</block>
+  <block id="bcb256cc8db5d05b70f038b36e876110" category="doc">生成AIナレッジベースのクイックスタート</block>
+  <block id="d46ff87e524577f2d38bb349e94974b6" category="paragraph">Amazon FSx for NetApp ONTAPファイルシステムに存在する組織のデータを使用して、ナレッジベースまたはAmazon Q Business Connectorの作成を開始します。チャットボットなどのアプリケーションは、このナレッジベースまたはコネクタにアクセスして、組織に焦点を当てた応答をエンドユーザーに提供します。</block>
+  <block id="cccf2c6ba0366b925d6b91882c267b34" category="paragraph">AWSインフラの導入、導入および検出されたFSx for ONTAPファイルシステム、ナレッジベースまたはコネクタに統合するデータソースのリスト、Amazon Bedrock AIサービスまたはAmazon Q Businessアプリケーションへのアクセスなどには、AWSのクレデンシャルが必要です。</block>
+  <block id="3e80efed95960189c2bbdd9f0dc01f65" category="paragraph"><block ref="1a5ee64d6d3db43ee72b882473d855ff" category="inline-link-macro-rx"></block>です。</block>
+  <block id="976ae8ec2741e03587309f02abbe28d5" category="paragraph"><block ref="a3a2a716da35b02a285bb1f994ffa509" category="inline-link-macro-rx"></block>です。</block>
+  <block id="d55d697bddbbc6a3065d07012cb084e6" category="paragraph">インフラ導入ウィザードを起動して、AWS環境に 生成AIインフラを導入します。このプロセスでは、NetApp生成AIエンジンのEC2インスタンスと、FSx for ONTAPファイルシステムにNetApp AIエンジンのデータベースを格納するボリュームを導入します。ボリュームは、ナレッジベースで使用されるベクターデータベースを格納するために使用されます。</block>
+  <block id="34dbaff8502e0c0b297561a24d1b6765" category="doc">生成AIナレッジベースの要件</block>
+  <block id="1c3f2d8f1a1781d6eacf4d82ed1ee08f" category="paragraph">ナレッジベースを使用する場合は、環境が次の要件を満たしていることを確認してください。</block>
+  <block id="2d4ef9af630dcc509532eda57cc638d4" category="paragraph">生成AIは、Anthropic、Amazon、Mistral AI、Meta、Jamba、Cohereのさまざまなモデルをサポートしています。</block>
+  <block id="95487d12af5aa12008b7fd4a9d240e39" category="paragraph">Amazon Bedrockでのこれらのモデルの使用について詳しくは、以下をご覧ください。</block>
+  <block id="8360fdbf930670a5295cc4e86b6f3a09" category="list-text"><block ref="8360fdbf930670a5295cc4e86b6f3a09" category="inline-link-rx"></block></block>
+  <block id="b53fdb129cf3a36c249bc3c5d2b830e7" category="list-text"><block ref="b53fdb129cf3a36c249bc3c5d2b830e7" category="inline-link-rx"></block></block>
+  <block id="c448390d73c1d6f4b375f397a804f135" category="list-text"><block ref="c448390d73c1d6f4b375f397a804f135" category="inline-link-rx"></block></block>
+  <block id="c8398186389d88b81b56c6c802a6967f" category="inline-link">Jambaモデル</block>
+  <block id="104808a77a288cf2cec8ed60264d5d99" category="list-text"><block ref="104808a77a288cf2cec8ed60264d5d99" category="inline-link-rx"></block></block>
+  <block id="deecfeaef90201c45d9c17ee5edf836d" category="list-text"><block ref="deecfeaef90201c45d9c17ee5edf836d" category="inline-link-rx"></block></block>
+  <block id="ccf0e0b5c1efe2dabb282d608ba593dd" category="list-text">1つのファイルシステムが、ナレッジベースで使用されるベクターデータベースを格納するために、NetAppの 生成AIエンジンによって使用されます（存在しない場合は作成されます）。</block>
+  <block id="822748e99c70e9162ce5432b2e1eff5c" category="section-title">2025年5月4日</block>
+  <block id="95ab6a86600b31e05b001864adcc30f3" category="sidebar">Amazon Bedrockのナレッジベースを構築</block>
+  <block id="bbe0643c4c2515d0e740168fae1ac3a3" category="sidebar">ナレッジベースのクイックスタート</block>
+  <block id="5c4a7a0d9d9ffc8363d3d3be4bfed390" category="sidebar">Amazon Q Business用コネクタの作成</block>
+  <block id="4434db0ad858887dd143bcf9ca54f677" category="sidebar">コネクタのクイックスタート</block>
+  <block id="c1e122c06e6fbdba97be83b62420f066" category="sidebar">生成AIインフラを管理します。</block>
+  <block id="91e2b8d20f36e828f16fe4114f527899" category="sidebar">コネクターの管理</block>
+  <block id="5945e11d0d43ff54edbf52c73445991e" category="sidebar">生成AIを使用してAmazon Bedrock用のナレッジベースを構築</block>
+  <block id="04e72ad1a1f8c5d1bc6e9d9cd655d231" category="sidebar">ナレッジベースに追加するデータソースを特定する</block>
+  <block id="6d0922d38f508966c79ec8917c90f839" category="sidebar">生成AIを使用してAmazon Q Business用のコネクタを作成する</block>
 </blocks>

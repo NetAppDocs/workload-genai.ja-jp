@@ -1,31 +1,43 @@
 ---
 sidebar: sidebar 
-permalink: requirements.html 
+permalink: knowledge-base/requirements-knowledge-base.html 
 keywords: ai, chatbot, prerequisites, bedrock, fsx for ontap, prerequisites, requirements 
 summary: ナレッジベースを構築する前に、ワークロードファクトリとAWSが適切に設定されていることを確認してください。これには、AWSのログインクレデンシャル、ナレッジベースに統合するデータソースを含む導入済みのFSx for ONTAPファイルシステム、Amazon Bedrock AIサービスへのアクセスなどが含まれます。 
 ---
-= GenAIの要件
+= 生成AIナレッジベースの要件
 :allow-uri-read: 
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]
 ナレッジベースを構築する前に、ワークロードファクトリとAWSが適切に設定されていることを確認してください。これには、AWSのログインクレデンシャル、ナレッジベースに統合するデータソースを含む導入済みのFSx for ONTAPファイルシステム、Amazon Bedrock AIサービスへのアクセスなどが含まれます。
 
+
+
+== 生成AIの基本要件
+
+生成AIには、作業を開始する前に環境が満たす必要のある一般的な要件があります。
+
 ワークロードの工場出荷時のログインとアカウント:: のいずれかを使用してログインする https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]必要があります https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["ワークロードファクトリでアカウントを設定する"^]。
-AWS のクレデンシャルと権限:: automate権限を持つワークロードファクトリにAWSクレデンシャルを追加する必要があります。つまり、生成AIの_automate_modeでワークロードファクトリを使用することになります。
+AWS のクレデンシャルと権限:: AWSクレデンシャルを読み取り/書き込み権限でWorkload Factoryに追加する必要があります。つまり、生成AIの_読み取り/書き込みモードでWorkload Factoryを使用することになります。
 +
 --
-現時点では、_basic_modeおよび_read_mode権限はサポートされていません。
+現時点では、_basic_modeおよび_read-only_mode権限はサポートされていません。
 
 クレデンシャルを設定する際に、以下に示すように権限を選択すると、FSx for ONTAPファイルシステムの管理、GenAI EC2インスタンスおよびナレッジベースとチャットボットに必要なその他のAWSリソースの導入と管理を行うためのフルアクセスが提供されます。
-
-image:screenshot-ai-permissions.png["AIリソースを完全に管理するための権限設定を示すスクリーンショット。"]
 
 https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["ワークロードファクトリにAWSクレデンシャルを追加する方法を確認"^]
 
 --
+
+
+
+
+== 生成AIナレッジベースの要件
+
+ナレッジベースを使用する場合は、環境が次の要件を満たしていることを確認してください。
+
 Amazon Bedrock:: Amazon Bedrockを使用すると、基盤モデルを使用でき、生成型AIアプリケーションを構築するための機能を提供します。
 +
 --
@@ -44,6 +56,8 @@ Amazon Bedrock:: Amazon Bedrockを使用すると、基盤モデルを使用で�
 * Titan埋め込みG1 -テキスト
 * Titan埋め込みテキストv2
 * Titan Multimodal Embedding G1
+* 英語を埋め込む
+* 多言語を埋め込む
 +
 https://aws.amazon.com/bedrock/titan/["Amazon Titanの詳細"^]
 
@@ -53,38 +67,24 @@ https://aws.amazon.com/bedrock/titan/["Amazon Titanの詳細"^]
 チャットモデル:: ナレッジベースを作成する前に、使用する予定の基本チャットモデルを有効にする必要があります。サポートされるモデルはAWSのリージョンによって異なるため、ナレッジベースを導入するリージョンで使用できるモデルを確認するには、を参照し https://docs.aws.amazon.com/bedrock/latest/userguide/models-regions.html["AWSのドキュメント"^] てください。
 +
 --
-生成AIは、次のAnthropic ClaudeモデルとAmazon Novaモデルをサポートしています。
+生成AIは、Anthropic、Amazon、Mistral AI、Meta、Jamba、Cohereのさまざまなモデルをサポートしています。
 
-* Anthropic Claude：
-+
-** クロード3.5ソネット
-** クロード3オプス
-** クロード3ハイク"
-** クロード3ソネット
-** クロード2.1
-** クロード2.0
-
-
-* Amazon Nova：
-+
-** Nova Micro
-** Nova Lite（画像とテキストをサポート）
-** Nova Pro（画像とテキストをサポート）
-
-
-
-
-Amazon Bedrockでこれらのモデルを使用する方法の詳細をご覧ください。
+Amazon Bedrockでのこれらのモデルの使用について詳しくは、以下をご覧ください。
 
 * https://aws.amazon.com/bedrock/claude/["Amazon BedrockのAnthropic's Claude"^]
 * https://docs.aws.amazon.com/nova/latest/userguide/getting-started-console.html["Amazon BedrockコンソールでAmazon Novaを使い始める"^]
+* https://aws.amazon.com/bedrock/mistral/["Mistral AIモデル"^]
+* https://docs.aws.amazon.com/bedrock/latest/userguide/titan-text-models.html["Amazon Titanテキストモデル"^]
+* https://aws.amazon.com/bedrock/llama/["Meta Llamaモデル"^]
+* https://docs.aws.amazon.com/bedrock/latest/userguide/model-parameters-jamba.html["Jambaモデル"^]
+* https://aws.amazon.com/bedrock/cohere/["Cohereコマンドモデル"^]
 
 
 --
 FSx for ONTAPファイルシステム:: 少なくとも1つのFSx for ONTAPファイルシステムが必要です。
 +
 --
-* NetApp GenAIエンジンは、ナレッジベースで使用されるベクターデータベースを格納するために1つのファイルシステムを使用します。
+* 1つのファイルシステムが、ナレッジベースで使用されるベクターデータベースを格納するために、NetAppの 生成AIエンジンによって使用されます（存在しない場合は作成されます）。
 +
 このFSx for ONTAPファイルシステムでは、FlexVolボリュームを使用する必要があります。FlexGroupボリュームはサポートされません。
 

@@ -1,0 +1,113 @@
+---
+sidebar: sidebar 
+permalink: connector/deploy-infrastructure.html 
+keywords: ai, chatbot, infrastructure, bedrock, fsx for ontap 
+summary: 組織に適したFSx for ONTAPナレッジベースとアプリケーションを構築するには、RAGフレームワークのインフラを環境に導入する必要があります。主要なインフラコンポーネントは、Amazon Bedrock AIサービス、NetApp GenAIエンジンの仮想マシンインスタンス、FSx for ONTAPファイルシステムです。 
+---
+= GenAIインフラの導入
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+組織のFSx for ONTAPナレッジベース、コネクタ、アプリケーションを構築する前に、生成AI Infrastructure for RAGフレームワークを環境に導入する必要があります。主要なインフラコンポーネントは、Amazon Bedrockサービス、NetApp生成AIエンジンの仮想マシンインスタンス、FSx for ONTAPファイルシステムです。
+
+展開されたインフラストラクチャは、複数のナレッジベース、チャットボット、コネクタをサポートできるため、通常はこのタスクを一度だけ実行する必要があります。
+
+
+
+== インフラの詳細
+
+GenAI環境は、Amazon Bedrockが有効になっているAWSリージョンに配置する必要があります。 https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-supported.html["サポートされているリージョンの一覧を表示する"^]
+
+インフラストラクチャは、次のコンポーネントで構成されています。
+
+Amazon Bedrockサービス:: Amazon Bedrockは、業界をリードするAI企業の基盤モデル（FMS）を単一のAPIで使用できるフルマネージドサービスです。また、セキュアなジェネレーティブAIアプリケーションの構築に必要な機能も提供します。
++
+--
+https://aws.amazon.com/bedrock/["Amazon Bedrockの詳細"^]
+
+--
+Amazon Q Business:: Amazon QはAmazon Bedrock上に構築されており、フルマネージドのジェネレーティブAIアシスタントを使用して、データソースからの情報に基づいて質問に答えたりコンテンツを生成したりできます。
++
+--
+https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/what-is.html["Amazon Q Businessの詳細"^]
+
+--
+NetApp GenAIエンジン用の仮想マシン:: このプロセスでは、NetApp GenAIエンジンがデプロイされます。データソースからデータを取り込み、そのデータをベクターデータベースに書き込む処理能力を提供します。
+FSx for ONTAPファイルシステム:: FSx for ONTAPファイルシステムは、GenAIシステムにストレージを提供します。
++
+--
+データソースに基づく基本モデルによって生成されたデータを格納するベクターデータベースを含む単一のボリュームが導入されます。
+
+ナレッジベースに統合するデータソースは、同じFSx for ONTAPファイルシステムに配置することも、別のシステムに配置することもできます。
+
+NetApp GenAIエンジンは、これらのボリュームの両方を監視し、相互作用します。
+
+--
+
+
+次の図は、GenAIインフラストラクチャを示しています。この手順では、番号1、2、3のコンポーネントを展開します。展開を開始する前に、他の要素が配置されている必要があります。
+
+image:genai-infrastructure-diagram-numbered.png["生成AIインフラコンポーネントの図。"]
+
+
+
+== GenAIインフラの導入
+
+AWSのクレデンシャルを入力し、FSx for ONTAPファイルシステムを選択して、Retrieval-Augmented Generation（RAG）インフラを導入する必要があります。
+
+.開始する前に
+この手順を開始する前に、使用している環境がナレッジベースまたはコネクタの要件を満たしていることを確認してください。
+
+* link:../knowledge-base/requirements-knowledge-base.html["ナレッジベースの要件"]
+* link:../connector/requirements-connector.html["コネクタの要件"]
+
+
+.手順
+. いずれかを使用してワークロードファクトリにログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
+. [AI Workloads]タイルで、*[Deploy & manage]*を選択します。
+. インフラの図を確認し、* Next *を選択します。
+. [AWS settings]セクションの項目を入力します。
++
+.. * AWSクレデンシャル*：AWSリソースを導入する権限を提供するAWSクレデンシャルを選択または追加します。
+.. *場所*：AWSのリージョン、VPC、サブネットを選択します。
++
+GenAI環境は、Amazon Bedrockが有効になっているAWSリージョンに配置する必要があります。 https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-supported.html["サポートされているリージョンの一覧を表示する"^]
+
+
+
+. [インフラストラクチャー設定]セクションの項目を入力します。
++
+.. * Tags *：この導入環境に含まれるすべてのAWSリソースに適用するタグのキーと値のペアを入力します。これらのタグは、AWS管理コンソールとワークロードファクトリ内のインフラストラクチャ情報領域に表示され、ワークロードファクトリリソースを追跡するのに役立ちます。
+
+
+. [Connectivity]*セクションに入力します。
++
+.. *キーペア*: NetApp GenAIエンジンインスタンスに安全に接続できるキーペアを選択します。
+
+
+. 「AIエンジン*」セクションを完了します。
++
+.. *インスタンス名*：必要に応じて、*インスタンス名を定義*を選択し、AIエンジンインスタンスのカスタム名を入力します。インスタンス名はAWS Management Consoleとワークロードファクトリ内のインフラストラクチャ情報領域に表示され、ワークロードファクトリリソースを追跡するのに役立ちます。
+
+
+. 導入*を選択して導入を開始します。
++
+
+NOTE: 導入がクレデンシャルエラーで失敗した場合は、エラーメッセージ内のハイパーリンクを選択すると、エラーの詳細を確認できます。見つからないかブロックされている権限のリストと、生成AIワークロードが 生成AIインフラを導入するために必要な権限のリストを確認できます。
+
+
+
+.結果
+Workload Factoryはチャットボットインフラストラクチャの導入を開始します。このプロセスには最大10分かかることがあります。
+
+導入プロセスでは、次の項目が設定されます。
+
+* ネットワークはプライベートエンドポイントとともにセットアップされます。
+* IAMロール、インスタンスプロファイル、およびセキュリティグループが作成されます。
+* GenAIエンジンの仮想マシンインスタンスが導入されている。
+* Amazon Bedrockは、プレフィックスを持つロググループを使用して、Amazon CloudWatch Logsにログを送信するように構成されて `/aws/bedrock/`います。
+* GenAIエンジンは、という名前のロググループを使用して、Amazon CloudWatch Logsにログを送信するように構成されてい `/netapp/wlmai/<tenancyAccountId>/randomId`ます。ここで、 `<tenancyAccountID>` は現在のユーザーのです https://docs.netapp.com/us-en/bluexp-automation/platform/get_identifiers.html#get-the-account-identifier["BlueXPアカウントID"^] 。
+

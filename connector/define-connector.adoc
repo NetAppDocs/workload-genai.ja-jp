@@ -1,0 +1,132 @@
+---
+sidebar: sidebar 
+permalink: connector/define-connector.html 
+keywords: ai, chatbot, connector, 
+summary: AIインフラストラクチャを展開し、Amazon Q Businessと統合するデータソースを特定したら、コネクタを定義できます。 
+---
+= Amazon Q用のNetApp ONTAPコネクタの作成
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+AIインフラを導入し、FSx for ONTAPデータストアから使用するデータソースを特定したら、NetApp ONTAP Connector for Amazon Qを定義できます。
+
+続行する前に、ご使用の環境がfor Amazon Q Businessの要件を満たしていることを確認しlink:requirements-connector.html["要件"]てください。
+
+.タスクの内容
+組織のデータソースには、個人識別情報（PII）が含まれている場合があります。この機密情報を保護するために、コネクタを定義するときに_data guardrails_を有効にすることができます。BlueXP  分類を利用したデータガードレールは、PIIを識別してマスクし、アクセスできず、取り出すことができないようにします。
+
+link:https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["BlueXPの分類について説明します"^]です。
+
+
+NOTE: BlueXP  Workload Factory for生成AIでは、機密性の高い個人情報（SPII）はマスクされません。このタイプのデータの詳細については、を参照してくださいlink:https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-sensitive-personal-data["機密性の高い個人データのタイプ"^]。
+
+
+NOTE: データガードレールはいつでも有効または無効にできます。データガードレールを有効にすると、Workload Factoryはデータソース全体をゼロからスキャンするため、コストが発生する可能性があります。
+
+
+
+== コネクターの定義
+
+Amazon Q用のNetApp ONTAPコネクタを作成するこのコネクタは、生成AIとAmazon Q Business間のAPIおよびデータソース通信を可能にします。
+
+.手順
+. いずれかを使用してワークロードファクトリにログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
+. [AI Workloads]タイルで、*[Deploy & manage]*を選択します。
+. [ナレッジベースとコネクタ]タブで、*[新規作成]*ドロップダウンを選択し、*[Amazon Q Business Connector]*を選択します。
+. [コネクタの定義（Define Connector）]ページで、コネクタの設定を構成します。
++
+.. *名前*:コネクタに使用する名前を入力します。
+.. *説明*：コネクタの詳細な説明を入力します。
+.. * Amazon Q *：統合するAmazon Q Businessインスタンスのリージョンとアプリケーション名。
+.. *データガードレール*:データガードレールを有効にするか無効にするかを選択します。link:https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["BlueXP  分類を活用したデータガードレールの詳細"^]です。
++
+データガードレールを有効にするには、次の前提条件を満たす必要があります。
+
++
+*** BlueXP  分類と通信するには、サービスアカウントが必要です。サービスアカウントを作成するには、BlueXP  テナンシーアカウントで_Organization admin_roleが必要です。組織管理者ロールを持つメンバーは、BlueXP  ですべてのアクションを実行できます。link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-manage-members-permissions.html#add-a-role-to-a-member["BlueXP  でメンバーにロールを追加する方法を確認する"^]
+*** AIエンジンがにアクセスできる必要がありますlink:https://api.bluexp.netapp.com["BlueXP  APIエンドポイント"^]。
+*** で説明されているように、次の手順を実行する必要がありlink:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-cloud-compliance.html#quick-start["BlueXPの分類に関するドキュメント"^]ます。
++
+.... BlueXPコネクタの作成
+.... 環境が前提条件を満たしていることを確認する
+.... BlueXP分類を導入します
+
+
+
+
+
+
++
+
+NOTE: データガードレール機能を有効にすると、生成AIは.txt、.md、.csv、.docx、および.pdfファイルを処理し、プレーンテキスト（埋め込み画像またはメディアテキストを除く）のみを取り込み、プライベートデータまたは機密データをマスキングします。他のすべてのファイルタイプは、プライベートデータや機密データをマスキングすることなく正常に処理されます。
+
++
+.. * FSx for ONTAPファイルシステム*：Amazon Q用の新しいNetApp ONTAPコネクタを定義すると、Workload Factoryはコネクタ情報を格納するための新しいAmazon FSx for NetApp ONTAPボリュームを作成します。新しいボリュームを作成する既存のファイルシステムおよびSVM（Storage VM）を選択します。
+.. * Snapshotポリシー*：ワークロード工場のストレージインベントリに定義されている既存のポリシーのリストからSnapshotポリシーを選択します。生成AIは、選択したSnapshotポリシーに基づいて、コネクタ情報を格納するボリュームの定期的なSnapshotを自動的に作成します。
++
+必要なSnapshotポリシーが存在しない場合は https://docs.netapp.com/us-en/ontap/data-protection/create-snapshot-policy-task.html["Snapshot ポリシーを作成します"^]、ボリュームを含むStorage VM上で実行できます。
+
+
+
+. [コネクタの作成]*を選択して、Amazon Q Businessと 生成AIを統合します。
++
+コネクタの作成中は、進行状況インジケータが表示されます。
+
++
+コネクタが作成されたら、Amazon Q Businessがデータを取り込んでインデックスに追加するように、コネクタにデータソースを追加するオプションがあります。[データソースの追加]*を選択し、ここで1つ以上のデータソースを追加することをお勧めします。
+
+
+
+
+
+== コネクタへのデータソースの追加
+
+1つ以上のデータソースを追加して、組織のデータをAmazon Q Businessインデックスに入力できます。
+
+.タスクの内容
+* サポートされるデータソースの最大数は10です。
+* Amazon Q Businessインデックスの特定のサービス制限については、を参照して https://docs.aws.amazon.com/kendra/latest/dg/quotas.html["Amazon Q Businessドキュメント"^]ください。
+
+
+.手順
+. [データソースの追加]*を選択すると、*[ファイルシステムの選択]*ページが表示されます。
+. *ファイルシステムを選択*：データソースファイルが存在するFSx for ONTAPファイルシステムを選択し、* Next *を選択します。
+. *ボリュームを選択*：データソースファイルが格納されているボリュームを選択し、*[次へ]*を選択します。
++
+SMBプロトコルを使用して保存されているファイルを選択する場合は、ドメイン、IPアドレス、ユーザ名、パスワードなどのActive Directory情報を入力する必要があります。
+
+. *データソースを選択*：ファイルを保存した場所に基づいてデータソースの場所を選択します。これは、ボリューム全体、またはボリューム内の特定のフォルダまたはサブフォルダにすることができ、* Next *を選択します。
+. *設定*:データソースがファイルから情報を取り込む方法と、スキャンに含めるファイルを設定します。
++
+** *ファイルフィルタリング*:スキャンに含めるファイルを設定します。
++
+*** [ファイルタイプのサポート]セクションで、すべてのタイプのファイルを含めるか、データソーススキャンに含めるファイルタイプを個別に選択します。
+*** [ファイル変更時刻フィルタ]*セクションで、ファイルの変更時刻に基づいてファイルを含めるかどうかを選択します。変更時刻のフィルタリングを有効にする場合は、リストから日付範囲を選択します。
++
+
+NOTE: 変更日の範囲に基づいてファイルをインクルードした場合、日付範囲が満たされない（指定した日付範囲内でファイルが変更されていない）とすぐに、ファイルは定期スキャンから除外され、データソースにはこれらのファイルは含まれません。
+
+
+
+
+
+. 権限対応*セクション（選択したデータソースがSMBプロトコルを使用するボリューム上にある場合にのみ表示）で、権限対応の応答を有効または無効にできます。
++
+** *有効*:このコネクタにアクセスするチャットボットのユーザーは、アクセス権を持つデータソースからのクエリに対する応答のみを取得します。
+** *無効*:チャットボットのユーザーは、統合されたすべてのデータソースからコンテンツを使用して応答を受信します。
++
+
+NOTE: Active Directoryグループ権限は、Amazon Q Business Connectorデータソースではサポートされていません。
+
+
+
+. このデータソースをAmazon Q Business Connectorに追加するには、*[追加]*を選択します。
+
+
+.結果
+データソースはAmazon Q Businessインデックスに埋め込まれています。データソースが完全に埋め込まれると、ステータスが「埋め込み」から「埋め込み」に変わります。
+
+コネクタに単一のデータソースを追加した後、Amazon Q Businessチャットボット環境でテストし、ユーザーがサービスを利用できるようにする前に必要な変更を加えることができます。同じ手順に従って、コネクタに追加データソースを追加することもできます。

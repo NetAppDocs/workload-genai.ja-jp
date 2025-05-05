@@ -1,17 +1,17 @@
 ---
 sidebar: sidebar 
-permalink: quick-start.html 
+permalink: knowledge-base/quick-start-knowledge-base.html 
 keywords: quick start, knowledge base, chatbot 
 summary: Amazon FSx for NetApp ONTAPファイルシステムに存在する組織のデータを使用して、ナレッジベースを作成しましょう。チャットボットなどのアプリケーションは、このナレッジベースにアクセスして、組織に焦点を当てた回答をエンドユーザーに提供します。 
 ---
-= GenAIのクイックスタート
+= 生成AIナレッジベースのクイックスタート
 :allow-uri-read: 
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]
-Amazon FSx for NetApp ONTAPファイルシステムに存在する組織のデータを使用して、ナレッジベースを作成しましょう。チャットボットなどのアプリケーションは、このナレッジベースにアクセスして、組織に焦点を当てた回答をエンドユーザーに提供します。
+Amazon FSx for NetApp ONTAPファイルシステムに存在する組織のデータを使用して、ナレッジベースまたはAmazon Q Business Connectorの作成を開始します。チャットボットなどのアプリケーションは、このナレッジベースまたはコネクタにアクセスして、組織に焦点を当てた応答をエンドユーザーに提供します。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"]ワークロードファクトリへのログイン
 [role="quick-margin-para"]
@@ -19,21 +19,21 @@ Amazon FSx for NetApp ONTAPファイルシステムに存在する組織のデ�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2つ"]生成AIの要件を満たす環境のセットアップ
 [role="quick-margin-para"]
-AWSインフラの導入、導入および検出されたFSx for ONTAPファイルシステム、ナレッジベースに統合するデータソースのリスト、Amazon Bedrock AIサービスへのアクセスなどには、AWSのクレデンシャルが必要です。
+AWSインフラの導入、導入および検出されたFSx for ONTAPファイルシステム、ナレッジベースまたはコネクタに統合するデータソースのリスト、Amazon Bedrock AIサービスまたはAmazon Q Businessアプリケーションへのアクセスなどには、AWSのクレデンシャルが必要です。
 
 [role="quick-margin-para"]
-link:requirements.html["生成AI要件の詳細"^]です。
+link:requirements-knowledge-base.html["生成AI要件の詳細"^]です。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"]データソースが格納されているFSx for ONTAPファイルシステムを特定する
 [role="quick-margin-para"]
 ナレッジベースに統合するデータソースは、単一のFSx for ONTAPファイルシステムに配置することも、複数のFSx for ONTAPファイルシステムに配置することもできます。これらのシステムが異なるVPCにある場合は、同じネットワーク内でアクセス可能であるか、またはAIエンジンと同じリージョンとAWSアカウントを使用してVPC間でピア関係を確立しておく必要があります。
 
 [role="quick-margin-para"]
-link:identify-data-sources.html["データソースを特定する方法"^]です。
+link:identify-data-sources-knowledge-base.html["データソースを特定する方法"^]です。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4つ"]ナレッジベースインフラストラクチャの導入
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4つ"]生成AIインフラの導入
 [role="quick-margin-para"]
-インフラ導入ウィザードを起動して、ナレッジベースインフラをAWS環境に導入します。このプロセスでは、NetApp GenAIエンジン用のEC2インスタンスと、NetApp AIエンジンデータベースを格納するFSx for ONTAPファイルシステムにボリュームを導入します。ボリュームは、ナレッジベースで使用されるベクターデータベースを格納するために使用されます。
+インフラ導入ウィザードを起動して、AWS環境に 生成AIインフラを導入します。このプロセスでは、NetApp生成AIエンジンのEC2インスタンスと、FSx for ONTAPファイルシステムにNetApp AIエンジンのデータベースを格納するボリュームを導入します。ボリュームは、ナレッジベースで使用されるベクターデータベースを格納するために使用されます。
 
 [role="quick-margin-para"]
 link:deploy-infrastructure.html["ナレッジベースインフラストラクチャの導入方法"^]です。

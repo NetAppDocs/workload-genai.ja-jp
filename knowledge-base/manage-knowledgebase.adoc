@@ -1,13 +1,13 @@
 ---
 sidebar: sidebar 
-permalink: manage-knowledgebase.html 
+permalink: knowledge-base/manage-knowledgebase.html 
 keywords: ai, chatbot, managing, knowledge base 
 summary: ナレッジベースを作成したら、ナレッジベースの詳細の表示、ナレッジベースの変更、追加のデータソースの統合、ナレッジベースの削除を行うことができます。 
 ---
 = 生成AIナレッジベースの管理
 :allow-uri-read: 
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]
@@ -237,6 +237,22 @@ NOTE: 変更日の範囲に基づいてファイルをインクルードした�
 
 .結果
 ナレッジベースは添付されたデータソースと同期され、アクティブなチャットボットはデータソースからの最新情報を使用し始めます。
+
+
+
+=== スケジュールされた同期を一時停止または再開する
+
+データソースの次の同期（スキャン）を一時停止または再開する場合は、いつでも実行できます。データソースに変更を加え、変更ウィンドウ中に同期を行わないようにする場合は、次のスケジュールされた同期を一時停止しなければならないことがあります。
+
+.手順
+. いずれかを使用してワークロードファクトリにログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
+. [ナレッジベースとコネクタ]タブで、スキャンを一時停止または再開するナレッジベースを選択します。
+. を選択し image:icon-action.png["オプションボタン"] 、*[ナレッジベースの管理]*を選択します。
+. [Actions]メニューを選択し、[Scan]>[Pause scheduled scan]*または[Scan]>[Resume scheduled scan]*を選択します。
++
+次のスケジュールされたスキャンが一時停止または再開されたことを示すメッセージが表示されます。
+
+
 
 
 

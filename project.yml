@@ -19,50 +19,68 @@ sidebar:
     entries:
     - title: 新機能
       url: "/whats-new.html"
-  - title: はじめに
+  - title: 生成AI向けBlueXP  ワークロードファクトリの詳細
     entries:
     - title: 生成AI向けBlueXP  ワークロードファクトリの詳細
-      url: "/ai-workloads-overview.html"
-    - title: クイックスタート
-      url: "/quick-start.html"
-    - title: GenAIの要件
-      url: "/requirements.html"
-    - title: ナレッジベースのデータソースを特定する
-      url: "/identify-data-sources.html"
-    - title: ナレッジベースインフラストラクチャの導入
-      url: "/deploy-infrastructure.html"
-    - title: 外部のサンプルチャットボットアプリケーションを使用する
-      url: "/example-chatbot-application.html"
-    - title: NetApp GenAIエンジンのコンポーネント
-      url: "/genai-engine-instance.html"
-  - title: 生成AIを使用してナレッジベースを構築する
+      url: "/general/ai-workloads-overview.html"
+    - title: NetApp生成AIエンジンのコンポーネント
+      url: "/general/genai-engine-instance.html"
+  - title: 生成AIを使用してAmazon Bedrock用のナレッジベースを構築
     entries:
+    - title: はじめに
+      entries:
+      - title: クイックスタート
+        url: "/knowledge-base/quick-start-knowledge-base.html"
+      - title: ナレッジベースの要件
+        url: "/knowledge-base/requirements-knowledge-base.html"
+      - title: ナレッジベースに追加するデータソースを特定する
+        url: "/knowledge-base/identify-data-sources-knowledge-base.html"
+      - title: GenAIインフラの導入
+        url: "/knowledge-base/deploy-infrastructure.html"
     - title: ナレッジベースの作成
-      url: "/create-knowledgebase.html"
+      url: "/knowledge-base/create-knowledgebase.html"
     - title: ナレッジベースのテスト
-      url: "/test-knowledgebase.html"
+      url: "/knowledge-base/test-knowledgebase.html"
     - title: 認証をアクティブ化
-      url: "/activate-authentication.html"
+      url: "/knowledge-base/activate-authentication.html"
     - title: ナレッジベースのパブリッシュ
-      url: "/publish-knowledgebase.html"
+      url: "/knowledge-base/publish-knowledgebase.html"
+    - title: 外部のサンプルチャットボットアプリケーションを使用する
+      url: "/knowledge-base/example-chatbot-application.html"
     - title: RAGベースのAIアプリケーションの作成
-      url: "/create-application.html"
+      url: "/knowledge-base/create-application.html"
     - title: 次は何ができるか
-      url: "/whats-next.html"
+      url: "/knowledge-base/whats-next.html"
+  - title: 生成AIを使用してAmazon Q Business用のコネクタを作成する
+    entries:
+    - title: はじめに
+      entries:
+      - title: クイックスタート
+        url: "/connector/quick-start-connector.html"
+      - title: ナレッジベースの要件
+        url: "/connector/requirements-connector.html"
+      - title: ナレッジベースに追加するデータソースを特定する
+        url: "/connector/identify-data-sources-connector.html"
+      - title: GenAIインフラの導入
+        url: "/connector/deploy-infrastructure.html"
+    - title: Amazon Q用のNetApp ONTAPコネクタの作成
+      url: "/connector/define-connector.html"
   - title: GenAIの管理
     entries:
     - title: GenAIインフラの管理
-      url: "/manage-infrastructure.html"
+      url: "/general/manage-infrastructure.html"
     - title: ナレッジベースの管理
-      url: "/manage-knowledgebase.html"
+      url: "/knowledge-base/manage-knowledgebase.html"
+    - title: コネクターの管理
+      url: "/connector/manage-connector.html"
     - title: データソースの管理
-      url: "/manage-data-source.html"
+      url: "/general/manage-data-source.html"
   - title: 知識とサポート
     entries:
     - title: サポートに登録します
       url: "/support-registration.html"
     - title: トラブルシューティング
-      url: "/troubleshooting.html"
+      url: "/general/troubleshooting.html"
     - title: ヘルプを表示します
       url: "/get-help.html"
   - title: 法的通知

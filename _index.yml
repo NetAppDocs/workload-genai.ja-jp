@@ -8,25 +8,33 @@ indexpage:
   - title: はじめに
     links:
     - title: 生成AI向けBlueXP  ワークロードファクトリの詳細
-      url: ai-workloads-overview.html
-    - title: クイックスタート
-      url: quick-start.html
-    - title: GenAIの要件
-      url: requirements.html
+      url: general/ai-workloads-overview.html
     - title: ナレッジベースインフラストラクチャの導入
-      url: deploy-infrastructure.html
-  - title: ナレッジベースの構築
+      url: knowledge-base/deploy-infrastructure.html
+  - title: Amazon Bedrockのナレッジベースを構築
     links:
+    - title: ナレッジベースのクイックスタート
+      url: knowledge-base/quick-start-knowledge-base.html
     - title: ナレッジベースの作成
-      url: create-knowledgebase.html
+      url: knowledge-base/create-knowledgebase.html
     - title: ナレッジベースのテスト
-      url: test-knowledgebase.html
+      url: knowledge-base/test-knowledgebase.html
     - title: ナレッジベースのパブリッシュ
-      url: publish-knowledgebase.html
+      url: knowledge-base/publish-knowledgebase.html
+  - title: Amazon Q Business用コネクタの作成
+    links:
+    - title: コネクタのクイックスタート
+      url: connector/quick-start-connector.html
+    - title: Amazon Q Business用コネクタの作成
+      url: connector/define-connector.html
   - title: GenAIの管理
     links:
-    - title: ナレッジベースインフラストラクチャの管理
-      url: manage-infrastructure.html
+    - title: 生成AIインフラを管理します。
+      url: general/manage-infrastructure.html
+    - title: ナレッジベースの管理
+      url: knowledge-base/manage-knowledgebase.html
+    - title: コネクターの管理
+      url: connector/manage-connector.html
   - title: ブログとコミュニティ
     links:
     - title: NetAppコミュニティ

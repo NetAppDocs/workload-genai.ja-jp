@@ -1,13 +1,13 @@
 ---
 sidebar: sidebar 
-permalink: troubleshooting.html 
+permalink: general/troubleshooting.html 
 keywords: support registration, register for support, support, nss account, add nss account, 
 summary: NetAppテクニカルサポートでサポートケースをオープンする前に、NetAppサポートサイトのアカウントをワークロード工場に追加し、サポートに登録する必要があります。 
 ---
 = 生成AIのトラブルシューティング
 :allow-uri-read: 
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

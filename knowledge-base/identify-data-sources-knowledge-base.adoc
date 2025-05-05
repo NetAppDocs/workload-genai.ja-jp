@@ -1,13 +1,13 @@
 ---
 sidebar: sidebar 
-permalink: identify-data-sources.html 
-keywords: data sources, chatbot, documents, knowledge base 
+permalink: knowledge-base/identify-data-sources-knowledge-base.html 
+keywords: data sources, chatbot, documents, knowledge base, connector 
 summary: ナレッジベースに統合するFSx for ONTAPファイルシステムにあるドキュメント（データソース）を特定または作成します。これらのデータソースを使用すると、組織に関連するデータに基づいて、ナレッジベースでユーザクエリに対する正確でパーソナライズされた回答を提供できます。 
 ---
-= 生成AIナレッジベースに統合するデータソースを特定する
+= ナレッジベースまたはコネクタに追加するデータソースを特定する
 :allow-uri-read: 
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]
@@ -45,14 +45,14 @@ SMB経由でアクセスされる共有（ファイルまたはディレクト�
 
 == サポートされるデータソースファイル形式
 
-現在、次のデータソースファイル形式がサポートされています。
+Workload Factory生成AIナレッジベースで現在サポートされているデータソースファイル形式は次のとおりです。
 
 [cols="2*"]
 |===
 | ファイル形式 | エクステンション 
 
 
-| Apache Parquetfootnote:免責事項[構造化データファイルの取り込み時にデータガードレール機能はサポートされていません。] | 寄木細工 
+| Apache Parquetfootnote:免責事項[構造化データファイルをナレッジベースに取り込む場合、データガードレール機能はサポートされていません。] | 寄木細工 
 
 
 | カンマ区切り値filefootnote:disclaimer[] | .csv 

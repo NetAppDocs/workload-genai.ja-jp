@@ -1,13 +1,13 @@
 ---
 sidebar: sidebar 
-permalink: example-chatbot-application.html 
+permalink: knowledge-base/example-chatbot-application.html 
 keywords: ai, example, sample, chatbot, app, application, local 
 summary: サンプルのチャットボットアプリケーションをインストールして実行し、ナレッジベースをテストし、ワークロードファクトリAPIを使用して独自の生成AIアプリケーションを作成する方法を学ぶことができます。 
 ---
 = 生成AI外部サンプルチャットボットアプリケーションを使用する
 :allow-uri-read: 
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

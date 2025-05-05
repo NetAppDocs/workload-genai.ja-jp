@@ -1,13 +1,13 @@
 ---
 sidebar: sidebar 
-permalink: whats-next.html 
+permalink: knowledge-base/whats-next.html 
 keywords: what you can do, knowledge base 
 summary: エンタープライズデータを使用してナレッジベースを作成し、ユーザ向けに導入したので、ナレッジベース、データソース、RAGインフラ（FSx for ONTAPファイルシステムを含む）を管理できます。 
 ---
 = 生成AIで次にできること
 :allow-uri-read: 
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

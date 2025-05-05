@@ -1,0 +1,69 @@
+---
+sidebar: sidebar 
+permalink: connector/requirements-connector.html 
+keywords: ai, chatbot, prerequisites, bedrock, fsx for ontap, prerequisites, requirements 
+summary: ナレッジベースを構築する前に、ワークロードファクトリとAWSが適切に設定されていることを確認してください。これには、AWSのログインクレデンシャル、ナレッジベースに統合するデータソースを含む導入済みのFSx for ONTAPファイルシステム、Amazon Bedrock AIサービスへのアクセスなどが含まれます。 
+---
+= 生成AI Connectorの要件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Amazon Q用のNetApp ONTAPコネクタを作成する前に、ワークロードファクトリとAWSが適切に設定されていることを確認してください。
+
+
+
+== 生成AIの基本要件
+
+生成AIには、作業を開始する前に環境が満たす必要のある一般的な要件があります。
+
+ワークロードの工場出荷時のログインとアカウント:: のいずれかを使用してログインする https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]必要があります https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["ワークロードファクトリでアカウントを設定する"^]。
+AWS のクレデンシャルと権限:: AWSクレデンシャルを読み取り/書き込み権限でWorkload Factoryに追加する必要があります。つまり、生成AIの_読み取り/書き込みモードでWorkload Factoryを使用することになります。
++
+--
+現時点では、_basic_modeおよび_read-only_mode権限はサポートされていません。
+
+クレデンシャルを設定する際に、以下に示すように権限を選択すると、FSx for ONTAPファイルシステムの管理、GenAI EC2インスタンスおよびナレッジベースとチャットボットに必要なその他のAWSリソースの導入と管理を行うためのフルアクセスが提供されます。
+
+https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["ワークロードファクトリにAWSクレデンシャルを追加する方法を確認"^]
+
+--
+
+
+
+
+== Amazon Q用NetApp ONTAP Connectorの要件
+
+Amazon Q Business Connectorの次の特定の要件を環境が満たしていることを確認します。
+
+Amazon Q Businessアプリケーション:: Amazon Q Businessアプリケーションを作成するか、既存のアプリケーションを使用する必要があります。
++
+--
+* アプリケーションがいずれかのAWSリージョンに存在することを確認します。
+* アプリケーションにがあることを確認し https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/select-retriever.html["インデックスを作成しました"^]ます。
+* アプリケーションが失敗した状態でないことを確認します。
+
+
+--
+FSx for ONTAPファイルシステム:: 少なくとも1つのFSx for ONTAPファイルシステムが必要です。
++
+--
+* NetAppの 生成AIエンジンは、コネクタに関する情報を格納するために1つのファイルシステムを使用（存在しない場合は作成）します。
++
+このFSx for ONTAPファイルシステムでは、FlexVolボリュームを使用する必要があります。FlexGroupボリュームはサポートされません。
+
+* 1つまたは複数のファイルシステムには、コネクタに追加するデータソースが含まれます。
++
+1つのFSx for ONTAPファイルシステムを両方の目的に使用することも、複数のFSx for ONTAPファイルシステムを使用することもできます。
+
+* AWS FSx for ONTAPファイルシステムが配置されているAWSリージョン、VPC、サブネットを把握しておく必要があります。
+* この導入に含まれるAWSリソースに適用するタグのキーと値のペアを検討する必要があります（オプション）。
+* NetApp AIエンジンインスタンスに安全に接続するためのキーペア情報を知っておく必要があります。
+
+
+https://docs.netapp.com/us-en/workload-fsx-ontap/create-file-system.html["FSx for ONTAPファイルシステムの導入と管理の方法をご確認ください"^]
+
+--
+
