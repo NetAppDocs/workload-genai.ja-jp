@@ -57,9 +57,9 @@ sidebar:
       entries:
       - title: クイックスタート
         url: "/connector/quick-start-connector.html"
-      - title: ナレッジベースの要件
+      - title: コネクタの要件
         url: "/connector/requirements-connector.html"
-      - title: ナレッジベースに追加するデータソースを特定する
+      - title: コネクタに追加するデータソースを特定する
         url: "/connector/identify-data-sources-connector.html"
       - title: GenAIインフラの導入
         url: "/connector/deploy-infrastructure.html"
