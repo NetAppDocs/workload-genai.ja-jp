@@ -20,7 +20,7 @@ summary: ナレッジベースを構築する前に、ワークロードファ�
 生成AIには、作業を開始する前に環境が満たす必要のある一般的な要件があります。
 
 ワークロードの工場出荷時のログインとアカウント:: のいずれかを使用してログインする https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]必要があります https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["ワークロードファクトリでアカウントを設定する"^]。
-AWS のクレデンシャルと権限:: AWSクレデンシャルを読み取り/書き込み権限でWorkload Factoryに追加する必要があります。つまり、生成AIの_読み取り/書き込みモードでWorkload Factoryを使用することになります。
+AWS のクレデンシャルと権限:: 読み取り/書き込み権限を持つ AWS 認証情報をワークロードファクトリーに追加する必要があります。つまり、ワークロードファクトリーを GenAI の _読み取り/書き込み_ モードで使用することになります。
 +
 --
 現時点では、_basic_modeおよび_read-only_mode権限はサポートされていません。
