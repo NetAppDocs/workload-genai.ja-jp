@@ -23,7 +23,7 @@ BlueXP  Workload Factory for生成AIでは、Amazon FSx for NetApp ONTAP上の�
 
 組織のデータに合わせてカスタマイズされたGenAIアプリケーションを開発することで、独自の知識と専門知識を活用できます。このカスタマイズ機能により、組織固有の質問に対する正確で適切な回答が保証され、すべてのユーザーの満足度と生産性が向上します。
 
-link:../knowledge-base/create-knowledgebase.html["ナレッジベースの作成"^]生成AIでは、データソースからデータを取り込み、ベクトル化された結果をデータベースに格納し、取り込まれたデータを使用してクエリに応答する方法を完全に制御できます。この方法では、より初期設定が必要ですが、結果に応じて異なるチャットモデルを選択できます。link:../connector/define-connector.html["Amazon Q用のNetApp ONTAPコネクタの定義"]データソースからのデータはAmazon Q Businessによって取り込まれ、インデックスに保存されます。この方法では初期設定の手間は少なくて済みますが、結果を制御することはできません。
+link:../knowledge-base/create-knowledgebase.html["ナレッジベースの作成"^]生成AIでは、データソースからデータを取り込み、ベクトル化された結果をデータベースに格納し、取り込まれたデータを使用してクエリに応答する方法を完全に制御できます。この方法では、より初期設定が必要ですが、結果に応じて異なるチャットモデルを選択できます。link:../connector/define-connector.html["Amazon Q Business用のNetAppコネクタを定義する"]データソースからのデータはAmazon Q Businessによって取り込まれ、インデックスに保存されます。この方法では初期設定の手間は少なくて済みますが、結果を制御することはできません。
 
 ワークロードファクトリの詳細については、を参照して https://docs.netapp.com/us-en/workload-setup-admin/workload-factory-overview.html["ワークロードファクトリの概要"^]ください。
 

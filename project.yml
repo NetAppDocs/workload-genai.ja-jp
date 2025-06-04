@@ -63,7 +63,7 @@ sidebar:
         url: "/connector/identify-data-sources-connector.html"
       - title: GenAIインフラの導入
         url: "/connector/deploy-infrastructure.html"
-    - title: Amazon Q用のNetApp ONTAPコネクタの作成
+    - title: Amazon Q Business 用の NetApp コネクタを作成する
       url: "/connector/define-connector.html"
   - title: 管理と監視
     entries:

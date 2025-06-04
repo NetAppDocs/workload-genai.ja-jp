@@ -11,7 +11,7 @@ summary: Amazon FSx for NetApp ONTAPファイルシステムに存在する組�
 
 
 [role="lead"]
-Amazon FSx for NetApp ONTAPファイルシステムに存在する組織のデータを使用して、Amazon Q用NetApp ONTAPコネクタの作成を開始しましょう。コネクタを作成すると、エンドユーザーはAmazon Q Businessアシスタントにアクセスして、質問に対する組織中心の回答を得ることができます。
+Amazon FSx for NetApp ONTAP ファイルシステムに存在する組織のデータを使用して、Amazon Q Business 用の NetApp コネクタの作成を開始します。コネクタを作成すると、エンドユーザーはAmazon Q Businessアシスタントにアクセスして、質問に対する組織中心の回答を得ることができます。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"]ワークロードファクトリへのログイン
 [role="quick-margin-para"]

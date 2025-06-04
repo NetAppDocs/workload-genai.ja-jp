@@ -770,7 +770,6 @@
   <block id="4d79fade08f1e8c2d92bbdf0e3237924" category="paragraph"><block ref="4d79fade08f1e8c2d92bbdf0e3237924" category="inline-link-macro-rx"></block></block>
   <block id="26ea891fa4f63d071728537d886e0f6c" category="section-title">Anthropic Claude Sonnet 3.7チャットモデルのサポート</block>
   <block id="4c58515c1bd9657f223b7731d306475c" category="paragraph">生成AIでは、Anthropic Claude 3.7 Sonnetチャットモデルがサポートされるようになりました。Claude 3.7 Sonnetのベータ機能は、要求ごとに最大128Kの出力トークンを可能にし、新しいコンピュータの使用アクションをサポートします。Claude 3.7 Sonnet拡張思考モードは、将来の 生成AIリリースでサポートされる予定です。</block>
-  <block id="fe72cb2aff5f7bf6138e806921c5d3d6" category="paragraph"><block ref="fe72cb2aff5f7bf6138e806921c5d3d6" category="inline-link-macro-rx"></block></block>
   <block id="40bd8fe426c37e97f38be2c5a2728752" category="section-title">汎用NFS / SMB共有からのデータソースの追加のサポート</block>
   <block id="1813c42a79840f7d495281cf050a30dc" category="paragraph">ワークロードファクトリAPIを使用して、一般的なNFSv3、NFSv4、またはSMB共有からデータソースを追加できるようになりました。NFS共有またはSMB共有からデータソースを追加しても、ナレッジベースボリュームはAmazon FSx for NetApp ONTAPボリュームに残ります。この機能は、ワークロードファクトリのWeb UIで今後のリリースでサポートされる予定です。</block>
   <block id="fbc7eedf5c13a549330a0c3f52777db8" category="section-title">vPCピアリングのサポート</block>
@@ -820,10 +819,6 @@
   <block id="4ea5a8d3b0067bf5307eb05137bce817" category="paragraph"><block ref="4ea5a8d3b0067bf5307eb05137bce817" category="inline-link-macro-rx"></block></block>
   <block id="77a89cd0e5a14d8b8709467f579b8edc" category="paragraph"><block ref="77a89cd0e5a14d8b8709467f579b8edc" category="inline-link-macro-rx"></block></block>
   <block id="c9cbd1d1d65e3b0d2ec2922daec8bddf" category="paragraph"><block ref="c9cbd1d1d65e3b0d2ec2922daec8bddf" category="inline-link-macro-rx"></block></block>
-  <block id="fa499afb5b0e71cede67d6430b479aad" category="doc">Amazon Q向けNetApp ONTAP Connectorのサポート</block>
-  <block id="c77dd74f22a4c7346ab562d5eff0bc5a" category="paragraph">このリリースの 生成AIでは、NetApp ONTAP Connector for Amazon Qのサポートが導入され、Amazon Q Business用のコネクタを作成できるようになりました。Amazon Bedrock用の 生成AIナレッジベースを構築するよりも、初期設定が少なくて済み、Amazon Q Business AIアシスタントをすばやく簡単に活用できます。</block>
-  <block id="cf79fa4b0d1663f0ab76e8bc4b4e5ff3" category="inline-link-macro">Amazon Q Business用の 生成AIコネクタの作成</block>
-  <block id="9e4085aea7ddf49d777bc0d6415232d0" category="paragraph"><block ref="9e4085aea7ddf49d777bc0d6415232d0" category="inline-link-macro-rx"></block></block>
   <block id="535baaac5969b3bd7fd10592a2cb8e22" category="section-title">強化されたチャットモデルサポート</block>
   <block id="48ced6c80c0d41a7f68e3e9caece65d9" category="paragraph">生成AIでは、ナレッジベース用に次の追加チャットモデルがサポートされるようになりました。</block>
   <block id="ba7ee7dc8867588bd50d38f7762f4e93" category="inline-link-macro">Mistral AIモデル</block>
@@ -843,22 +838,18 @@
   <block id="514f1fc0ac0ff6e4200d3637146367f1" category="section-title">権限に関する用語を更新</block>
   <block id="a7b97ab7d88b015e92ed51ef4bee9c25" category="paragraph">ワークロードファクトリのユーザインターフェイスとドキュメントでは、読み取り権限を「読み取り専用」に、自動権限を「読み取り/書き込み」に指定するようになりました。</block>
   <block id="da1f9b1e0d45e28b599d8f40c855f668" category="summary">AIインフラストラクチャを展開し、Amazon Q Businessと統合するデータソースを特定したら、コネクタを定義できます。</block>
-  <block id="06576beecf0a3b501bd304361172e710" category="doc">Amazon Q用のNetApp ONTAPコネクタの作成</block>
-  <block id="eb56f84f8c7f39034f8b4f008276df54" category="paragraph">AIインフラを導入し、FSx for ONTAPデータストアから使用するデータソースを特定したら、NetApp ONTAP Connector for Amazon Qを定義できます。</block>
   <block id="b4851e92b19af0c5c82447fc0937709d" category="inline-link-macro">要件</block>
   <block id="c544ac4406a53e3d89f1f777f49bd9ab" category="paragraph">続行する前に、ご使用の環境がfor Amazon Q Businessの要件を満たしていることを確認し<block ref="e9a731368b15c5c87437cf87756c4dd9" category="inline-link-macro-rx"></block>てください。</block>
   <block id="416b1ad25d5076e01c81a106a5183bb8" category="paragraph">組織のデータソースには、個人識別情報（PII）が含まれている場合があります。この機密情報を保護するために、コネクタを定義するときに_data guardrails_を有効にすることができます。BlueXP  分類を利用したデータガードレールは、PIIを識別してマスクし、アクセスできず、取り出すことができないようにします。</block>
   <block id="32a3d08b7aad0fea19d07c320ae1572b" category="admonition">BlueXP  Workload Factory for生成AIでは、機密性の高い個人情報（SPII）はマスクされません。このタイプのデータの詳細については、を参照してください<block ref="0cdb750dab1dfb2fce5dd1cc6f558f0e" category="inline-link-macro-rx"></block>。</block>
   <block id="35c5b8334726059a903cf8e72acd6567" category="admonition">データガードレールはいつでも有効または無効にできます。データガードレールを有効にすると、Workload Factoryはデータソース全体をゼロからスキャンするため、コストが発生する可能性があります。</block>
   <block id="7110ae9aea43e2e00725933a5f626fa1" category="section-title">コネクターの定義</block>
-  <block id="587c0510bec4ca8fb8c5c828596d2bf3" category="paragraph">Amazon Q用のNetApp ONTAPコネクタを作成するこのコネクタは、生成AIとAmazon Q Business間のAPIおよびデータソース通信を可能にします。</block>
   <block id="cef935b09c14a76911c2bc3b2878c1eb" category="list-text">[ナレッジベースとコネクタ]タブで、*[新規作成]*ドロップダウンを選択し、*[Amazon Q Business Connector]*を選択します。</block>
   <block id="e90a1e1cd02488bfade2709b90f749fd" category="list-text">[コネクタの定義（Define Connector）]ページで、コネクタの設定を構成します。</block>
   <block id="5e8ca8e597dc55a04039701d5dac2cf3" category="list-text">*名前*:コネクタに使用する名前を入力します。</block>
   <block id="dffbc54d16e84507b04590e6d1c0c866" category="list-text">*説明*：コネクタの詳細な説明を入力します。</block>
   <block id="c9feba567b8d3a8ba8747f88e19831cc" category="list-text">* Amazon Q *：統合するAmazon Q Businessインスタンスのリージョンとアプリケーション名。</block>
   <block id="bf5ee3ec2f3e4b65913ce148dc85d307" category="admonition">データガードレール機能を有効にすると、生成AIは.txt、.md、.csv、.docx、および.pdfファイルを処理し、プレーンテキスト（埋め込み画像またはメディアテキストを除く）のみを取り込み、プライベートデータまたは機密データをマスキングします。他のすべてのファイルタイプは、プライベートデータや機密データをマスキングすることなく正常に処理されます。</block>
-  <block id="48ca727fe38026867b97dd4a2615a41f" category="list-text">* FSx for ONTAPファイルシステム*：Amazon Q用の新しいNetApp ONTAPコネクタを定義すると、Workload Factoryはコネクタ情報を格納するための新しいAmazon FSx for NetApp ONTAPボリュームを作成します。新しいボリュームを作成する既存のファイルシステムおよびSVM（Storage VM）を選択します。</block>
   <block id="5449bd448d32094e1be238f48844c03e" category="list-text">* Snapshotポリシー*：ワークロード工場のストレージインベントリに定義されている既存のポリシーのリストからSnapshotポリシーを選択します。生成AIは、選択したSnapshotポリシーに基づいて、コネクタ情報を格納するボリュームの定期的なSnapshotを自動的に作成します。</block>
   <block id="c5639571aa9605e9474435556c2b9258" category="paragraph">必要なSnapshotポリシーが存在しない場合は<block ref="446afe1ef4f3740a216a777a896ec27c" category="inline-link-rx"></block>、ボリュームを含むStorage VM上で実行できます。</block>
   <block id="c47b1f6ddc8b5b2b1c01ea580fdcbe2b" category="list-text">[コネクタの作成]*を選択して、Amazon Q Businessと 生成AIを統合します。</block>
@@ -876,7 +867,6 @@
   <block id="7072813121d82ae0d2bc05aaab425d4c" category="paragraph">コネクタは、NFSまたはSMB / CIFSプロトコルを使用するボリュームのデータをサポートします。SMBプロトコルを使用して保存されているファイルを選択する場合は、コネクタがこれらのボリューム上のファイルにアクセスできるように、Active Directory情報を入力する必要があります。これには、Active Directoryドメイン、IPアドレス、ユーザ名、パスワードが含まれます。</block>
   <block id="40ad80bd520fcb9c58d8bdf69bfeafe8" category="paragraph">たとえば、コネクタに10個のファイル(データソース)を統合し、そのうちの2個が制限された情報を含む人事ファイルである場合、これら2つのファイルへのアクセスを認証されたチャットボットユーザーのみが、それらのファイルからのデータを含むチャットボットから応答を受け取ります。</block>
   <block id="7be29227377788a5b12c7a7e7a66cd65" category="admonition">Amazon Q Business Connectorにデータソースを追加する場合、データソースファイルにはユーザー権限のみが適用されます。グループ権限は適用されません。</block>
-  <block id="5004434ec8c79db151dd6e0c18edd6b3" category="paragraph">現在、NetApp ONTAP Connector for Amazon Qでサポートされているデータソースのファイル形式は次のとおりです。</block>
   <block id="68dfdbe39ab30356a21fe4db773d9589" category="cell">カンマ区切り値ファイル</block>
   <block id="67cddf56c0ff55c79aee7dfa01b3d310" category="cell">JSONとJSONP</block>
   <block id="8c7a7a618a6d4acfe85b4b4b1048846d" category="cell">.docx</block>
@@ -931,7 +921,6 @@
   <block id="cd5654a62ac0ae4992fc556cbbfc385c" category="paragraph">コネクタがワークロードファクトリから削除され、関連付けられているボリュームが削除されます。</block>
   <block id="182e3e33bf92b5fae899ae295398f967" category="summary">Amazon FSx for NetApp ONTAPファイルシステムに存在する組織のデータを使用してコネクタを作成しましょう。</block>
   <block id="450eb57f37211d072a7368e65c267a97" category="doc">生成AIコネクタのクイックスタート</block>
-  <block id="3327960afa4d33a42952d6c7d8ed56ec" category="paragraph">Amazon FSx for NetApp ONTAPファイルシステムに存在する組織のデータを使用して、Amazon Q用NetApp ONTAPコネクタの作成を開始しましょう。コネクタを作成すると、エンドユーザーはAmazon Q Businessアシスタントにアクセスして、質問に対する組織中心の回答を得ることができます。</block>
   <block id="473b0d4489afb6847b3528470c283f5e" category="paragraph">AWSインフラの導入、導入および検出されたFSx for ONTAPファイルシステム、コネクタに統合するデータソースのリスト、Amazon Q Businessアプリケーションへのアクセスなどには、AWSのクレデンシャルが必要です。</block>
   <block id="ecce7b5245e843c6ae115994088db5e2" category="paragraph"><block ref="a4570bff78b2af8a7e4a27bf4959db8d" category="inline-link-macro-rx"></block>です。</block>
   <block id="aa9cd94a01409a2e0db1cfbaa2ff5574" category="paragraph">コネクタに統合するデータソースは、単一のFSx for ONTAPファイルシステムに配置することも、複数のFSx for ONTAPファイルシステムに配置することもできます。これらのシステムが異なるVPCにある場合は、同じネットワーク内でアクセス可能であるか、またはAIエンジンと同じリージョンとAWSアカウントを使用してVPC間でピア関係を確立しておく必要があります。</block>
@@ -942,12 +931,10 @@
   <block id="a052f63c8b3d79d0e865981102e38253" category="paragraph"><block ref="0d6818cfcf477d8cb9e6d8498d1a9d44" category="inline-link-macro-rx"></block>です。</block>
   <block id="136533d4992078df7d1f45db41363ffc" category="paragraph">Amazon Q Business用のコネクタを作成して、組織に焦点を当てた回答をエンドユーザーに提供できるようになりました。</block>
   <block id="69c3ca978f076b54fa2030f25d3332fc" category="doc">生成AI Connectorの要件</block>
-  <block id="a3b1269946165413b25e6bd3a003b6be" category="paragraph">Amazon Q用のNetApp ONTAPコネクタを作成する前に、ワークロードファクトリとAWSが適切に設定されていることを確認してください。</block>
   <block id="a6390dd71ac213c8926f4e003361b1c7" category="section-title">生成AIの基本要件</block>
   <block id="d94f906cc0b4e822ea4cc6f7282c6f3f" category="paragraph">生成AIには、作業を開始する前に環境が満たす必要のある一般的な要件があります。</block>
   <block id="5d077bd2e14c4e2191fcc692704a074c" category="list-text">AWSクレデンシャルを読み取り/書き込み権限でWorkload Factoryに追加する必要があります。つまり、生成AIの_読み取り/書き込みモードでWorkload Factoryを使用することになります。</block>
   <block id="92b8944386b41a864c3b42d0a5f178da" category="paragraph">現時点では、_basic_modeおよび_read-only_mode権限はサポートされていません。</block>
-  <block id="595f56efdb431edfb5c98924891aa631" category="section-title">Amazon Q用NetApp ONTAP Connectorの要件</block>
   <block id="dc24ca2a4507b8d4ffa56cd2f4ff7a5c" category="paragraph">Amazon Q Business Connectorの次の特定の要件を環境が満たしていることを確認します。</block>
   <block id="50a0042a7df9c6588a808141018da878" category="list-text">Amazon Q Businessアプリケーション</block>
   <block id="89092e7ac04c4e6446bab5908228964d" category="list-text">Amazon Q Businessアプリケーションを作成するか、既存のアプリケーションを使用する必要があります。</block>
@@ -961,8 +948,6 @@
   <block id="a6389fdd3aafc525ca961513074657c7" category="paragraph">BlueXP  Workload factory for生成AIでは、Amazon FSx for NetApp ONTAPファイルシステムを 生成AI基盤モデルと統合できます。これにより、AIデータセット向けの豊富な保護機能、セキュリティ機能、コスト最適化機能を備えたハイパフォーマンスストレージが実現します。</block>
   <block id="60525997ca84017159be9ccc575fddc6" category="paragraph">BlueXP  Workload Factory for生成AIでは、Amazon FSx for NetApp ONTAP上のエンタープライズデータソースとジェネレーティブAIアプリケーションを使用できます。Retrieval-Augmented Generation(RAG)を利用すると、データソースをAmazon BedrockまたはAmazon Q Business経由で利用可能な基盤モデルにすばやく接続し、バーチャルアシスタント、Q&amp;Aチャットボット、ドキュメント要約、コンテンツ作成などのGenerative AIを活用したアプリケーションを開発できます。</block>
   <block id="9eac267e04135210fd13de3d35bf966f" category="inline-link-macro">ナレッジベースの作成</block>
-  <block id="7857532e4fb86ce943421b8f4c90279e" category="inline-link-macro">Amazon Q用のNetApp ONTAPコネクタの定義</block>
-  <block id="816eaa71f63bd8cfa450e3a6a6a4e21b" category="paragraph"><block ref="a1707f04689d949f85e4cb6db99b5c64" category="inline-link-macro-rx"></block>生成AIでは、データソースからデータを取り込み、ベクトル化された結果をデータベースに格納し、取り込まれたデータを使用してクエリに応答する方法を完全に制御できます。この方法では、より初期設定が必要ですが、結果に応じて異なるチャットモデルを選択できます。<block ref="7e2e1fab0b17942f623c655a801494c8" category="inline-link-macro-rx"></block>データソースからのデータはAmazon Q Businessによって取り込まれ、インデックスに保存されます。この方法では初期設定の手間は少なくて済みますが、結果を制御することはできません。</block>
   <block id="33ce7f647f173acb7ace68da57d0ad93" category="paragraph">生成AI向けのBlueXP  ワークロードファクトリは、取得拡張生成（RAG）を使用してジェネレーティブAIアプリケーションを構築するために必要なインフラを導入するプロセスを簡易化します。具体的には、生成AIには次のようなメリットがあります。</block>
   <block id="71aa508255eddc0938ca384c87a7c8a1" category="list-text">LangChainなどのオープンソースフレームワークを使用したQ&amp;Aチャットボットなどの 生成AIアプリケーションの開発を加速 生成AI APIを活用して、ナレッジベースやコネクタのプロビジョニングと管理、ナレッジベースとのチャット、チャット履歴の保存と取得を行います。</block>
   <block id="f0bdc00cfa448d8f15fa17aea3aee5fa" category="paragraph">生成AIは、組織のプライベートデータを使用してモデルのインテリジェンスを補完し、組織内のユーザーからの質問に対するカスタマイズされた回答を提供します。まずRAGフレームワークに必要なインフラストラクチャをデプロイしてから、Amazon BedrockまたはAmazon Q Businessで利用可能な組織のデータソースと基盤モデルを使用してナレッジベースを構築するかコネクタを定義し、次にアプリケーション（Q&amp;Aチャットボットなど）をナレッジベースまたはコネクタに接続します。</block>
@@ -1015,7 +1000,6 @@
   <block id="822748e99c70e9162ce5432b2e1eff5c" category="section-title">2025年5月4日</block>
   <block id="95ab6a86600b31e05b001864adcc30f3" category="sidebar">Amazon Bedrockのナレッジベースを構築</block>
   <block id="bbe0643c4c2515d0e740168fae1ac3a3" category="sidebar">ナレッジベースのクイックスタート</block>
-  <block id="5c4a7a0d9d9ffc8363d3d3be4bfed390" category="sidebar">Amazon Q Business用コネクタの作成</block>
   <block id="4434db0ad858887dd143bcf9ca54f677" category="sidebar">コネクタのクイックスタート</block>
   <block id="c1e122c06e6fbdba97be83b62420f066" category="sidebar">生成AIインフラを管理します。</block>
   <block id="91e2b8d20f36e828f16fe4114f527899" category="sidebar">コネクターの管理</block>
@@ -1079,4 +1063,17 @@
   <block id="4aa37f4d9a391345e9a54c68333e2503" category="section-title">2025年6月3日</block>
   <block id="5eb43e1edd4f0757c83c6d6f6632ff94" category="sidebar">管理と監視</block>
   <block id="2e0c4c64c2671f5575eb184e577dcdae" category="sidebar">Trackerを使用した操作の監視</block>
+  <block id="93f953f50f24ae6dbf0400fde1bcc67d" category="doc">Amazon Q Business 向け NetApp コネクタのサポート</block>
+  <block id="f6f6ab51c21f03ba653ceea7301964e4" category="paragraph">GenAI のこのリリースでは、NetApp Connector for Amazon Q Business のサポートが導入され、Amazon Q Business 用のコネクタを作成できるようになりました。Amazon Bedrock用の 生成AIナレッジベースを構築するよりも、初期設定が少なくて済み、Amazon Q Business AIアシスタントをすばやく簡単に活用できます。</block>
+  <block id="3381eec0e48920855b86597d56709196" category="inline-link-macro">Amazon Q Business 用の NetApp コネクタを作成する</block>
+  <block id="8320a18edf6c2a7804ecd7a111b33314" category="paragraph"><block ref="8320a18edf6c2a7804ecd7a111b33314" category="inline-link-macro-rx"></block></block>
+  <block id="534e426be2627a9319bb3c894762f050" category="paragraph">AI インフラストラクチャをデプロイし、FSx for ONTAP データストアから使用するデータソースを特定したら、Amazon Q Business 用の NetApp コネクタを定義する準備が整います。</block>
+  <block id="6d3af8c853c012217bf8fe36271d8240" category="paragraph">Amazon Q Business用のNetAppコネクタを作成します。このコネクタにより、GenAIとAmazon Q Business間のAPIおよびデータソース通信が可能になります。</block>
+  <block id="656010651ec8363cac194260d40bd4ee" category="list-text">*FSx for ONTAP ファイルシステム*: Amazon Q Business 用の新しい NetApp コネクタを定義すると、ワークロードファクトリーによって、コネクタ情報を保存するための新しい Amazon FSx for NetApp ONTAP ボリュームが作成されます。新しいボリュームを作成する既存のファイルシステムおよびSVM（Storage VM）を選択します。</block>
+  <block id="9d9d5c45b6105d758da7731605f8df1e" category="paragraph">NetApp Connector for Amazon Q Business では現在、次のデータ ソース ファイル形式がサポートされています。</block>
+  <block id="9a5f71b3118fef9873b3a70c67778664" category="paragraph">Amazon FSx for NetApp ONTAP ファイルシステムに存在する組織のデータを使用して、Amazon Q Business 用の NetApp コネクタの作成を開始します。コネクタを作成すると、エンドユーザーはAmazon Q Businessアシスタントにアクセスして、質問に対する組織中心の回答を得ることができます。</block>
+  <block id="c7a0c2f464177538b923186b84b0328f" category="paragraph">Amazon Q Business 用の NetApp コネクタを作成する前に、ワークロード ファクトリーと AWS が適切にセットアップされていることを確認します。</block>
+  <block id="65a16de587f6ba26884202bf406c26fe" category="section-title">Amazon Q Business 向け NetApp コネクタの要件</block>
+  <block id="56daa392224e0cdcc6a69457c4094aa8" category="inline-link-macro">Amazon Q Business用のNetAppコネクタを定義する</block>
+  <block id="7e8def5c748db55cfe2ebcc2c26543fd" category="paragraph"><block ref="a1707f04689d949f85e4cb6db99b5c64" category="inline-link-macro-rx"></block>生成AIでは、データソースからデータを取り込み、ベクトル化された結果をデータベースに格納し、取り込まれたデータを使用してクエリに応答する方法を完全に制御できます。この方法では、より初期設定が必要ですが、結果に応じて異なるチャットモデルを選択できます。<block ref="fbe77fd827b80e33ddc74f945f323ccb" category="inline-link-macro-rx"></block>データソースからのデータはAmazon Q Businessによって取り込まれ、インデックスに保存されます。この方法では初期設定の手間は少なくて済みますが、結果を制御することはできません。</block>
 </blocks>

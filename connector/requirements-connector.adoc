@@ -11,7 +11,7 @@ summary: ナレッジベースを構築する前に、ワークロードファ�
 
 
 [role="lead"]
-Amazon Q用のNetApp ONTAPコネクタを作成する前に、ワークロードファクトリとAWSが適切に設定されていることを確認してください。
+Amazon Q Business 用の NetApp コネクタを作成する前に、ワークロード ファクトリーと AWS が適切にセットアップされていることを確認します。
 
 
 
@@ -34,7 +34,7 @@ https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["ワー�
 
 
 
-== Amazon Q用NetApp ONTAP Connectorの要件
+== Amazon Q Business 向け NetApp コネクタの要件
 
 Amazon Q Business Connectorの次の特定の要件を環境が満たしていることを確認します。
 

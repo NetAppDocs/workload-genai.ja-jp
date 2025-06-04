@@ -51,7 +51,7 @@ NOTE: データソース内のファイルにテキストがない場合(テキ�
 
 == サポートされるデータソースファイル形式
 
-現在、NetApp ONTAP Connector for Amazon Qでサポートされているデータソースのファイル形式は次のとおりです。
+NetApp Connector for Amazon Q Business では現在、次のデータ ソース ファイル形式がサポートされています。
 
 [cols="2*"]
 |===

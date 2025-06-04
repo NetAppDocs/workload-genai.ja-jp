@@ -4,14 +4,14 @@ permalink: connector/define-connector.html
 keywords: ai, chatbot, connector, 
 summary: AIインフラストラクチャを展開し、Amazon Q Businessと統合するデータソースを特定したら、コネクタを定義できます。 
 ---
-= Amazon Q用のNetApp ONTAPコネクタの作成
+= Amazon Q Business 用の NetApp コネクタを作成する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-AIインフラを導入し、FSx for ONTAPデータストアから使用するデータソースを特定したら、NetApp ONTAP Connector for Amazon Qを定義できます。
+AI インフラストラクチャをデプロイし、FSx for ONTAP データストアから使用するデータソースを特定したら、Amazon Q Business 用の NetApp コネクタを定義する準備が整います。
 
 続行する前に、ご使用の環境がfor Amazon Q Businessの要件を満たしていることを確認しlink:requirements-connector.html["要件"]てください。
 
@@ -30,7 +30,7 @@ NOTE: データガードレールはいつでも有効または無効にでき�
 
 == コネクターの定義
 
-Amazon Q用のNetApp ONTAPコネクタを作成するこのコネクタは、生成AIとAmazon Q Business間のAPIおよびデータソース通信を可能にします。
+Amazon Q Business用のNetAppコネクタを作成します。このコネクタにより、GenAIとAmazon Q Business間のAPIおよびデータソース通信が可能になります。
 
 .手順
 . いずれかを使用してワークロードファクトリにログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
@@ -64,7 +64,7 @@ Amazon Q用のNetApp ONTAPコネクタを作成するこのコネクタは、生
 NOTE: データガードレール機能を有効にすると、生成AIは.txt、.md、.csv、.docx、および.pdfファイルを処理し、プレーンテキスト（埋め込み画像またはメディアテキストを除く）のみを取り込み、プライベートデータまたは機密データをマスキングします。他のすべてのファイルタイプは、プライベートデータや機密データをマスキングすることなく正常に処理されます。
 
 +
-.. * FSx for ONTAPファイルシステム*：Amazon Q用の新しいNetApp ONTAPコネクタを定義すると、Workload Factoryはコネクタ情報を格納するための新しいAmazon FSx for NetApp ONTAPボリュームを作成します。新しいボリュームを作成する既存のファイルシステムおよびSVM（Storage VM）を選択します。
+.. *FSx for ONTAP ファイルシステム*: Amazon Q Business 用の新しい NetApp コネクタを定義すると、ワークロードファクトリーによって、コネクタ情報を保存するための新しい Amazon FSx for NetApp ONTAP ボリュームが作成されます。新しいボリュームを作成する既存のファイルシステムおよびSVM（Storage VM）を選択します。
 .. * Snapshotポリシー*：ワークロード工場のストレージインベントリに定義されている既存のポリシーのリストからSnapshotポリシーを選択します。生成AIは、選択したSnapshotポリシーに基づいて、コネクタ情報を格納するボリュームの定期的なSnapshotを自動的に作成します。
 +
 必要なSnapshotポリシーが存在しない場合は https://docs.netapp.com/us-en/ontap/data-protection/create-snapshot-policy-task.html["Snapshot ポリシーを作成します"^]、ボリュームを含むStorage VM上で実行できます。
