@@ -65,7 +65,7 @@ sidebar:
         url: "/connector/deploy-infrastructure.html"
     - title: Amazon Q用のNetApp ONTAPコネクタの作成
       url: "/connector/define-connector.html"
-  - title: GenAIの管理
+  - title: 管理と監視
     entries:
     - title: GenAIインフラの管理
       url: "/general/manage-infrastructure.html"
@@ -75,6 +75,8 @@ sidebar:
       url: "/connector/manage-connector.html"
     - title: データソースの管理
       url: "/general/manage-data-source.html"
+    - title: Trackerを使用した操作の監視
+      url: "/general/monitor-operations.html"
   - title: 知識とサポート
     entries:
     - title: サポートに登録します
