@@ -53,7 +53,6 @@
   <block id="831e8ddab4c3e70bcfe67a3e58aaf8cc" category="paragraph">1つまたは複数のデータソースを追加して、組織のデータをナレッジベースに入力できます。</block>
   <block id="bbe48fb854ea022537208eeeff822f91" category="paragraph-title">タスクの内容</block>
   <block id="443fa995d0ec899357a7e519e2055b98" category="paragraph">サポートされるデータソースの最大数は10です。</block>
-  <block id="10031d73287aadb6c5f8b3dae7b23860" category="list-text">[データソースの追加]*を選択すると、*[ファイルシステムの選択]*ページが表示されます。</block>
   <block id="8817d70d4163473468fa1b2b6e498321" category="paragraph">データソースがナレッジベースに埋め込まれ始めます。データソースが完全に埋め込まれると、ステータスが「埋め込み」から「埋め込み」に変わります。</block>
   <block id="b9605cf748e4b8e1c97d786258a0be40" category="summary">組織に適したFSx for ONTAPナレッジベースとアプリケーションを構築するには、RAGフレームワークのインフラを環境に導入する必要があります。主要なインフラコンポーネントは、Amazon Bedrock AIサービス、NetApp GenAIエンジンの仮想マシンインスタンス、FSx for ONTAPファイルシステムです。</block>
   <block id="e379b913896cf9bdd4e2d6717212215a" category="doc">GenAIインフラの導入</block>
@@ -757,7 +756,6 @@
   <block id="f1776184cd873aef06fc869138b3b776" category="admonition">チャットボットシミュレータウィンドウのサイズを変更してタイトルを変更したり、質問や回答をクリップボードにコピーしたりできます。</block>
   <block id="e27f142520976de0e091895abd1a2b45" category="list-text">回答の下の*ソース*リストを展開すると、回答の作成に使用されたソースを確認できます。これにより、アンサーの生成に使用されるファイルのリストが表示されます。ファイル名にカーソルを合わせると、各ファイルおよびボリュームパスで使用されているデータチャンクを表示およびコピーできます。</block>
   <block id="8e08c9e7067a8bc5d8828ba0b5a8a5b2" category="list-text">テーブルが応答に含まれている場合は、各列のデータをソートし、各テーブルをクリップボードにコピーできます。</block>
-  <block id="2d5a4b914acb6c2f03d312067c73ce32" category="section-title">2025年3月2日</block>
   <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">ブログとコミュニティ</block>
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetAppコミュニティ</block>
   <block id="abd0fe91ce589ecf3c7bad0543ccad16" category="sidebar">BlueXPのブログ</block>
@@ -1077,4 +1075,30 @@
   <block id="4ead5e435cb4f2c7cf627b1d1e84c333" category="paragraph">ワークロード ファクトリのユーザー インターフェースとドキュメントでは、読み取り権限を示すために「読み取り専用」を使用し、自動化権限を示すために「読み取り/書き込み」を使用するようになりました。</block>
   <block id="2285d955a18bdde3d5780d04f48d58cd" category="list-text">読み取り/書き込み権限を持つ AWS 認証情報をワークロードファクトリーに追加する必要があります。つまり、ワークロードファクトリーを GenAI の _読み取り/書き込み_ モードで使用することになります。</block>
   <block id="c45d86a4185cef0bc3cadb7e6e9b46f4" category="paragraph">現時点では、_基本_モードと_読み取り専用_モードの権限はサポートされていません。</block>
+  <block id="7d906e58a1354072160e6ed36352865a" category="open-title">FSx for ONTAP ファイルシステムを追加する</block>
+  <block id="6d74c0f67ca2ffc7e802992699848ce7" category="open-title">汎用NFSファイルシステムを追加する</block>
+  <block id="47f6d5704c1ced6391a6f696c9715d6f" category="list-text">*ファイル システムを選択*: データ ソース ファイルが存在するファイル システム ホストの IP アドレスまたは FQDN を入力し、ネットワーク共有の NFS プロトコルを選択して、*次へ* を選択します。</block>
+  <block id="f877eadc66897f3228392ce8c7190a3b" category="admonition">場合によっては、NFSエクスポート名を手動で入力し、「ディレクトリを取得」を選択して利用可能なディレクトリを表示する必要があります。エクスポート全体を選択するか、エクスポートから特定のフォルダのみを選択するかを選択できます。</block>
+  <block id="d6cc21a7239c70140c4fe9e5d219835f" category="list-text">このデータ ソースをナレッジ ベースに追加するには、[データ ソースの追加] を選択します。</block>
+  <block id="72d08830496d7cb22679d7006ceb540d" category="open-title">汎用SMBファイルシステムを追加する</block>
+  <block id="8dc6eb4b595b0f73bfb84bc0ff3bbe68" category="list-text">*ファイルシステムを選択*:</block>
+  <block id="cff886b73f836ffbb81637a1582026d6" category="list-text">データ ソース ファイルが存在するファイル システム ホストの IP アドレスまたは FQDN を入力します。</block>
+  <block id="097fffee0ff7b9dc84809630d58d9921" category="list-text">ネットワーク共有の SMB プロトコルを選択します。</block>
+  <block id="3a38971888a2c2f134ec4c4fe6164859" category="list-text">ドメイン、IP アドレス、ユーザー名、パスワードを含む Active Directory 情報を入力します。</block>
+  <block id="e6cd86d61f4639c8a27006c6c29b3e9f" category="list-text">「 * 次へ * 」を選択します。</block>
+  <block id="50e87b511edc21ffba5ebba81a768f04" category="admonition">場合によっては、SMB共有名を手動で入力し、「ディレクトリの取得」を選択して利用可能なディレクトリを表示する必要があります。共有全体を選択するか、共有内の特定のフォルダのみを選択するかを選択できます。</block>
+  <block id="0065452defb4a4481c8fe8db6f74a038" category="list-text">*権限認識*: 権限認識応答を有効または無効にします。</block>
+  <block id="944ee388209d33a3bf1b309c6acdf693" category="doc">汎用 NFS/SMB ファイルシステムでホストされるデータソースのサポート</block>
+  <block id="9a7d241f00b55d0e00761313cced5dd8" category="paragraph">汎用SMBまたはNFS共有からデータソースを追加できるようになりました。これにより、Amazon FSx for NetApp ONTAP以外のファイルシステムでホストされているボリュームに保存されているファイルも含めることができます。</block>
+  <block id="5cba57d460e5683815517b44a7811760" category="inline-link">ナレッジベースにデータソースを追加する</block>
+  <block id="b37629096d44c6fda917848365c84ebe" category="paragraph"><block ref="b37629096d44c6fda917848365c84ebe" category="inline-link-rx"></block></block>
+  <block id="6320af7d92cd5d357460c5cbc5f642a9" category="inline-link">コネクタにデータソースを追加する</block>
+  <block id="5cd676bef1867c904c092c33ad4a8f2d" category="paragraph"><block ref="5cd676bef1867c904c092c33ad4a8f2d" category="inline-link-rx"></block></block>
+  <block id="68548c26cece20bcf93105ea4fe89e88" category="list-text">*データ ソースの追加*を選択すると、*ファイル システムの選択* ページが表示されます。</block>
+  <block id="cf398eb273d2634893193d0e955a4fa2" category="list-text">追加するデータ ソースの種類を選択します。</block>
+  <block id="c0f70038820005956aaf78b931d681c4" category="list-text">FSx for ONTAP ファイルシステムを追加する (既存の FSx for ONTAP ボリュームのファイルを使用)</block>
+  <block id="63e19fdc4a09680278ff2270264b3005" category="list-text">ファイルシステムを追加する（一般的な SMB または NFS 共有のファイルを使用）</block>
+  <block id="438852e39ff5e2c7366e67dde7cfdab4" category="list-text">*データ ソースの追加* を選択した後、追加するデータ ソースの種類を選択します。</block>
+  <block id="7454fc4c14df2a987637928e569efe3a" category="section-title">2025年6月29日</block>
+  <block id="84cd46ec8d4d2d63881ed3e5d98fe218" category="paragraph">ワークロード ファクトリのユーザー インターフェースとドキュメントでは、読み取り権限を示すために「読み取り専用」を使用し、自動化権限を示すために「読み取り/書き込み」を使用するようになりました。== 2025年3月2日</block>
 </blocks>

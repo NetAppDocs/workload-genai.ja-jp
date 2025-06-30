@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: 'what"s new, features, new, release notes, enhancements, fixes' 
+keywords: 'what"s new, features, new, release notes, enhancements, fixes, genai' 
 summary: ワークロードファクトリーのAIワークロード機能の最新情報をご確認ください。 
 ---
 = 生成AI向けBlueXP  ワークロードファクトリの最新情報
@@ -12,6 +12,20 @@ summary: ワークロードファクトリーのAIワークロード機能の最
 
 [role="lead"]
 ワークロードファクトリのジェネレーティブAIワークロード機能の最新情報をご確認ください。
+
+
+
+== 2025年6月29日
+
+
+
+=== 汎用 NFS/SMB ファイルシステムでホストされるデータソースのサポート
+
+汎用SMBまたはNFS共有からデータソースを追加できるようになりました。これにより、Amazon FSx for NetApp ONTAP以外のファイルシステムでホストされているボリュームに保存されているファイルも含めることができます。
+
+https://docs.netapp.com/us-en/workload-genai/knowledge-base/create-knowledgebase.html#add-data-sources-to-the-knowledge-base["ナレッジベースにデータソースを追加する"]
+
+https://docs.netapp.com/us-en/workload-genai/connector/define-connector.html#add-data-sources-to-the-connector["コネクタにデータソースを追加する"]
 
 
 
@@ -67,11 +81,7 @@ link:https://docs.netapp.com/us-en/workload-genai/knowledge-base/create-knowledg
 
 === 権限に関する用語を更新
 
-ワークロード ファクトリのユーザー インターフェースとドキュメントでは、読み取り権限を示すために「読み取り専用」を使用し、自動化権限を示すために「読み取り/書き込み」を使用するようになりました。
-
-
-
-== 2025年3月2日
+ワークロード ファクトリのユーザー インターフェースとドキュメントでは、読み取り権限を示すために「読み取り専用」を使用し、自動化権限を示すために「読み取り/書き込み」を使用するようになりました。== 2025年3月2日
 
 
 
