@@ -22,6 +22,6 @@ link:https://docs.netapp.com/us-en/workload-genai/knowledge-base/deploy-infrastr
 
 === 破損または欠落している 生成AIインフラの再構築
 
-AIエンジンインスタンスが破損したり、何らかの理由で削除されたりした場合は、ワークロードファクトリに再構築を依頼できます。ワークロードファクトリは、再構築が完了した後、ナレッジベースをインフラストラクチャに自動的に再接続して、すぐに使用できるようにします。
+AI エンジン インスタンスが破損したり、何らかの理由で削除されたりした場合は、Workload Factory で再構築することができます。ワークロード ファクトリーは、再構築が完了するとナレッジ ベースをインフラストラクチャに自動的に再接続し、すぐに使用できるようにします。
 
 link:https://docs.netapp.com/us-en/workload-genai/general/troubleshooting.html["トラブルシューティング"]

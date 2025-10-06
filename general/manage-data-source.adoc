@@ -20,8 +20,8 @@ FSx for ONTAPファイルシステムでデータソースを使用してナレ�
 データソースのコンテンツに関する情報を表示したり、ナレッジベースまたはコネクタを使用してデータソースの埋め込みステータスを表示したりできます。データソースはナレッジベースまたはコネクタに関連付けられているため、データソースの詳細を表示するには、まずナレッジベースまたはコネクタを選択する必要があります。
 
 .手順
-. いずれかを使用してワークロードファクトリにログインし https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
-. ワークロード工場出荷時のナビゲーションメニューで、* AI *を選択します。
+. 次のいずれかを使用してWorkload Factoryにログインします。 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^] 。
+. [AI Workloads]タイルで、*[Deploy & manage]*を選択します。
 . データソースが存在するナレッジベースまたはコネクタを選択しimage:icon-action.png["オプションボタン"]、*[ナレッジベースの管理]*または*[コネクタの管理]*を選択します。
 +
 ページの下部には、関連するデータソースが表示されます。
@@ -39,7 +39,8 @@ FSx for ONTAPファイルシステムでデータソースを使用してナレ�
 ナレッジベースまたはコネクタと統合したデータソースに関する情報を編集できます。ほとんどの情報は、データソースを追加した後で修正されますが、一部の構成（チャンキング定義やパーミッションアウェアネスなど）に変更を加えることができます。
 
 .手順
-. いずれかを使用してワークロードファクトリにログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
+. 次のいずれかを使用してWorkload Factoryにログインします。link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^] 。
+. [AI Workloads]タイルで、*[Deploy & manage]*を選択します。
 . ナレッジベースインベントリページで、データソースが存在するナレッジベースを選択し、 image:icon-action.png["オプションボタン"] *[ナレッジベースの管理]*を選択します。
 +
 ページの下部には、このナレッジベースの一部であるデータソースが一覧表示されます。
@@ -67,7 +68,8 @@ FSx for ONTAPファイルシステムでデータソースを使用してナレ�
 データソースをナレッジベースに含める必要がなくなった場合は、そのデータソースを削除できます。
 
 .手順
-. いずれかを使用してワークロードファクトリにログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
+. 次のいずれかを使用してWorkload Factoryにログインします。link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^] 。
+. [AI Workloads]タイルで、*[Deploy & manage]*を選択します。
 . ナレッジベースのインベントリページで、データソースが存在するナレッジベースを選択し、 image:icon-action.png["オプションボタン"] *[ナレッジベースの管理]*を選択します。
 +
 ページの下部には、このナレッジベースの一部であるデータソースが一覧表示されます。

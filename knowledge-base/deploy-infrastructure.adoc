@@ -66,7 +66,7 @@ AWSのクレデンシャルを入力し、FSx for ONTAPファイルシステム�
 
 
 .手順
-. いずれかを使用してワークロードファクトリにログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
+. 次のいずれかを使用してWorkload Factoryにログインします。link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^] 。
 . [AI Workloads]タイルで、*[Deploy & manage]*を選択します。
 . インフラの図を確認し、* Next *を選択します。
 . [AWS settings]セクションの項目を入力します。
@@ -80,7 +80,7 @@ GenAI環境は、Amazon Bedrockが有効になっているAWSリージョンに�
 
 . [インフラストラクチャー設定]セクションの項目を入力します。
 +
-.. * Tags *：この導入環境に含まれるすべてのAWSリソースに適用するタグのキーと値のペアを入力します。これらのタグは、AWS管理コンソールとワークロードファクトリ内のインフラストラクチャ情報領域に表示され、ワークロードファクトリリソースを追跡するのに役立ちます。
+.. *タグ*: このデプロイメントの一部であるすべての AWS リソースに適用するタグのキーと値のペアを入力します。これらのタグは、AWS マネジメントコンソールと Workload Factory 内のインフラストラクチャ情報領域に表示され、Workload Factory リソースを追跡するのに役立ちます。
 
 
 . [Connectivity]*セクションに入力します。
@@ -90,7 +90,7 @@ GenAI環境は、Amazon Bedrockが有効になっているAWSリージョンに�
 
 . 「AIエンジン*」セクションを完了します。
 +
-.. *インスタンス名*：必要に応じて、*インスタンス名を定義*を選択し、AIエンジンインスタンスのカスタム名を入力します。インスタンス名はAWS Management Consoleとワークロードファクトリ内のインフラストラクチャ情報領域に表示され、ワークロードファクトリリソースを追跡するのに役立ちます。
+.. *インスタンス名*: オプションで、*インスタンス名の定義*を選択し、AI エンジン インスタンスのカスタム名を入力します。インスタンス名は AWS マネジメントコンソールと Workload Factory 内のインフラストラクチャ情報領域に表示され、Workload Factory リソースを追跡するのに役立ちます。
 
 
 . 導入*を選択して導入を開始します。
@@ -101,7 +101,7 @@ NOTE: 導入がクレデンシャルエラーで失敗した場合は、エラ�
 
 
 .結果
-Workload Factoryはチャットボットインフラストラクチャの導入を開始します。このプロセスには最大10分かかることがあります。
+Workload Factory がチャットボット インフラストラクチャの展開を開始します。このプロセスには最大 10 分かかる場合があります。
 
 導入プロセスでは、次の項目が設定されます。
 
@@ -109,5 +109,5 @@ Workload Factoryはチャットボットインフラストラクチャの導入�
 * IAMロール、インスタンスプロファイル、およびセキュリティグループが作成されます。
 * GenAIエンジンの仮想マシンインスタンスが導入されている。
 * Amazon Bedrockは、プレフィックスを持つロググループを使用して、Amazon CloudWatch Logsにログを送信するように構成されて `/aws/bedrock/`います。
-* GenAIエンジンは、という名前のロググループを使用して、Amazon CloudWatch Logsにログを送信するように構成されてい `/netapp/wlmai/<tenancyAccountId>/randomId`ます。ここで、 `<tenancyAccountID>` は現在のユーザーのです https://docs.netapp.com/us-en/bluexp-automation/platform/get_identifiers.html#get-the-account-identifier["BlueXPアカウントID"^] 。
+* GenAIエンジンは、次の名前のロググループを使用してAmazon CloudWatch Logsにログを送信するように設定されています。 `/netapp/wlmai/<tenancyAccountId>/randomId` 、 どこ `<tenancyAccountID>`は https://docs.netapp.com/us-en/console-automation/platform/get_identifiers.html#get-the-account-identifier["NetAppコンソールアカウントID"^]現在のユーザーに対して。
 

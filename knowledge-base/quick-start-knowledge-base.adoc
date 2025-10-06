@@ -13,9 +13,9 @@ summary: Amazon FSx for NetApp ONTAPファイルシステムに存在する組�
 [role="lead"]
 Amazon FSx for NetApp ONTAPファイルシステムに存在する組織のデータを使用して、ナレッジベースまたはAmazon Q Business Connectorの作成を開始します。チャットボットなどのアプリケーションは、このナレッジベースまたはコネクタにアクセスして、組織に焦点を当てた応答をエンドユーザーに提供します。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"]ワークロードファクトリへのログイン
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"]ワークロードファクトリーにログイン
 [role="quick-margin-para"]
-のいずれかを使用してログインする https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]必要があります https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["ワークロードファクトリでアカウントを設定する"^]。
+必要となるのは https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["Workload Factoryでアカウントを設定する"^]次のいずれかを使用してログインします https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2つ"]生成AIの要件を満たす環境のセットアップ
 [role="quick-margin-para"]

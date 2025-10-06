@@ -20,8 +20,8 @@ summary: ナレッジベースを作成したら、ナレッジベースの詳�
 ナレッジベースと統合されているデータソースの設定に関する情報を表示できます。
 
 .手順
-. いずれかを使用してワークロードファクトリにログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
-. ワークロード工場出荷時のナビゲーションメニューで、* AI *を選択します。
+. 次のいずれかを使用してWorkload Factoryにログインします。link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^] 。
+. [AI Workloads]タイルで、*[Deploy & manage]*を選択します。
 . 表示するナレッジベースを選択します。
 +
 定義されている場合は、現在使用されているカンバセーションスタータが右側のペインに表示されます。
@@ -44,7 +44,8 @@ summary: ナレッジベースを作成したら、ナレッジベースの詳�
 ナレッジベースにデータソースを追加、変更、または削除するたびに、データソースを同期してナレッジベースに再インデックス化する必要があります。同期は差分で行われるため、Amazon Bedrockは前回の同期後に追加、変更、または削除されたFSx for ONTAPボリューム内のオブジェクトのみを処理します。
 
 .手順
-. いずれかを使用してワークロードファクトリにログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
+. 次のいずれかを使用してWorkload Factoryにログインします。link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^] 。
+. [AI Workloads]タイルで、*[Deploy & manage]*を選択します。
 . ナレッジベースインベントリページで、更新するナレッジベースを選択します。
 . を選択し image:icon-action.png["オプションボタン"] 、*[ナレッジベースの管理]*を選択します。
 +
@@ -82,7 +83,8 @@ NOTE: 埋め込み、コストを含むすべてのナレッジベーススキ�
 ナレッジベースボリュームのスナップショットを手動で作成することで、ナレッジベースの状態を保存できます。
 
 .手順
-. いずれかを使用してワークロードファクトリにログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
+. 次のいずれかを使用してWorkload Factoryにログインします。link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^] 。
+. [AI Workloads]タイルで、*[Deploy & manage]*を選択します。
 . ナレッジベースインベントリページで、保護するナレッジベースを選択します。
 . を選択し image:icon-action.png["オプションボタン"] 、*[ナレッジベースの管理]*を選択します。
 +
@@ -109,7 +111,8 @@ NOTE: 埋め込み、コストを含むすべてのナレッジベーススキ�
 NOTE: ボリュームに格納されているデータベースが破損しているか削除されている場合は、Generative AI Workloads UIを使用してSnapshotをリストアすることはできません。対処方法として、ボリュームがホストされているONTAPクラスタでを使用してSnapshotをリストアし https://docs.netapp.com/us-en/ontap-cli/volume-snapshot-restore.html["ONTAP CLI"^]ます。
 
 .手順
-. いずれかを使用してワークロードファクトリにログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
+. 次のいずれかを使用してWorkload Factoryにログインします。link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^] 。
+. [AI Workloads]タイルで、*[Deploy & manage]*を選択します。
 . ナレッジベースインベントリページで、復元するナレッジベースを選択します。
 . を選択し image:icon-action.png["オプションボタン"] 、*[ナレッジベースの管理]*を選択します。
 +
@@ -134,7 +137,8 @@ NOTE: ボリュームに格納されているデータベースが破損して�
 ナレッジベーススナップショットから新しいナレッジベースを作成できます。これは、元のナレッジベースが破損したり失われたりした場合に便利です。
 
 .手順
-. いずれかを使用してワークロードファクトリにログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
+. 次のいずれかを使用してWorkload Factoryにログインします。link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^] 。
+. [AI Workloads]タイルで、*[Deploy & manage]*を選択します。
 . ナレッジベースインベントリページで、復元するナレッジベースを選択します。
 . を選択し image:icon-action.png["オプションボタン"] 、*[ナレッジベースの管理]*を選択します。
 +
@@ -162,7 +166,8 @@ NOTE: ボリュームに格納されているデータベースが破損して�
 追加のデータソースをナレッジベースに埋め込んで、追加の組織データをナレッジベースに取り込むことができます。
 
 .手順
-. いずれかを使用してワークロードファクトリにログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
+. 次のいずれかを使用してWorkload Factoryにログインします。link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^] 。
+. [AI Workloads]タイルで、*[Deploy & manage]*を選択します。
 . [ナレッジベース]インベントリページで、データソースを追加するナレッジベースを選択します。
 . を選択 image:icon-action.png["オプションボタン"] し、*[Add data source]*を選択します。
 . 追加するデータ ソースの種類を選択します。
@@ -199,7 +204,7 @@ NOTE: オーバーラップ率を高く設定すると、取得精度がわず�
 +
 *** [ファイルタイプのサポート]セクションで、すべてのタイプのファイルを含めるか、データソーススキャンに含めるファイルタイプを個別に選択します。
 +
-画像またはPDFファイルを含めると、BlueXP  Workload Factory for生成AIは画像内のテキスト(PDFドキュメント内の画像を含む)を解析するため、コストが高くなります。
+画像または PDF ファイルを含めると、 NetApp Workload Factory for GenAI は画像内のテキスト (PDF ドキュメント内の画像を含む) を解析するため、コストが高くなります。
 
 +
 画像のテキストデータを含めると、スキャンされたテキストデータが環境からAWSに送信されるため、生成AIは画像の個人識別情報(PII)をマスクできません。ただし、データが保存されると、すべてのPIIは 生成AIデータベースでマスクされます。
@@ -251,7 +256,7 @@ NOTE: オーバーラップ率を高く設定すると、取得精度がわず�
 +
 *** [ファイルタイプのサポート]セクションで、すべてのタイプのファイルを含めるか、データソーススキャンに含めるファイルタイプを個別に選択します。
 +
-画像またはPDFファイルを含めると、BlueXP  Workload Factory for生成AIは画像内のテキスト(PDFドキュメント内の画像を含む)を解析するため、コストが高くなります。
+画像または PDF ファイルを含めると、 NetApp Workload Factory for GenAI は画像内のテキスト (PDF ドキュメント内の画像を含む) を解析するため、コストが高くなります。
 
 +
 画像のテキストデータを含めると、スキャンされたテキストデータが環境からAWSに送信されるため、生成AIは画像の個人識別情報(PII)をマスクできません。ただし、データが保存されると、すべてのPIIは 生成AIデータベースでマスクされます。
@@ -310,7 +315,7 @@ NOTE: オーバーラップ率を高く設定すると、取得精度がわず�
 +
 *** [ファイルタイプのサポート]セクションで、すべてのタイプのファイルを含めるか、データソーススキャンに含めるファイルタイプを個別に選択します。
 +
-画像またはPDFファイルを含めると、BlueXP  Workload Factory for生成AIは画像内のテキスト(PDFドキュメント内の画像を含む)を解析するため、コストが高くなります。
+画像または PDF ファイルを含めると、 NetApp Workload Factory for GenAI は画像内のテキスト (PDF ドキュメント内の画像を含む) を解析するため、コストが高くなります。
 
 +
 画像のテキストデータを含めると、スキャンされたテキストデータが環境からAWSに送信されるため、生成AIは画像の個人識別情報(PII)をマスクできません。ただし、データが保存されると、すべてのPIIは 生成AIデータベースでマスクされます。
@@ -345,7 +350,8 @@ NOTE: 変更日の範囲に基づいてファイルをインクルードした�
 同期は増分処理であるため、Amazon Bedrockは前回の同期以降に追加、変更、または削除されたデータソース内のオブジェクトのみを処理します。
 
 .手順
-. いずれかを使用してワークロードファクトリにログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
+. 次のいずれかを使用してWorkload Factoryにログインします。link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^] 。
+. [AI Workloads]タイルで、*[Deploy & manage]*を選択します。
 . ナレッジベースインベントリページで、同期するナレッジベースを選択します。
 . を選択し image:icon-action.png["オプションボタン"] 、*[ナレッジベースの管理]*を選択します。
 . [アクション]*メニューを選択し、*[今すぐスキャン]*を選択します。
@@ -364,8 +370,9 @@ NOTE: 変更日の範囲に基づいてファイルをインクルードした�
 データソースの次の同期（スキャン）を一時停止または再開する場合は、いつでも実行できます。データソースに変更を加え、変更ウィンドウ中に同期を行わないようにする場合は、次のスケジュールされた同期を一時停止しなければならないことがあります。
 
 .手順
-. いずれかを使用してワークロードファクトリにログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
-. [ナレッジベースとコネクタ]タブで、スキャンを一時停止または再開するナレッジベースを選択します。
+. 次のいずれかを使用してWorkload Factoryにログインします。link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^] 。
+. [AI Workloads]タイルで、*[Deploy & manage]*を選択します。
+. 「ナレッジ ベースとコネクタ」メニューから、スキャンを一時停止または再開するナレッジ ベースを選択します。
 . を選択し image:icon-action.png["オプションボタン"] 、*[ナレッジベースの管理]*を選択します。
 . [Actions]メニューを選択し、[Scan]>[Pause scheduled scan]*または[Scan]>[Resume scheduled scan]*を選択します。
 +
@@ -383,7 +390,8 @@ NOTE: 変更日の範囲に基づいてファイルをインクルードした�
 NOTE: この機能は、ナレッジベースが作成されていない場合（ナレッジベースインベントリページにナレッジベースが存在しない場合）にのみ使用できます。
 
 .手順
-. いずれかを使用してワークロードファクトリにログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
+. 次のいずれかを使用してWorkload Factoryにログインします。link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^] 。
+. [AI Workloads]タイルで、*[Deploy & manage]*を選択します。
 . ナレッジベースのインベントリページから、チャットボットのページの右側にチャットモデルを選択するオプションが表示されます。
 . リストからチャットモデルを選択し、プロンプト領域に質問のセットを入力して、チャットボットがどのように応答するかを確認します。
 . 複数のモデルを試して、実装に最適なモデルを確認してください。
@@ -401,7 +409,8 @@ NOTE: この機能は、ナレッジベースが作成されていない場合�
 ナレッジベースを非公開にすると、チャットアプリケーションの動作が停止します。ナレッジベースにアクセスできた一意のAPIエンドポイントが無効になります。
 
 .手順
-. いずれかを使用してワークロードファクトリにログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
+. 次のいずれかを使用してWorkload Factoryにログインします。link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^] 。
+. [AI Workloads]タイルで、*[Deploy & manage]*を選択します。
 . [ナレッジベース]インベントリページで、非公開にするナレッジベースを選択します。
 . を選択し image:icon-action.png["オプションボタン"] 、*[ナレッジベースの管理]*を選択します。
 +
@@ -417,12 +426,13 @@ NOTE: この機能は、ナレッジベースが作成されていない場合�
 
 == ナレッジベースの削除
 
-ナレッジベースが不要になった場合は、ナレッジベースを削除できます。ナレッジベースを削除すると、そのナレッジベースはワークロードファクトリから削除され、ナレッジベースを含むボリュームが削除されます。ナレッジベースを使用しているアプリケーションやチャットボットはすべて機能しなくなります。ナレッジベースの削除は元に戻すことはできません。
+ナレッジ ベースが不要になった場合は、削除できます。ナレッジ ベースを削除すると、そのナレッジ ベースは Workload Factory から削除され、そのナレッジ ベースを含むボリュームも削除されます。ナレッジベースを使用しているアプリケーションやチャットボットはすべて動作を停止します。ナレッジベースの削除は元に戻せません。
 
 ナレッジベースを削除する場合は、ナレッジベースに関連付けられているすべてのリソースを完全に削除するために、ナレッジベースと関連付けられているエージェントの関連付けも解除する必要があります。
 
 .手順
-. いずれかを使用してワークロードファクトリにログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
+. 次のいずれかを使用してWorkload Factoryにログインします。link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^] 。
+. [AI Workloads]タイルで、*[Deploy & manage]*を選択します。
 . ナレッジベースインベントリページで、削除するナレッジベースを選択します。
 . を選択し image:icon-action.png["オプションボタン"] 、*[ナレッジベースの管理]*を選択します。
 . [アクション]メニューを選択し、*[ナレッジベースの削除]*を選択します。
@@ -430,4 +440,4 @@ NOTE: この機能は、ナレッジベースが作成されていない場合�
 
 
 .結果
-ナレッジベースがワークロードファクトリから削除され、関連付けられているボリュームが削除されます。
+ナレッジ ベースは Workload Factory から削除され、それに関連付けられたボリュームも削除されます。

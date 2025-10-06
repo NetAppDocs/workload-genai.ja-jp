@@ -16,15 +16,15 @@ AI インフラストラクチャをデプロイし、FSx for ONTAP データス
 続行する前に、ご使用の環境がfor Amazon Q Businessの要件を満たしていることを確認しlink:requirements-connector.html["要件"]てください。
 
 .タスクの内容
-組織のデータソースには、個人識別情報（PII）が含まれている場合があります。この機密情報を保護するために、コネクタを定義するときに_data guardrails_を有効にすることができます。BlueXP  分類を利用したデータガードレールは、PIIを識別してマスクし、アクセスできず、取り出すことができないようにします。
+組織のデータ ソースには、個人を特定できる情報 (PII) が含まれている可能性があります。この機密情報を保護するために、コネクタを定義するときに _データ ガードレール_ を有効にすることができます。  NetApp Data Classification を活用したデータ ガードレールは、PII を識別してマスクし、アクセス不能かつ回復不可能な状態にします。
 
-link:https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["BlueXPの分類について説明します"^]です。
-
-
-NOTE: BlueXP  Workload Factory for生成AIでは、機密性の高い個人情報（SPII）はマスクされません。このタイプのデータの詳細については、を参照してくださいlink:https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-sensitive-personal-data["機密性の高い個人データのタイプ"^]。
+link:https://docs.netapp.com/us-en/data-services-data-classification/concept-cloud-compliance.html["NetAppデータ分類について学ぶ"^] 。
 
 
-NOTE: データガードレールはいつでも有効または無効にできます。データガードレールを有効にすると、Workload Factoryはデータソース全体をゼロからスキャンするため、コストが発生する可能性があります。
+NOTE: NetApp Workload Factory for GenAI は、機密個人情報 (SPII) をマスクしません。参照link:https://docs.netapp.com/us-en/data-services-data-classification/reference-private-data-categories.html#types-of-sensitive-personal-data["機密性の高い個人データのタイプ"^]このタイプのデータの詳細については、こちらをご覧ください。
+
+
+NOTE: データ ガードレールはいつでも有効化または無効化できます。データ ガードレールの有効化を切り替えると、Workload Factory はデータ ソース全体を最初からスキャンするため、コストが発生する可能性があります。
 
 
 
@@ -33,26 +33,26 @@ NOTE: データガードレールはいつでも有効または無効にでき�
 Amazon Q Business用のNetAppコネクタを作成します。このコネクタにより、GenAIとAmazon Q Business間のAPIおよびデータソース通信が可能になります。
 
 .手順
-. いずれかを使用してワークロードファクトリにログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
+. 次のいずれかを使用してWorkload Factoryにログインします。link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^] 。
 . [AI Workloads]タイルで、*[Deploy & manage]*を選択します。
-. [ナレッジベースとコネクタ]タブで、*[新規作成]*ドロップダウンを選択し、*[Amazon Q Business Connector]*を選択します。
+. 「ナレッジベースとコネクタ」メニューから、「*新規作成*」ドロップダウンを選択し、「*Amazon Q ビジネス コネクタ*」を選択します。
 . [コネクタの定義（Define Connector）]ページで、コネクタの設定を構成します。
 +
 .. *名前*:コネクタに使用する名前を入力します。
 .. *説明*：コネクタの詳細な説明を入力します。
 .. * Amazon Q *：統合するAmazon Q Businessインスタンスのリージョンとアプリケーション名。
-.. *データガードレール*:データガードレールを有効にするか無効にするかを選択します。link:https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["BlueXP  分類を活用したデータガードレールの詳細"^]です。
+.. *データ ガードレール*: データ ガードレールを有効にするか無効にするかを選択します。link:https://docs.netapp.com/us-en/data-services-data-classification/concept-cloud-compliance.html["NetApp Data Classification を活用したデータ ガードレールについて学ぶ"^] 。
 +
 データガードレールを有効にするには、次の前提条件を満たす必要があります。
 
 +
-*** BlueXP  分類と通信するには、サービスアカウントが必要です。サービスアカウントを作成するには、BlueXP  テナンシーアカウントで_Organization admin_roleが必要です。組織管理者ロールを持つメンバーは、BlueXP  ですべてのアクションを実行できます。link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-manage-members-permissions.html#add-a-role-to-a-member["BlueXP  でメンバーにロールを追加する方法を確認する"^]
-*** AIエンジンがにアクセスできる必要がありますlink:https://api.bluexp.netapp.com["BlueXP  APIエンドポイント"^]。
-*** で説明されているように、次の手順を実行する必要がありlink:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-cloud-compliance.html#quick-start["BlueXPの分類に関するドキュメント"^]ます。
+*** NetApp Data Classification と通信するには、サービス アカウントが必要です。サービス アカウントを作成するには、 NetAppコンソール テナンシー アカウントで _組織管理者_ ロールを持っている必要があります。組織管理者ロールを持つメンバーは、 NetAppコンソールですべてのアクションを完了できます。link:https://docs.netapp.com/us-en/console-setup-admin/task-iam-manage-members-permissions.html#add-a-role-to-a-member["NetAppコンソールでメンバーにロールを追加する方法を学びます"^]
+*** AIエンジンは、link:https://api.bluexp.netapp.com["NetAppコンソールAPIエンドポイント"^] 。
+*** 以下の手順に従ってください。link:https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-cloud-compliance.html#quick-start["NetAppデータ分類ドキュメント"^] :
 +
-.... BlueXPコネクタの作成
+.... コンソールエージェントを作成する
 .... 環境が前提条件を満たしていることを確認する
-.... BlueXP分類を導入します
+.... NetAppデータ分類を導入
 
 
 
@@ -64,8 +64,8 @@ Amazon Q Business用のNetAppコネクタを作成します。このコネクタ
 NOTE: データガードレール機能を有効にすると、生成AIは.txt、.md、.csv、.docx、および.pdfファイルを処理し、プレーンテキスト（埋め込み画像またはメディアテキストを除く）のみを取り込み、プライベートデータまたは機密データをマスキングします。他のすべてのファイルタイプは、プライベートデータや機密データをマスキングすることなく正常に処理されます。
 
 +
-.. *FSx for ONTAP ファイルシステム*: Amazon Q Business 用の新しい NetApp コネクタを定義すると、ワークロードファクトリーによって、コネクタ情報を保存するための新しい Amazon FSx for NetApp ONTAP ボリュームが作成されます。新しいボリュームを作成する既存のファイルシステムおよびSVM（Storage VM）を選択します。
-.. * Snapshotポリシー*：ワークロード工場のストレージインベントリに定義されている既存のポリシーのリストからSnapshotポリシーを選択します。生成AIは、選択したSnapshotポリシーに基づいて、コネクタ情報を格納するボリュームの定期的なSnapshotを自動的に作成します。
+.. *FSx for ONTAPファイルシステム*: Amazon Q Business 用の新しいNetAppコネクタを定義すると、Workload Factory によってコネクタ情報を保存するための新しいAmazon FSx for NetApp ONTAPボリュームが作成されます。新しいボリュームを作成する既存のファイル システムと SVM (ストレージ VM とも呼ばれます) を選択します。
+.. *スナップショット ポリシー*: Workload Factory ストレージ インベントリで定義されている既存のポリシーのリストからスナップショット ポリシーを選択します。  GenAI は、選択したスナップショット ポリシーに基づいて、コネクタ情報を格納するボリュームの定期的なスナップショットを自動的に作成します。
 +
 必要なSnapshotポリシーが存在しない場合は https://docs.netapp.com/us-en/ontap/data-protection/create-snapshot-policy-task.html["Snapshot ポリシーを作成します"^]、ボリュームを含むStorage VM上で実行できます。
 

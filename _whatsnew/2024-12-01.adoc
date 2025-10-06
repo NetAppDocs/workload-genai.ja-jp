@@ -6,7 +6,7 @@
 
 === Snapshotからナレッジベースをクローニング
 
-生成AI向けのBlueXP  ワークロードファクトリでは、スナップショットからのナレッジベースのクローニングがサポートされるようになりました。これにより、ナレッジベースの迅速なリカバリと既存のデータソースを使用した新しいナレッジベースの作成が可能になり、データのリカバリと開発に役立ちます。
+NetApp Workload Factory for GenAI では、スナップショットからのナレッジ ベースのクローン作成がサポートされるようになりました。これにより、ナレッジ ベースの迅速な回復と既存のデータ ソースを使用した新しいナレッジ ベースの作成が可能になり、データの回復と開発に役立ちます。
 
 link:https://docs.netapp.com/us-en/workload-genai/knowledge-base/manage-knowledgebase.html#clone-a-knowledge-base["ナレッジベースの複製"]
 
@@ -14,6 +14,6 @@ link:https://docs.netapp.com/us-en/workload-genai/knowledge-base/manage-knowledg
 
 === オンプレミスのONTAPクラスタの検出とレプリケーション
 
-オンプレミスのONTAPクラスタデータを検出してFSx for ONTAPファイルシステムにレプリケートすることで、AIのナレッジベースを強化できます。オンプレミスの検出とレプリケーションのすべてのワークフローは、ストレージインベントリの新しい*オンプレミスONTAP *タブから実行できます。
+オンプレミスのONTAPクラスターデータを検出して FSx for ONTAPファイル システムに複製し、AI ナレッジ ベースの強化に使用できるようにします。すべてのオンプレミス検出およびレプリケーション ワークフローは、ストレージ インベントリの新しい *On-Premises ONTAP* メニューから実行できます。
 
 link:https://docs.netapp.com/us-en/workload-fsx-ontap/use-onprem-data.html["オンプレミスの ONTAP クラスタを検出"]

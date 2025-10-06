@@ -1,13 +1,13 @@
 ---
 indexpage:
-  title: 生成AIドキュメント用のBlueXP  ワークロードファクトリ
+  title: NetApp Workload Factory for GenAI ドキュメント
   summary: FSx for ONTAPファイルシステムのデータをMLOpsプラットフォームやGenAI基盤モデルと統合し、組織のデータを使用して機能的なチャットボットを作成します。
   keywords: AI, GenAI, ML, Chatbot, FSx, FSx for ONTAP, knowledge base
   lead: FSx for ONTAPファイルシステムのデータをMLOpsプラットフォームやGenAI基盤モデルと統合し、組織のデータを使用して機能的なチャットボットを作成します。
   tiles:
   - title: はじめに
     links:
-    - title: 生成AI向けBlueXP  ワークロードファクトリの詳細
+    - title: GenAI向けNetAppワークロードファクトリーの詳細
       url: general/ai-workloads-overview.html
     - title: ナレッジベースインフラストラクチャの導入
       url: knowledge-base/deploy-infrastructure.html
@@ -37,11 +37,9 @@ indexpage:
       url: connector/manage-connector.html
   - title: ブログとコミュニティ
     links:
+    - title: NetAppコンソール
+      url: https://www.netapp.com/console
+    - title: NetAppデータサービス
+      url: https://www.netapp.com/data-services/
     - title: NetAppコミュニティ
-      url: https://community.netapp.com/t5/BlueXP-and-Services/ct-p/CDS
-    - title: BlueXPのブログ
-      url: https://bluexp.netapp.com/blog
-    - title: クラウドに関する Web セミナー
-      url: https://bluexp.netapp.com/events
-    - title: データで 生成AIを最大限に活用
-      url: https://community.netapp.com/t5/Tech-ONTAP-Blogs/Unlocking-GenAI-with-your-data-using-Amazon-FSx-for-NetApp-ONTAP-and-BlueXP/ba-p/456394
+      url: https://community.netapp.com/

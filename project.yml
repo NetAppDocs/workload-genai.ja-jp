@@ -18,9 +18,9 @@ sidebar:
     entries:
     - title: 新機能
       url: "/whats-new.html"
-  - title: 生成AI向けBlueXP  ワークロードファクトリの詳細
+  - title: GenAI向けNetAppワークロードファクトリーの詳細
     entries:
-    - title: 生成AI向けBlueXP  ワークロードファクトリの詳細
+    - title: GenAI向けNetAppワークロードファクトリーの詳細
       url: "/general/ai-workloads-overview.html"
     - title: NetApp生成AIエンジンのコンポーネント
       url: "/general/genai-engine-instance.html"
@@ -87,5 +87,5 @@ sidebar:
   - title: 法的通知
     url: "/legal-notices.html"
 product-family:
-  name: BlueXP workload factory
+  name: NetApp Workload Factory
   repo: workload-family

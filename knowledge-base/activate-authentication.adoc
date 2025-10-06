@@ -14,7 +14,8 @@ summary: ナレッジベースとチャットボットアプリケーション�
 APIエンドポイントを使用してナレッジベースとチャットボットアプリケーションを統合するときにトークンの検証とACLが必要になるように、ナレッジベースの認証をアクティブにします。認証を有効にするときは、チャットボットクライアントからナレッジベースへのAPI要求に使用されるJSON Webトークンの設定を構成します。
 
 .手順
-. いずれかを使用してワークロードファクトリにログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
+. 次のいずれかを使用してWorkload Factoryにログインします。link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^] 。
+. [AI Workloads]タイルで、*[Deploy & manage]*を選択します。
 . ナレッジベースインベントリページで、認証を有効にするナレッジベースを選択します。
 . を選択し image:icon-action.png["オプションボタン"] 、*[ナレッジベースの管理]*を選択します。
 . [アクション]*メニューを選択し、*[認証設定の管理]*を選択します。

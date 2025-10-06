@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: connector/requirements-connector.html 
 keywords: ai, chatbot, prerequisites, bedrock, fsx for ontap, prerequisites, requirements 
-summary: ナレッジベースを構築する前に、ワークロードファクトリとAWSが適切に設定されていることを確認してください。これには、AWSのログインクレデンシャル、ナレッジベースに統合するデータソースを含む導入済みのFSx for ONTAPファイルシステム、Amazon Bedrock AIサービスへのアクセスなどが含まれます。 
+summary: ナレッジベースを構築する前に、Workload Factory と AWS が適切にセットアップされていることを確認してください。これには、AWS ログイン認証情報、ナレッジベースに統合するデータソースを含むデプロイ済みの FSx for ONTAPファイルシステム、Amazon Bedrock AI サービスへのアクセスなどが含まれます。 
 ---
 = 生成AI Connectorの要件
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: ナレッジベースを構築する前に、ワークロードファ�
 
 
 [role="lead"]
-Amazon Q Business 用の NetApp コネクタを作成する前に、ワークロード ファクトリーと AWS が適切にセットアップされていることを確認します。
+Amazon Q Business 用のNetAppコネクタを作成する前に、Workload Factory と AWS が適切にセットアップされていることを確認してください。
 
 
 
@@ -19,15 +19,15 @@ Amazon Q Business 用の NetApp コネクタを作成する前に、ワークロ
 
 生成AIには、作業を開始する前に環境が満たす必要のある一般的な要件があります。
 
-ワークロードの工場出荷時のログインとアカウント:: のいずれかを使用してログインする https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]必要があります https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["ワークロードファクトリでアカウントを設定する"^]。
-AWS のクレデンシャルと権限:: 読み取り/書き込み権限を持つ AWS 認証情報をワークロードファクトリーに追加する必要があります。つまり、ワークロードファクトリーを GenAI の _読み取り/書き込み_ モードで使用することになります。
+Workload Factoryのログインとアカウント:: 必要となるのは https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["Workload Factoryでアカウントを設定する"^]次のいずれかを使用してログインします https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]。
+AWS のクレデンシャルと権限:: Workload Factory に読み取り/書き込み権限を持つ AWS 認証情報を追加する必要があります。つまり、Workload Factory を GenAI の _読み取り/書き込み_ モードで使用することになります。
 +
 --
 現時点では、_基本_モードと_読み取り専用_モードの権限はサポートされていません。
 
 クレデンシャルを設定する際に、以下に示すように権限を選択すると、FSx for ONTAPファイルシステムの管理、GenAI EC2インスタンスおよびナレッジベースとチャットボットに必要なその他のAWSリソースの導入と管理を行うためのフルアクセスが提供されます。
 
-https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["ワークロードファクトリにAWSクレデンシャルを追加する方法を確認"^]
+https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["Workload FactoryにAWS認証情報を追加する方法を学ぶ"^]
 
 --
 

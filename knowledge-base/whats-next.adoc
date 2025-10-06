@@ -22,4 +22,4 @@ summary: エンタープライズデータを使用してナレッジベース�
 * FSx for ONTAPファイルシステム上の重要なデータをバックアップして保護し、ナレッジベースデータやその他のインフラコンポーネントを常に利用できるようにします。
 
 
-FSx for ONTAPファイルシステムの管理については、で https://docs.netapp.com/us-en/workload-fsx-ontap/index.html["Amazon FSx for NetApp ONTAPドキュメントのワークロードファクトリー"^] 使用できるバックアップ機能と保護機能を確認してください。
+FSx for ONTAPファイルシステムの管理については、 https://docs.netapp.com/us-en/workload-fsx-ontap/index.html["Amazon FSx for NetApp ONTAP のワークロードファクトリーのドキュメント"^]使用できるバックアップおよび保護機能を表示します。

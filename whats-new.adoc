@@ -2,16 +2,72 @@
 sidebar: sidebar 
 permalink: whats-new.html 
 keywords: 'what"s new, features, new, release notes, enhancements, fixes, genai' 
-summary: ワークロードファクトリーのAIワークロード機能の最新情報をご確認ください。 
+summary: Workload Factory の AI ワークロード機能の新機能について説明します。 
 ---
-= 生成AI向けBlueXP  ワークロードファクトリの最新情報
+= NetApp Workload Factory for GenAIの新機能
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-ワークロードファクトリのジェネレーティブAIワークロード機能の最新情報をご確認ください。
+Workload Factory の Generative AI ワークロード機能の新機能について説明します。
+
+
+
+== 2025年10月5日
+
+
+
+=== BlueXP workload factoryがNetAppワークロードファクトリーに
+
+BlueXP は、データ インフラストラクチャの管理における役割をより適切に反映するために、名前が変更され、再設計されました。その結果、 BlueXP workload factoryの名前がNetAppワークロード ファクトリーに変更されました。
+
+
+
+=== Amazon Q Business のNetAppコネクタに汎用 NFS/SMB データソースを追加するためのサポート
+
+Workload Factory API を使用すると、汎用 NFSv3、NFSv4、または SMB 共有から Amazon Q Business のNetAppコネクタにデータ ソースを追加できるようになりました。これにより、Amazon FSx for NetApp ONTAP以外のファイルシステムでホストされているボリュームに保存されているファイルを含めることができます。
+
+link:https://docs.netapp.com/us-en/workload-genai/connector/define-connector.html["Amazon Q Business 用の NetApp コネクタを作成する"]
+
+link:https://docs.netapp.com/us-en/workload-genai/connector/define-connector.html#add-data-sources-to-the-connector["コネクタにデータソースを追加する"]
+
+
+
+=== ナレッジベースの高度なチャット設定
+
+応答の長さ、温度、推論設定など、ナレッジ ベースのチャット モデルに適用可能な高度なチャット設定を構成できるようになりました。これらの設定の一部 (最新性や変更時間の設定、高度な取得設定、システム プロンプトなど) は、Workload Factory API を使用する場合にのみ利用できます。
+
+link:https://docs.netapp.com/us-en/workload-genai/knowledge-base/create-knowledgebase.html["生成AIナレッジベースの作成"]
+
+
+
+=== 埋め込み、チャット、再ランキングモデルで推論タイプの選択がサポートされるようになりました
+
+選択した埋め込み、チャット、または再ランク付けモデルに推論設定がある場合は、推論タイプを選択できるようになりました。これにより、チャットボットのパフォーマンスとリソース要件をニーズに合わせてより適切に調整できるようになります。
+
+link:https://docs.netapp.com/us-en/workload-genai/knowledge-base/create-knowledgebase.html["生成AIナレッジベースの作成"]
+
+
+
+== 2025年8月3日
+
+
+
+=== 構造化データ結果の安全な保存
+
+チャットボットのクエリ結果に構造化データが含まれている場合、GenAI はその結果を Amazon S3 バケットに保存できます。これらの結果が S3 バケットに保存されると、チャット セッション内のダウンロード リンクを使用してダウンロードできます。
+
+link:https://docs.netapp.com/us-en/workload-genai/knowledge-base/create-knowledgebase.html["生成AIナレッジベースの作成"]
+
+
+
+=== MCP サーバーの可用性
+
+NetApp は現在、 NetApp Workload Factory for GenAI に Model Context Protocol (MCP) サーバーを提供しています。サーバーをローカルにインストールすると、外部の MCP クライアントが GenAI ナレッジ ベースからクエリ結果を検出して取得できるようになります。
+
+link:https://github.com/NetApp/mcp/tree/main/NetApp-KnowledgeBase-MCP-server["NetApp Workload Factory GenAI MCP サーバー"^]
 
 
 
@@ -37,7 +93,7 @@ https://docs.netapp.com/us-en/workload-genai/connector/define-connector.html#add
 
 GenAIでTracker監視機能が利用可能になりました。Trackerを使用すると、保留中、進行中、完了済みの操作の進行状況とステータスを監視および追跡したり、操作タスクとサブタスクの詳細を確認したり、問題や失敗を診断したり、失敗した操作のパラメータを編集したり、失敗した操作を再試行したりできます。
 
-link:https://docs.netapp.com/us-en/workload-genai/general/monitor-operations.html["BlueXP ワークロード ファクトリーの Tracker を使用してワークロード操作を監視する"]
+link:https://docs.netapp.com/us-en/workload-genai/general/monitor-operations.html["NetApp Workload FactoryのTrackerでワークロード操作を監視する"]
 
 
 
@@ -81,7 +137,11 @@ link:https://docs.netapp.com/us-en/workload-genai/knowledge-base/create-knowledg
 
 === 権限に関する用語を更新
 
-ワークロード ファクトリのユーザー インターフェースとドキュメントでは、読み取り権限を示すために「読み取り専用」を使用し、自動化権限を示すために「読み取り/書き込み」を使用するようになりました。== 2025年3月2日
+Workload Factory のユーザー インターフェースとドキュメントでは、読み取り権限を示すために「読み取り専用」を使用し、自動化権限を示すために「読み取り/書き込み」を使用するようになりました。
+
+
+
+== 2025年3月2日
 
 
 
@@ -154,7 +214,7 @@ link:https://docs.netapp.com/us-en/workload-genai/knowledge-base/create-knowledg
 
 生成AIでは、ハイブリッド検索を使用して結果をリランク付けすることで、検索結果の関連性と精度を大幅に向上させることができます。ハイブリッド検索は、従来のキーワードベース検索の強みと高度な高密度ベクトルベースのセマンティック検索技術を組み合わせたものです。標準的なキーワード検索結果は、近い一致と言語的なニュアンスで強化され、関連性が向上します。その後、生成AIはCohere RerankやAmazon Rerankなどの高度なリランキングモデルを使用してこれらの結果をさらに絞り込み、最も関連性の高い結果を返します。この機能は、新しく作成されたナレッジベースで使用できます。
 
-link:https://docs.netapp.com/us-en/workload-genai/general/ai-workloads-overview.html#benefits-of-using-genai-to-create-generative-ai-applications["生成AI向けBlueXP  ワークロードファクトリの詳細"]
+link:https://docs.netapp.com/us-en/workload-genai/general/ai-workloads-overview.html#benefits-of-using-genai-to-create-generative-ai-applications["GenAI向けNetAppワークロードファクトリーの詳細"]
 
 
 
@@ -180,7 +240,7 @@ link:https://docs.netapp.com/us-en/workload-genai/knowledge-base/deploy-infrastr
 
 === 破損または欠落している 生成AIインフラの再構築
 
-AIエンジンインスタンスが破損したり、何らかの理由で削除されたりした場合は、ワークロードファクトリに再構築を依頼できます。ワークロードファクトリは、再構築が完了した後、ナレッジベースをインフラストラクチャに自動的に再接続して、すぐに使用できるようにします。
+AI エンジン インスタンスが破損したり、何らかの理由で削除されたりした場合は、Workload Factory で再構築することができます。ワークロード ファクトリーは、再構築が完了するとナレッジ ベースをインフラストラクチャに自動的に再接続し、すぐに使用できるようにします。
 
 link:https://docs.netapp.com/us-en/workload-genai/general/troubleshooting.html["トラブルシューティング"]
 
@@ -192,7 +252,7 @@ link:https://docs.netapp.com/us-en/workload-genai/general/troubleshooting.html["
 
 === Snapshotからナレッジベースをクローニング
 
-生成AI向けのBlueXP  ワークロードファクトリでは、スナップショットからのナレッジベースのクローニングがサポートされるようになりました。これにより、ナレッジベースの迅速なリカバリと既存のデータソースを使用した新しいナレッジベースの作成が可能になり、データのリカバリと開発に役立ちます。
+NetApp Workload Factory for GenAI では、スナップショットからのナレッジ ベースのクローン作成がサポートされるようになりました。これにより、ナレッジ ベースの迅速な回復と既存のデータ ソースを使用した新しいナレッジ ベースの作成が可能になり、データの回復と開発に役立ちます。
 
 link:https://docs.netapp.com/us-en/workload-genai/knowledge-base/manage-knowledgebase.html#clone-a-knowledge-base["ナレッジベースの複製"]
 
@@ -200,7 +260,7 @@ link:https://docs.netapp.com/us-en/workload-genai/knowledge-base/manage-knowledg
 
 === オンプレミスのONTAPクラスタの検出とレプリケーション
 
-オンプレミスのONTAPクラスタデータを検出してFSx for ONTAPファイルシステムにレプリケートすることで、AIのナレッジベースを強化できます。オンプレミスの検出とレプリケーションのすべてのワークフローは、ストレージインベントリの新しい*オンプレミスONTAP *タブから実行できます。
+オンプレミスのONTAPクラスターデータを検出して FSx for ONTAPファイル システムに複製し、AI ナレッジ ベースの強化に使用できるようにします。すべてのオンプレミス検出およびレプリケーション ワークフローは、ストレージ インベントリの新しい *On-Premises ONTAP* メニューから実行できます。
 
 link:https://docs.netapp.com/us-en/workload-fsx-ontap/use-onprem-data.html["オンプレミスの ONTAP クラスタを検出"]
 
@@ -212,11 +272,11 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/use-onprem-data.html["オ�
 
 === 個人識別情報をデータガードレールでマスクする
 
-ジェネレーティブAIワークロードには、BlueXP  分類を基盤とするデータガードレール機能が導入されています。データガードレール機能は、個人識別情報(PII)を識別してマスクし、組織の機密データのコンプライアンスを維持し、セキュリティを強化するのに役立ちます。
+Generative AI ワークロードでは、 NetAppコンソール分類を活用したデータ ガードレール機能が導入されています。データ ガードレール機能は、個人を特定できる情報 (PII) を識別してマスクし、コンプライアンスを維持し、組織の機密データのセキュリティを強化するのに役立ちます。
 
 link:https://docs.netapp.com/us-en/workload-genai/knowledge-base/create-knowledgebase.html["生成AIナレッジベースの作成"]
 
-link:https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["BlueXPの分類について説明します"^]
+link:https://docs.netapp.com/us-en/data-services-data-classification/concept-cloud-compliance.html["NetAppコンソールの分類について学ぶ"^]
 
 
 
@@ -278,7 +338,7 @@ https://docs.netapp.com/us-en/workload-genai/knowledge-base/identify-data-source
 
 === チャットボットアプリケーションの例
 
-NetAppワークロードファクトリ 生成AIサンプルアプリケーションを使用すると、Webベースのチャットボットアプリケーションで直接対話することで、公開されたNetAppワークロードファクトリナレッジベースからの認証と取得をテストできます。
+NetApp Workload Factory GenAI サンプル アプリケーションを使用すると、Web ベースのチャットボット アプリケーションで直接対話して、公開されたNetApp Workload Factory ナレッジ ベースからの認証と取得をテストできます。
 
 
 
@@ -286,6 +346,6 @@ NetAppワークロードファクトリ 生成AIサンプルアプリケーシ�
 
 
 
-=== 生成AI向けワークロードファクトリの初回リリース
+=== GenAI向けワークロードファクトリーの初期リリース
 
 最初のリリースには、組織のデータを埋め込むことによってカスタマイズされたナレッジベースを開発する機能が含まれています。ナレッジベースには、ユーザー用のチャットボットアプリケーションからアクセスできます。この機能により、組織固有の質問に対する正確で適切な回答が保証され、すべてのユーザーの満足度と生産性が向上します。

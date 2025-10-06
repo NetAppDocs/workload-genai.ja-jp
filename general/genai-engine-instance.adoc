@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: general/genai-engine-instance.html 
 keywords: genai engine, instance, ec2, role, iam role, permissions, security group, inbound, outbound, private endpoints 
-summary: 生成AIインフラを導入すると、ワークロードファクトリによって 生成AIエンジン用のEC2インスタンスが作成されます。また、このインスタンスのIAMロール、セキュリティグループ、プライベートエンドポイントも作成されます。ワークロードファクトリがAWS環境に作成するこれらのコンポーネントの詳細を確認することができます。 
+summary: GenAI インフラストラクチャをデプロイすると、Workload Factory によって GenAI エンジン用の EC2 インスタンスが作成されます。また、このインスタンスの IAM ロール、セキュリティ グループ、プライベート エンドポイントも作成されます。  Workload Factory が AWS 環境に作成するこれらのコンポーネントについて、さらに詳しく理解したい場合があります。 
 ---
 = NetApp生成AIエンジンのコンポーネント
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 生成AIインフラを導入すると、ワークロードファクト
 
 
 [role="lead"]
-生成AIインフラを導入すると、ワークロードファクトリによって 生成AIエンジン用のEC2インスタンスが作成されます。また、このインスタンスのIAMロール、セキュリティグループ、プライベートエンドポイントも作成されます。ワークロードファクトリがAWS環境に作成するこれらのコンポーネントの詳細を確認することができます。
+GenAI インフラストラクチャをデプロイすると、Workload Factory によって GenAI エンジン用の EC2 インスタンスが作成されます。また、このインスタンスの IAM ロール、セキュリティ グループ、プライベート エンドポイントも作成されます。  Workload Factory が AWS 環境に作成するこれらのコンポーネントについて、さらに詳しく理解したい場合があります。
 
 EC2インスタンスタイプ:: m5.large
 IAMロール:: GenAIエンジンインスタンスには、データのチャンクをAmazon Bedrockの埋め込みモデルに送信し、NetApp AIサービスバックエンドと通信するための権限が必要です。IAMロールには次の権限が含まれています。
@@ -25,6 +25,16 @@ IAMロール:: GenAIエンジンインスタンスには、データのチャン
 {
   "Version": "2012-10-17",
   "Statement": [
+    {
+      "Action": [
+        "iam:CreateRole",
+        "iam:CreatePolicy",
+        "iam:AttachRolePolicy",
+        "iam:PassRole"
+      ],
+      "Resource": "*",
+      "Effect": "Allow"
+    },
     {
       "Action": [
         "ssm:DescribeDocument",
@@ -87,7 +97,7 @@ IAMロール:: GenAIエンジンインスタンスには、データのチャン
     {
       "Condition": {
         "StringLike": {
-          "aws:ResourceTag/netapp:wlmai: <ai-engine-id>:kbId": "*"
+          "aws:ResourceTag/netapp:wlmai:<id>:kbId": "*"
         }
       },
       "Action": "fsx:DeleteVolume",
@@ -100,7 +110,7 @@ IAMロール:: GenAIエンジンインスタンスには、データのチャン
     {
       "Condition": {
         "StringLike": {
-          "aws:ResourceTag/netapp:wlmai: <ai-engine-id>:qConnectorId": "*"
+          "aws:ResourceTag/netapp:wlmai:<id>:qConnectorId": "*"
         }
       },
       "Action": "fsx:DeleteVolume",
@@ -113,7 +123,7 @@ IAMロール:: GenAIエンジンインスタンスには、データのチャン
     {
       "Condition": {
         "StringLike": {
-          "aws:ResourceTag/netapp:wlmai: <ai-engine-id>": "*"
+          "aws:ResourceTag/netapp:wlmai:<id>": "*"
         }
       },
       "Action": "fsx:UntagResource",
@@ -123,7 +133,7 @@ IAMロール:: GenAIエンジンインスタンスには、データのチャン
     {
       "Condition": {
         "StringLike": {
-          "aws:ResourceTag/netapp:wlmai: <ai-engine-id>:kbId": "*"
+          "aws:ResourceTag/netapp:wlmai:<id>:kbId": "*"
         }
       },
       "Action": "fsx:UntagResource",
@@ -133,7 +143,7 @@ IAMロール:: GenAIエンジンインスタンスには、データのチャン
     {
       "Condition": {
         "StringLike": {
-          "aws:ResourceTag/netapp:wlmai: <ai-engine-id>:qConnectorId": "*"
+          "aws:ResourceTag/netapp:wlmai:<id>:qConnectorId": "*"
         }
       },
       "Action": "fsx:UntagResource",
@@ -145,7 +155,9 @@ IAMロール:: GenAIエンジンインスタンスには、データのチャン
         "bedrock:InvokeModel",
         "bedrock:Rerank",
         "bedrock:GetFoundationModel",
-        "bedrock:GetInferenceProfile"
+        "bedrock:GetInferenceProfile",
+        "bedrock:GetModelInvocationLoggingConfiguration",
+        "bedrock:PutModelInvocationLoggingConfiguration"
       ],
       "Resource": "*",
       "Effect": "Allow"
@@ -165,6 +177,7 @@ IAMロール:: GenAIエンジンインスタンスには、データのチャン
     {
       "Action": [
         "qbusiness:ListWebExperiences",
+        "qbusiness:ListApplications",
         "qbusiness:GetApplication",
         "qbusiness:CreateDataSource",
         "qbusiness:DeleteDataSource",
@@ -193,6 +206,7 @@ IAMロール:: GenAIエンジンインスタンスには、データのチャン
         "logs:CreateLogGroup"
       ],
       "Resource": [
+        "arn:aws:logs:*:*:log-group:/aws/bedrock*",
         "arn:aws:logs:*:*:log-group:/netapp/wlmai/*:log-stream:*",
         "arn:aws:logs:*:*:log-group:/netapp/wlmai/*"
       ],
@@ -220,7 +234,7 @@ IAMロール:: GenAIエンジンインスタンスには、データのチャン
 ====
 --
 セキュリティグループ:: 発信ルールはすべてのトラフィックに対してオープンであり、着信ルールは完全にクローズされます。
-プライベートエンドポイント:: ターゲットVPCにまだVPCがない場合、Workload Factoryは 生成AIエンジンEC2インスタンスのプライベートエンドポイントを作成し、次のAWSサービスと通信できるようにします。
+プライベートエンドポイント:: ターゲット VPC にまだプライベートエンドポイントがない場合、Workload Factory は GenAI エンジン EC2 インスタンスのプライベートエンドポイントを作成し、次の AWS サービスと通信できるようにします。
 +
 --
 * Amazon Bedrock
